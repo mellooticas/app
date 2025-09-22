@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PWA Icon Generator</title>
+</head>
+<body>
+    <canvas id="canvas192" width="192" height="192" style="border:1px solid #ccc;"></canvas>
+    <canvas id="canvas512" width="512" height="512" style="border:1px solid #ccc;"></canvas>
+    
+    <script>
+        // Gerar ícone 192x192
+        const canvas192 = document.getElementById('canvas192');
+        const ctx192 = canvas192.getContext('2d');
+        
+        // Fundo vermelho
+        ctx192.fillStyle = '#dc2626';
+        ctx192.fillRect(0, 0, 192, 192);
+        
+        // Círculo decorativo
+        ctx192.beginPath();
+        ctx192.arc(96, 96, 60, 0, 2 * Math.PI);
+        ctx192.fillStyle = 'rgba(255, 255, 255, 0.1)';
+        ctx192.fill();
+        
+        // Emoji sakura
+        ctx192.font = '48px serif';
+        ctx192.fillStyle = '#ffffff';
+        ctx192.textAlign = 'center';
+        ctx192.fillText('🌸', 96, 110);
+        
+        // Texto
+        ctx192.font = 'bold 16px Arial';
+        ctx192.fillStyle = '#ffffff';
+        ctx192.fillText('Nipo School', 96, 140);
+        
+        // Gerar ícone 512x512
+        const canvas512 = document.getElementById('canvas512');
+        const ctx512 = canvas512.getContext('2d');
+        
+        // Fundo vermelho
+        ctx512.fillStyle = '#dc2626';
+        ctx512.fillRect(0, 0, 512, 512);
+        
+        // Círculos decorativos
+        ctx512.beginPath();
+        ctx512.arc(256, 256, 200, 0, 2 * Math.PI);
+        ctx512.fillStyle = 'rgba(255, 255, 255, 0.1)';
+        ctx512.fill();
+        
+        ctx512.beginPath();
+        ctx512.arc(256, 256, 150, 0, 2 * Math.PI);
+        ctx512.fillStyle = 'rgba(255, 255, 255, 0.05)';
+        ctx512.fill();
+        
+        // Emoji sakura
+        ctx512.font = '120px serif';
+        ctx512.fillStyle = '#ffffff';
+        ctx512.textAlign = 'center';
+        ctx512.fillText('🌸', 256, 280);
+        
+        // Texto principal
+        ctx512.font = 'bold 40px Arial';
+        ctx512.fillStyle = '#ffffff';
+        ctx512.fillText('Nipo School', 256, 380);
+        
+        // Subtítulo
+        ctx512.font = '24px Arial';
+        ctx512.fillStyle = 'rgba(255, 255, 255, 0.8)';
+        ctx512.fillText('Sistema Oriental Musical', 256, 420);
+        
+        // Download links
+        setTimeout(() => {
+            const link192 = document.createElement('a');
+            link192.download = 'pwa-192x192.png';
+            link192.href = canvas192.toDataURL();
+            document.body.appendChild(link192);
+            
+            const link512 = document.createElement('a');
+            link512.download = 'pwa-512x512.png';
+            link512.href = canvas512.toDataURL();
+            document.body.appendChild(link512);
+            
+            console.log('Icons generated! Right-click and save the canvases above.');
+        }, 100);
+    </script>
+</body>
+</html>
