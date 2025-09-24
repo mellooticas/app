@@ -22,7 +22,7 @@ import {
   Heart
 } from 'lucide-react';
 import QuickSwitch from '../components/QuickSwitch';
-import { NipoHeaderLogo } from '../../../shared/components/ui/NipoLogo';
+import { NipoHeaderLogo } from '../../../shared/components/UI/NipoLogo';
 
 const ProfessoresLayout = () => {
   const { user, userProfile, logout, loading } = useAuth();

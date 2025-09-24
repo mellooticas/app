@@ -23,10 +23,10 @@ import {
   NipoGrid,
   NipoCard,
   NipoButton
-} from '../shared/components/ui/NipoUI'; 
+} from '../shared/components/UI/NipoUI'; 
 
 // Logo oficial
-import { NipoLandingLogo } from '../shared/components/ui/NipoLogo'; 
+import { NipoLandingLogo } from '../shared/components/UI/NipoLogo'; 
 
 const LandingPage = () => {
   const navigate = useNavigate();

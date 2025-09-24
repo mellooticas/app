@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../shared/contexts/AuthContext';
-import { NipoLandingLogo, LogoVencedor } from '../shared/components/ui/NipoLogo';
-import LogoVencedorDestaque from '../shared/components/ui/LogoVencedorDestaque';
+import { NipoLandingLogo, LogoVencedor } from '../shared/components/UI/NipoLogo';
+import LogoVencedorDestaque from '../shared/components/UI/LogoVencedorDestaque';
 
 const Dashboard = () => {
   const { user, userProfile, loading } = useAuth();

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../../shared/contexts/AuthContext';
-import { NipoHeaderLogo } from '../../../shared/components/ui/NipoLogo';
+import { NipoHeaderLogo } from '../../../shared/components/UI/NipoLogo';
 import {
   Plus,
   Eye,

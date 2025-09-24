@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useAuth } from '../../../shared/contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '../../../shared/lib/supabase/supabaseClient';
-import { NipoHeaderLogo } from '../../../shared/components/ui/NipoLogo';
+import { NipoHeaderLogo } from '../../../shared/components/UI/NipoLogo';
 
 import {  
   BarChart3,
