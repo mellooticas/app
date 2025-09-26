@@ -21,15 +21,15 @@ import Vote from '@/features/auth/pages/Vote';
 // 📱 Import do Scanner QR - REATIVANDO
 import { QRScannerPage } from '@/features/alunos/pages/QRScannerPage';
 
-// 📚 Import das páginas de alunos - PÁGINAS TEMPORÁRIAS PARA BUILD
-// import ModulosPage from '@/features/modulos/pages/ModulosPage';
-// import ConquistasPage from '@/features/conquistas/pages/ConquistasPage';
+// 📚 Import das páginas de alunos - REATIVANDO ESSENCIAIS
+import ModulosPage from '@/features/modulos/pages/ModulosPage';
+import ConquistasPage from '@/features/conquistas/pages/ConquistasPage';
 // import DevocionalPage from '@/features/devocional/pages/DevocionalPage';
 
-// 📖 Import das páginas de curriculum - METODOLOGIAS INDIVIDUAIS - COMENTADO PARA BUILD
-// import CurriculumMethodologyPage from '@/features/curriculum/pages/CurriculumMethodologyPage';
-// import CurriculumMethodologyPageSimple from '@/features/curriculum/pages/CurriculumMethodologyPageSimple';
-// import TestCurriculumPage from '@/features/curriculum/pages/TestCurriculumPage';
+// 📖 Import das páginas de curriculum - METODOLOGIAS INDIVIDUAIS - REATIVANDO
+import CurriculumMethodologyPage from '@/features/curriculum/pages/CurriculumMethodologyPage';
+import CurriculumMethodologyPageSimple from '@/features/curriculum/pages/CurriculumMethodologyPageSimple';
+import TestCurriculumPage from '@/features/curriculum/pages/TestCurriculumPage';
 
 // 📋 Import das páginas do Kanban Admin - COMENTADO PARA BUILD
 import Kanban from '@/features/admin/pages/Kanban';
@@ -63,16 +63,16 @@ import AdminProfessores from '@/features/admin/pages/AdminProfessores';
 // 📊 Import das páginas administrativas adicionais - COMENTADO PARA BUILD
 import AdminRelatorios from '@/features/admin/pages/AdminRelatorios';
 import AdminConfiguracoes from '@/features/admin/pages/AdminConfiguracoes';
-// 📚 Import da página de curriculum - COMENTADO PARA BUILD
-// import AdminCurriculumNew from '@/features/admin/pages/AdminCurriculum';
-// import AdminMethodologyEditor from '@/features/admin/pages/AdminMethodologyEditor';
-// import AdminMethodologyView from '@/features/admin/pages/AdminMethodologyView';
+// 📚 Import da página de curriculum - REATIVANDO
+import AdminCurriculumNew from '@/features/admin/pages/AdminCurriculum';
+import AdminMethodologyEditor from '@/features/admin/pages/AdminMethodologyEditor';
+import AdminMethodologyView from '@/features/admin/pages/AdminMethodologyView';
 import AdminInstrumentView from '@/features/admin/pages/AdminInstrumentView';
 // 🆕 Import das páginas QR - COMENTADO PARA BUILD
 import { QRCodeManager } from '@/features/admin/pages/QRCodeManager';
 
 // 🎓 Import da página de gestão de turmas - COMENTADO PARA BUILD
-// import AdminTurmas from '@/features/turmas/pages/AdminTurmas';
+import AdminTurmas from '@/features/turmas/pages/AdminTurmas';
 
 // 🎓 Import das páginas dos alunos - REATIVANDO AS ESSENCIAIS
 import DetalheInstrumento from '@/features/alunos/instrumentos/pages/DetalheInstrumento';
@@ -322,6 +322,7 @@ const AppRouter = () => {
 
       {/* Outras rotas protegidas existentes - TEMPORARIAMENTE COMENTADAS PARA BUILD */}
       {/*
+      {/* ROTA MÓDULOS - REATIVADA */}
       <Route 
         path="/modulos" 
         element={
@@ -339,19 +340,8 @@ const AppRouter = () => {
           </ProtectedRoute>
         } 
       />
-      
-      <Route 
-        path="/devocional" 
-        element={
-          <ProtectedRoute>
-            <DevocionalPage />
-          </ProtectedRoute>
-        } 
-      />
-      */}
 
-      {/* 📖 Rotas do Curriculum - Metodologias Individuais - COMENTADO PARA BUILD */}
-      {/*
+      {/* 📖 Rotas do Curriculum - Metodologias Individuais - REATIVADO */}
       <Route 
         path="/curriculum/metodologia/:methodId" 
         element={
@@ -360,7 +350,6 @@ const AppRouter = () => {
           </ProtectedRoute>
         } 
       />
-      */}
       
       <Route 
         path="/perfil" 
@@ -733,7 +722,6 @@ const AppRouter = () => {
       />
       
       {/* 📚 SISTEMA DE CURRICULUM - Rota independente para admin */}
-      {/* ROTA CURRICULUM COMENTADA PARA BUILD
       <Route 
         path="/admin/curriculum" 
         element={
@@ -742,8 +730,6 @@ const AppRouter = () => {
           </AdminRoute>
         } 
       />
-      */}
-      {/* ROTAS CURRICULUM COMENTADAS PARA BUILD
       <Route 
         path="/admin/curriculum/edit/:chapterId" 
         element={
@@ -760,7 +746,6 @@ const AppRouter = () => {
           </AdminRoute>
         } 
       />
-      */}
       <Route 
         path="/admin/instruments/view/:instrumentId" 
         element={
