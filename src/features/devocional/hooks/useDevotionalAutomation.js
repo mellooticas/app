@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { supabaseClient } from '../../../shared/lib/supabase';
+import { supabase } from '../../../shared/lib/supabase/supabase';
 
 /**
  * Hook para gerenciar a automação dos devocionais semanais
@@ -102,7 +102,7 @@ Hoje, pense em como você pode usar sua música para abençoar alguém. Talvez s
       const weekEnd = new Date(weekStart);
       weekEnd.setDate(weekStart.getDate() + 6);
 
-      const { data: existingDevotionals } = await supabaseClient
+      const { data: existingDevotionals } = await supabase
         .from('devotional_content')
         .select('id, published_date, title')
         .gte('published_date', weekStart.toISOString().split('T')[0])
@@ -160,7 +160,7 @@ Hoje, pense em como você pode usar sua música para abençoar alguém. Talvez s
         automation_week: `${weekStart.getFullYear()}-W${Math.ceil((weekStart - new Date(weekStart.getFullYear(), 0, 1)) / 604800000)}`
       };
 
-      const { data, error } = await supabaseClient
+      const { data, error } = await supabase
         .from('devotional_content')
         .insert([newDevotional])
         .select()
@@ -194,7 +194,7 @@ Hoje, pense em como você pode usar sua música para abençoar alguém. Talvez s
       const nextWeekStart = getWeekStart(nextWeek);
 
       // Verificar se já existe devocional agendado
-      const { data: scheduled } = await supabaseClient
+      const { data: scheduled } = await supabase
         .from('devotional_content')
         .select('id')
         .eq('published_date', nextWeekStart.toISOString().split('T')[0])
@@ -224,7 +224,7 @@ Hoje, pense em como você pode usar sua música para abençoar alguém. Talvez s
         automation_week: `${nextWeekStart.getFullYear()}-W${Math.ceil((nextWeekStart - new Date(nextWeekStart.getFullYear(), 0, 1)) / 604800000)}`
       };
 
-      const { data, error } = await supabaseClient
+      const { data, error } = await supabase
         .from('devotional_content')
         .insert([scheduledDevotional])
         .select()

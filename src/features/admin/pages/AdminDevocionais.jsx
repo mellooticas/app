@@ -4,7 +4,7 @@ import NipoHeader from '../../../shared/components/UI/NipoHeader';
 import { NipoSection, NipoButton } from '../../../shared/components/UI/NipoUI';
 import { useDevotionals } from '../../devocional/hooks/useDevotionals';
 import { useAuth } from '../../../shared/contexts/AuthContext';
-import { supabaseClient } from '../../../shared/lib/supabase';
+import { supabase } from '../../../shared/lib/supabase/supabaseClient';
 
 const AdminDevocionais = () => {
   const { devotionals, loading, refreshDevotionals } = useDevotionals();
@@ -45,7 +45,7 @@ const AdminDevocionais = () => {
   const calculateStats = useCallback(async () => {
     try {
       // Contar total de leituras e favoritos
-      const { data: readStats } = await supabaseClient
+      const { data: readStats } = await supabase
         .from('user_devotional_progress')
         .select('devotional_id, is_read, is_favorite');
 
@@ -66,7 +66,7 @@ const AdminDevocionais = () => {
 
   const handleCreateDevotional = async () => {
     try {
-      const { error } = await supabaseClient
+      const { error } = await supabase
         .from('devotional_content')
         .insert([{
           ...formData,
@@ -98,7 +98,7 @@ const AdminDevocionais = () => {
   const handleDeleteDevotional = async (id) => {
     if (window.confirm('Tem certeza que deseja excluir este devocional?')) {
       try {
-        const { error } = await supabaseClient
+        const { error } = await supabase
           .from('devotional_content')
           .delete()
           .eq('id', id);
@@ -113,7 +113,7 @@ const AdminDevocionais = () => {
 
   const handleToggleStatus = async (id, currentStatus) => {
     try {
-      const { error } = await supabaseClient
+      const { error } = await supabase
         .from('devotional_content')
         .update({ is_active: !currentStatus })
         .eq('id', id);
