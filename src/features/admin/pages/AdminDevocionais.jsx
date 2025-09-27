@@ -3,7 +3,7 @@ import { Plus, Calendar, Eye, Trash2, Star, Users, Book, Target, Search, Filter 
 import NipoHeader from '../../../shared/components/UI/NipoHeader';
 import { NipoSection, NipoButton } from '../../../shared/components/UI/NipoUI';
 import { useDevotionals } from '../../devocional/hooks/useDevotionals';
-import { useAuth } from '../../../shared/hooks/useAuth';
+import { useAuth } from '../../../shared/contexts/AuthContext';
 import { supabaseClient } from '../../../shared/lib/supabase';
 
 const AdminDevocionais = () => {
