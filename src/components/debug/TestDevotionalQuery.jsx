@@ -1,7 +1,7 @@
 // TestDevotionalQuery.jsx - Componente para testar se o erro foi corrigido
 import React, { useEffect, useState } from 'react';
 import { supabase } from '../../shared/lib/supabase/supabaseClient';
-import { useAuth } from '../../shared/contexts/AuthContext';
+import { useAuth } from '../../contexts/auth-context';
 
 const TestDevotionalQuery = () => {
   const { user } = useAuth();

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet, useLocation, Link } from 'react-router-dom';
-import { useAuth } from '../../../shared/contexts/AuthContext';
+import { useAuth } from '../../../contexts/auth-context';
 
 const InstrumentosLayout = () => {
   const { userProfile } = useAuth();

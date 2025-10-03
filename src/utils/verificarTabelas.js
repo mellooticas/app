@@ -1,5 +1,5 @@
 // Utility para verificar todas as tabelas disponíveis no Supabase
-import { supabase } from '../shared/lib/supabase/supabaseClient';
+import { supabase } from '../lib/supabase/supabaseClient';
 
 export const verificarTabelasDisponiveis = async () => {
   console.log('🔍 VERIFICANDO TABELAS DISPONÍVEIS NO SUPABASE...');

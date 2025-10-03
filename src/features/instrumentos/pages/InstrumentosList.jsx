@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useInstrumentosComStats } from '../../instrumentos/hooks/useInstruments'; 
-import { useAuth } from '../../../shared/contexts/AuthContext';
+import { useAuth } from '../../../contexts/auth-context';
 
 const InstrumentosList = () => {
   const { userProfile } = useAuth();

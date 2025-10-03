@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useAuth } from '../../../shared/contexts/AuthContext';
+import { useAuth } from '../../../contexts/auth-context';
 
 export const useAchievements = () => {
   const { userProfile } = useAuth();

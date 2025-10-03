@@ -2,6 +2,8 @@
 // SISTEMA DE CONTROLE DE ACESSO
 // ==========================================
 
+import { useAuth } from '../../contexts/working-auth-context';
+
 /**
  * Definição de permissões por tipo de usuário
  */

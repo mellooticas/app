@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useAuth } from '../../../shared/contexts/AuthContext';
+import { useAuth } from '../../../contexts/auth-context';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '../../../shared/lib/supabase/supabaseClient';
 

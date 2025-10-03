@@ -26,7 +26,7 @@ import {
   Flame
 } from 'lucide-react';
 import { supabase } from '../../../shared/lib/supabase/supabaseClient';
-import { useAuth } from '../../../shared/contexts/AuthContext';
+import { useAuth } from '../../../contexts/auth-context';
 
 const AdminAlunoDetalhe = () => {
   const { id } = useParams();

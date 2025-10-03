@@ -1,6 +1,6 @@
 import React from 'react';
 import { User, RefreshCw, LogOut } from 'lucide-react';
-import { useAuth } from '@/shared/contexts/AuthContext';
+import { useAuth } from '@/contexts/auth-context';
 import { useNavigate } from 'react-router-dom';
 import { NipoHeaderLogo } from './NipoLogo';
 
