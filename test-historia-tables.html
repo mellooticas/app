@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificar Tabelas História da Música</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    body {
+      font-family: monospace;
+      padding: 20px;
+      background: #1a1a1a;
+      color: #fff;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    pre {
+      background: #2a2a2a;
+      padding: 20px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    .success { color: #4CAF50; }
+    .error { color: #f44336; }
+    .warning { color: #ff9800; }
+  </style>
+</head>
+<body>
+  <h1>🔍 Verificar Tabelas de História da Música</h1>
+  <button onclick="checkTables()">Verificar Tabelas</button>
+  <button onclick="createTables()">Criar Tabelas</button>
+  <pre id="result"></pre>
+
+  <script>
+    const SUPABASE_URL = 'https://eehidnwlwrzqzgytbfsd.supabase.co'
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVlaGlkbndsd3J6cXpneXRiZnNkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDgyMzA1MjQsImV4cCI6MjA2MzgwNjUyNH0.SawTk_G0H8CYFEQ7h62Wsv35uNqZz0Q5rsLNT5wCcUM'
+
+    const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+
+    async function checkTables() {
+      const result = document.getElementById('result')
+      result.innerHTML = '🔍 Verificando tabelas de História da Música...\n\n'
+
+      const tabelas = [
+        'historia_periodos',
+        'historia_compositores', 
+        'historia_obras',
+        'historia_generos',
+        'historia_movimentos',
+        'historia_instrumentos_evolucao',
+        'historia_conceitos_teoricos',
+        'historia_eventos_timeline',
+        'historia_progresso_usuario',
+        'historia_quiz'
+      ]
+
+      let existentes = 0
+      let naoExistentes = 0
+
+      for (const tabela of tabelas) {
+        try {
+          const { data, error, count } = await supabase
+            .from(tabela)
+            .select('*', { count: 'exact', head: true })
+          
+          if (error) {
+            result.innerHTML += `<span class="error">❌ ${tabela}: NÃO EXISTE</span>\n`
+            result.innerHTML += `   Erro: ${error.message}\n\n`
+            naoExistentes++
+          } else {
+            result.innerHTML += `<span class="success">✅ ${tabela}: existe (${count || 0} registros)</span>\n`
+            existentes++
+          }
+        } catch (err) {
+          result.innerHTML += `<span class="error">❌ ${tabela}: ERRO</span>\n`
+          result.innerHTML += `   ${err.message}\n\n`
+          naoExistentes++
+        }
+      }
+
+      result.innerHTML += `\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`
+      result.innerHTML += `<span class="success">✅ Existentes: ${existentes}</span>\n`
+      result.innerHTML += `<span class="error">❌ Não existentes: ${naoExistentes}</span>\n`
+      result.innerHTML += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n`
+
+      if (naoExistentes > 0) {
+        result.innerHTML += `<span class="warning">⚠️  ATENÇÃO: ${naoExistentes} tabela(s) precisa(m) ser criada(s)!</span>\n`
+        result.innerHTML += `<span class="warning">   Execute o SQL do documento estrutura_Completa_historia_da_musica.md</span>\n`
+      } else {
+        result.innerHTML += `<span class="success">🎉 Todas as tabelas existem!</span>\n`
+      }
+    }
+
+    async function createTables() {
+      const result = document.getElementById('result')
+      result.innerHTML = '<span class="warning">⚠️  Para criar as tabelas, acesse:\n\n'
+      result.innerHTML += 'https://eehidnwlwrzqzgytbfsd.supabase.co/project/eehidnwlwrzqzgytbfsd/editor/sql\n\n'
+      result.innerHTML += 'E execute o SQL que está no documento:\n'
+      result.innerHTML += 'docs/estrutura/estrutura_Completa_historia_da_musica.md\n\n'
+      result.innerHTML += '(Linhas 1-250 do documento)</span>'
+    }
+  </script>
+</body>
+</html>

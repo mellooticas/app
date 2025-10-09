@@ -1,1 +1,0 @@
-export { AlunoPageLayout } from './AlunoPageLayout';

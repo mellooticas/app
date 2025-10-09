@@ -28,6 +28,43 @@ dist-ssr
 teste-*.js
 testar-*.js
 testar-*.cjs
+
+# Backups e arquivos antigos
+*_backup_*/
+*-backup/
+*.backup
+*.old
+*_old.*
+*-old.*
+
+# Arquivos de debug e teste
+*debug*.jsx
+*debug*.js
+*test*.jsx
+*test*.js
+test-*.mjs
+auth-testing.*
+backend-test-*
+database-integration-test.*
+redirect-testing.*
+simple-test.*
+user-level-testing.*
+
+# Arquivos de desenvolvimento temporários
+.dev-*
+*.dev.*
+estrutura-visual.txt
+*.tmp
+*.temp
+
+# Contextos duplicados (manter apenas principais)
+*-real.jsx
+working-auth-context.*
+*-simple.jsx
+
+# Pastas de teste no src/
+src/tests/
+src/**/test/
 *test-temp*
 *debug-temp*
 

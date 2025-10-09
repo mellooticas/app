@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investigar Usuários - Nipo School</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #1a1a1a;
+      color: #fff;
+    }
+    h1 { color: #dc2626; }
+    button {
+      background: #dc2626;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 10px 5px;
+    }
+    button:hover { background: #b91c1c; }
+    #result {
+      background: #2a2a2a;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+      white-space: pre-wrap;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      max-height: 600px;
+      overflow-y: auto;
+    }
+    .user-card {
+      background: #333;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border-left: 4px solid #dc2626;
+    }
+    .user-email { color: #60a5fa; font-weight: bold; }
+    .user-role { 
+      color: #34d399; 
+      font-weight: bold;
+      display: inline-block;
+      padding: 4px 12px;
+      background: #065f46;
+      border-radius: 4px;
+      margin: 5px 0;
+    }
+    .user-id { color: #94a3b8; font-size: 12px; }
+    .admin { background: #7c2d12; border-left-color: #f59e0b; }
+    .professor { background: #1e3a8a; border-left-color: #3b82f6; }
+    .aluno { background: #065f46; border-left-color: #10b981; }
+  </style>
+</head>
+<body>
+  <h1>🔍 Investigação de Usuários - Nipo School</h1>
+  <p>Teste completo do banco de dados de usuários</p>
+
+  <div>
+    <button onclick="testLogin()">1. Testar Login (junior.sax@gmail.com)</button>
+    <button onclick="listAllUsers()">2. Listar TODOS os Usuários</button>
+    <button onclick="checkCurrentSession()">3. Verificar Sessão Atual</button>
+  </div>
+
+  <div id="result"></div>
+
+  <script>
+    const SUPABASE_URL = 'https://eehidnwlwrzqzgytbfsd.supabase.co'
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVlaGlkbndsd3J6cXpneXRiZnNkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDgyMzA1MjQsImV4cCI6MjA2MzgwNjUyNH0.SawTk_G0H8CYFEQ7h62Wsv35uNqZz0Q5rsLNT5wCcUM'
+
+    const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+
+    async function testLogin() {
+      const result = document.getElementById('result')
+      result.innerHTML = '<h2>🔐 Testando Login...</h2>'
+
+      const email = 'junior.sax@gmail.com'
+      const password = 'Kt12jyh2815t@$'
+
+      try {
+        const { data, error } = await supabase.auth.signInWithPassword({ email, password })
+
+        if (error) {
+          result.innerHTML += `<p style="color: #ef4444;">❌ ERRO: ${error.message}</p>`
+          return
+        }
+
+        result.innerHTML += `
+          <div class="user-card ${data.user.user_metadata?.tipo_usuario || 'aluno'}">
+            <h3>✅ LOGIN OK!</h3>
+            <p class="user-email">Email: ${data.user.email}</p>
+            <p class="user-id">ID: ${data.user.id}</p>
+            <p><span class="user-role">${data.user.user_metadata?.tipo_usuario || 'N/A'}</span></p>
+            <h4>User Metadata Completo:</h4>
+            <pre>${JSON.stringify(data.user.user_metadata, null, 2)}</pre>
+          </div>
+        `
+      } catch (error) {
+        result.innerHTML += `<p style="color: #ef4444;">❌ ERRO: ${error.message}</p>`
+      }
+    }
+
+    async function checkCurrentSession() {
+      const result = document.getElementById('result')
+      result.innerHTML = '<h2>👤 Sessão Atual...</h2>'
+
+      try {
+        const { data: { session }, error } = await supabase.auth.getSession()
+
+        if (error) {
+          result.innerHTML += `<p style="color: #ef4444;">❌ ERRO: ${error.message}</p>`
+          return
+        }
+
+        if (!session) {
+          result.innerHTML += '<p style="color: #f59e0b;">⚠️ Nenhuma sessão ativa. Faça login primeiro!</p>'
+          return
+        }
+
+        result.innerHTML += `
+          <div class="user-card ${session.user.user_metadata?.tipo_usuario || 'aluno'}">
+            <h3>✅ Sessão Ativa!</h3>
+            <p class="user-email">Email: ${session.user.email}</p>
+            <p class="user-id">ID: ${session.user.id}</p>
+            <p><span class="user-role">${session.user.user_metadata?.tipo_usuario || 'N/A'}</span></p>
+            <h4>User Metadata:</h4>
+            <pre>${JSON.stringify(session.user.user_metadata, null, 2)}</pre>
+          </div>
+        `
+      } catch (error) {
+        result.innerHTML += `<p style="color: #ef4444;">❌ ERRO: ${error.message}</p>`
+      }
+    }
+
+    async function listAllUsers() {
+      const result = document.getElementById('result')
+      result.innerHTML = '<h2>📋 Listando Usuários...</h2><p>Buscando na tabela profiles...</p>'
+
+      try {
+        // Tentar buscar da tabela profiles
+        const { data: profiles, error: profileError } = await supabase
+          .from('profiles')
+          .select('*')
+          .order('created_at', { ascending: false })
+
+        if (profileError) {
+          result.innerHTML += `
+            <p style="color: #f59e0b;">⚠️ Não consegui acessar a tabela profiles</p>
+            <p style="color: #94a3b8;">Erro: ${profileError.message}</p>
+            <p style="color: #94a3b8;">Código: ${profileError.code}</p>
+            <p>Isso é esperado se você não tiver acesso direto à tabela profiles via anon key.</p>
+          `
+        } else if (profiles && profiles.length > 0) {
+          result.innerHTML += '<h3>✅ Usuários encontrados na tabela profiles:</h3>'
+          
+          profiles.forEach(profile => {
+            const roleClass = profile.tipo_usuario || 'aluno'
+            result.innerHTML += `
+              <div class="user-card ${roleClass}">
+                <p class="user-email">Email: ${profile.email || 'N/A'}</p>
+                <p class="user-id">ID: ${profile.id}</p>
+                <p><span class="user-role">${profile.tipo_usuario || 'N/A'}</span></p>
+                <p>Nome: ${profile.full_name || 'N/A'}</p>
+                ${profile.avatar ? `<p>Avatar: ${profile.avatar}</p>` : ''}
+              </div>
+            `
+          })
+        } else {
+          result.innerHTML += '<p style="color: #f59e0b;">⚠️ Nenhum usuário encontrado na tabela profiles</p>'
+        }
+
+        // Informações sobre a estrutura
+        result.innerHTML += `
+          <h3 style="margin-top: 30px;">💡 Informações Importantes:</h3>
+          <ul style="line-height: 1.8;">
+            <li>Os usuários estão em <code>auth.users</code> (gerenciado pelo Supabase Auth)</li>
+            <li>O <code>tipo_usuario</code> está em <code>user_metadata</code> do Auth</li>
+            <li>Valores possíveis: <span class="user-role">aluno</span>, <span class="user-role">professor</span>, <span class="user-role">admin</span>, <span class="user-role">pastor</span></li>
+            <li>Use o botão "1. Testar Login" para ver os dados completos de um usuário</li>
+          </ul>
+        `
+
+      } catch (error) {
+        result.innerHTML += `<p style="color: #ef4444;">❌ ERRO GERAL: ${error.message}</p>`
+      }
+    }
+  </script>
+</body>
+</html>

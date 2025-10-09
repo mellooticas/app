@@ -1,2 +1,3 @@
 // Barrel export para supabase
-export { supabase, logSupabaseConnection } from './supabaseClient';
+export { supabase, getCurrentUser, getCurrentSession, getCurrentProfile, signOut, isAuthenticated } from './supabaseClient';
+export type { UserProfile } from './supabaseClient';
