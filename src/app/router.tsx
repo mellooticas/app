@@ -8,6 +8,7 @@ import { PublicLayout } from '../components/layout/PublicLayout'
 import { ProtectedLayout } from '../components/layout/ProtectedLayout'
 
 // Public Pages
+import LandingPage from '../features/shared/pages/LandingPage'
 import NavigationPage from '../features/shared/pages/NavigationPage'
 import { NotFoundPage } from '../features/shared/pages/NotFoundPage'
 import ComponentShowcase from '../features/shared/pages/ComponentShowcase' // 🎌 NOVO
@@ -27,6 +28,9 @@ import DebugAuthPage from '../features/shared/pages/debug/DebugAuthPage'
 // Instrumentos Pages
 import InstrumentosPage from '../features/shared/pages/instrumentos/InstrumentosPage'
 
+// História da Música Pages
+import HistoriaMusicaHome from '../features/historia-musica/pages/HistoriaMusicaHome'
+
 // Dashboard Pages
 import SystemDashboardPage from '../features/shared/pages/dashboard/SystemDashboardPage'
 
@@ -34,6 +38,12 @@ import SystemDashboardPage from '../features/shared/pages/dashboard/SystemDashbo
 import { AlunoDashboard } from '../features/alunos/pages/AlunoDashboard'
 import { ProfessorDashboard } from '../features/professores/pages/ProfessorDashboard'
 import { AdminDashboard } from '../features/admin/pages/AdminDashboard'
+
+// Páginas de Professor
+import ConteudosPage from '../features/professores/pages/ConteudosPage'
+import NovoConteudoPage from '../features/professores/pages/NovoConteudoPage'
+import TurmasPage from '../features/professores/pages/TurmasPage'
+import AvaliacoesPage from '../features/professores/pages/AvaliacoesPage'
 
 // Páginas de Aluno
 import { ConquistasPage } from '../features/alunos/pages/ConquistasPage'
@@ -78,11 +88,25 @@ function ProtectedRoute({ children }: ProtectedRouteProps) {
 }
 
 export const router = createBrowserRouter([
+  // Landing Page SEM Layout (sem Navbar/Footer)
+  {
+    path: ROUTES.HOME,
+    element: <LandingPage />,
+  },
+  // Login e Signup SEM Layout (sem Navbar/Footer) - Com portal Torii
+  {
+    path: ROUTES.LOGIN,
+    element: <LoginPage />,
+  },
+  {
+    path: ROUTES.SIGNUP,
+    element: <SignUpPage />,
+  },
   {
     element: <PublicLayout />,
     children: [
       {
-        path: ROUTES.HOME,
+        path: '/nav', // Movido para outra rota
         element: <NavigationPage />,
       },
       {
@@ -92,14 +116,6 @@ export const router = createBrowserRouter([
       {
         path: '/teste', // 🧪 NOVA ROTA DE TESTE
         element: <TestePage />,
-      },
-      {
-        path: ROUTES.LOGIN,
-        element: <LoginPage />,
-      },
-      {
-        path: ROUTES.SIGNUP,
-        element: <SignUpPage />,
       },
       {
         path: ROUTES.PASSWORD_RESET,
@@ -231,6 +247,38 @@ export const router = createBrowserRouter([
         ),
       },
       {
+        path: '/professores/conteudos',
+        element: (
+          <RoleProtectedRoute allowedRoles={['professor']}>
+            <ConteudosPage />
+          </RoleProtectedRoute>
+        ),
+      },
+      {
+        path: '/professores/novo',
+        element: (
+          <RoleProtectedRoute allowedRoles={['professor']}>
+            <NovoConteudoPage />
+          </RoleProtectedRoute>
+        ),
+      },
+      {
+        path: '/professores/turmas',
+        element: (
+          <RoleProtectedRoute allowedRoles={['professor']}>
+            <TurmasPage />
+          </RoleProtectedRoute>
+        ),
+      },
+      {
+        path: '/professores/avaliacoes',
+        element: (
+          <RoleProtectedRoute allowedRoles={['professor']}>
+            <AvaliacoesPage />
+          </RoleProtectedRoute>
+        ),
+      },
+      {
         path: '/admin',
         element: (
           <RoleProtectedRoute allowedRoles={['admin']}>
@@ -261,6 +309,14 @@ export const router = createBrowserRouter([
       {
         path: '/instrumentos',
         element: <InstrumentosPage />,
+      },
+      {
+        path: '/historia-musica',
+        element: (
+          <ProtectedRoute>
+            <HistoriaMusicaHome />
+          </ProtectedRoute>
+        ),
       },
       {
         path: '/system',

@@ -8,7 +8,7 @@
 
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { X, Home, BookOpen, Trophy, Briefcase, Users, Settings, HelpCircle, Music, Calendar, Award, Library } from 'lucide-react'
+import { X, Home, BookOpen, Trophy, Briefcase, Users, Settings, HelpCircle, Music, Calendar, Award, Library, TrendingUp } from 'lucide-react'
 import { ROUTES } from '../../lib/constants/routes'
 import { useAuth } from '../../contexts/AuthContext'
 import clsx from 'clsx'
@@ -34,41 +34,39 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
   // Navegação baseada no role
   const getNavigationItems = () => {
     const common = [
-      { name: 'Início', path: ROUTES.APP, icon: Home },
-      { name: 'Ajuda', path: ROUTES.HELP, icon: HelpCircle },
-      { name: 'Configurações', path: ROUTES.SETTINGS, icon: Settings },
+      { name: 'Ajuda', path: '/ajuda', icon: HelpCircle },
+      { name: 'Configurações', path: '/configuracoes', icon: Settings },
     ]
 
     if (userRole === 'aluno') {
       return [
-        { name: 'Dashboard', path: ROUTES.ALUNO.INDEX, icon: Home },
-        { name: 'Portfólio', path: ROUTES.ALUNO.PORTFOLIO.INDEX, icon: Briefcase },
-        { name: 'Conquistas', path: ROUTES.ALUNO.ACHIEVEMENTS.INDEX, icon: Trophy },
-        { name: 'Desafios', path: ROUTES.ALUNO.CHALLENGES.INDEX, icon: Award },
-        { name: 'Instrumentos', path: ROUTES.ALUNO.INSTRUMENTS.INDEX, icon: Music },
-        { name: 'Minhas Aulas', path: ROUTES.ALUNO.CLASSES, icon: Calendar },
-        { name: 'História da Música', path: ROUTES.HISTORIA.INDEX, icon: BookOpen },
+        { name: 'Dashboard', path: '/alunos', icon: Home },
+        { name: 'Portfólio', path: '/alunos/portfolio', icon: Briefcase },
+        { name: 'Conquistas', path: '/alunos/conquistas', icon: Trophy },
+        { name: 'Desafios', path: '/alunos/desafios', icon: Award },
+        { name: 'Instrumentos', path: '/alunos/instrumentos', icon: Music },
+        { name: 'Minhas Aulas', path: '/alunos/aulas', icon: Calendar },
+        { name: 'Progresso', path: '/alunos/progresso', icon: TrendingUp },
+        { name: 'História da Música', path: '/historia-musica', icon: BookOpen },
         ...common,
       ]
     }
 
     if (userRole === 'professor') {
       return [
-        { name: 'Dashboard', path: ROUTES.PROFESSOR.INDEX, icon: Home },
-        { name: 'Turmas', path: ROUTES.PROFESSOR.CLASSES, icon: Users },
-        { name: 'Calendário', path: ROUTES.PROFESSOR.CALENDAR, icon: Calendar },
-        { name: 'Materiais', path: ROUTES.PROFESSOR.MATERIALS, icon: Library },
-        { name: 'Submissões', path: ROUTES.PROFESSOR.SUBMISSIONS, icon: Award },
+        { name: 'Dashboard', path: '/professores', icon: Home },
+        { name: 'Turmas', path: '/professores/turmas', icon: Users },
+        { name: 'Conteúdos', path: '/professores/conteudos', icon: Library },
+        { name: 'Avaliações', path: '/professores/avaliacoes', icon: Award },
         ...common,
       ]
     }
 
     if (userRole === 'admin') {
       return [
-        { name: 'Dashboard', path: ROUTES.ADMIN.INDEX, icon: Home },
-        { name: 'Usuários', path: ROUTES.ADMIN.USERS, icon: Users },
-        { name: 'Instrumentos', path: ROUTES.ADMIN.INSTRUMENTS, icon: Music },
-        { name: 'Conquistas', path: ROUTES.ADMIN.ACHIEVEMENTS, icon: Trophy },
+        { name: 'Dashboard', path: '/admin', icon: Home },
+        { name: 'Banco de Dados', path: '/admin/database', icon: Users },
+        { name: 'Diagnóstico', path: '/admin/diagnostic', icon: Music },
         ...common,
       ]
     }
