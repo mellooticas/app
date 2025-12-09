@@ -190,7 +190,16 @@ export async function getProgressoGeralAluno(
 
   if (error) {
     // Tabela de progresso ainda não implementada, retornar array vazio
-    if (error.code === 'PGRST116' || error.message?.includes('does not exist')) {
+    // Verifica se é erro de tabela não existente (objeto vazio {} ou código PGRST)
+    const errorStr = JSON.stringify(error);
+    const isTableNotFound = 
+      errorStr === '{}' || 
+      error.code === 'PGRST116' || 
+      error.code === '42P01' ||
+      error.message?.includes('does not exist') ||
+      error.message?.includes('relation') && error.message?.includes('does not exist');
+    
+    if (isTableNotFound) {
       console.log('Tabela aluno_progresso_aula não existe ainda. Retornando array vazio.');
       return [];
     }
