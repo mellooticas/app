@@ -189,6 +189,11 @@ export async function getProgressoGeralAluno(
     .eq('aluno_id', alunoId);
 
   if (error) {
+    // Tabela de progresso ainda não implementada, retornar array vazio
+    if (error.code === 'PGRST116' || error.message?.includes('does not exist')) {
+      console.log('Tabela aluno_progresso_aula não existe ainda. Retornando array vazio.');
+      return [];
+    }
     console.error('Erro ao buscar progresso geral:', error);
     return [];
   }
@@ -205,15 +210,38 @@ export async function getEstatisticasProgresso(
   const supabase = await createClient();
 
   // Buscar todas as aulas
-  const { count: totalAulas } = await supabase
+  const { count: totalAulas, error: errorTotal } = await supabase
     .from('aulas')
     .select('id', { count: 'exact' });
+  
+  if (errorTotal) {
+    console.error('Erro ao contar aulas:', errorTotal);
+    return {
+      totalAulas: 30,
+      concluidas: 0,
+      emAndamento: 0,
+      desafiosAprovados: 0,
+      porcentagemConclusao: 0,
+    };
+  }
 
   // Buscar progresso do aluno
-  const { data: progressos } = await supabase
+  const { data: progressos, error: errorProgressos } = await supabase
     .from('aluno_progresso_aula')
     .select('*')
     .eq('aluno_id', alunoId);
+
+  // Se tabela não existe, retornar estatísticas padrão
+  if (errorProgressos?.code === 'PGRST116' || errorProgressos?.message?.includes('does not exist')) {
+    console.log('Tabela aluno_progresso_aula não existe ainda. Retornando estatísticas padrão.');
+    return {
+      totalAulas: totalAulas || 30,
+      concluidas: 0,
+      emAndamento: 0,
+      desafiosAprovados: 0,
+      porcentagemConclusao: 0,
+    };
+  }
 
   // Calcular estatísticas
   const concluidas = progressos?.filter((p: ProgressoAula) => p.status === 'concluida').length || 0;
@@ -225,6 +253,7 @@ export async function getEstatisticasProgresso(
     concluidas,
     emAndamento,
     desafiosAprovados,
+    porcentagemConclusao: totalAulas ? (concluidas / totalAulas) * 100 : 0,
   };
 }
 
