@@ -43,8 +43,6 @@ export function AdminSidebar({ isOpen, onClose }: AdminSidebarProps) {
     // Gestão de Aulas (Admin)
     { name: 'Aulas - Kanban', path: '/admin/aulas', icon: Columns },
     { name: 'Aulas - Lista', path: '/admin/aulas/lista', icon: List },
-    { name: 'Aulas (Preview)', path: '/alunos/aulas', icon: Calendar },
-    { name: 'Show Final', path: '/alunos/show-final', icon: Music },
     
     // Gestão de Pessoas
     { name: 'Professores', path: '/admin/professores', icon: UserCheck },

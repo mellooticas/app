@@ -1,6 +1,7 @@
 {
   "/(auth)/login/page": "/login",
   "/(protected)/admin/alunos/page": "/admin/alunos",
+  "/(protected)/admin/aulas/lista/page": "/admin/aulas/lista",
   "/(protected)/admin/aulas/page": "/admin/aulas",
   "/(protected)/admin/page": "/admin",
   "/(protected)/admin/professores/page": "/admin/professores",

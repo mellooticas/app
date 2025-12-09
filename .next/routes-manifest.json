@@ -58,6 +58,12 @@
       "namedRegex": "^/admin/aulas(?:/)?$"
     },
     {
+      "page": "/admin/aulas/lista",
+      "regex": "^/admin/aulas/lista(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/aulas/lista(?:/)?$"
+    },
+    {
       "page": "/admin/professores",
       "regex": "^/admin/professores(?:/)?$",
       "routeKeys": {},
