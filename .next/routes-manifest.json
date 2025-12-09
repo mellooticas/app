@@ -19,7 +19,16 @@
     "afterFiles": [],
     "fallback": []
   },
-  "dynamicRoutes": [],
+  "dynamicRoutes": [
+    {
+      "page": "/alunos/aulas/[numero]",
+      "regex": "^/alunos/aulas/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPnumero": "nxtPnumero"
+      },
+      "namedRegex": "^/alunos/aulas/(?<nxtPnumero>[^/]+?)(?:/)?$"
+    }
+  ],
   "staticRoutes": [
     {
       "page": "/",

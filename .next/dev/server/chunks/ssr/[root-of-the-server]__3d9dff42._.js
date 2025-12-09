@@ -68,14 +68,26 @@ __turbopack_context__.s([
     ()=>getAulasShowFinal,
     "getEstatisticasProgresso",
     ()=>getEstatisticasProgresso,
+    "getInstrumentosAula",
+    ()=>getInstrumentosAula,
     "getMateriaisAula",
     ()=>getMateriaisAula,
+    "getMetodologiasAula",
+    ()=>getMetodologiasAula,
+    "getPreRequisitosAula",
+    ()=>getPreRequisitosAula,
     "getProgressoAula",
     ()=>getProgressoAula,
     "getProgressoGeralAluno",
     ()=>getProgressoGeralAluno,
+    "getProximasAulas",
+    ()=>getProximasAulas,
+    "getRepertorioAula",
+    ()=>getRepertorioAula,
     "getTodasAulas",
-    ()=>getTodasAulas
+    ()=>getTodasAulas,
+    "getVideosAula",
+    ()=>getVideosAula
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$supabase$2f$server$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/supabase/server.ts [app-rsc] (ecmascript)");
 ;
@@ -266,6 +278,137 @@ async function getAulasShowFinal() {
     }
     return data;
 }
+async function getMetodologiasAula(aulaId) {
+    const supabase = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$supabase$2f$server$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["createClient"])();
+    const { data, error } = await supabase.from('metodologias').select(`
+      id,
+      nome,
+      resumo,
+      filosofia,
+      principios,
+      caracteristicas,
+      faixa_etaria,
+      instrumentos_utilizados,
+      sequencia_didatica,
+      imagem_representativa_url,
+      video_explicativo_url
+    `).contains('tags', [
+        aulaId
+    ]);
+    if (error) {
+        console.error('Erro ao buscar metodologias:', error);
+        return [];
+    }
+    return data || [];
+}
+async function getInstrumentosAula(aulaId) {
+    const supabase = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$supabase$2f$server$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["createClient"])();
+    const { data, error } = await supabase.from('biblioteca_instrumentos').select(`
+      id,
+      nome,
+      categoria_id,
+      origem,
+      historia,
+      curiosidades,
+      uso_tradicional,
+      uso_moderno,
+      material,
+      tecnicas_basicas,
+      imagem_url,
+      audio_exemplo_url,
+      video_demonstracao_url,
+      nivel_dificuldade,
+      idade_recomendada,
+      pre_requisitos,
+      disponivel_escola,
+      pode_emprestar
+    `).contains('tags', [
+        aulaId
+    ]);
+    if (error) {
+        console.error('Erro ao buscar instrumentos:', error);
+        return [];
+    }
+    return data || [];
+}
+async function getRepertorioAula(aulaId) {
+    const supabase = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$supabase$2f$server$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["createClient"])();
+    const { data, error } = await supabase.from('repertorio').select(`
+      id,
+      titulo,
+      compositor,
+      arranjo_por,
+      tonalidade,
+      andamento,
+      duracao_estimada,
+      nivel_dificuldade,
+      instrumentos_necessarios,
+      partitura_url,
+      cifra_url,
+      letra_url,
+      playback_url,
+      video_tutorial_url,
+      tags,
+      observacoes
+    `).contains('tags', [
+        aulaId
+    ]);
+    if (error) {
+        console.error('Erro ao buscar repertório:', error);
+        return [];
+    }
+    return data || [];
+}
+async function getVideosAula(aulaId) {
+    const supabase = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$supabase$2f$server$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["createClient"])();
+    const { data, error } = await supabase.from('videos_professores').select(`
+      id,
+      titulo,
+      descricao,
+      duracao,
+      video_url,
+      thumbnail_url,
+      modulo,
+      instrumento_foco,
+      nivel_dificuldade,
+      transcricao,
+      materiais_complementares
+    `).eq('aula_relacionada_id', aulaId).eq('publico', true);
+    if (error) {
+        console.error('Erro ao buscar vídeos:', error);
+        return [];
+    }
+    return data || [];
+}
+async function getPreRequisitosAula(aulaId) {
+    const supabase = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$supabase$2f$server$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["createClient"])();
+    const { data, error } = await supabase.from('aula_pre_requisitos').select(`
+      *,
+      aula_prerequisito:pre_requisito_aula_id (
+        id,
+        numero,
+        titulo,
+        objetivo_didatico,
+        status
+      )
+    `).eq('aula_id', aulaId);
+    if (error) {
+        console.error('Erro ao buscar pré-requisitos:', error);
+        return [];
+    }
+    return data || [];
+}
+async function getProximasAulas(aulaNumero) {
+    const supabase = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$supabase$2f$server$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["createClient"])();
+    const { data, error } = await supabase.from('aulas').select('id, numero, titulo, objetivo_didatico, data_programada, status').gt('numero', aulaNumero).order('numero', {
+        ascending: true
+    }).limit(3);
+    if (error) {
+        console.error('Erro ao buscar próximas aulas:', error);
+        return [];
+    }
+    return data || [];
+}
 }),
 "[project]/src/lib/types/aulas.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -279,6 +422,12 @@ __turbopack_context__.s([
     "TIPO_MATERIAL_CONFIG",
     ()=>TIPO_MATERIAL_CONFIG
 ]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check-big.js [app-rsc] (ecmascript) <export default as CheckCircle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/clock.js [app-rsc] (ecmascript) <export default as Clock>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$alert$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-alert.js [app-rsc] (ecmascript) <export default as AlertCircle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-x.js [app-rsc] (ecmascript) <export default as XCircle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$list$2d$todo$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__ListTodo$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/list-todo.js [app-rsc] (ecmascript) <export default as ListTodo>");
+;
 const BLOCOS_PEDAGOGICOS = {
     'BLOCO 1': {
         nome: 'Fundação e Iniciação',
@@ -359,23 +508,28 @@ const BLOCOS_PEDAGOGICOS = {
 const STATUS_CONFIG = {
     'A Fazer': {
         label: 'A Fazer',
-        color: 'gray'
+        color: '#6B7280',
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$list$2d$todo$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__ListTodo$3e$__["ListTodo"]
     },
     'Em Preparação': {
         label: 'Em Preparação',
-        color: 'blue'
+        color: '#3B82F6',
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"]
     },
     'Concluída': {
         label: 'Concluída',
-        color: 'green'
+        color: '#10B981',
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__["CheckCircle"]
     },
     'Revisão': {
         label: 'Revisão',
-        color: 'orange'
+        color: '#F59E0B',
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$alert$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertCircle$3e$__["AlertCircle"]
     },
     'Cancelada': {
         label: 'Cancelada',
-        color: 'red'
+        color: '#EF4444',
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__["XCircle"]
     }
 };
 const TIPO_MATERIAL_CONFIG = {

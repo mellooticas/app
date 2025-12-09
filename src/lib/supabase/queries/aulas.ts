@@ -306,3 +306,189 @@ export async function getAulasShowFinal(): Promise<Aula[]> {
 
   return data as Aula[];
 }
+
+/**
+ * Busca metodologias aplicadas em uma aula
+ */
+export async function getMetodologiasAula(aulaId: string) {
+  const supabase = await createClient();
+
+  const { data, error } = await supabase
+    .from('metodologias')
+    .select(`
+      id,
+      nome,
+      resumo,
+      filosofia,
+      principios,
+      caracteristicas,
+      faixa_etaria,
+      instrumentos_utilizados,
+      sequencia_didatica,
+      imagem_representativa_url,
+      video_explicativo_url
+    `)
+    .contains('tags', [aulaId]);
+
+  if (error) {
+    console.error('Erro ao buscar metodologias:', error);
+    return [];
+  }
+
+  return data || [];
+}
+
+/**
+ * Busca instrumentos relacionados a uma aula
+ */
+export async function getInstrumentosAula(aulaId: string) {
+  const supabase = await createClient();
+
+  const { data, error } = await supabase
+    .from('biblioteca_instrumentos')
+    .select(`
+      id,
+      nome,
+      categoria_id,
+      origem,
+      historia,
+      curiosidades,
+      uso_tradicional,
+      uso_moderno,
+      material,
+      tecnicas_basicas,
+      imagem_url,
+      audio_exemplo_url,
+      video_demonstracao_url,
+      nivel_dificuldade,
+      idade_recomendada,
+      pre_requisitos,
+      disponivel_escola,
+      pode_emprestar
+    `)
+    .contains('tags', [aulaId]);
+
+  if (error) {
+    console.error('Erro ao buscar instrumentos:', error);
+    return [];
+  }
+
+  return data || [];
+}
+
+/**
+ * Busca repertório estudado em uma aula
+ */
+export async function getRepertorioAula(aulaId: string) {
+  const supabase = await createClient();
+
+  const { data, error } = await supabase
+    .from('repertorio')
+    .select(`
+      id,
+      titulo,
+      compositor,
+      arranjo_por,
+      tonalidade,
+      andamento,
+      duracao_estimada,
+      nivel_dificuldade,
+      instrumentos_necessarios,
+      partitura_url,
+      cifra_url,
+      letra_url,
+      playback_url,
+      video_tutorial_url,
+      tags,
+      observacoes
+    `)
+    .contains('tags', [aulaId]);
+
+  if (error) {
+    console.error('Erro ao buscar repertório:', error);
+    return [];
+  }
+
+  return data || [];
+}
+
+/**
+ * Busca vídeos educativos relacionados a uma aula
+ */
+export async function getVideosAula(aulaId: string) {
+  const supabase = await createClient();
+
+  const { data, error } = await supabase
+    .from('videos_professores')
+    .select(`
+      id,
+      titulo,
+      descricao,
+      duracao,
+      video_url,
+      thumbnail_url,
+      modulo,
+      instrumento_foco,
+      nivel_dificuldade,
+      transcricao,
+      materiais_complementares
+    `)
+    .eq('aula_relacionada_id', aulaId)
+    .eq('publico', true);
+
+  if (error) {
+    console.error('Erro ao buscar vídeos:', error);
+    return [];
+  }
+
+  return data || [];
+}
+
+/**
+ * Busca aulas pré-requisito (aulas anteriores necessárias)
+ */
+export async function getPreRequisitosAula(aulaId: string) {
+  const supabase = await createClient();
+
+  const { data, error } = await supabase
+    .from('aula_pre_requisitos')
+    .select(`
+      *,
+      aula_prerequisito:pre_requisito_aula_id (
+        id,
+        numero,
+        titulo,
+        objetivo_didatico,
+        status
+      )
+    `)
+    .eq('aula_id', aulaId);
+
+  if (error) {
+    console.error('Erro ao buscar pré-requisitos:', error);
+    return [];
+  }
+
+  return data || [];
+}
+
+/**
+ * Busca próximas aulas (aulas que dependem desta)
+ */
+export async function getProximasAulas(aulaNumero: number) {
+  const supabase = await createClient();
+
+  const { data, error } = await supabase
+    .from('aulas')
+    .select('id, numero, titulo, objetivo_didatico, data_programada, status')
+    .gt('numero', aulaNumero)
+    .order('numero', { ascending: true })
+    .limit(3);
+
+  if (error) {
+    console.error('Erro ao buscar próximas aulas:', error);
+    return [];
+  }
+
+  return data || [];
+}
