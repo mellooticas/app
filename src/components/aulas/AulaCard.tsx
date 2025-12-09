@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Calendar, Clock, BookOpen, ArrowRight } from 'lucide-react';
-import type { Aula } from '@/lib/types/aulas';
-import { CORES_NIVEL, STATUS_CONFIG } from '@/lib/types/aulas';
+import type { Aula } from '@/src/lib/types/aulas';
+import { STATUS_CONFIG, BLOCOS_PEDAGOGICOS } from '@/src/lib/types/aulas';
 
 interface AulaCardProps {
   aula: Aula;
@@ -11,9 +11,19 @@ interface AulaCardProps {
   };
 }
 
+// Helper para encontrar bloco da aula
+function getBlocoAula(numero: number): { key: string; nome: string } | null {
+  for (const [key, bloco] of Object.entries(BLOCOS_PEDAGOGICOS)) {
+    if (bloco.aulas.includes(numero)) {
+      return { key, nome: bloco.nome };
+    }
+  }
+  return null;
+}
+
 export function AulaCard({ aula, progresso }: AulaCardProps) {
-  const nivelColors = CORES_NIVEL[aula.nivel];
   const statusConfig = STATUS_CONFIG[aula.status];
+  const bloco = getBlocoAula(aula.numero);
 
   const progressoStatus = progresso?.status || 'nao_iniciada';
   const porcentagem = progresso?.porcentagem_completa || 0;
@@ -27,19 +37,19 @@ export function AulaCard({ aula, progresso }: AulaCardProps) {
   return (
     <Link href={`/alunos/aulas/${aula.numero}`}>
       <div className="group relative bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-200 overflow-hidden">
-        {/* Header com número e badge de nível */}
+        {/* Header com número e badge de bloco */}
         <div className="flex items-start justify-between p-6 pb-4">
           <div className="flex items-center gap-3">
             <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-br from-gray-900 to-gray-700 text-white font-bold text-lg">
               {aula.numero}
             </div>
-            <div>
-              <span
-                className={`inline-block px-3 py-1 rounded-full text-xs font-medium ${nivelColors.bg} ${nivelColors.text}`}
-              >
-                {aula.nivel.charAt(0).toUpperCase() + aula.nivel.slice(1)}
-              </span>
-            </div>
+            {bloco && (
+              <div>
+                <span className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">
+                  {bloco.key}
+                </span>
+              </div>
+            )}
           </div>
 
           {/* Status do progresso */}

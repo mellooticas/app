@@ -8,12 +8,10 @@ import { usePathname, useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { 
   X, Home, Columns, List, UserCheck, GraduationCap, QrCode, 
-  FileText, Music, Settings, HelpCircle, LogOut, Calendar,
-  ChevronDown, ChevronUp, Sparkles, Rocket
+  FileText, Music, Settings, HelpCircle, LogOut, Calendar
 } from 'lucide-react'
 import { useAuth } from '@/app/providers/AuthProvider'
 import clsx from 'clsx'
-import { useState } from 'react'
 
 interface AdminSidebarProps {
   isOpen: boolean
@@ -24,7 +22,6 @@ export function AdminSidebar({ isOpen, onClose }: AdminSidebarProps) {
   const pathname = usePathname()
   const router = useRouter()
   const { user, signOut } = useAuth()
-  const [aulasExpanded, setAulasExpanded] = useState(false)
 
   const handleLogout = async () => {
     try {
@@ -46,20 +43,13 @@ export function AdminSidebar({ isOpen, onClose }: AdminSidebarProps) {
     // Gestão de Aulas (Admin)
     { name: 'Aulas - Kanban', path: '/admin/aulas', icon: Columns },
     { name: 'Aulas - Lista', path: '/admin/aulas/lista', icon: List },
+    { name: 'Aulas (Preview)', path: '/alunos/aulas', icon: Calendar },
+    { name: 'Show Final', path: '/alunos/show-final', icon: Music },
     
     // Gestão de Pessoas
     { name: 'Professores', path: '/admin/professores', icon: UserCheck },
     { name: 'Alunos', path: '/admin/alunos', icon: GraduationCap },
-  ]
-
-  const aulasSubItems = [
-    { name: 'Iniciante', path: '/alunos/aulas/iniciante', icon: GraduationCap, emoji: '🌱' },
-    { name: 'Intermediário', path: '/alunos/aulas/intermediario', icon: Sparkles, emoji: '🌿' },
-    { name: 'Avançado', path: '/alunos/aulas/avancado', icon: Rocket, emoji: '🌳' },
-    { name: 'Show Final', path: '/alunos/show-final', icon: Music, emoji: '🎭' },
-  ]
-
-  const otherItems = [
+    
     // QR Code
     { name: 'Gerenciar QR Codes', path: '/admin/qr-codes', icon: QrCode },
     { name: 'Scanner QR', path: '/admin/scanner', icon: QrCode },
@@ -113,83 +103,6 @@ export function AdminSidebar({ isOpen, onClose }: AdminSidebarProps) {
           <nav className="flex-1 overflow-y-auto p-4">
             <ul className="space-y-1">
               {navigationItems.map((item) => {
-                const Icon = item.icon
-                const active = isActive(item.path)
-
-                return (
-                  <li key={item.path}>
-                    <Link
-                      href={item.path}
-                      onClick={onClose}
-                      className={clsx(
-                        'flex items-center gap-3 px-3 py-2 rounded-lg transition-colors',
-                        active
-                          ? 'bg-red-100 text-red-700 font-medium'
-                          : 'text-gray-700 hover:bg-gray-100'
-                      )}
-                    >
-                      <Icon className="w-5 h-5 flex-shrink-0" />
-                      <span className="text-sm">{item.name}</span>
-                    </Link>
-                  </li>
-                )
-              })}
-
-              {/* Aulas Dropdown */}
-              <li>
-                <button
-                  onClick={() => setAulasExpanded(!aulasExpanded)}
-                  className={clsx(
-                    'w-full flex items-center justify-between gap-3 px-3 py-2 rounded-lg transition-colors',
-                    pathname.includes('/alunos/aulas') || pathname.includes('/alunos/show-final')
-                      ? 'bg-red-100 text-red-700 font-medium'
-                      : 'text-gray-700 hover:bg-gray-100'
-                  )}
-                >
-                  <div className="flex items-center gap-3">
-                    <Calendar className="w-5 h-5 flex-shrink-0" />
-                    <span className="text-sm">Aulas (Preview)</span>
-                  </div>
-                  {aulasExpanded ? (
-                    <ChevronUp className="w-4 h-4" />
-                  ) : (
-                    <ChevronDown className="w-4 h-4" />
-                  )}
-                </button>
-
-                {aulasExpanded && (
-                  <ul className="mt-1 ml-4 space-y-1 border-l-2 border-gray-200 pl-4">
-                    {aulasSubItems.map((item) => {
-                      const active = isActive(item.path)
-
-                      return (
-                        <li key={item.path}>
-                          <Link
-                            href={item.path}
-                            onClick={onClose}
-                            className={clsx(
-                              'flex items-center gap-2 px-3 py-2 rounded-lg transition-colors text-sm',
-                              active
-                                ? 'bg-red-50 text-red-700 font-medium'
-                                : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
-                            )}
-                          >
-                            <span>{item.emoji}</span>
-                            <span>{item.name}</span>
-                          </Link>
-                        </li>
-                      )
-                    })}
-                  </ul>
-                )}
-              </li>
-
-              {/* Separator */}
-              <li className="pt-2">
-                <div className="border-t border-gray-200 my-2"></div>
-              </li>
-
-              {otherItems.map((item) => {
                 const Icon = item.icon
                 const active = isActive(item.path)
 

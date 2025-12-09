@@ -1,6 +1,5 @@
-// Tipos e interfaces para o sistema de aulas
+// Tipos e interfaces para o sistema de aulas - Método Alpha
 
-export type NivelAula = 'iniciante' | 'intermediario' | 'avancado' | 'todos';
 export type StatusAula = 'a_fazer' | 'em_preparacao' | 'concluida' | 'cancelada';
 export type FormatoAula = 'presencial' | 'online' | 'hibrido';
 export type StatusProgresso = 'nao_iniciada' | 'em_andamento' | 'concluida';
@@ -8,12 +7,11 @@ export type TipoMaterial = 'pdf' | 'video' | 'partitura' | 'audio' | 'formulario
 
 export interface Aula {
   id: string;
-  numero: number;
+  numero: number; // 0-29 (progressão contínua)
   titulo: string;
   data_programada: string;
   objetivo_didatico: string;
-  nivel: NivelAula;
-  modulo?: string;
+  modulo?: string; // BLOCO 1-9
   metodologia_principal?: string;
   metodologias_secundarias?: string[];
   status: StatusAula;
@@ -105,7 +103,6 @@ export interface AulaCompleta extends Aula {
 
 // Filtros para listagem de aulas
 export interface FiltrosAulas {
-  nivel?: NivelAula;
   status?: StatusAula;
   formato?: FormatoAula;
   modulo?: string;
@@ -116,16 +113,18 @@ export interface FiltrosAulas {
 
 // Estatísticas de progresso
 export interface EstatisticasProgresso {
-  total_aulas: number;
-  aulas_concluidas: number;
-  aulas_em_andamento: number;
-  aulas_nao_iniciadas: number;
-  porcentagem_completa: number;
-  desafios_enviados: number;
-  desafios_aprovados: number;
+  totalAulas: number;
+  concluidas: number;
+  emAndamento: number;
+  desafiosAprovados: number;
+  proximaAula?: {
+    numero: number;
+    titulo: string;
+    descricao_curta?: string;
+  };
 }
 
-// Mapeamento de blocos pedagógicos
+// Mapeamento de blocos pedagógicos (Método Alpha)
 export const BLOCOS_PEDAGOGICOS = {
   'BLOCO 1': { nome: 'Fundação e Iniciação', aulas: [0, 1, 2, 3, 4, 5] },
   'BLOCO 2': { nome: 'Alfabetização Musical', aulas: [6, 7] },
@@ -137,38 +136,6 @@ export const BLOCOS_PEDAGOGICOS = {
   'BLOCO 8': { nome: 'Performance e Prática de Conjunto', aulas: [20, 21, 22, 23, 24] },
   'BLOCO 9': { nome: 'Preparação Final e Show', aulas: [25, 26, 27, 28, 29] },
 } as const;
-
-// Mapeamento de aulas por nível
-export const AULAS_POR_NIVEL = {
-  iniciante: [0, 1, 2, 3, 4, 5, 6],
-  intermediario: [7, 8, 9, 10, 11, 12, 21, 23],
-  avancado: [13, 14, 15, 16, 17, 18, 19, 20, 22, 24],
-  todos: [25, 26, 27, 28, 29],
-} as const;
-
-// Cores por nível
-export const CORES_NIVEL: Record<NivelAula, { bg: string; text: string; border: string }> = {
-  iniciante: {
-    bg: 'bg-green-100',
-    text: 'text-green-800',
-    border: 'border-green-300',
-  },
-  intermediario: {
-    bg: 'bg-yellow-100',
-    text: 'text-yellow-800',
-    border: 'border-yellow-300',
-  },
-  avancado: {
-    bg: 'bg-red-100',
-    text: 'text-red-800',
-    border: 'border-red-300',
-  },
-  todos: {
-    bg: 'bg-blue-100',
-    text: 'text-blue-800',
-    border: 'border-blue-300',
-  },
-};
 
 // Ícones por status
 export const STATUS_CONFIG: Record<StatusAula, { label: string; color: string }> = {
