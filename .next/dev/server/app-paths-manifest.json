@@ -1,3 +1,4 @@
 {
+  "/(protected)/alunos/aulas/[numero]/page": "app/(protected)/alunos/aulas/[numero]/page.js",
   "/(protected)/alunos/aulas/page": "app/(protected)/alunos/aulas/page.js"
 }
