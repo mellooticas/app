@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { BookOpen, Plus, Download } from 'lucide-react';
+import { BookOpen, Plus, Download, AlertCircle } from 'lucide-react';
 import Link from 'next/link';
 import TurmasGrid from './_components/TurmasGrid';
 import AdminPageLayout from '../_components/AdminPageLayout';
@@ -9,15 +9,28 @@ import AdminPageLayout from '../_components/AdminPageLayout';
 export default function AdminTurmasPage() {
     const [turmas, setTurmas] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
         async function loadTurmas() {
             try {
+                setError(null);
                 const response = await fetch('/api/turmas');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
                 const data = await response.json();
-                setTurmas(data);
+                
+                if (data.error) {
+                    throw new Error(data.error);
+                }
+                
+                setTurmas(Array.isArray(data) ? data : []);
             } catch (error) {
                 console.error('Erro ao carregar turmas:', error);
+                setError(error instanceof Error ? error.message : 'Erro ao carregar turmas');
             } finally {
                 setLoading(false);
             }
@@ -30,6 +43,24 @@ export default function AdminTurmasPage() {
             <AdminPageLayout title="Gestão de Turmas" icon={BookOpen}>
                 <div className="admin-card p-8 text-center">
                     <p className="text-slate-600">Carregando...</p>
+                </div>
+            </AdminPageLayout>
+        );
+    }
+
+    if (error) {
+        return (
+            <AdminPageLayout title="Gestão de Turmas" icon={BookOpen}>
+                <div className="admin-card p-8 text-center">
+                    <AlertCircle className="w-12 h-12 text-red-500 mx-auto mb-4" />
+                    <p className="text-slate-600 mb-2">Erro ao carregar turmas</p>
+                    <p className="text-sm text-red-600">{error}</p>
+                    <button 
+                        onClick={() => window.location.reload()} 
+                        className="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
+                    >
+                        Tentar Novamente
+                    </button>
                 </div>
             </AdminPageLayout>
         );
