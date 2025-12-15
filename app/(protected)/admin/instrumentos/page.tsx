@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Music, Plus, Download, Search, Filter } from 'lucide-react';
+import { Music, Plus, Download, Search, Filter, Edit } from 'lucide-react';
 import AdminPageLayout from '../_components/AdminPageLayout';
 
 export default function AdminInstrumentosPage() {
