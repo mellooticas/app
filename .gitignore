@@ -92,3 +92,6 @@ src/components/*Test*.jsx
 src/components/*Debug*.jsx
 src/utils/teste*.js
 src/utils/debug*.js
+
+# Build outputs
+.next/
