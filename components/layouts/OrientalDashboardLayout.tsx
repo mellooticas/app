@@ -16,7 +16,26 @@ import {
   ChevronLeft,
   X,
   PanelLeftClose,
-  PanelLeftOpen
+  PanelLeftOpen,
+  GraduationCap,
+  Globe,
+  Building2,
+  Lightbulb,
+  Music,
+  BookOpen,
+  Scroll,
+  FileText,
+  Trophy,
+  MessageSquare,
+  Settings,
+  HelpCircle,
+  Home,
+  Calendar,
+  Users,
+  PlusCircle,
+  CheckCircle,
+  Star,
+  MapPin
 } from 'lucide-react'
 import { useAuth } from '@/app/providers/AuthProvider'
 
@@ -25,6 +44,7 @@ type RoleType = 'aluno' | 'professor' | 'admin'
 interface NavItem {
   label: string
   href: string
+  icon?: any
 }
 
 interface NavGroup {
@@ -80,12 +100,52 @@ const THEMES: Record<RoleType, ThemeConfig> = {
     gradient: 'from-blue-600 to-cyan-600',
     pattern: 'bg-pattern-seigaiha',
     icon: Waves,
-    navItems: [
-      { label: 'Dashboard', href: '/professores' },
-      { label: 'Turmas', href: '/professores/turmas' },
-      { label: 'Cronograma', href: '/professores/aulas' },
-      { label: 'Conteúdos', href: '/em-construcao' },
-      { label: 'Estatísticas', href: '/em-construcao' },
+    navItems: undefined,
+    groups: [
+      {
+        title: 'Ensino',
+        items: [
+          { label: 'Início', href: '/professores', icon: Home },
+          { label: 'Agenda Semanal', href: '/professores/agenda', icon: Calendar },
+          { label: 'Minhas Turmas', href: '/professores/turmas', icon: Users },
+          { label: 'Nova Aula', href: '/professores/aulas/nova', icon: PlusCircle },
+          { label: 'Correções', href: '/professores/correcoes', icon: CheckCircle },
+        ]
+      },
+      {
+        title: 'Formação',
+        items: [
+          { label: 'Formação Docente', href: '/professores/formacao', icon: GraduationCap },
+          { label: 'Experiências BR', href: '/professores/experiencias', icon: MapPin },
+          { label: 'Referenciais Int.', href: '/professores/referenciais', icon: Globe },
+        ]
+      },
+      {
+        title: 'Conteúdo',
+        items: [
+          { label: 'Repertório', href: '/professores/repertorio', icon: BookOpen },
+          { label: 'Instrumentos', href: '/professores/instrumentos', icon: Music },
+          { label: 'História da Música', href: '/professores/historia', icon: Scroll },
+          { label: 'Documentos', href: '/professores/documentos', icon: FileText },
+          { label: 'Espaços Alternativos', href: '/professores/espacos', icon: Building2 },
+        ]
+      },
+      {
+        title: 'Engajamento',
+        items: [
+          { label: 'Gamificação', href: '/professores/gamificacao', icon: Trophy },
+          { label: 'Estratégias', href: '/professores/estrategias', icon: Lightbulb },
+          { label: 'Fórum', href: '/professores/forum', icon: MessageSquare },
+          { label: 'Show Final', href: '/professores/show', icon: Star },
+        ]
+      },
+      {
+        title: 'Sistema',
+        items: [
+          { label: 'Configurações', href: '/professores/configuracoes', icon: Settings },
+          { label: 'Ajuda', href: '/professores/ajuda', icon: HelpCircle },
+        ]
+      }
     ]
   },
   admin: {
@@ -281,9 +341,9 @@ export default function OrientalDashboardLayout({ children, role }: OrientalDash
         {/* Logo Area */}
         <div className={`p-6 text-center border-b border-gray-100/50 flex flex-col items-center justify-center transition-all duration-300 ${isSidebarCollapsed ? 'gap-0' : 'gap-2'}`}>
           <div className={`flex items-center justify-center transition-all duration-300 ${isSidebarCollapsed ? 'w-10 h-10' : 'w-14 h-14'}`}>
-            <Image 
-              src="/logo-icon.svg" 
-              alt="Nipo School" 
+            <Image
+              src="/logo-icon.svg"
+              alt="Nipo School"
               width={isSidebarCollapsed ? 40 : 56}
               height={isSidebarCollapsed ? 40 : 56}
               className="transition-all duration-300"
@@ -336,9 +396,9 @@ export default function OrientalDashboardLayout({ children, role }: OrientalDash
       {/* Mobile Header */}
       <div className="md:hidden fixed top-0 left-0 right-0 h-16 bg-white/80 backdrop-blur-md border-b border-gray-200 flex items-center justify-between px-4 z-40 shadow-sm">
         <div className="flex items-center gap-2">
-          <Image 
-            src="/logo-icon.svg" 
-            alt="Nipo School" 
+          <Image
+            src="/logo-icon.svg"
+            alt="Nipo School"
             width={32}
             height={32}
           />

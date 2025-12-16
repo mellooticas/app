@@ -2,12 +2,18 @@
 import { getTurmas } from '@/src/lib/supabase/queries/users_turmas';
 import { Users, Calendar, MapPin, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import { createClient } from '@/lib/supabase/server';
+import { redirect } from 'next/navigation';
 
 export default async function ProfessorTurmasPage() {
-    // TODO: Pegar o ID do professor logado da sessão real
-    // const { session } = await getServerSession(); const professorId = session.user.id;
-    // Por enquanto busca todas as turmas para demo
-    const turmas = await getTurmas();
+    const supabase = await createClient();
+    const { data: { user } } = await supabase.auth.getUser();
+
+    if (!user) {
+        redirect('/login');
+    }
+
+    const turmas = await getTurmas(user.id);
 
     return (
         <div className="p-6 lg:p-8 space-y-6">
