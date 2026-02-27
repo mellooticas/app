@@ -3,7 +3,7 @@
 import { ReactNode, useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import {
   LogOut,
   Menu,
@@ -202,6 +202,7 @@ interface OrientalDashboardLayoutProps {
 
 export default function OrientalDashboardLayout({ children, role }: OrientalDashboardLayoutProps) {
   const { signOut, user } = useAuth()
+  const router = useRouter()
   const pathname = usePathname()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false)
@@ -383,7 +384,10 @@ export default function OrientalDashboardLayout({ children, role }: OrientalDash
           </div>
 
           <button
-            onClick={() => signOut()}
+            onClick={async () => {
+              await signOut()
+              router.push('/login')
+            }}
             title="Sair"
             className={`w-full flex items-center justify-center gap-2 px-4 ${isSidebarCollapsed ? 'py-2' : 'py-2.5'} text-sm font-medium text-red-600 bg-red-50 hover:bg-red-100 rounded-xl transition-all hover:shadow-sm active:scale-95`}
           >
