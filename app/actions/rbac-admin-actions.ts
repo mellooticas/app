@@ -13,6 +13,7 @@ import {
   updateRoleSchema,
   saveRolePermissionsSchema,
   saveRoleNavigationSchema,
+  updateProfileSchema,
 } from '@/lib/validations/rbac-schemas'
 import {
   successResponse,
@@ -312,6 +313,76 @@ export async function createStudent(rawData: unknown): Promise<ActionResult> {
   revalidatePath('/settings/enrollments')
   revalidatePath('/settings/users')
   return successResponse({ userId: userData.user?.id }, 'Cadastro realizado com sucesso')
+}
+
+/**
+ * Update a user's profile (admin edits name, phone, unit, instruments).
+ * Also syncs profile_instruments (many-to-many).
+ */
+export async function updateProfile(rawData: unknown): Promise<ActionResult> {
+  const ctx = await getAuthContext()
+  if (!ctx) return unauthorizedError('Acesso restrito a administradores')
+
+  const validation = await validateAction(updateProfileSchema, rawData)
+  if (!validation.success) return validationError(validation.error)
+
+  const { userId, fullName, displayName, phone, unitId, instrumentIds } = validation.data
+
+  // 1. Update profile
+  const { error: profileErr } = await ctx.supabase
+    .from('profiles')
+    .update({
+      full_name: fullName,
+      display_name: displayName || null,
+      phone: phone || null,
+      unit_id: unitId || null,
+    })
+    .eq('user_id', userId)
+    .eq('tenant_id', ctx.tenantId)
+
+  if (profileErr) return databaseError(profileErr.message)
+
+  // 2. Sync profile_instruments (delete all + insert new)
+  const { error: delErr } = await ctx.supabase
+    .from('profile_instruments')
+    .delete()
+    .eq('user_id', userId)
+    .eq('tenant_id', ctx.tenantId)
+
+  if (delErr) return databaseError(delErr.message)
+
+  if (instrumentIds.length > 0) {
+    const rows = instrumentIds.map((instrumentId, i) => ({
+      tenant_id: ctx.tenantId,
+      user_id: userId,
+      instrument_id: instrumentId,
+      is_primary: i === 0,
+    }))
+
+    const { error: insErr } = await ctx.supabase
+      .from('profile_instruments')
+      .insert(rows)
+
+    if (insErr) return databaseError(insErr.message)
+
+    // Also update primary_instrument_id on profile
+    await ctx.supabase
+      .from('profiles')
+      .update({ primary_instrument_id: instrumentIds[0] })
+      .eq('user_id', userId)
+      .eq('tenant_id', ctx.tenantId)
+  } else {
+    // Clear primary instrument
+    await ctx.supabase
+      .from('profiles')
+      .update({ primary_instrument_id: null })
+      .eq('user_id', userId)
+      .eq('tenant_id', ctx.tenantId)
+  }
+
+  revalidatePath('/settings/enrollments')
+  revalidatePath('/settings/users')
+  return successResponse(null, 'Perfil atualizado com sucesso')
 }
 
 // ========================================

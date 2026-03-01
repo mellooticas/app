@@ -5,15 +5,31 @@ import { useRouter } from 'next/navigation'
 import {
   GraduationCap, Search, ChevronLeft, X, Check, Users,
   Music, BookOpen, UserPlus, Trash2, Plus, Phone, Mail, Lock, User, Loader2,
+  Pencil, Building2,
 } from 'lucide-react'
 import { supabase } from '@/lib/supabase/client'
 import { PermissionGate } from '@/components/auth/PermissionGate'
 import { enrollStudent, unenrollStudent } from '@/app/actions/course-actions'
-import { createStudent } from '@/app/actions/rbac-admin-actions'
+import { createStudent, updateProfile } from '@/app/actions/rbac-admin-actions'
 
 interface Instrument {
   id: string
   name: string
+}
+
+interface Unit {
+  id: string
+  name: string
+  city: string | null
+  is_active: boolean
+}
+
+interface ProfileInstrument {
+  id: string
+  user_id: string
+  instrument_id: string
+  is_primary: boolean
+  instrument_name: string
 }
 
 interface Student {
@@ -25,6 +41,8 @@ interface Student {
   phone: string | null
   instrument_name: string | null
   primary_instrument_id: string | null
+  unit_id: string | null
+  unit_name: string | null
   is_active: boolean
   roles: Array<{ slug: string; display_name: string }>
 }
@@ -57,6 +75,8 @@ export default function EnrollmentsPage() {
   const [enrollments, setEnrollments] = useState<Enrollment[]>([])
   const [courses, setCourses] = useState<Course[]>([])
   const [instruments, setInstruments] = useState<Instrument[]>([])
+  const [units, setUnits] = useState<Unit[]>([])
+  const [profileInstruments, setProfileInstruments] = useState<ProfileInstrument[]>([])
   const [loading, setLoading] = useState(true)
   const [search, setSearch] = useState('')
   const [filterStatus, setFilterStatus] = useState<'all' | 'enrolled' | 'not_enrolled'>('all')
@@ -78,17 +98,28 @@ export default function EnrollmentsPage() {
   const [newInstrumentId, setNewInstrumentId] = useState('')
   const [newRole, setNewRole] = useState<'student' | 'teacher'>('student')
 
+  // Edit profile modal state
+  const [showEditModal, setShowEditModal] = useState(false)
+  const [editStudent, setEditStudent] = useState<Student | null>(null)
+  const [editName, setEditName] = useState('')
+  const [editDisplayName, setEditDisplayName] = useState('')
+  const [editPhone, setEditPhone] = useState('')
+  const [editUnitId, setEditUnitId] = useState('')
+  const [editInstrumentIds, setEditInstrumentIds] = useState<string[]>([])
+
   useEffect(() => {
     loadData()
   }, [])
 
   async function loadData() {
     setLoading(true)
-    const [studentsRes, enrollmentsRes, coursesRes, instrumentsRes] = await Promise.all([
+    const [studentsRes, enrollmentsRes, coursesRes, instrumentsRes, unitsRes, profInstRes] = await Promise.all([
       supabase.from('v_profiles').select('*').order('full_name'),
       supabase.from('v_enrollments').select('*').order('enrolled_at', { ascending: false }),
       supabase.from('v_courses').select('*').eq('is_active', true).order('name'),
       supabase.from('instruments').select('id, name').eq('is_active', true).order('name'),
+      supabase.from('units').select('id, name, city, is_active').eq('is_active', true).order('name'),
+      supabase.from('v_profile_instruments').select('*'),
     ])
 
     if (studentsRes.data) {
@@ -103,6 +134,8 @@ export default function EnrollmentsPage() {
     if (enrollmentsRes.data) setEnrollments(enrollmentsRes.data as Enrollment[])
     if (coursesRes.data) setCourses(coursesRes.data as Course[])
     if (instrumentsRes.data) setInstruments(instrumentsRes.data as Instrument[])
+    if (unitsRes.data) setUnits(unitsRes.data as Unit[])
+    if (profInstRes.data) setProfileInstruments(profInstRes.data as ProfileInstrument[])
 
     setLoading(false)
   }
@@ -202,6 +235,49 @@ export default function EnrollmentsPage() {
       await loadData()
     }
     setSaving(false)
+  }
+
+  function openEditModal(student: Student) {
+    setEditStudent(student)
+    setEditName(student.full_name || '')
+    setEditDisplayName(student.display_name || '')
+    setEditPhone(student.phone || '')
+    setEditUnitId(student.unit_id || '')
+    const userInsts = profileInstruments
+      .filter(pi => pi.user_id === student.user_id)
+      .map(pi => pi.instrument_id)
+    setEditInstrumentIds(userInsts.length > 0 ? userInsts : student.primary_instrument_id ? [student.primary_instrument_id] : [])
+    setShowEditModal(true)
+  }
+
+  async function handleEditSave() {
+    if (!editStudent || !editName.trim()) return
+    setSaving(true)
+    const result = await updateProfile({
+      userId: editStudent.user_id,
+      fullName: editName.trim(),
+      displayName: editDisplayName.trim() || undefined,
+      phone: editPhone.trim() || undefined,
+      unitId: editUnitId || null,
+      instrumentIds: editInstrumentIds,
+    })
+    if ('error' in result) {
+      showMsg('error', result.error)
+    } else {
+      showMsg('success', result.message || 'Perfil atualizado')
+      setShowEditModal(false)
+      setEditStudent(null)
+      await loadData()
+    }
+    setSaving(false)
+  }
+
+  function toggleEditInstrument(instrumentId: string) {
+    setEditInstrumentIds(prev =>
+      prev.includes(instrumentId)
+        ? prev.filter(id => id !== instrumentId)
+        : [...prev, instrumentId]
+    )
   }
 
   const notEnrolledCount = students.filter(s => getStudentEnrollments(s.user_id).length === 0).length
@@ -352,10 +428,30 @@ export default function EnrollmentsPage() {
                         )}
                       </div>
                       <div className="flex items-center gap-2 text-xs text-gray-500">
-                        {student.instrument_name && (
+                        {(() => {
+                          const userInsts = profileInstruments.filter(pi => pi.user_id === student.user_id)
+                          if (userInsts.length > 0) {
+                            return (
+                              <span className="flex items-center gap-1">
+                                <Music className="w-3 h-3" />
+                                {userInsts.map(pi => pi.instrument_name).join(', ')}
+                              </span>
+                            )
+                          }
+                          if (student.instrument_name) {
+                            return (
+                              <span className="flex items-center gap-1">
+                                <Music className="w-3 h-3" />
+                                {student.instrument_name}
+                              </span>
+                            )
+                          }
+                          return null
+                        })()}
+                        {student.unit_name && (
                           <span className="flex items-center gap-1">
-                            <Music className="w-3 h-3" />
-                            {student.instrument_name}
+                            <Building2 className="w-3 h-3" />
+                            {student.unit_name}
                           </span>
                         )}
                         {student.phone && (
@@ -384,16 +480,26 @@ export default function EnrollmentsPage() {
                       ))}
                     </div>
 
-                    {/* Enroll button */}
-                    <button
-                      onClick={() => openEnrollModal(student)}
-                      disabled={saving}
-                      title="Matricular em turma"
-                      className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-bold text-green-700 bg-green-50 hover:bg-green-100 transition-all flex-shrink-0"
-                    >
-                      <UserPlus className="w-4 h-4" />
-                      Matricular
-                    </button>
+                    {/* Edit + Enroll buttons */}
+                    <div className="flex items-center gap-1 flex-shrink-0">
+                      <button
+                        onClick={() => openEditModal(student)}
+                        disabled={saving}
+                        title="Editar dados"
+                        className="p-2 rounded-lg text-gray-400 hover:text-blue-600 hover:bg-blue-50 transition-all"
+                      >
+                        <Pencil className="w-4 h-4" />
+                      </button>
+                      <button
+                        onClick={() => openEnrollModal(student)}
+                        disabled={saving}
+                        title="Matricular em turma"
+                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-bold text-green-700 bg-green-50 hover:bg-green-100 transition-all"
+                      >
+                        <UserPlus className="w-4 h-4" />
+                        Matricular
+                      </button>
+                    </div>
                   </div>
                 </div>
               )
@@ -641,6 +747,148 @@ export default function EnrollmentsPage() {
                     <Check className="w-4 h-4" />
                   )}
                   Cadastrar
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Edit Profile Modal */}
+        {showEditModal && editStudent && (
+          <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4" onClick={() => setShowEditModal(false)}>
+            <div className="bg-white rounded-2xl shadow-xl w-full max-w-md p-6 space-y-4" onClick={e => e.stopPropagation()}>
+              <div className="flex items-center justify-between">
+                <h2 className="text-lg font-bold text-gray-900 flex items-center gap-2">
+                  <Pencil className="w-5 h-5 text-blue-600" />
+                  Editar Perfil
+                </h2>
+                <button onClick={() => setShowEditModal(false)} className="p-1 hover:bg-gray-100 rounded-lg">
+                  <X className="w-5 h-5 text-gray-400" />
+                </button>
+              </div>
+
+              {/* Student Info */}
+              <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-xl">
+                <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-bold">
+                  {editStudent.full_name?.[0]?.toUpperCase() || '?'}
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">{editStudent.full_name}</p>
+                  <p className="text-xs text-gray-500">
+                    {editStudent.roles?.map(r => r.display_name).join(', ') || 'Aluno'}
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-3">
+                {/* Name */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Nome Completo</label>
+                  <input
+                    type="text"
+                    value={editName}
+                    onChange={e => setEditName(e.target.value)}
+                    className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-200 focus:border-blue-400 outline-none"
+                  />
+                </div>
+
+                {/* Display Name */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    Apelido <span className="text-gray-400 font-normal">(opcional)</span>
+                  </label>
+                  <input
+                    type="text"
+                    value={editDisplayName}
+                    onChange={e => setEditDisplayName(e.target.value)}
+                    placeholder="Nome de exibição"
+                    className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-200 focus:border-blue-400 outline-none"
+                  />
+                </div>
+
+                {/* Phone */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    Telefone <span className="text-gray-400 font-normal">(opcional)</span>
+                  </label>
+                  <div className="relative">
+                    <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+                    <input
+                      type="tel"
+                      value={editPhone}
+                      onChange={e => setEditPhone(e.target.value)}
+                      placeholder="(11) 99999-9999"
+                      className="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-200 focus:border-blue-400 outline-none"
+                    />
+                  </div>
+                </div>
+
+                {/* Unit */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Unidade</label>
+                  <div className="relative">
+                    <Building2 className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+                    <select
+                      value={editUnitId}
+                      onChange={e => setEditUnitId(e.target.value)}
+                      className="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-200 focus:border-blue-400 outline-none bg-white appearance-none"
+                    >
+                      <option value="">Sem unidade</option>
+                      {units.map(unit => (
+                        <option key={unit.id} value={unit.id}>
+                          {unit.name}{unit.city ? ` (${unit.city})` : ''}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+
+                {/* Instruments (multi-select checkboxes) */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Instrumentos <span className="text-gray-400 font-normal">(selecione um ou mais)</span>
+                  </label>
+                  <div className="grid grid-cols-2 gap-2 max-h-40 overflow-y-auto">
+                    {instruments.map(inst => (
+                      <label
+                        key={inst.id}
+                        className={`flex items-center gap-2 px-3 py-2 rounded-lg border cursor-pointer transition-all text-sm ${
+                          editInstrumentIds.includes(inst.id)
+                            ? 'border-blue-300 bg-blue-50 text-blue-700 font-medium'
+                            : 'border-gray-200 hover:border-gray-300 text-gray-600'
+                        }`}
+                      >
+                        <input
+                          type="checkbox"
+                          checked={editInstrumentIds.includes(inst.id)}
+                          onChange={() => toggleEditInstrument(inst.id)}
+                          className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                        />
+                        {inst.name}
+                      </label>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex justify-end gap-2 pt-2">
+                <button
+                  onClick={() => setShowEditModal(false)}
+                  className="px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-xl transition-colors"
+                >
+                  Cancelar
+                </button>
+                <button
+                  onClick={handleEditSave}
+                  disabled={saving || !editName.trim()}
+                  className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-xl text-sm font-bold hover:bg-blue-700 transition-colors disabled:opacity-50"
+                >
+                  {saving ? (
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                  ) : (
+                    <Check className="w-4 h-4" />
+                  )}
+                  Salvar
                 </button>
               </div>
             </div>

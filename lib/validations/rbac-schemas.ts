@@ -84,6 +84,46 @@ export const saveRoleNavigationSchema = z.object({
 })
 
 // ========================================
+// Unit Management
+// ========================================
+
+export const createUnitSchema = z.object({
+  name: z.string().min(2, 'Nome deve ter no mínimo 2 caracteres'),
+  slug: z.string().min(2, 'Slug deve ter no mínimo 2 caracteres').regex(/^[a-z0-9-]+$/, 'Slug deve conter apenas letras minúsculas, números e hífens'),
+  address: z.string().optional(),
+  city: z.string().optional(),
+  state: z.string().optional(),
+  phone: z.string().optional(),
+})
+
+export const updateUnitSchema = z.object({
+  unitId: z.string().uuid('ID de unidade inválido'),
+  name: z.string().min(2, 'Nome deve ter no mínimo 2 caracteres'),
+  address: z.string().optional(),
+  city: z.string().optional(),
+  state: z.string().optional(),
+  phone: z.string().optional(),
+})
+
+export const toggleUnitActiveSchema = z.object({
+  unitId: z.string().uuid('ID de unidade inválido'),
+  isActive: z.boolean(),
+})
+
+// ========================================
+// Profile Edit
+// ========================================
+
+export const updateProfileSchema = z.object({
+  userId: z.string().uuid('ID de usuário inválido'),
+  fullName: z.string().min(3, 'Nome deve ter no mínimo 3 caracteres'),
+  displayName: z.string().optional(),
+  phone: z.string().optional(),
+  unitId: z.string().uuid().optional().nullable(),
+  instrumentIds: z.array(z.string().uuid()).default([]),
+})
+
+// ========================================
 // Types
 // ========================================
 
@@ -95,3 +135,7 @@ export type CreateStudentInput = z.infer<typeof createStudentSchema>
 export type UpdateRoleInput = z.infer<typeof updateRoleSchema>
 export type SaveRolePermissionsInput = z.infer<typeof saveRolePermissionsSchema>
 export type SaveRoleNavigationInput = z.infer<typeof saveRoleNavigationSchema>
+export type CreateUnitInput = z.infer<typeof createUnitSchema>
+export type UpdateUnitInput = z.infer<typeof updateUnitSchema>
+export type ToggleUnitActiveInput = z.infer<typeof toggleUnitActiveSchema>
+export type UpdateProfileInput = z.infer<typeof updateProfileSchema>
