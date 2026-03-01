@@ -1,0 +1,5531 @@
+-- =============================================
+-- Migration: 003_instrument_facts.sql
+-- Table: core.instrument_facts
+-- Source CSV: instrumento_curiosidades_rows.csv
+-- Generated: 2026-02-28T16:15:03.061Z
+-- Rows: 1380
+-- =============================================
+
+BEGIN;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0005abdf-11a5-453c-815b-8379a8a32035', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '00189c62-3374-4bb0-827f-bdf480d8a714', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '003ab1e2-2827-4eaf-ac18-eca373786e7a', '32705505-7727-4d27-b7bd-b08e7c90c233', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0053b4f7-9b6c-41d3-807a-0acabbd5e1c6', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '006085d0-6dd3-4c55-a7a5-f374d76dfb13', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0079a516-4151-450b-b905-2e04d41576aa', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0098970e-134d-49b3-8b1e-4f4592fe06ed', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '00d600db-b391-46a4-83d3-0329a367fbb2', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '00f70250-551a-4b13-85ec-a681de5f5579', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '01212be5-66a1-4dce-b52a-446b4c1a1a32', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '012e3f22-a797-412a-aa4d-dba367de3877', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '01443d04-8085-435b-8e2f-ca725bcbd9aa', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '017a4d70-2698-4ffd-aa37-2c9433109832', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '017b4fea-91c7-4c63-bb15-529a458f297d', '1b699036-0f72-4c48-9801-e01f6f25e165', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '01e2f20a-3ccd-4dac-af96-1bd4f3894a0b', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '01e5d0d9-134b-4fe6-ad5e-d55f33f96520', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '01f4d937-bca3-4416-8f7e-9e97245bc497', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '02737f45-9e85-4544-aa15-78b53ac94e46', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '028b97bb-7ded-4ea0-8a4c-fd9cc1043341', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '02a38cb6-2646-4a58-93b2-1e85bf2a3bea', '6925f61b-ba48-473a-b69a-e3548036c1df', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0307192d-cec2-45dc-b80b-b29ac87fd863', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '031db773-2f24-4058-9dd4-7281e1021d4b', '492f792b-8d0c-46b7-a195-c8c32114696d', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0321a3f7-da0b-4dac-924b-ac02e093c729', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '03801d75-4cbd-41e9-8143-ff609414faf4', '82052c70-0a9d-4d94-873e-3b402e032f55', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '03929b45-4196-489b-abe4-a3a21fb15c8f', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '03a04c1d-169f-4fb8-a624-1550d95885b9', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '03ec6a90-e11b-4df0-b55f-8d6467254210', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '040f9f98-ce63-4fa8-b794-817333db0fe4', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$O Piano Preparado$$, $$John Cage revolucionou o piano colocando objetos entre as cordas (parafusos, borrachas, papel), criando timbres percussivos únicos em obras como "Sonatas and Interludes".$$, $$/images/curiosidades/piano_preparado.jpg$$, '2025-06-08 18:58:13.529143'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '041d12b0-9a3f-4d59-9d24-6b17285e8859', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0423cb06-8236-47b5-ac89-080dec44ae11', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '04539418-50d9-4504-9d54-cb84ec4b0555', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '045b8540-5bd9-4018-8ff8-b7630f05b2c3', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '04f279c5-34a8-4247-863e-303da2a79295', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '04fd6c30-135d-489d-a9f6-7670de0a700d', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0509888c-743d-43f6-97b6-4511c0f5cc22', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '055d2440-fc78-4f52-b20e-3af522420aef', '36040329-1aa6-428a-ad39-cd85de03493e', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '059c6479-5d9c-45ff-9f72-f571c9c55313', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '05c94d2c-4aae-4919-a929-326a9e0626c8', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '06010eed-e1a9-4445-b4ad-f6f5e2027e43', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '06582607-b0ba-4666-a99b-1c3b62242b33', '32705505-7727-4d27-b7bd-b08e7c90c233', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '06772560-150c-468d-ac4e-42e2cccfa6ae', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Amplificação$$, $$Captadores de contato preservam timbre com pouco vazamento.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '06b2ae1c-69cb-4af7-8be8-07b4a71562f9', '82052c70-0a9d-4d94-873e-3b402e032f55', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '06c7527a-44bb-4b34-8efc-49d688e67cc3', '56f643e0-a3e2-4067-84ac-334c454426f8', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '07333d78-043e-48aa-9cb5-692330ed38b4', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '078e9feb-2c80-4114-a452-412406cdf2d5', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '07b67293-e1a2-47a6-a6fc-51b28b2f3289', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '07bb5be5-bce0-47af-9efa-4d51c76640ef', '56f643e0-a3e2-4067-84ac-334c454426f8', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '07ca656d-3984-4d9b-a1f3-5bc4bec24676', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '082761dc-fdec-4b01-b9b5-f71ed64e11be', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0840cb8a-d695-4266-b46c-b7c2f9bcb1eb', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '08b2077e-8320-4164-a4cb-3661987ae4d1', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '08cf5eab-17df-40a7-bf9b-b12548175962', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '093e1636-f97c-4b5c-9485-599dd961ac31', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '095ddeb0-1906-476b-b946-6e0410f0aecd', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0966faf2-9cc7-4021-a881-f4268e8891cc', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '098b4dd8-b185-478a-8791-c65795ab5d20', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '09b7da6c-b761-42b9-ba2f-6b25edad733a', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '09d99e42-45a0-4183-ab94-5c33aa03046c', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '09ed89ff-b98e-468a-aa35-6924a36c221d', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '09ee31dc-af08-4837-a28c-8de92621f9e5', '36040329-1aa6-428a-ad39-cd85de03493e', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0a283e93-58b7-4abc-b964-0f650d8899c1', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0a32a0ef-33fa-481c-82ae-7e656bc0f443', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0a4e222d-9694-4cfc-8965-762f747f6a15', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0a4f6d35-ceef-45e2-80c3-cc645fbef2e5', '56f643e0-a3e2-4067-84ac-334c454426f8', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0a53989b-003d-4027-adda-523a8367ffc9', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0a9c3885-41ee-4605-af5a-d7916e2f4f00', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0b33bc63-4d7a-45cb-a04d-3d1d56a64b54', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0b4f81dc-e696-41f6-99d4-1864205b18fb', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0c2c076c-862a-4b01-83d7-3014d9d5b95a', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0caa064f-bad0-4203-a0af-946e9c4acb51', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0cb52883-ba82-45cb-bede-d6adab2ec7ab', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0ce7df34-9a6d-46b4-9bc2-7bfa676f60c4', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0d49ea5e-c5da-4fde-9eb0-4fdb1b9aff54', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0dac3070-3955-4a54-874c-e96d6525945b', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0dcab705-d50b-4feb-8ff8-5dfaf79676cf', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0dcc3612-0cb4-4ce8-864d-f13959a7be8b', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0dd39d03-6b24-4722-ae4e-393217faf90b', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0df2b35c-6cdd-44d1-89b5-a8e17eb98f67', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0df95faa-72d9-4843-8d4d-d05957d967f7', '80436b4f-15c1-452f-9442-34e42b5117e4', $$A Importância da Alma$$, $$A "alma" do violino é um pequeno bastão de madeira posicionado internamente entre o tampo e o fundo. Sua posição milimétrica afeta drasticamente o timbre e a projeção do som.$$, NULL, '2025-06-09 03:36:30.827266'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0e296683-84e5-4431-abc9-cb0c7947bce1', '9a5e0eac-114e-4173-90af-32b55c870675', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0e7f6b14-295e-42b4-9ba5-2586c1e82dea', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0e8d2956-e42b-416d-bbba-ec2539971d0b', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0f0b8521-ce1c-4d43-9980-fdd19ecfd104', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0f297f00-1379-4747-af4b-64b57295e767', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0f2d0179-d3c2-47c2-8607-b1864f8bcab4', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0fa3b011-dd9d-47da-a984-7e29b66cfb9c', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '0fb322b9-d1eb-4e00-b655-97b2598e3598', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '103c2f6c-af1b-408d-8ead-257822d95599', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '104db6e4-4dd7-48be-92a1-98d35ec951b1', '82052c70-0a9d-4d94-873e-3b402e032f55', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '104f5f47-ff7b-48d6-9d42-59e345923d1e', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1063eb5f-3080-4de2-8802-2a9af44bffba', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '10666a01-ffad-45b3-bc44-cb4178f3be4d', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '10abe0b7-0896-40d8-8bb5-32ddec356863', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '10f515fa-9dde-4d23-b806-65a0499086a3', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '10fabb3c-e6a1-40a7-97af-f4c1ac893127', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1118c8ef-f468-417b-9093-7c064cf7e7e4', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '115be054-114e-4c0d-857b-911403ecff59', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1197e7ad-f154-4c97-8967-f1a1a5c3fbcd', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '11d7e1f4-dfdd-4e5e-9c89-8364553b0783', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1201b4c7-f2e1-4687-b760-7d526d9c0966', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1206afd0-7dc8-43a5-92f9-72dbc23d4b01', '509d6a26-159a-4976-aa46-83f914f930aa', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '12172af8-1fda-4385-84a7-caf2ab7bf18f', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1236af9a-30ce-4e42-8378-5a78f95e01ee', '6925f61b-ba48-473a-b69a-e3548036c1df', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1292d30c-27cd-47cc-8096-e3227eb82913', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '129eb5d6-5c79-4e1c-97c1-bc099fdaf42b', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '12a05ea9-a5d7-47d7-bdf4-a154b94948f5', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '12a93633-340f-4ecd-9ea2-c82bb081dff4', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '12e8e3e7-7d72-4e80-8cfb-2e403aa22e41', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '13496db6-03fb-4e1b-8d75-cac63f32b66c', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '13a0ec4b-a585-4ed9-acd1-ac51a2c9681e', '509d6a26-159a-4976-aa46-83f914f930aa', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '13bd98dd-7ff5-4c8b-9a5c-ab58bae8fa2a', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Harmônicos naturais$$, $$Facilitados nas regiões próximas às metades/terços da corda.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '13c9f3a4-01e8-4af0-88fe-d28530cca049', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$Guitar Hero e Gaming$$, $$O jogo Guitar Hero, lançado em 2005, introduziu uma nova geração à guitarra. Estudos mostram que jogadores do Guitar Hero têm 2x mais probabilidade de aprender guitarra real.$$, NULL, '2025-06-09 04:27:54.332572'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '13cccb01-edca-4762-b170-c9a4a38a80b6', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Técnicas estendidas$$, $$Sul ponticello, col legno, tremolo de efeito, etc.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '13d3e322-fd66-4f1e-adf0-6947c5aaa7d8', '509d6a26-159a-4976-aa46-83f914f930aa', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '14116bb3-3fd4-4ae3-929a-cd1e61f03f0f', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '145fe259-b873-446b-9fa8-2945a802480f', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '14cf6be9-dc5b-42c1-b7b0-2013b8236259', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '14e56f43-05a5-491c-b605-e1c27924f58e', '6925f61b-ba48-473a-b69a-e3548036c1df', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '154390c1-785c-439a-ad32-f742079c81d5', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1562da88-ebdf-46c3-9701-7a616fdd646f', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '15634d08-7891-4939-a878-5b08a6b38caa', '56f643e0-a3e2-4067-84ac-334c454426f8', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1567580a-07d4-4250-bdde-a78e56a0da95', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '15a23712-56e4-4634-9061-5d4d297f2951', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '15a5042e-73f4-462a-986f-98fffe15d428', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '15d51172-dc41-4c2a-ac71-71b9e10014d8', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '15dcba69-77e1-4176-8605-7050e9f06450', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '15f74ca2-005c-443a-bde1-db13f0df60f3', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '164cefb7-713c-4641-8507-d5faf5c4ecf1', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '165e3bec-66c9-454c-b3f1-67be33d12e36', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '170897f7-c991-4fd2-952d-7c3211ed86d6', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '17c3cb3d-1ec0-4d7c-ac1e-e16df1c48547', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '17d22e10-1b40-4c3d-be2a-01c2184de9d1', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '17e19b7d-97fd-4f15-9902-ba8c044b8e00', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '18a6c96a-6c7f-4229-bbee-b361dedffbbb', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '18c9bbc7-1d4d-4b38-ba74-4a946f63a09b', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$Violão de 12 Cordas$$, $$O violão de 12 cordas produz um som mais "cheio" porque cada corda tem uma "companheira" afinada uma oitava acima (nas 4 cordas graves) ou em uníssono (nas 2 cordas agudas).$$, $$/images/curiosidades/violao_12_cordas.jpg$$, '2025-06-08 01:08:19.394658'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '18f77efa-b06e-4d61-b8c4-07e69d718d5e', '32705505-7727-4d27-b7bd-b08e7c90c233', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '199c7064-9a0d-4fc2-ab1f-44f68587f8b9', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '19d34138-da07-4c2a-9ca2-ca3becd4503c', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '19de92a5-a0aa-418d-ae99-7d70319efa39', '32705505-7727-4d27-b7bd-b08e7c90c233', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '19ef9ab2-9d83-466e-af30-3cbe2cd4dabb', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1a3e35bc-0a31-4125-bc12-73162bff88ec', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1a3f887a-eb07-40fc-8cbe-681760c809cf', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1a5b4d79-3e2b-4af3-bf20-8ee01398d57e', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1aca5ea6-20bf-42c6-b36a-30cb38523eff', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$Madeiras e Timbre$$, $$O corpo de alder produz som equilibrado, mogno é mais quente e escuro, enquanto ash é mais brilhante. O braço de maple é mais atacado, já o rosewood é mais suave e quente.$$, NULL, '2025-06-09 04:31:04.663796'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1af97149-564c-450a-a3f3-734b2da7804e', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1b1343da-a03c-4fc7-a712-8b9bb95a0d5a', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1b1bc6f4-223d-4d19-9629-f70037f48bef', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1b46aee3-1641-4ab6-9f54-825c01e78ca0', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1b527c89-2e8f-4826-abef-b62451931c98', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1bcc952c-41cc-4919-b7f3-b49e03f5087e', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1bfed7f2-985d-4d2f-87e0-92a05ba0c6c9', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1c21ef5d-f72b-47d2-95f0-41f44f8a6f0c', '56f643e0-a3e2-4067-84ac-334c454426f8', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1c3852f3-e6bc-4101-a73c-d48edda03297', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1c44309b-1544-4af2-94cd-64abc012ce09', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1c7671e8-983b-4d32-b38f-8638973a8c28', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1c78de5d-d28b-4270-bb10-5d3c133174fd', '6925f61b-ba48-473a-b69a-e3548036c1df', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1cb36f55-340e-411b-8b94-5b8004052207', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1cb81cb5-d8e2-477f-9628-9a1fceb2cdae', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1cbaf5e8-9784-4086-84e7-b38719aff271', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1ce52694-0d54-4734-8da1-2789ded8666f', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$Sustain e Física$$, $$O sustain (duração da nota) é determinado pela massa do corpo, qualidade da ponte, altura das cordas e eletrônicos. Guitarras sólidas têm mais sustain que semi-acústicas devido à menor vibração parasita.$$, NULL, '2025-06-09 04:27:54.332572'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1d2749e4-ee67-4bea-af69-b384c799e30e', '492f792b-8d0c-46b7-a195-c8c32114696d', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1d483bd6-7c98-4ac4-afc9-c899f0d0bb1d', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1d67aaf9-2687-43e8-8ee9-dc0bc037a11a', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1dceda9f-e0a4-487e-af29-2003235018e6', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1df26ce1-c1c8-4cd5-a3f1-8a727b0f7036', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1e3c97c4-cefb-4914-be8f-76e450a6a09d', '9a5e0eac-114e-4173-90af-32b55c870675', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1e4999c5-0317-4d4a-b942-272eb280762c', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1e8fbe7b-d18b-4061-a80d-527869ebc5b3', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1eed5bbd-50ea-4fc7-a6c3-073591a959c7', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1ef2e494-7b63-4692-a0ea-d36c4beba8f7', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1f05bc4f-575d-4358-a032-6685bbfe8a11', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1f66e1d2-8adc-41f6-9d75-052b6ec10170', '56f643e0-a3e2-4067-84ac-334c454426f8', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1f670781-1571-4153-b7bd-582dc8e47126', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1f720d63-1f8d-47f4-98e7-2883b63133d2', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1f9f4408-07ff-4c7b-bf78-4925ce9cc94b', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '1fd7968f-a050-4c66-8024-eaa1faa8811a', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '200346ca-f556-43e7-b88c-0a0cf03748f2', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '203f34ba-9b8f-4b3e-bd26-b77e9cca67c1', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '205184b3-b1cd-4ad5-a9d3-71e3e898c014', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '205817a7-8727-4333-8e39-b9e956a6cf8f', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2094b14f-ed14-46a8-92d9-0055751302de', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$Por que 6 Cordas?$$, $$O violão nem sempre teve 6 cordas. No século XVIII, violões tinham 5 pares de cordas. A sexta corda grave foi adicionada na Espanha no século XIX para expandir o registro do instrumento.$$, $$/images/curiosidades/evolucao_cordas.jpg$$, '2025-06-08 01:08:19.394658'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '20aec78b-5eb9-4989-aa12-64148d759eb4', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '21015312-fc53-468f-a8c1-b163a25f101e', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '210e1c0d-5ccb-4326-8ca9-b8d602a20c66', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '21864fe6-d465-4678-aedf-015a3d87413c', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '21881270-ec40-43a8-8b96-c56944f8a944', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '21d8d0da-c2a7-4cb4-9b6a-ae9e8f790187', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '21ec526d-d932-4235-903c-bcfa0bebce77', '9a5e0eac-114e-4173-90af-32b55c870675', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '21fc4df7-4afc-4108-b86b-22c45210e421', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '220e5e00-9008-42a3-9089-dfbf4e1822a2', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2254c3c7-1f6f-4988-838f-a3dc21e0fd38', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '229b3786-3d05-45ac-950f-2671f0dcf065', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '22cb439b-d21a-46f0-bdc5-bd767f7775a2', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '22cc3d76-f722-4786-982f-e3ae03a5c3a8', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '23441536-83ab-4473-9a01-76195d5a4150', '6925f61b-ba48-473a-b69a-e3548036c1df', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '23987ccf-c5c0-4a3c-9202-9ab761651750', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '23a49393-674f-4c7e-947f-b3087bcb9166', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '23aa868d-29e3-4a4d-942a-0a3e291f1648', '761a3318-9a5e-46f3-88f2-62159b96100c', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '24cdd59b-2ccb-44df-a98d-47f29300246d', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '24cdfd08-6828-49b8-8761-0aa45954c034', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '250cfcc1-efee-442d-aa49-57d828ade69e', '80436b4f-15c1-452f-9442-34e42b5117e4', $$A Lenda de Paganini$$, $$Niccolò Paganini (1782-1840) era tão virtuoso que as pessoas acreditavam que ele havia vendido sua alma ao diabo. Suas técnicas eram consideradas impossíveis para mortais comuns, criando lendas que persistem até hoje.$$, NULL, '2025-06-09 03:42:40.336695'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2533f152-d7b9-4c19-866a-531ac95e05fd', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '25379d5e-df08-488a-9f41-60323dd53c86', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '25746c53-dc33-4cf6-880b-84b943add499', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2583e66b-0625-46e8-98b3-046313b87bcb', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '25b7c2b7-2fb0-4e3d-9232-8fe50fd3d8df', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '25e9c480-d145-4f72-89ae-721341da6654', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2627c824-12e4-4224-80cb-1799a0024436', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2638783b-09a2-4387-9d16-d0aeaf22de18', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2644a780-96f9-4a57-a266-975d6b33b1be', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2673330d-041a-4546-90db-30554007b6c2', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '26ae708f-ab7e-4d30-abc0-7be728366768', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$Villa-Lobos e o Violão$$, $$Heitor Villa-Lobos compôs alguns dos estudos mais importantes para violão clássico, mas ironicamente ele não sabia tocar o instrumento! Ele compunha no piano e depois adaptava para violão.$$, $$/images/curiosidades/villa_lobos.jpg$$, '2025-06-08 01:08:19.394658'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '26af550f-3487-44b9-af04-4499f60eb998', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '277f0af1-9f0f-4ebb-8750-f84043d3c840', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '27e202c6-8825-45fc-876e-69637328e104', '9a5e0eac-114e-4173-90af-32b55c870675', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '28300035-6a95-45c7-838a-9c67481bfde1', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '286dbbd6-9824-4a26-aabe-ed7d840f582b', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2872e5c6-c11a-4774-a554-8962c632b24a', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '28d5b9ae-4ea4-4df4-bf63-c86ca946be37', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '28db8a9c-d52b-49fb-8561-a42bbb8a7ffe', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '28f03192-90bd-444b-81f5-49a674f50413', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '28fc80dc-4cf5-4161-82f0-aa3660ff6d58', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '29032605-6c4c-4e38-8eb7-385acd43cd59', '82052c70-0a9d-4d94-873e-3b402e032f55', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '292fba88-6b2d-44ec-912b-cb9d471ced19', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '29302261-fd52-4285-a529-4996023f7e34', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '29743075-b105-4ee5-b99f-9bee36412e56', '56f643e0-a3e2-4067-84ac-334c454426f8', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '297c90b5-f95e-4913-81dc-8046471f6d54', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '299fdae7-9a23-4e3a-8345-dab3c32c6c09', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$O Mito da Les Paul Burst$$, $$Entre 1958-1960, Gibson produziu apenas cerca de 1.700 Les Paul Standard Sunburst. Hoje, uma em bom estado pode valer mais de 500.000 dólares, sendo uma das guitarras mais valiosas do mundo.$$, NULL, '2025-06-09 04:27:54.332572'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '29b22df3-66d3-4fae-b458-d412cdb3c726', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '29d28ebe-f304-47c0-af83-526652c2a112', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$Neurociência da Guitarra$$, $$Tocar guitarra ativa simultaneamente os córtices motor, auditivo e visual. Guitarristas desenvolvem conexões neurais únicas entre hemisférios, melhorando criatividade e coordenação motora fina.$$, NULL, '2025-06-09 04:31:04.663796'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2a0fdc33-de8d-4e37-a077-99ccfd3a3736', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2a12a2f9-53c2-4920-8fb8-c8894e8802b8', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2a15e420-f39b-4d5c-80ce-b46d6a325e57', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2a505de1-015b-4c4a-95c9-22f7f7c97c53', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2a6643db-2c18-48a2-b7a3-b1db071445d1', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2a6c7100-1bfd-4e28-b5d3-0d6294d7fbc0', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2aa45bdb-05b4-4f6f-aa17-71f253aa80e6', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2b792e54-ffa6-44c4-8641-c389525292e7', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Afinação em quintas$$, $$Cordas C3–G3–D4–A4; a corda C dá a cor mais grave característica.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2ba7a792-3ded-4bfd-b21e-6d31256998f8', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2ba85689-b134-4db7-b7fe-02631e8808e6', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2baf197a-16d6-47ec-b25f-e7372d243f37', '1b699036-0f72-4c48-9801-e01f6f25e165', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2bb87cca-d1b7-4574-8ef6-9545d5fe0889', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2be06f8a-ba6c-4620-a132-280004b6d85e', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2c27f313-7047-40cc-9293-4291a4d66e22', '9a5e0eac-114e-4173-90af-32b55c870675', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2c74a61b-ebd9-49bd-93c5-d4cf5376d634', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2c794186-6593-45ca-ae7a-b0ae484b3461', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2ceb9c34-a0a3-4926-9d9d-78e4bc90afa8', '56f643e0-a3e2-4067-84ac-334c454426f8', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2d0e0f67-e843-427b-a960-7d28415034d4', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2d2a0916-15ee-4e80-a5d1-199a71389029', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2d41edc5-ef6c-488d-9a0e-374b952e994e', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2d6158fb-818a-42f4-a624-98e4aac4c25f', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2d65ae5b-5cc5-4f12-8988-afd2fed517fb', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2d73a3b6-1715-4220-b4a1-ec6e5f43ef40', '6925f61b-ba48-473a-b69a-e3548036c1df', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2d7df646-cc4a-484e-9058-089701360cfd', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2e38a0a7-da0e-4595-a766-92c6ada1dc5e', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2e451fd2-99e5-42af-9e0d-5cc6081d1483', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2e48a4e1-5363-4995-95a2-8547d8a1e34a', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2e4fb8a8-087d-4f58-a487-8f36ea8cb849', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2e8dd23d-4fbc-4420-b804-5984831306ae', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2e9d8a15-cdd5-4a3d-b721-3df90fba7944', '32705505-7727-4d27-b7bd-b08e7c90c233', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2ea3d3ce-4cdd-47b3-addb-8ed139c9b498', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2eaab4d1-68e3-430a-84b1-7871a60055bb', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2ef31918-0b41-4daf-b3c9-4392a8fc33bc', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2f713edc-ca02-4a56-9675-3b686c4bf080', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2f7d1c56-4fba-4d5b-bb42-3269cf8e1bb9', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2f994c38-413e-434f-90be-3371adba4a11', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '2fdc3b9b-ca6e-4624-960e-81de82310997', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '30267363-a6f6-4844-9104-5593dc82ebf6', '6925f61b-ba48-473a-b69a-e3548036c1df', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3036eaca-c317-4759-b00a-1413f0d8ce89', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '30376ac3-8cbf-4da1-aae2-44661a5299a1', '6925f61b-ba48-473a-b69a-e3548036c1df', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '304731fb-48e9-4cd7-9832-071ca555f3ff', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3077beaa-8f28-487c-916b-9ff88179f13e', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '30fb5cd2-bc0d-480b-ae4f-533fe8dc7aef', '36040329-1aa6-428a-ad39-cd85de03493e', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3119db96-34e1-4fb0-bc19-edcdadc1e625', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '313d00fc-f05c-4a99-8a46-a4d997163e60', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '319655ad-6d78-4a0a-aec4-ed50ac95629c', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '31b94ef2-d891-47a4-a3bc-77c492950087', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '31f66f92-f4b8-44f1-8a1b-0ffcd17db2af', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '326ca59e-f00b-4d40-82d1-075e88abd8a5', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '32768335-267d-4b66-9095-10a8b74d46ee', '509d6a26-159a-4976-aa46-83f914f930aa', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '32bfe3f2-8815-46a6-914c-ebb52417dcf4', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '32c63e4a-bf89-4fe8-aded-d44353310822', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '33126594-2c4c-45b2-8b17-6e964fc074ca', '9a5e0eac-114e-4173-90af-32b55c870675', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '333f16cc-167f-4df8-9fee-e29a0bcb7f1c', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '33f14848-a831-4652-91d8-c5e5984cb116', '82052c70-0a9d-4d94-873e-3b402e032f55', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '340a2e9b-cca0-4e93-9dcd-fff8aa28e070', '6925f61b-ba48-473a-b69a-e3548036c1df', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '341e3ae2-04f6-43fc-938e-783fa628fc71', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '342b806d-9eb8-4fc6-85fc-31e5255db808', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '34c52666-00d8-404a-bd09-78655c711bae', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '355fb97f-e289-403a-a3a4-b63d1c54e5ee', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '35642ec5-6cfd-4bbb-8356-b415ec990def', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '357c93a2-bee9-415b-b0a6-4d4eb741a2ca', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '35c87ec0-383a-4717-aa19-06106aae349e', '56f643e0-a3e2-4067-84ac-334c454426f8', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '35e4fb98-9466-42de-ae58-c10dfc3c5aca', '509d6a26-159a-4976-aa46-83f914f930aa', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '35ffdb8f-907d-478e-a4f9-804b758cd4ab', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3637c2cf-a9c0-4f48-84a3-14ff702d3ef0', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '36729399-e45c-4ceb-9fd9-ae6f3b5966f5', '36040329-1aa6-428a-ad39-cd85de03493e', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '36a535bd-4f44-40e3-ad9e-d2e175182771', '492f792b-8d0c-46b7-a195-c8c32114696d', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '36e71f10-5fb5-4abc-b6c5-99a81e46078d', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '36fceb2d-d510-4ed0-ba0d-e77cb2ce0473', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3721a12b-c7e9-4bd2-8b46-1a98a94072c4', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '37265f4b-52fc-4b9b-860f-af7110175a51', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '373cc332-6edd-434b-8ba7-c700b0367f08', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '37676672-23a4-4b7b-9dfd-9f47958064e8', '36040329-1aa6-428a-ad39-cd85de03493e', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '376a6d8a-57b1-4c86-8027-171d53d1cd36', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '37b91230-7162-43c5-a612-3cb77fcde07d', '36040329-1aa6-428a-ad39-cd85de03493e', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '37c04f8a-df5f-421a-84ed-e260cc0a8bfd', '761a3318-9a5e-46f3-88f2-62159b96100c', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '37ea7b29-b893-4683-92ae-196c08ffba3c', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '37f4ed6b-2b95-4db0-adb0-72210b37dbe2', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '38a1dccf-fa50-4fc1-ac64-fceda70e8b5f', '36040329-1aa6-428a-ad39-cd85de03493e', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '38a8d38b-b929-4fe5-8f6c-7032f6d291c0', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '38b065fa-e9e3-441c-af7a-6e703bc460bb', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3907c7cb-bcf3-4d40-a5d6-7b714ec015af', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '390ff8b7-bf03-4481-8a2d-49a1d5134f15', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '393456db-65f2-44b9-b189-9c278f105c5c', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3954475f-c517-419c-95ce-e3d02eaf86af', '82052c70-0a9d-4d94-873e-3b402e032f55', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '395d9e0c-df69-4109-839b-5310bcafbcef', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '395da5ed-00a9-4907-8058-ff0dbae4b236', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3991d3e9-73da-438b-8cf5-5bf7cc5ce7a5', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3abe5c42-751d-4707-be6d-885aecf67164', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$O Maior Violão do Mundo$$, $$O maior violão funcional do mundo mede 13,29 metros de altura e foi construído na Academia de Música de Poznań, na Polônia. Ele realmente toca e produz sons graves profundos!$$, $$/images/curiosidades/maior_violao.jpg$$, '2025-06-08 01:08:19.394658'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3ac43b22-3746-4104-bc42-3f173095f489', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Vibrato$$, $$Amplitude/velocidade modulam caráter expressivo.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3adde25a-4864-44d4-8bef-7697794a0915', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3ae50f54-e8d8-48ad-9eea-49cd08ad787c', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3b0df169-6973-492d-82c0-84465ee92238', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3b16a00a-f013-468c-8539-22814cd684ff', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3b33407b-2c59-433c-9559-28c19d8f8b26', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3b8f7085-9fa2-4fca-acd8-5e9b6529d342', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3b96c275-ae20-473a-9387-70bafc795fc1', '6925f61b-ba48-473a-b69a-e3548036c1df', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3ba1e00c-7984-4c72-a254-d60be8840fd2', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3bbe4442-5705-46c4-9b56-19447f9f82d0', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3c2c1067-b1c0-4e63-bd55-148fc6bd56e1', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3c7c4562-c3d0-4b3f-8537-4e056c1b2512', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3cf4de0e-7fe9-4f82-854d-f2fab47de572', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3d18ad8b-5f16-4c2d-a7cf-e13a07b3bee2', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3d5ddaf8-54ff-42b2-990e-58657acf5dab', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3db88999-0264-4afd-bfce-65e5d36d2859', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3df30e37-c915-480a-8a80-a896cec6cb0c', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3e128227-9240-4afe-abac-f3ba55546699', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3e342702-971d-432a-a24f-b8e708be0ab8', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3ec916a9-2d48-4fbe-a91b-bcc2e572ef9c', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3ef989d2-2b20-4740-8df3-284e625efc77', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3f34cfc3-7008-4010-93f6-f7edf06477b9', '56f643e0-a3e2-4067-84ac-334c454426f8', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3f47c7c9-935c-4482-8e58-d7c1ba61736d', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3fab1c3a-e9d3-4aa6-a567-451f84208ecd', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3fb1ff1f-413b-4be6-9b7f-fff1cc6292dd', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3fe5347c-53a4-4a24-88a0-83791de5278d', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '3fe65cc2-bd66-46ee-bc0c-96c90af5a67e', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '40bffc96-85f8-47d9-902e-fb78200f8ec9', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '40c06b96-16d8-41c9-ac75-879cb95c82ac', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '40d1e87c-59fa-4b7b-93d0-4de1d1dd5627', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '40ee8140-9604-4211-8c96-14da1aa1d0cd', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '40fe3cc6-0d8e-4077-88d5-690cbc959f42', '761a3318-9a5e-46f3-88f2-62159b96100c', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4101be6f-5941-48c0-b100-65700d545e07', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '415a91d9-a87e-4ccc-b09f-9299ec7e6c72', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '418fa05f-74f0-4f8a-9a5f-957bec5bb933', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4195ab2b-3a3d-48ea-9920-5275301bae44', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '41c4dc0e-6364-4916-8159-83c2f34137f1', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '41d31d54-da48-47bf-99c1-347a6ea88594', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Função em câmara$$, $$Costuma construir vozes internas e contracantos em quartetos.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '41f0d4b0-2bd8-47c0-b5b1-281136e8569e', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '42110a94-679e-4ecc-8e10-215ad5ab52d3', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '421ab8a6-303e-489a-b522-f752e5a23817', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4236fa4e-a87e-48c8-8f93-c766d653c6c0', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '42b7fc38-5ad9-4086-ad54-43a0b5e921bc', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '42bd374e-e9af-400a-8ca7-76c9c99e8b87', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '42e0fac7-b274-4ae7-a8f4-48f0151316a4', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '42ee66e6-0810-4f88-a51b-8fc311dee571', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '432cdfb0-2a6a-4008-a3ef-53ac78eddd82', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '439dc6ca-ff49-46a5-95d0-743c7d410951', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$Mozart e o Piano$$, $$Mozart foi um dos primeiros compositores a explorar completamente o piano. Suas 32 sonatas foram fundamentais para estabelecer o piano como instrumento solista.$$, $$/images/curiosidades/mozart_piano.jpg$$, '2025-06-08 18:58:13.529143'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '43b5cfa3-400f-4688-a79e-968805e87859', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '441d4628-99b8-47e4-87f6-144612d6ff20', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '444f8460-044a-4f3e-a67b-d47d438a956f', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Repertório solo$$, $$Obras de Walton, Hindemith, Bartók ampliaram o repertório do século XX.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4471dfb4-f007-4c12-b327-694bf2b9f5bd', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '44740913-90fb-459b-b5a5-08be48fc36b6', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '44933adc-0fc8-48f6-a908-6be9599eae33', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '44a5e453-bfa0-4779-8678-aa0f8f3c3b87', '492f792b-8d0c-46b7-a195-c8c32114696d', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '44c43ba1-839e-4e45-b052-ac428e390ba1', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '44d12b47-cb09-4cae-ac24-e64f7700f7a9', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '44d5d219-5400-4f14-93b1-ef5970ea9f67', '1b699036-0f72-4c48-9801-e01f6f25e165', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '451d8f8f-67b3-49c8-86d5-6d95f23c03da', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '45437888-c359-4208-9048-2db28f3bd6a3', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '45629f7e-cea2-4498-9f12-b8da64471a6f', '56f643e0-a3e2-4067-84ac-334c454426f8', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '457f5a41-f68c-49c3-be90-f96bb8b2baea', '492f792b-8d0c-46b7-a195-c8c32114696d', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4614f18d-fb2b-4653-a891-823a4aa8ca5a', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '462469b1-eed7-4c22-bf20-fdd1614206f8', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4661156a-ca54-4512-a5fb-72d14409e553', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '46684f9f-dd57-46fa-9f92-4108feda820e', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '46fa6cc1-b624-4c93-9712-d42c4b5be3b2', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '471cd906-ed90-4b38-b36a-5d3fe6956b2a', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '476b786a-d250-4ce9-873d-76ec0f212942', '509d6a26-159a-4976-aa46-83f914f930aa', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '478297d4-4c9b-4431-8f0a-1316ccfe23d1', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4789ea33-0fc8-46b5-8c0b-b4259c9feccf', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4796f52e-83e1-4539-8f4b-ee84a02f3980', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '47bd55f9-df14-4db2-b2f7-7e3cfa946dc0', '6925f61b-ba48-473a-b69a-e3548036c1df', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '47bf39c2-79c3-45e1-bbb7-20108a4431fb', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '48333ca6-de79-4d81-baf5-e0697d75910e', '36040329-1aa6-428a-ad39-cd85de03493e', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4834048e-e935-4f18-877b-c34bc0ebff8d', '6925f61b-ba48-473a-b69a-e3548036c1df', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '48e1e5ec-8585-4681-bb0d-ecef98d68e55', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '48fef3b7-dfcb-4732-bbca-1c70ace943f5', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '494a76b6-25d7-4985-99f4-5324b902fc15', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4972b786-95a3-4820-9faf-bd81bf0d4779', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '49955c44-b2e2-4bf5-8379-a67d4aa55317', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '49bb1797-637f-4450-b4ed-6c7d1d3a9e93', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '49cdde44-8b2c-4059-8362-64eeff6b1c82', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '49e1dfea-45d3-4bbc-a572-de37251c330d', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4a00f26f-e5a8-4067-8025-dcc777b3cd23', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4a3b6c12-5c01-4eb2-9b30-ca38be8a30cf', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4a6fbaa5-a33d-4c1e-bf66-447353cef0a1', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4a88f54e-8aa9-43bf-b01e-bb5fc15217ae', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4a8d4b03-a5a0-49c2-808d-ecf148bb1550', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4a900b46-48e2-4773-b81f-cd183ff7958b', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4b18b896-8acc-44f0-abd6-1637d84394a2', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4b217e38-b470-4271-a129-fe04209506ac', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4b604456-884e-4e81-a264-f2e5c308f779', '80436b4f-15c1-452f-9442-34e42b5117e4', $$Violinos no Folk Mundial$$, $$O violino adaptou-se a diversas culturas: fiddle irlandês, violino cigano, rabeca nordestina brasileira e hardanger norueguês. Cada tradição desenvolveu técnicas e repertórios únicos.$$, NULL, '2025-06-09 03:36:30.827266'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4b82eb0e-824a-414e-80fb-fd49d637ef3d', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4b9f0ebd-04e1-450d-b1fd-752755e6c769', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4ba4ecd8-2684-4563-b2e1-04df0b266157', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4bb1c310-67b1-4b12-b8f2-a14102cc9e60', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4bdaed4e-f2dd-468f-a427-250b0cb7a624', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4be93f61-eda2-493a-bf94-997f78ab4363', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4c369236-1b26-4451-b23d-4990df94d3a7', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4c3a3530-5d39-463b-a73b-464267c6c69f', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4c72c668-9dc0-472c-9797-eea29352efc5', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4ca4216a-735f-4c40-962e-03bb970677c4', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Martelé$$, $$Ataque definido com curta sustentação.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4ce840af-fe57-43ed-9426-773c8110ab8e', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4d05c9d5-cfca-4f1f-bf29-a56891b8a5b4', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4d5fb4dc-9a19-4e59-b294-150e3527f557', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4d76c392-981a-4047-b170-0e90c54b362a', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4da0394e-7def-47fe-bd1d-12e33e817c30', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4dc2c432-3f45-4cab-9b78-77957e91efa3', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4e009a62-4169-498d-adfd-36fc6ed92e84', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4e0a1e9b-78aa-448b-9ab7-6fe702cda4ff', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4e53f392-b4ab-4abb-8e71-3ae7ad0f89ce', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4e6c40fa-63fb-4886-867b-46917028c91e', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4ec554d5-6fd5-4e67-b515-03b4491752f1', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4ed033b7-8ffc-43b2-8a2c-3482a94dc236', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4f0c5593-625b-43b9-aea3-0845e3110fb0', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4f1c25cf-3290-442c-a573-480f8b49f543', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4f3a75a4-fa5d-48bf-a75a-57b4dc9f4c0f', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4f3d6545-01fb-44f2-93dc-dc64ef8fb14b', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '4f5e8f81-5479-48b6-8085-506c297be54f', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '50095744-3ca9-4437-beb7-c96258fd2f97', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '501e2bf6-fd1a-4efb-bdb8-f064e8a70a20', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '501f9aa4-b0db-43d6-8c4c-3713fd9a9649', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '50210640-464a-4ae8-b225-a59a1ed7335f', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5029c155-1626-4472-aa0d-4a358e628db9', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '502bfe98-01ac-4b8c-a766-2f0e62e01a12', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '504092da-3547-4cb4-98b5-88f867e70fb7', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '504a1ba6-27da-4066-8ef4-01cd28d3c710', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5066ebb1-5986-483b-aec3-51362e479fb4', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5084f510-43ea-4981-829d-e183baf20b42', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '50a385cd-4148-4378-8b9d-5e959e317a7b', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '50ecb02a-c18c-4653-9991-0c1777c94086', '509d6a26-159a-4976-aa46-83f914f930aa', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '51103c37-da17-42c3-94a6-403541dab389', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '51154f57-ecd1-43f4-928c-c70b96769e3f', '761a3318-9a5e-46f3-88f2-62159b96100c', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '518d6d2f-bdd3-4f3b-a3ab-d1f9c994236e', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '51c1def5-a03a-440e-9cce-0ebe74dac85c', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '51c97452-534b-48d7-9de1-ab3bddfdc0d9', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '51e7f43b-ff0a-4d43-ab67-4db3631f9c3f', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '52001be5-d3f2-4f9a-9a39-1af04777ed64', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5205e02f-ebf0-4915-81eb-4d309f2cc397', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '52438fdf-8848-4518-b9dd-1c2ab2a914da', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '528ea2e5-a992-46f2-aca6-cef93e0feed0', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '52b45830-16e5-4dcd-b780-0cd251452321', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '52e494cc-7dea-495a-9693-10cd728bb331', '80436b4f-15c1-452f-9442-34e42b5117e4', $$Crina de Cavalo Siberiano$$, $$Os melhores arcos utilizam crina de cavalos siberianos machos, pois é mais resistente e uniforme. Um arco profissional pode ter entre 150 a 200 fios de crina.$$, NULL, '2025-06-09 03:36:30.827266'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '532287d2-f789-4fa6-a973-411b39591ad4', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '53682ce2-47ed-4ba8-b7b6-e4a60f19220e', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '53840d4d-e248-4d8e-b9f0-96d9f9bc0283', '82052c70-0a9d-4d94-873e-3b402e032f55', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '53b3d61f-abc2-49a7-93de-083ffe39b546', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '544efa9f-ee3d-4010-9040-c3efca0e9b61', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '54ab0192-6686-48e9-a611-1791a03e2048', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '54e62b1c-1515-47cb-a150-cb35f4bbb4ff', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '54ea2beb-b840-41bc-a14f-c4fd93cf61ed', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '55ae9e3f-383d-4ee7-a18a-7ac1b83120e3', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '56174149-f47f-42a6-a23e-1c121314e29d', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '561a66e9-78d3-4679-a560-f1ccef61d471', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5650f3a6-d229-4648-849e-e998e26932b9', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5665b880-f396-470e-bfe7-a7db4038c51b', '509d6a26-159a-4976-aa46-83f914f930aa', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5672d59d-fc2f-4cb0-a424-14ee2c051f0b', '1b699036-0f72-4c48-9801-e01f6f25e165', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '568e38fc-6dc3-406c-98df-cd7e0bfa182d', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '56916859-2be7-48fa-9a3e-78282af7a88d', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '57275e06-76d6-49c0-bb78-aefc99185933', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '573d2178-9468-404e-bcc5-70703656c185', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '575a9f21-47cf-46b8-bc73-84b74442d181', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '586a4687-24b1-45fd-b40b-d028760d2ae9', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '587100bf-6a6f-4e82-9938-ef703b33aa20', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '58801516-d0bd-438c-836b-87de6231dd07', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '58925d66-37c1-4222-89fc-d28eefb56315', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '58f71cbb-0ba6-400d-bdc7-8737598003eb', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$Por que 88 Teclas?$$, $$O piano moderno tem 88 teclas (52 brancas, 36 pretas) porque essa quantidade cobre praticamente toda a extensão da audição humana e da música ocidental, de A0 a C8.$$, $$/images/curiosidades/88_teclas.jpg$$, '2025-06-08 18:58:13.529143'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '58fda659-bf52-46f4-9428-080cd2577b81', '509d6a26-159a-4976-aa46-83f914f930aa', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '591768a5-3350-4f80-b075-e6ff3a04a9f2', '761a3318-9a5e-46f3-88f2-62159b96100c', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5937be2a-6da4-47fc-8c6d-7c864b38d8d8', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '59422934-2be6-42cb-b653-ae90992f6d6b', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '59cf5fb8-5bd2-414e-ba29-1e14fa94acb8', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '59f3c2a1-72d5-4ef1-9998-1f1c2f567ccb', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5a14760e-60f7-4e84-9a55-cbeafac99cfd', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5a329d75-1f1a-4dc5-8fee-3072302e4eed', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5a4def84-cccd-478a-bd89-07131940b266', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5a7ff8d0-d95e-4fa7-8e02-2a16bbb0e58f', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$Grande alcance$$, $$O clarinete possui um dos maiores alcances entre os instrumentos de sopro, ultrapassando três oitavas.$$, NULL, '2025-06-15 18:40:50.938131'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5aa9fcab-3265-4ebe-bdc0-58590c57cee3', '6925f61b-ba48-473a-b69a-e3548036c1df', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5aeb20df-8b8d-4627-ac28-a64f72719ade', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5afbc494-a445-4189-af9d-77a1190c608d', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5b0dd0c8-a41b-4b62-8c71-f2187fd7385f', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5b4bc6c3-32f9-4de0-b6c0-c6186d6cced5', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5b8e6840-cd38-4d51-b8ab-216dd5954d06', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5bf35fde-6059-484d-bdba-2a9fe0844f17', '36040329-1aa6-428a-ad39-cd85de03493e', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5c58555f-6caa-49b7-91ca-8d05c7eacb21', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5cb1576f-3902-4ef5-abe1-43c015dce8b5', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5ce8c2a5-45af-4ad8-a862-d6cf8502730c', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5d197b21-4fa2-4f57-8baa-8f92b25eb5c5', '36040329-1aa6-428a-ad39-cd85de03493e', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5d6f6d23-7414-45e8-b08c-3cada749a9f2', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5d815556-1d2c-4132-8a55-aa7329cf02ee', '492f792b-8d0c-46b7-a195-c8c32114696d', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5d830cb6-b14f-4081-b452-c3dbe45cacf1', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5d8800c1-c76b-4737-b800-705c2754f930', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5ddb5e48-c535-48b4-9e1a-9be8155279f6', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5df46267-2114-469e-805e-098f3cda3912', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5e064284-7cf9-40c6-af80-4337ad00cf69', '761a3318-9a5e-46f3-88f2-62159b96100c', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5e22b587-b2e1-4452-aa45-a4e04214ab3e', '492f792b-8d0c-46b7-a195-c8c32114696d', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5e2bd8b4-eae5-4238-9020-76ce7f7bdaf2', '82052c70-0a9d-4d94-873e-3b402e032f55', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5e5baa75-88d3-412d-bb6b-d2f7c81c05af', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5e6541e1-2500-420e-add1-8e8f3ed87aa3', '492f792b-8d0c-46b7-a195-c8c32114696d', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5ea37e65-6f7a-429e-97df-de85fe2df3a1', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5eb47fa0-89ad-41b2-8568-f5043613d720', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5f09e65f-b9cf-4b96-bef9-a3999a29fa98', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '5f654137-6875-4232-89c2-3529346abaee', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6029220a-330b-4cf9-80ea-1b28d706035c', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '602e999c-67f4-4455-9df5-786ac15674fd', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '603b30a2-f4fc-4487-95d8-dd8b10d32c84', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '604d6975-e836-454b-ad7f-2c872e194f5b', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '60672fe2-2cda-4606-8599-922c44f2ed71', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '60800413-67a6-4fce-9229-a24d7ce989b3', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '608d127b-5e6c-40f9-b205-4dcfb6f372e9', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Ricochet$$, $$Rebotes sequenciais do arco numa única arcada.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '60ab91b3-9c60-4942-8e55-1e211d8be720', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '60c6786d-212e-475a-9652-008e9a524015', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '60d7218c-8566-4634-bf89-1a279f504129', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6105545a-9a76-4e8f-842e-23e36b30c792', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '61077edc-fbc8-4b61-9420-78ddd1d2fe04', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6116aeb7-1079-4b37-a60d-8b07867ee967', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '611a2fd3-3a34-4098-a43b-d26f8a94c7a9', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '61aed5e1-ebf6-441b-9e0c-0fdbb64b4936', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '61c9ea3d-f6ab-4413-b2dc-bc103b70bba0', '492f792b-8d0c-46b7-a195-c8c32114696d', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '61f74b9b-cb0b-42f6-8a68-d45c52bbc613', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6213edfe-0ea1-483a-bbba-25ba88ddfe45', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '62252e2f-3956-4227-a569-9ceacc616491', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '62267f76-31b3-4c2b-909e-6aee4979579b', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '62378bfa-964d-4cee-81bb-5ccc506deeb3', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '62486102-34ee-4e5e-aff5-7be2d660d0cd', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6254a752-0003-48b4-8acf-7b15f91c2825', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '62f0968c-8e07-4c67-854f-e812003ed360', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '630733ad-1271-4413-bbf5-ada10376261b', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '63452e8e-14cf-4f96-9152-6ad273c9bb3f', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '63587ca1-0c2a-4343-9fd5-d0d9d8b24cf5', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '63883ef2-49ec-41aa-a106-65ac0f59a2f3', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6396602b-f23d-4f18-861f-fb4a3edd0810', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '63b636da-bee9-40fa-a4ae-cc30b9fa501b', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '63c18148-7f82-4868-8b4b-100a6ae2c1a2', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '63dfea6f-af1a-4a43-8057-789d9cb23dbc', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6423aa9d-1661-4dc3-9247-4acf53b13502', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6431513c-69ae-40f0-baca-0abda0906c5a', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '644bf663-8ea1-4b06-ab2f-24198c6c23fd', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '64565243-d33d-4633-99c0-12e1426d6248', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '646611c6-6227-493c-ac1a-d101f7a7314f', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '646c3570-b677-4603-ac58-726cf9d186fa', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '646d834b-f3c1-4de0-be4c-f3fc68fb75e2', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Luthieria tradicional$$, $$Tampo de abeto, fundo/laterais de bordo são combinações clássicas.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '64c6809b-5462-4f93-9430-ee42204851e6', '56f643e0-a3e2-4067-84ac-334c454426f8', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '64d9f0dc-6d7f-44ee-9099-c6e57a973ad1', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '64ef0eef-7d07-4a93-848c-339d3bb8b688', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '65272a64-20f1-4c4d-afa8-11cbe82b03a5', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '65367086-3677-49f0-88ea-dbb8796fc965', '9a5e0eac-114e-4173-90af-32b55c870675', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '653f5ff7-0146-4a60-a21b-46e7830a2330', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '653f8b44-0a97-42b0-965d-4f035ffc4b0f', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6584f601-1831-4d6c-a5ea-e2096291af98', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '65e59d20-fc4e-40ef-912e-ca7e03cd7403', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '65f2440b-3110-43d0-ab87-e2c5476db719', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '66112374-4ea8-4f09-b733-cea38e872b1a', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '666a8291-9cc3-4213-a5a2-322e310b040a', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6683a5b5-27ff-43c1-a976-e355d9a2acf9', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '66ab89ee-1787-42b0-bca9-8236d4d9ebd8', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '66e5e791-3813-4b6c-9550-c640a617e555', '32705505-7727-4d27-b7bd-b08e7c90c233', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '66f3a57f-384e-4af0-9c26-f3860814c486', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6703d394-ab05-4ed2-a5b6-56af30013a47', '82052c70-0a9d-4d94-873e-3b402e032f55', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6705ba83-8fef-4246-93a3-785044f8bb8d', '82052c70-0a9d-4d94-873e-3b402e032f55', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6716e379-cf96-4542-9a67-f9c99a9ad740', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '675ac0d8-9696-4f19-a0da-c29ead9e1b8a', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '678da909-e44c-4e3f-9dcc-e9340148266d', '1b699036-0f72-4c48-9801-e01f6f25e165', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '67ce52ac-fd39-48a2-94b4-7e21b67fea29', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '68249d82-7ca4-434c-9a31-a73111de62cf', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '684270d7-ea9a-4328-afc1-379e198161df', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '686c4763-6499-43ba-b686-067d4c892819', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '68c413b6-783d-4cd3-bb84-43165225ae6b', '32705505-7727-4d27-b7bd-b08e7c90c233', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '68d8df9a-6c84-4998-8e45-d15526820d74', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '68fee0d9-4be1-4e79-a785-c928d36e2594', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '69179dc9-11a9-440d-8a8e-2db325a9ee78', '1b699036-0f72-4c48-9801-e01f6f25e165', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6955e3fa-15e0-4f0b-aa5f-36f5054eb76c', '761a3318-9a5e-46f3-88f2-62159b96100c', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '69e4ff10-efb8-41e6-a870-eafba29d05c8', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6a228298-2a13-48cf-ac21-172aeb3da643', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6a30491b-04bc-4628-a46f-141461397123', '9a5e0eac-114e-4173-90af-32b55c870675', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6a48eb23-5498-469e-a011-e1d3df32719f', '1b699036-0f72-4c48-9801-e01f6f25e165', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6a66ef2f-4a63-4c2e-a138-4f3f58258f9f', '82052c70-0a9d-4d94-873e-3b402e032f55', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6aad0454-161e-4072-a67a-47952370aaf7', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6ab889c7-001b-48ea-b433-260dd92ee91d', '80436b4f-15c1-452f-9442-34e42b5117e4', $$Os Segredos de Stradivarius$$, $$Antonio Stradivarius (1644-1737) criou cerca de 1.100 instrumentos, dos quais aproximadamente 650 sobrevivem até hoje. O segredo de seu verniz e a qualidade superior da madeira utilizada ainda intrigam cientistas e luthiers modernos.$$, NULL, '2025-06-09 03:36:30.827266'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6ae1690c-024e-4620-9037-5aa777543ca6', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6ae3a2c7-04bd-47b8-b5b5-6e32cf0b7f52', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6aec733d-5dab-417f-b0ff-0f753677f1ed', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6b5c7c24-2245-4b40-97be-5d879d9df6b5', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6b82fc45-4d0b-49f9-8a50-9e12859b3885', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6bbf7bac-fd22-493c-bfe8-33d8dd42dcf4', '509d6a26-159a-4976-aa46-83f914f930aa', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6bda1b95-9fa3-4978-9163-f915bc3525c2', '80436b4f-15c1-452f-9442-34e42b5117e4', $$Violinos no Folk Mundial$$, $$O violino adaptou-se a diversas culturas: fiddle irlandês, violino cigano, rabeca nordestina brasileira e hardanger norueguês. Cada tradição desenvolveu técnicas e repertórios únicos.$$, NULL, '2025-06-09 03:42:40.336695'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6c6236cb-a8c4-4886-afdb-866e206b7b5e', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6c94c4c1-4721-430c-a3d7-bda872a48262', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6d24f3fa-baf5-4b14-b860-e27381bfe16d', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6d4e125a-cf93-4c42-8dc4-7beccdbb8490', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6d51f044-fbbc-4a0e-98ee-c2c8f7adb3bb', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6d5682cf-037a-457e-9715-8dca13a5c612', '492f792b-8d0c-46b7-a195-c8c32114696d', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6d588546-4479-4a5e-aa08-95a193e19867', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6d5cbf7f-e027-419f-bc0b-c9ff6fc1fef7', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$A Revolução da Fender$$, $$Leo Fender, que nunca aprendeu a tocar guitarra, revolucionou o instrumento criando a Telecaster (1950) e Stratocaster (1954). Sua abordagem de engenheiro mudou para sempre o som da música popular.$$, NULL, '2025-06-09 04:27:54.332572'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6d9eb31e-b79a-49d0-8e8f-f052311d37af', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6dbff354-7739-4699-8e31-5641561f30a5', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6dcf0f43-fa96-4b46-8c41-cff25644b550', '509d6a26-159a-4976-aa46-83f914f930aa', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6dddab68-df6b-4b76-99e4-e964760de562', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6e242131-30e5-4d7f-9e7b-f6bfc38d6adc', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6e26123b-6043-48c8-8b5d-67aac29d5fec', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6e39e14a-6160-4a29-8b9b-6d6f1c4c1e7a', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6eff083f-6567-495b-915e-b4200be4e41b', '761a3318-9a5e-46f3-88f2-62159b96100c', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6f28f592-630e-460e-b396-40d3bfa2bd71', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6f3d9d6f-88f1-4b3b-981c-97f2617df55a', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6f56bdf4-3cf3-4d9f-93c2-cd69c13d6ea0', '82052c70-0a9d-4d94-873e-3b402e032f55', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6f79eb3c-f033-4dbf-acda-14a064b254f9', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6f81bd96-94f9-45ad-95f1-b0ef37d079f0', '56f643e0-a3e2-4067-84ac-334c454426f8', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6f937652-434f-426a-96af-16517bc1cb45', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6fd052e9-ad20-4a25-ad3d-3b1864a4da2d', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '6fd40e3c-e9e7-41fd-9354-3bd311d6e915', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '705276d6-8b94-4227-9ac9-bbc05a948eed', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7068b9cf-e95b-4317-8cfa-34dca0dae9d7', '56f643e0-a3e2-4067-84ac-334c454426f8', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '70814d37-6726-41fd-873b-528ecfc71815', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '70b66a32-1b69-4054-b394-4d291f4aef9a', '80436b4f-15c1-452f-9442-34e42b5117e4', $$Frequências do Violino$$, $$O violino pode produzir frequências de 196 Hz (Sol grave) até mais de 3.000 Hz nas posições mais agudas, cobrindo quase quatro oitavas de extensão sonora.$$, NULL, '2025-06-09 03:42:40.336695'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '70fbd17a-228a-48d9-b731-e87daed9fddd', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$A Física do Bend$$, $$Ao fazer um bend, você aumenta a tensão da corda, elevando sua afinação. Um bend de tom inteiro na corda Si (12ª casa) requer cerca de 3-4 libras de força e eleva a nota em 200 cents.$$, NULL, '2025-06-09 04:27:54.332572'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '715d7fd0-0211-419f-b3d5-0d0ff0a9fec3', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7172f9be-4907-4127-8911-9df295bebcbf', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '722c860e-ee68-4837-96ec-a9f25bf75b9e', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7275539a-5b41-4651-8b6c-94fa31cee27b', '1b699036-0f72-4c48-9801-e01f6f25e165', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '729091e6-2c21-44c1-819e-36beb0bc5737', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '72a27576-7020-4a49-a291-a76686270299', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$Pickups e Magnetismo$$, $$Os pickups captam as vibrações das cordas através de campos magnéticos. Single coils têm som mais brilhante mas captam interferências, enquanto humbuckers cancelam ruídos mas têm som mais encorpado.$$, NULL, '2025-06-09 04:27:54.332572'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '72b5351e-8da6-4694-8ffd-237728729bd5', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '72f9a1c1-7db9-42a2-afd0-34c656b996d2', '761a3318-9a5e-46f3-88f2-62159b96100c', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '72ff86e5-a250-456c-8761-d88f8d0f6d04', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$Madeiras e Timbre$$, $$O corpo de alder produz som equilibrado, mogno é mais quente e escuro, enquanto ash é mais brilhante. O braço de maple é mais atacado, já o rosewood é mais suave e quente.$$, NULL, '2025-06-09 04:27:54.332572'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '73239b57-3164-4fc4-8d28-cf0fbaf97e5c', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '738813a2-d30e-4deb-9061-d6cf4e12356b', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '739f1f1c-3090-49c3-8dc3-f330f1a8d78d', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '73ac777d-7d61-4699-9838-e3a8e965f538', '80436b4f-15c1-452f-9442-34e42b5117e4', $$Neurociência e Violino$$, $$Estudos mostram que tocar violino desenvolve significativamente o córtex motor, aumenta a conectividade entre hemisférios cerebrais e melhora a coordenação motora fina e a memória auditiva.$$, NULL, '2025-06-09 03:36:30.827266'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '73f7430a-54ee-4fd7-90bf-53e4516d5e51', '56f643e0-a3e2-4067-84ac-334c454426f8', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '744cbb13-8f2f-45aa-8ac4-cf2ab84c2460', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7459530b-9b7c-4ec2-8160-2f0966a1385e', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '74705277-4660-4e99-b52d-852887c9b698', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '74b8850f-6c75-4baf-8581-08acc3818d49', '6925f61b-ba48-473a-b69a-e3548036c1df', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '74e2872f-6d67-4f37-9931-b0ef531ba6b1', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$O Piano Mais Caro do Mundo$$, $$O Steinway Z de John Lennon foi vendido por 2,1 milhões de dólares em 2000. Neste piano, Lennon compôs "Imagine" e outras canções dos Beatles.$$, $$/images/curiosidades/lennon_piano.jpg$$, '2025-06-08 18:58:13.529143'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '751f79c0-0b05-4796-adda-3cbab4c0d566', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '753feb05-858b-47a3-8440-d7031cb255c5', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '755ff595-41d4-4092-8d96-e58737273350', '761a3318-9a5e-46f3-88f2-62159b96100c', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '756418d1-573b-4e53-87df-55d908ec9a77', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '758e2d18-8b7d-4e07-913e-f209fd0a9056', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '75a52233-43b4-4339-a30e-9105e951cbf0', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '75da5cf3-0ea2-49d6-b0da-6204f4f8bc22', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '75e30070-54c2-49c9-80ef-de84d240bc84', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '762d206b-f181-4370-b5f2-27a03a6d2015', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '76385e7d-2a3c-435a-b104-455397dfe526', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7673479c-eaa4-457a-9461-ff76b1e57e7a', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '76a245db-916a-4f8d-bf2c-52531ab3435f', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '76d51623-c6fa-4308-ad96-9cbe4df77472', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '76f52ed4-11d8-447d-8877-d17a1889d81e', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '77904af1-cb0a-4e61-850e-ab182c179ae4', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '780e62fa-3fff-4c0c-9b00-9f2063a5a8d3', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '781ce7b8-29bb-4211-a5af-cc02b2ab564d', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '784647eb-e07d-4118-9ace-573a48d49c1f', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '78566e82-343b-40d5-a55e-f9d4830c1c50', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7868c7ec-eb25-45d0-b5ef-42edd095bb4d', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '786e066b-ca54-4cc9-8768-b38295277620', '1b699036-0f72-4c48-9801-e01f6f25e165', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '78cce5dd-db1e-42ad-8e20-76e2b060f835', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '78d78710-a887-46e3-9722-81cee01e90c3', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '78e833bd-3518-4c8f-a19c-35f0d7399c82', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '793960f1-2fbd-434f-9785-9baf1d5db06a', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '798fc9a3-9b91-4412-8ba5-548f00202682', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '79996e42-f7e1-4c17-8bd3-08d84152e690', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$A Revolução da Fender$$, $$Leo Fender, que nunca aprendeu a tocar guitarra, revolucionou o instrumento criando a Telecaster (1950) e Stratocaster (1954). Sua abordagem de engenheiro mudou para sempre o som da música popular.$$, NULL, '2025-06-09 04:31:04.663796'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '79a9abdb-41f8-4a4e-8936-9694160c78e2', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '79aabfa5-c6e5-4686-a63f-a26d46d20034', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7a069095-2b31-497a-b5ba-fdc620c55b41', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7a3c86c6-025e-4652-a06e-499723b9464d', '82052c70-0a9d-4d94-873e-3b402e032f55', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7a3d5f95-cb6c-4d1c-9c58-0eba46654d18', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7a411f30-c6cb-4338-9ee5-f8efda598bfe', '1b699036-0f72-4c48-9801-e01f6f25e165', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7aae6433-3b30-4d88-9d75-acd8444bc8f8', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7ab07fed-7025-40ec-a318-66fa22277e71', '36040329-1aa6-428a-ad39-cd85de03493e', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7ab4ee9f-a1b9-4c6b-abcd-f20b5fe76692', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7ac3a309-4a24-4e24-8515-92e3f8cd881c', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7ae4ddf3-4762-4fec-8b28-a9921c71b4a0', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7affed87-6419-486b-bff6-dab5702376e0', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7b68c780-a718-4902-9c8d-2ce2e8d8b3b1', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7bb35b35-1cae-40d8-b967-6789e48b08c2', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$Guitarra e Rebelião$$, $$A guitarra elétrica tornou-se símbolo de rebelião juvenil nos anos 50-60. Chuck Berry, Elvis e depois os Beatles usaram o instrumento para desafiar convenções sociais e musicais da época.$$, NULL, '2025-06-09 04:27:54.332572'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7bc5d332-b20d-459b-a042-eacdbd3d22ec', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7c1e60e3-bd37-47e0-bba7-9b478a2002b4', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7c7bfbbd-6125-4282-8bcd-8914e3eb256b', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7c87366a-a5bb-4218-b959-6a5a303845d8', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7cd05198-8329-441a-a792-2c2cffb8a531', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7d262a1f-bbda-4ed4-a6e3-fc353cf33031', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7d318909-d77e-48a4-9fa5-61cc16ff8bf8', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7d4263d2-e732-46ea-88f2-dfc7fdab3210', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7d440053-4751-451a-be16-b175c4f6e608', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7d850206-11b1-4f0e-9175-d857859388ad', '509d6a26-159a-4976-aa46-83f914f930aa', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7d871506-82ff-4802-a436-fb8716a8fb4c', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7dc73e1c-3e78-41bc-ae70-96665e533f0d', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7e00c106-c04e-4553-84c3-0789a5ce75ca', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7e257ec2-fa8b-4110-aca1-509791376686', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7ea79c7a-fe49-44c0-a766-49b331b47e72', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7ec27705-6656-4ca7-a8a9-6d8d6903b16a', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7f01c644-3afe-4399-9669-acd970d54af9', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7f35ab7f-dacf-4c52-bf9b-ce1b3d8a0bab', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '7f704cd9-3e7d-4881-9438-ea312a5e75c0', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '800b8cc3-5f39-4101-84a0-190ff8ce0878', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$O Violão Mais Caro do Mundo$$, $$O violão mais caro já vendido foi um Martin D-45 de 1968 que pertenceu a Johnny Cash, vendido por 135.000 dólares em leilão. Violões vintage de luthiers famosos podem valer mais que carros de luxo!$$, $$/images/curiosidades/violao_caro.jpg$$, '2025-06-08 01:08:19.394658'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '80196cc2-78e7-433e-86d1-ffd189c29d60', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '806e0bb1-94e6-4a71-a402-498f210bbc25', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '807e4bd2-b488-44e5-bb09-17d9877ed38e', '1b699036-0f72-4c48-9801-e01f6f25e165', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '80c12468-cb56-4b24-840c-aee2303fa1f5', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '81050f59-777d-4bf6-8876-1887cfc639f7', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '816892b8-50f3-442f-91f6-6acdd5508479', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '81ab634f-779c-4ce0-b684-14edffae5194', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Evolução histórica$$, $$Consolidação do papel de “voz média” na Renascença/Barroco.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '81abaf66-9d1c-4be7-9b4c-33b531528118', '82052c70-0a9d-4d94-873e-3b402e032f55', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '81b85bbd-8c8a-4778-abec-f9b73cee3f09', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '81f5c913-96ac-4c98-b5da-09324e21b479', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '824e325c-bcd1-4b2d-8fab-ec378b9ce416', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8262753a-ccde-401a-9b6d-436a56019853', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8284cd60-c3f6-4f7e-9b98-11a70c1329a9', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '82aadcd3-c57f-4f3b-8123-6709dee4057f', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '82b32aaf-fa7a-4477-bb97-fc940a13ed83', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '82b917bf-5d9c-4184-aac9-56490393c252', '80436b4f-15c1-452f-9442-34e42b5117e4', $$Os Segredos de Stradivarius$$, $$Antonio Stradivarius (1644-1737) criou cerca de 1.100 instrumentos, dos quais aproximadamente 650 sobrevivem até hoje. O segredo de seu verniz e a qualidade superior da madeira utilizada ainda intrigam cientistas e luthiers modernos.$$, NULL, '2025-06-09 03:42:40.336695'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8312d4b5-c957-4026-9c02-8c5f0ba4f52a', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8374f7b1-508b-4731-8e4e-57cf043d6fe6', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8397ddbd-2d1c-4d7f-8ae2-3cec1ea03766', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '83c61c8e-c2d0-4a0f-83d2-65e0cfbc00f1', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '83e28635-f16b-4ec6-926b-54a08df8b9bf', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '841b2875-4b1b-49b4-a60e-66ff66fef2a1', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$O Piano Mais Longo$$, $$O maior piano do mundo é um Challen Concert Grand de 1935, medindo 3,55 metros de comprimento e pesando mais de 1 tonelada.$$, $$/images/curiosidades/maior_piano.jpg$$, '2025-06-08 18:58:13.529143'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '844e3d99-eef6-42fe-831f-e7bea1c608f4', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '846de778-2bdf-4ae5-9b5b-30fa5503bb93', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8477aa4c-6776-4efe-9ff4-f0422672a324', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '84784a47-532f-4d73-be1c-3d0438f22c03', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '84aa92a2-1226-40f8-8b3f-750820e0ab72', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '84d8bb58-e5fb-4864-a120-6a3b67e40974', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '852c49b4-85ad-4215-b95a-112c10d853c2', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '85422526-6730-45b2-94e5-f81131ce19ce', '9a5e0eac-114e-4173-90af-32b55c870675', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '857f4e7d-a282-4105-ae76-dc980e945fe7', '56f643e0-a3e2-4067-84ac-334c454426f8', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '85a422ed-b587-46d3-93d3-f41bdd9f2ad2', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '85dd4f60-b6dd-4884-acb8-6f7b05110a28', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '860b89d6-09b8-466e-945f-f7a27f0161f1', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '864cf81b-dd98-46cb-85ce-38f8f26962bd', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '866718aa-191c-4bc6-b098-a9435212924a', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8681e665-a103-4334-998b-8d5b2f90127c', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '86bd2148-fdbd-42a8-9874-ea9bca1d5992', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '86c74f34-8736-4959-bcfa-e9575a76d9f2', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '86df05ce-82fd-4111-a0cd-654599c1a3b8', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '87003d30-b452-4b55-939e-2d88d1530b1d', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '87041e32-b2a9-4768-a1e8-37d88d1f1905', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8766bedf-9eaf-4f98-86b0-c20221a5aaa2', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '87a3ac1c-1952-4436-9f1a-4b5ffe150904', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '87b9aa19-6676-46ce-a28e-60fdf4479629', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '87d5143a-cf9e-4469-8e4e-7be848ef9ffd', '82052c70-0a9d-4d94-873e-3b402e032f55', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '87ec6280-952e-42ea-a350-694ded7aa7da', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '880e8400-e29b-41d4-a716-446655550001', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Primeira Bateria do Mundo$$, $$A primeira bateria completa foi montada em 1918 por William Ludwig em Chicago$$, NULL, '2025-06-09 03:01:59.3811'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '880e8400-e29b-41d4-a716-446655550002', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Recorde de Velocidade$$, $$Buddy Rich conseguia tocar rufos de 32 notas por segundo$$, NULL, '2025-06-09 03:01:59.3811'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '880e8400-e29b-41d4-a716-446655550003', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Maior Kit de Bateria$$, $$Terry Bozzio possui o kit com mais de 100 peças funcionais$$, NULL, '2025-06-09 03:01:59.3811'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '880e8400-e29b-41d4-a716-446655550004', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Coordenação Cerebral$$, $$A bateria desenvolve conexões únicas entre hemisférios cerebrais$$, NULL, '2025-06-09 03:01:59.3811'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '880e8400-e29b-41d4-a716-446655550005', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Origem do Nome$$, $$Drum set surgiu porque eram vários instrumentos setados juntos$$, NULL, '2025-06-09 03:01:59.3811'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '880e8400-e29b-41d4-a716-446655550006', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Segredo do Groove$$, $$Bons bateristas tocam 5-10ms atrasados criando o groove natural$$, NULL, '2025-06-09 03:01:59.3811'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '880e8400-e29b-41d4-a716-446655550007', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Bonham e o Som$$, $$John Bonham revolucionou o som do bumbo nos anos 70$$, NULL, '2025-06-09 03:01:59.3811'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '880e8400-e29b-41d4-a716-446655550008', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Quatro Membros$$, $$Único instrumento que usa os quatro membros simultaneamente$$, NULL, '2025-06-09 03:01:59.3811'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '880e8400-e29b-41d4-a716-446655550009', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Kit do Neil Peart$$, $$Neil Peart do Rush tinha kits com mais de 40 peças$$, NULL, '2025-06-09 03:01:59.3811'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '880e8400-e29b-41d4-a716-446655550010', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Pedal Ludwig$$, $$O pedal de bumbo foi inventado em 1909 por William Ludwig$$, NULL, '2025-06-09 03:01:59.3811'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '88100ded-7d61-4d8e-8bbe-15d39d828b15', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '88539d89-7ab8-4143-ada1-b40410d42e0b', '32705505-7727-4d27-b7bd-b08e7c90c233', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '895e7353-4719-4458-827b-e3f7cf45ce26', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '89c765d5-b0c7-4da7-b6bf-589b49e96745', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '89d555c8-8b75-4321-911c-a15096927f46', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '89fa9c46-21ce-4ec0-a79a-37c812e81bd0', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8a2f1423-7330-40e1-b590-01f0e7aa233b', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8a342d25-ab84-4d23-a885-0591e2f4403e', '6925f61b-ba48-473a-b69a-e3548036c1df', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8a4bc97a-ae65-4252-899a-6dedf1d670c3', '82052c70-0a9d-4d94-873e-3b402e032f55', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8a5d6939-aea7-4135-8cd1-4a6303b7b9bc', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8a7adb87-56a2-4aad-9e80-1a35f9da5e66', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8a8f2f86-74d5-465a-a0f0-d4e8b8b4d81f', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8a95f8e9-c197-4576-a73d-71f74b61a29d', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8ad86e61-07ad-4f02-923c-1695e7b9a222', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8af45b88-ea64-426a-9bb8-7a49f529b0f8', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8b986395-e279-43a0-9c38-469391c85b24', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8b9a74ed-b0fe-4311-bfe6-00098686193e', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$Piano vs. Forte$$, $$O piano pode produzir cerca de 5-7 níveis dinâmicos distintos, desde pianissimo (pp) até fortissimo (ff), graças ao sistema de martelos de Cristofori.$$, $$/images/curiosidades/dinamicas_piano.jpg$$, '2025-06-08 18:58:13.529143'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8bc8260f-f734-4565-a7ef-3cd05d892f7a', '9a5e0eac-114e-4173-90af-32b55c870675', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8bf9c0b3-8832-460a-b552-dc125f45db52', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8cbf7357-ea9a-4fc3-b38e-fec8effb1284', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8ccaef83-877d-43bd-9ba5-051d26da470a', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8cdad767-8397-4b20-b360-7969d843a41e', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8cfceaa0-877c-433f-9dd0-49268ca29fc6', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8d0bbabc-ffd6-47b9-b790-f4f620fb36d5', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8d600779-9e04-4bf9-a2aa-c843556de8da', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8dec7b3b-06f9-47ee-a17f-23a88d02eb1f', '1b699036-0f72-4c48-9801-e01f6f25e165', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8e05a739-fb5b-4cbe-9de1-e629bd1bd6f9', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8e5151ad-a778-4a43-9027-6fa4b2c6f6ef', '32705505-7727-4d27-b7bd-b08e7c90c233', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8e5c89f0-4da8-4c03-9ed8-3a3aa3256daf', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8e6fef23-f96a-4549-8ff7-1a9b4bc323f9', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8e918efb-f682-4e3f-8707-144bc86255bc', '761a3318-9a5e-46f3-88f2-62159b96100c', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8f0bcfd0-290d-4904-9b8b-fd188f042692', '9a5e0eac-114e-4173-90af-32b55c870675', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '8f38145a-38b6-4ecf-8f90-9aa48d8beda8', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '903f3835-8357-4237-845c-3f46b6c33a11', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '90401e52-8427-4461-b454-94bf8a82dcd4', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '908a442e-9d49-437c-9549-ff338c0cd639', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '90bb2806-b524-477d-8bbe-45bd8cc0a24a', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '90d27968-a030-43f5-a27b-26b6fbd5dc03', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '91129bab-59eb-43ab-a797-e0d12ccd8d4d', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9147f498-0e23-4b4c-a775-37c61d37f79a', '32705505-7727-4d27-b7bd-b08e7c90c233', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '915f6e61-f2d1-4f87-8482-9b5ec83d4b0e', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '92752061-12bb-4216-84ab-d2580b7c2560', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '92bf3100-7253-4ba4-bf3e-81e764955cb8', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '92f19970-8f18-4d42-97bf-74f7a246e0af', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '92f9979d-d110-4f9c-a1b0-e2c715a88d15', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '93504fe9-eb95-4f64-87fe-f2eac2333f53', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '93517fd0-eab8-463e-8c6e-0bac516db242', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '93547823-fb9d-40e4-9913-6b403fd969f6', '761a3318-9a5e-46f3-88f2-62159b96100c', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '93691236-a891-4f7f-96b4-969927699e34', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '936b847f-29ef-4fd0-b3f7-a71358253b94', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '93962fde-ca5f-41bd-866d-1d8609826083', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '93bd7055-1a98-4d08-8ea5-0ac43a28839a', '32705505-7727-4d27-b7bd-b08e7c90c233', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '93c4ffc1-8aa0-4213-8c6c-aa4454ac5b20', '509d6a26-159a-4976-aa46-83f914f930aa', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '94440e64-87d8-4052-851f-f6fe55ab28d5', '80436b4f-15c1-452f-9442-34e42b5117e4', $$O Violino no Cinema$$, $$A trilha sonora de "A Lista de Schindler" de John Williams, tocada por Itzhak Perlman, é considerada uma das performances de violino mais emocionantes do cinema, ganhando Oscar de Melhor Trilha Sonora.$$, NULL, '2025-06-09 03:42:40.336695'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9471ec94-38f5-4195-808c-2a3e45e67b0e', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '94d50034-ec0b-4776-8483-1b401c15c72a', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '951ef9bb-8dbd-4a18-8b5e-34cbac293de4', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$A Física do Bend$$, $$Ao fazer um bend, você aumenta a tensão da corda, elevando sua afinação. Um bend de tom inteiro na corda Si (12ª casa) requer cerca de 3-4 libras de força e eleva a nota em 200 cents.$$, NULL, '2025-06-09 04:31:04.663796'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '953783fa-ece6-4735-8f6f-e0cadb09d844', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '955783e0-375c-4529-8542-92c3c02427fc', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '956d3aa1-27af-47be-b711-0065596afe81', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9571fa4e-a2f6-4ca1-8143-dafa5bd7bd7a', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '95b47179-a017-4f53-b066-6d5f6c2a1314', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '95c05f42-023a-45fc-93fc-e3d88d4d0ac2', '36040329-1aa6-428a-ad39-cd85de03493e', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '96711956-0cc2-411f-8adb-bd0c1c4778a3', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '96aa96eb-f217-4d84-b686-8154a217c1f4', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '96baee2a-306e-4285-af0a-0e933b69c371', '9a5e0eac-114e-4173-90af-32b55c870675', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '96c7a1d5-bae6-4265-ab23-38ce49b6a526', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '96e1f65c-cafc-402c-a2f5-6519fb717e3c', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '970a2ea1-3121-4ae8-aa82-c40e59f5de65', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9763bb28-9ac4-49e9-9ec5-e0b5427b52be', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9768d60a-bfdd-4bf2-9ecc-3d1beb196787', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '978a8315-f119-4603-97a0-871113ba6077', '509d6a26-159a-4976-aa46-83f914f930aa', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '97a7af8d-93b2-46f2-be31-c3b93bd3c9a5', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '97bd869f-a754-4385-8db3-ff2bb20870b4', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '97bfcfbe-b809-4582-9d0c-45e3bf2b0928', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '97dd4393-dd83-4e55-8d9f-9a118c675e34', '509d6a26-159a-4976-aa46-83f914f930aa', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '97ed8bf2-4cbb-4bc5-91d3-fb5756cdadd8', '80436b4f-15c1-452f-9442-34e42b5117e4', $$Madeira e Ressonância$$, $$O abeto usado no tampo harmônico tem densidade específica que permite vibração ótima. Cientistas descobriram que a madeira de violinos antigos passou por um processo de envelhecimento que modificou sua estrutura molecular.$$, NULL, '2025-06-09 03:36:30.827266'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9801ec31-46de-4811-9fa6-89bd9329a930', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '987e67dc-25d4-4147-ba6d-ee1fa5af2c20', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$Mozart e o clarinete$$, $$Mozart foi um dos primeiros grandes compositores a destacar o clarinete em suas obras.$$, NULL, '2025-06-15 18:40:50.938131'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '989b89a4-4a4c-4cad-8efd-60b0ded8f32e', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '99406651-5ee5-43fe-869b-1b2ae44d5fd5', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9944cdc3-42a2-4928-950c-754b5ddbf3fc', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '994c0de7-2747-46fc-b3f0-9a6aca698ffd', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9956c171-8f59-4e8d-9c84-922e5567f71d', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '99aaa753-8f7e-4280-ae71-45fd4c4d0900', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '99e5920b-ea0e-433a-801b-b6ad7f2ec15a', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '99f6b9dd-3b35-45b6-9566-7fd8eaaa3d48', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9a23014e-9f20-4532-8053-3eb7f5906cbd', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9a42de83-30db-47bd-9950-a6d1efb5accd', '492f792b-8d0c-46b7-a195-c8c32114696d', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9a9fd09a-437f-4d8f-87d9-08faeeb107b4', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9ae32dc2-0735-418e-9a02-4dc760400edb', '32705505-7727-4d27-b7bd-b08e7c90c233', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9aebe36e-0c8f-4dc6-aaf5-91ec47a9e520', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9b20a995-3e99-47e1-ac70-b3f6a287fdbf', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9b6c7bbd-09d7-475c-84ca-f952f912eedc', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9ba1897f-a4fc-47d2-92ab-b14d2fca5b97', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9c28b802-f8ef-4143-9b46-c77c3498de2b', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9c2f4466-bdc9-4ac3-a461-5dc9c2d48c02', '1b699036-0f72-4c48-9801-e01f6f25e165', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9c302ea7-2f74-4877-80ac-ffdd659cb56d', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9c80d5d1-e7d7-4529-8da5-a26580c303bc', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$Hendrix e a Stratocaster Invertida$$, $$Jimi Hendrix tocava uma Stratocaster para destros de cabeça para baixo por ser canhoto. Isso criava um som único devido à posição invertida dos pickups e das cordas.$$, NULL, '2025-06-09 04:31:04.663796'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9c83ed74-561a-4140-a17f-f79f73d63c70', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9cae7c0c-da1f-409f-ac77-5141563d73b7', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9cd137a1-fa1c-4c6a-b134-0b22c63da166', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9cd69086-8cba-4c00-9da4-8127a57b90a5', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9e16594a-6e67-49ad-9845-0aa8cab0603d', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$Neurociência da Guitarra$$, $$Tocar guitarra ativa simultaneamente os córtices motor, auditivo e visual. Guitarristas desenvolvem conexões neurais únicas entre hemisférios, melhorando criatividade e coordenação motora fina.$$, NULL, '2025-06-09 04:27:54.332572'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9e704f9b-8548-4d4c-9ba2-c17a4b1beb50', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9e70a0fe-940d-4143-b05b-3341a9c4a2ef', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9ea11966-30a4-4e81-97ed-e312e0f5ab60', '80436b4f-15c1-452f-9442-34e42b5117e4', $$Crina de Cavalo Siberiano$$, $$Os melhores arcos utilizam crina de cavalos siberianos machos, pois é mais resistente e uniforme. Um arco profissional pode ter entre 150 a 200 fios de crina.$$, NULL, '2025-06-09 03:42:40.336695'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9eab94a7-36c0-4143-97df-a4766c67042e', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9ed90f4e-4b58-48d4-b362-e5676699576b', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Queixeira e ombreira$$, $$Ajustes de ergonomia impactam postura e liberdade do arco.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9f5f77c3-8863-444d-b9a6-512c6201ce02', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9f8a7c56-7d0e-4368-981a-1156aa68fe8b', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9f9bbea7-5a9a-45cd-817b-359f40bad4e6', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', '9fb415cb-ae9d-417b-9f0c-00c41016cfb4', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a04320d9-4515-42c2-8da1-c2a486a564c7', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a085313c-9665-461b-97aa-bbc43f49a774', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a08c6a49-02df-4d98-bf91-f7ac1e8b91ed', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$Hendrix e a Stratocaster Invertida$$, $$Jimi Hendrix tocava uma Stratocaster para destros de cabeça para baixo por ser canhoto. Isso criava um som único devido à posição invertida dos pickups e das cordas.$$, NULL, '2025-06-09 04:27:54.332572'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a0cab77c-a0be-4e96-b1ab-b29b3ae8bef5', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a1019bd7-d78f-419c-9be9-4406107720ed', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a1096225-66d2-46b7-96d1-c3a62eb214cc', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a146617d-ec1a-4b2a-85f1-305fdd108381', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a14c3875-d90d-4ec6-85bf-50194e4dc647', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a1e28832-e2eb-4cd4-b60e-94b3a6ab2b28', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Diferença para o violino$$, $$A viola é ligeiramente maior e soa uma quinta abaixo do violino.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a214c545-125c-4506-9b5d-1754f6f897e8', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a2226318-259d-40e8-aa81-29f559e8cdcd', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a2a95146-a69a-4f36-9e98-4c6f64325929', '32705505-7727-4d27-b7bd-b08e7c90c233', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a2d9d1be-e91d-4bcf-a4f3-c2a66e7ba302', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a300968b-8ca2-491d-8fd0-b8bda1ae29f4', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a33b1be9-2d17-4b12-966d-98de550f7a8d', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a3f0df1e-0e04-4979-9c10-5ed54581ab90', '492f792b-8d0c-46b7-a195-c8c32114696d', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a3fbac9c-ac43-4771-8b09-8308db3db81e', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a40fa39b-f7d5-42c8-9109-b45c290082ae', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a4b05399-c65a-44fb-90da-e3d387ce7a2b', '6925f61b-ba48-473a-b69a-e3548036c1df', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a52156c2-012d-4c66-a2de-2554ef9dbc90', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Surdinas$$, $$Modelos metálicos alteram mais o timbre que as de borracha.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a58cf376-b349-4516-bfa5-417a73a07cc3', '32705505-7727-4d27-b7bd-b08e7c90c233', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a5bf68e6-1e08-4292-bade-cfd7339d98b0', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a5ce1f4e-5604-447a-baf9-3f7bafe3a58a', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a62a42cc-3d60-4d9f-ab87-4d740d1a4d3c', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a69256b4-ed91-4b0c-9fc7-72772b2d7a55', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a6ac452e-9440-42cd-aefc-e734880b310e', '761a3318-9a5e-46f3-88f2-62159b96100c', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a6fdfc7c-4d5b-4b6c-88ed-3b519ab4674b', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a7831f12-8d37-4617-bf47-30e4753f1f09', '32705505-7727-4d27-b7bd-b08e7c90c233', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a783e12a-b726-4c2b-b00f-776131b0ac00', '509d6a26-159a-4976-aa46-83f914f930aa', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a78fd3e5-632b-4b44-bea7-9647f6d0982a', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a79106ca-46ca-4e71-a713-b2fff6ec566d', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a7d4576d-af73-4d48-a7c2-f41ca7a102c4', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a7e737f7-34c2-4fb5-9347-10493cca83e7', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a7f84a52-3919-47ef-94f2-28e9208c902d', '9a5e0eac-114e-4173-90af-32b55c870675', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a831c2d7-afe2-4fc2-8d9a-82776c21f558', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a873e5ff-f469-42d8-9355-af7a6a52e8d3', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a8c3db3b-25d0-4645-9f3f-035716c27372', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a8ddd75f-dfb6-467e-adb2-d25a2cb0b533', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a9629545-b3cd-40c1-b09f-c520a42c64b7', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a9869053-6c26-4341-a5ab-ed96ccfd657b', '36040329-1aa6-428a-ad39-cd85de03493e', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a9a43d88-c0ad-4da1-8ffb-d16bbee5137b', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a9d4bbb5-c926-4c3c-a77e-d89a9a7eb80e', '761a3318-9a5e-46f3-88f2-62159b96100c', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'aa30c9c4-b1c8-4f50-afbd-a789b592fb85', '6925f61b-ba48-473a-b69a-e3548036c1df', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'aa366070-24a7-467e-a0c0-cb9bf3c74267', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'aa4cc44b-5d8b-423b-9342-25986e949fbd', '36040329-1aa6-428a-ad39-cd85de03493e', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ab0c3a45-175a-4f64-9d99-afc7db7cafb9', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ab1a8d6f-85bc-465f-b813-5f649378db6c', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ab44eeed-eb97-4ebc-8802-74e24afe3b2d', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'abcbe6cd-2adf-4512-a17d-11da8731d3f6', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ac0927d1-b491-421b-9769-b20afb6df85b', '509d6a26-159a-4976-aa46-83f914f930aa', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ac10c60c-b5bc-4109-9e65-e82b42935687', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ac386a6b-2ce1-4b9b-bbd9-45acb637c98c', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ac71cb98-850d-4e16-88be-30347086e186', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ac879af8-0a04-4c46-a0f1-25de1b7f4984', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'acb4b7e0-b303-487d-a395-e9008f2cd905', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'acf0e9e1-f232-47b4-a4b2-4159597adea1', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ad299821-f2ca-4771-8f25-7780f7536098', '6925f61b-ba48-473a-b69a-e3548036c1df', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ad4b3aa0-f6c4-4253-9b90-95fa2b9afcd3', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ada355a2-b91d-4da5-a408-d6513f78c878', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'addb312a-7fec-41da-b645-280de0a78464', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ae055961-f90e-4de4-bdb7-061761513e43', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ae67dfa5-6d55-4e50-aeb2-8fcda94764f8', '82052c70-0a9d-4d94-873e-3b402e032f55', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'aec08fa2-eb23-4eeb-a773-7fd5bdacec21', '36040329-1aa6-428a-ad39-cd85de03493e', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'aee1750d-1eeb-484c-a653-876c5ba3e80e', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Cordas modernas$$, $$Núcleos sintéticos equilibram estabilidade e projeção.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'af0613af-5484-4f9b-bfd3-1112ffa941e7', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'af2a91a5-236c-42c5-a0d9-7b279ead8379', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$Madeira que Melhora com o Tempo$$, $$Diferente de outros instrumentos, violões de qualidade melhoram com o tempo. As madeiras "abrem" conforme são tocadas, liberando mais harmônicos e tornando o som mais rico e complexo.$$, $$/images/curiosidades/madeira_envelhecimento.jpg$$, '2025-06-08 01:08:19.394658'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'af37d2c4-61ae-47f1-967f-6a8e351ba6c9', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'af5a63df-4265-4668-a947-ff80f3d4381c', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'af9dbfba-fc4b-42be-be7a-78dd7dca7243', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'afb360f2-ab84-4585-96b4-241c66b304fe', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'afb6e874-b974-4745-b8ce-c17481bb9004', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b01eb213-b704-4185-bec9-bd35ee08d927', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b01f6000-a134-4d35-908a-5f9eea7ae2ae', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b031b1e3-477e-46dd-baab-ed9290fac1a5', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b04a15e3-02ac-48e1-8a14-45ea9ed2feb4', '80436b4f-15c1-452f-9442-34e42b5117e4', $$O Violino de Einstein$$, $$Albert Einstein era um violinista apaixonado e chamava seu instrumento de "Lina". Ele disse uma vez: "Se eu não fosse físico, provavelmente seria músico." Tocava regularmente em quartetos de câmara.$$, NULL, '2025-06-09 03:42:40.336695'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b053edcf-9e27-4abb-8c34-80e2a3fda458', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b066ac85-82f6-4c1c-9b11-efae22df718d', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b0717ac1-d0c2-4a13-8bdc-471338747ef4', '9a5e0eac-114e-4173-90af-32b55c870675', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b181ca23-1f37-470f-8602-ea2124776911', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b22981bf-e042-423e-8f08-ab94f2f7f4a1', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b22e3435-c9d5-483f-ac1e-2f5ecae2c408', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b244bbdf-ed06-4c17-a28d-ac7c2fbafa45', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b2480ada-6378-4475-ab4d-1d79226715d1', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b274ea8a-7557-40dd-b4cf-288e0b014290', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b2c3a619-e799-4e0a-a8f6-d49cfb14f77f', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b2d3c0b6-5b1c-47bd-acf7-77f471cbeb04', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b30e6cb4-1c3d-4813-8f56-ad85f09ff816', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b32ca258-03f6-40a0-bcd5-213d2e9ed5a2', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b35ef7c3-3dd6-44fe-98b9-b531c17cb270', '32705505-7727-4d27-b7bd-b08e7c90c233', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b37ad764-bfb7-4b87-b488-3419ed1dcee3', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b3d750e0-ff96-4162-8e95-38b8b887045b', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b3ee85b5-d07d-4dbb-a6e7-39b610ee3f8e', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b4213e83-37d5-44ea-93c7-96499686a888', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b444c403-9a72-4a8e-9411-a5001e0a2865', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b45c76e8-0ed6-44e4-97c9-8cdee4fbd56d', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Arcos específicos$$, $$Arcos de viola têm massa/curva pensadas para a tessitura do instrumento.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b46f75a7-4e57-48ad-b93f-f7fa8ab3d69d', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b4ada877-50bb-4a04-8763-2ec6ee2f2557', '82052c70-0a9d-4d94-873e-3b402e032f55', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b4dc37ac-206e-4b75-8f70-ca8327c4727c', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b501cf17-ebd8-432a-8a53-7ec9915b9625', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b50757e5-d6ad-44a2-ad8e-43b04ac726c0', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b50a69ad-1d99-476a-9084-5466d1d96f90', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b52582a4-ba30-4f47-a10e-998131a6731d', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b529ac21-b1a3-411a-b916-2d3f4be2152d', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b54b6329-ccb1-4434-8db7-9d15f5b574e8', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b5703c22-5fe8-4b49-8b61-4964833c6ce7', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b579db6c-7a50-45e1-aba3-439eeaed9d4c', '1b699036-0f72-4c48-9801-e01f6f25e165', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b589fb8d-66d1-4b04-b748-bff072a5a8e8', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$A Força das Cordas$$, $$Um piano de cauda tem cerca de 240 cordas que exercem uma tensão total de aproximadamente 20 toneladas sobre a estrutura de ferro fundido.$$, $$/images/curiosidades/tensao_cordas.jpg$$, '2025-06-08 18:58:13.529143'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b5cdb808-8537-4003-8f41-4557a29ccd70', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b639dd7b-df23-4e07-8c82-48fdd62ebf00', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b65b7d29-ab50-419b-bd37-d756f06575e8', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b6ac2249-93fd-4804-ad7f-576a4f4e3360', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b6e1012a-6825-468f-8389-863ba83f5991', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b6e52bfb-cf0c-4071-a318-ca7ae4e141ef', '761a3318-9a5e-46f3-88f2-62159b96100c', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b736eb0f-1380-41c4-afdc-9b8b6a6bed18', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b73b3fae-c062-4eea-a91c-1e3a788fc69b', '80436b4f-15c1-452f-9442-34e42b5117e4', $$O Violino no Cinema$$, $$A trilha sonora de "A Lista de Schindler" de John Williams, tocada por Itzhak Perlman, é considerada uma das performances de violino mais emocionantes do cinema, ganhando Oscar de Melhor Trilha Sonora.$$, NULL, '2025-06-09 03:36:30.827266'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b773e83d-dae8-4119-9415-dc941482859d', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$Guitarra e Rebelião$$, $$A guitarra elétrica tornou-se símbolo de rebelião juvenil nos anos 50-60. Chuck Berry, Elvis e depois os Beatles usaram o instrumento para desafiar convenções sociais e musicais da época.$$, NULL, '2025-06-09 04:31:04.663796'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b77f2d6d-23aa-4c2c-9f41-6e7432c9b333', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b7b378df-65ef-4488-81c0-7373695df6f1', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b7e730ea-fe81-4e56-9c58-c8a3e4e06e8d', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b878261c-1651-43d8-923d-1431e443f4f9', '6925f61b-ba48-473a-b69a-e3548036c1df', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b899562f-2c13-400f-bf77-146ee7d6ade2', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b8a2087a-a517-402c-9e6a-de2a52018754', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b8c0301a-3486-4e9a-b51c-5ce7f054b48a', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b8c47a36-fecb-499f-ba60-8e741983244d', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b8c4b654-b12c-4518-b5ba-9591b729acbb', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b9186f26-bbc2-44dd-8caf-d5c1264c0b45', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b94e15d0-7ab9-4ebe-8185-96639e78ee8d', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Manutenção preventiva$$, $$Troca periódica de cordas e checagem da alma/cavalete.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b95f5101-f6d9-4a57-a5f3-9fddf50b054e', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b99a0cba-4503-4cc1-a27b-20d3a8ff0e65', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b9b9d5e2-45c9-42ff-9bc2-b42332c33773', '56f643e0-a3e2-4067-84ac-334c454426f8', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ba58d86e-2038-4d73-b3cb-ee48b058e0c4', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ba633bff-18f5-4d9b-8d05-7fec6b8ff16c', '9a5e0eac-114e-4173-90af-32b55c870675', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ba64cffc-0a8c-497d-aa29-3d2a61e991c5', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ba8f8bb0-5306-404d-bf2a-0ec09b8cc2c2', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ba94f4a8-ce42-49bc-823e-1513a6082878', '36040329-1aa6-428a-ad39-cd85de03493e', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bacdb6ec-e595-4b7b-841d-eb60e195ef28', '56f643e0-a3e2-4067-84ac-334c454426f8', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'baddcca4-5f77-427e-98d9-6acdd343fbbd', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bafb0646-1274-4324-a9f6-55d4403d580d', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bb2b8f11-8ac0-425e-b236-549ec572d9ab', '82052c70-0a9d-4d94-873e-3b402e032f55', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bb5d2532-98f2-4427-92be-fedbb00b4915', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bbaf54b8-b878-4952-8542-d7485085bd79', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bbbfae38-24a3-423b-b528-e9b01442fc93', '80436b4f-15c1-452f-9442-34e42b5117e4', $$O Violino de Einstein$$, $$Albert Einstein era um violinista apaixonado e chamava seu instrumento de "Lina". Ele disse uma vez: "Se eu não fosse físico, provavelmente seria músico." Tocava regularmente em quartetos de câmara.$$, NULL, '2025-06-09 03:36:30.827266'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bbd192b6-252a-4556-a0ba-1edb45869ee6', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bc34ceae-be51-4af7-b71b-35bf595c0c73', '492f792b-8d0c-46b7-a195-c8c32114696d', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bc491b7c-9fd3-4730-a1c0-149d48529f43', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bc691060-f66b-43c9-afa0-0a86702f0811', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bc70d0df-ad33-4762-9834-7722e01fc43d', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bc87667e-9b10-42e1-96a6-675974e37fdd', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bcab29b0-0ed2-4c71-a480-813532f8b770', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bcb4046f-29ac-4034-818c-679c6913392b', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bccf75a9-b40d-4207-a064-f6485d12c5bf', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bd25ff16-7756-41c4-83c4-2c58398fd44e', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bd35cb9a-9c94-41b5-98b6-2338d094e5bd', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bde63504-c869-468e-af31-4bda5042d9f9', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'be472963-31f6-490f-bb32-aed08a10be0a', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'be6ce292-a183-4cab-80e7-c7187efbbc38', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'be7740f8-40d3-4c50-9df6-cbf8054e780a', '1b699036-0f72-4c48-9801-e01f6f25e165', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'beb7054e-842a-4f36-b8ed-479e11d39fc2', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bec4acc3-f078-4b36-ba39-42dc95162d22', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bf1d0af4-4d9f-4f1d-862f-8ee2bb7e0fa8', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bf2d21d6-57be-468b-8d32-e4b138fa7197', '80436b4f-15c1-452f-9442-34e42b5117e4', $$Madeira e Ressonância$$, $$O abeto usado no tampo harmônico tem densidade específica que permite vibração ótima. Cientistas descobriram que a madeira de violinos antigos passou por um processo de envelhecimento que modificou sua estrutura molecular.$$, NULL, '2025-06-09 03:42:40.336695'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bf2d88ac-cf5e-44f9-8fbd-aec2dfaab06a', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bf30712f-8d33-45e7-829c-890a1c6d67c0', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bf69ae89-ea12-4474-8399-9083d7e2f420', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bf6b5858-9778-496e-b9c3-afdad0b642b3', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bfd65c3b-02e9-4dec-b7ce-15682e2c6a04', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c0561edd-7a92-4160-b2ba-05fa91efd7ee', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c08cb79c-b12a-46b5-81af-fab69d590558', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c0c74cf9-c006-40a1-989d-23af6152b7b6', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c11949e2-d9b9-41b0-aac9-61ecf282b970', '492f792b-8d0c-46b7-a195-c8c32114696d', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c1eb5ae8-b8d2-4c3d-9dab-a706163ba8bd', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c2750acb-5bba-4577-a561-84da21f65662', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c2884a01-c239-4b2a-8ef6-48c9b95a3724', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c28b15bc-de84-4f01-a526-ad55b44f53ce', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c2920e01-7ba3-43cb-bed2-be6b3a3ca928', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c2b64a5c-447f-41ac-b97c-273ed7bf6aa7', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c2e0fc17-e235-4150-bf18-880d0c1b5f2c', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Timbre característico$$, $$Região média aveludada, ideal para linhas expressivas.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c2e5a79d-b1dd-40a0-aed6-86920b6b078c', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c332dd21-ce96-4c8a-9008-f9bbb82a5323', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c3460901-2884-4f4c-baf6-ca3ba3197d18', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c35127e7-854e-4a50-94fc-e48b200e40cf', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c3baba46-6fc2-4d68-9131-1fa59103db64', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c3d90d6b-c67d-429f-8fd9-8544ff404d36', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c3da2a36-79e3-4b0d-a097-ceb6f6b48626', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c3e035fd-b823-43db-abec-ec7e5bbbc7c1', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c4159a32-26b2-4c06-b127-eaf3fcb19e2d', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c4183240-9b37-4f96-a90f-7c14291ef9bb', '1b699036-0f72-4c48-9801-e01f6f25e165', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c424f425-6b58-4257-8fae-b7f21985bf15', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c438d539-5119-4eca-b6c2-9eaa62c6a014', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c4fad85e-a97e-499d-9f5d-9b3b0907a752', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$Chopin e as Teclas Pretas$$, $$Chopin ensinava iniciantes começando pela escala de Si Maior (5 sustenidos) porque considerava mais natural para a posição dos dedos do que Dó Maior.$$, $$/images/curiosidades/chopin_teclas_pretas.jpg$$, '2025-06-08 18:58:13.529143'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c5002841-c92a-4d09-b350-648410eb43dd', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c52fcb5d-779b-4a64-8e41-4a812a6eb3c6', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c5351b6e-4538-4a67-98a7-681325164e41', '1b699036-0f72-4c48-9801-e01f6f25e165', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c5439000-bad1-403e-bcbf-a3bd20774c88', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c5a13675-e282-4b2b-b242-025842afe757', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c5a21e72-5360-4465-818f-5a48b3794e89', '6925f61b-ba48-473a-b69a-e3548036c1df', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c5f97c6d-ead6-49c7-8ab3-c39077474a0f', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c66eb5d0-6125-413a-8c05-15c771fce48a', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c679f613-33d0-4d35-8e53-a613ad198864', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c6863881-f755-4cd5-9ca7-72571eea2525', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c6a3adab-4548-4d6d-8e6d-98a2fcd3da1f', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c6d1a6ec-acad-4d48-aef0-961410943cbc', '761a3318-9a5e-46f3-88f2-62159b96100c', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c6db6b67-24b7-418f-bc6b-93a19cf4b261', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c6f0ea00-dd1f-4410-a398-41d100557753', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c7054972-f764-45ee-a5b3-7fa3e88f74df', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c762d462-ec7b-4534-9600-10f06885e4e8', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c7b830c2-2065-4713-a032-85c795c066ab', '9a5e0eac-114e-4173-90af-32b55c870675', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c7bc4a2e-69fd-4b4f-8535-e9f4c5dd585e', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c8983a21-e6f5-4e83-bbe7-067ef2eea0fb', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c8d279d4-4328-453f-9bdd-a99d878d1862', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c908c707-066a-488b-bccd-c102ba78431a', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c928fa78-4b21-490f-b311-c0734a842e21', '56f643e0-a3e2-4067-84ac-334c454426f8', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c96aee54-daf9-4d9d-9dc7-895e34c847ce', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c97fe87d-fa57-4d1a-9ffe-9f83eeac9f79', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c9b19d48-f0ee-42b5-bd4a-7222f7ef2cdb', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c9ca06cc-cf32-4517-9065-014ff09ecafb', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c9dcce9d-e10e-4cd6-969b-1d8a8efb75bb', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ca02530e-87fe-4949-b70d-d26550a6aa83', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$Cristofori vs. Cravo$$, $$Bartolomeo Cristofori inventou o piano em 1700 para superar a limitação do cravo, que não permitia variações dinâmicas. O nome original era "gravicembalo col piano e forte".$$, $$/images/curiosidades/cristofori_invencao.jpg$$, '2025-06-08 18:58:13.529143'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ca0f1504-2350-45cf-baab-3dd359a593f1', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$Sustain e Física$$, $$O sustain (duração da nota) é determinado pela massa do corpo, qualidade da ponte, altura das cordas e eletrônicos. Guitarras sólidas têm mais sustain que semi-acústicas devido à menor vibração parasita.$$, NULL, '2025-06-09 04:31:04.663796'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ca2941f1-ae09-4cb2-a582-8182acca75d4', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ca8778d2-8837-4134-aef4-d2a2d8310307', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cac32bc7-f6b1-4197-bc19-eb0d04ff9f27', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cb344cbd-15d7-462d-aebd-f8fce6cbb4ad', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cb4318ca-bb67-474b-a4b5-49598b1ae679', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cb52895e-1cbc-4797-a424-95d848aa0a38', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cba8fb7f-edbd-4cbf-a427-08b4a092afb8', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cbbeec00-8382-44f6-8055-9981b8a14633', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cbd92a31-e8ac-48bb-83d0-5ba064a6a764', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cbe6e5fa-fb6c-4598-af3c-0d17a39233c0', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cbfb646b-4fb5-461d-b584-b9e6ac786bff', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cc4b2a74-12a7-4cdf-aa94-95eba90281da', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cc861285-69c5-422b-b2bc-95e43e59b139', '509d6a26-159a-4976-aa46-83f914f930aa', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cca28dd5-6acd-46f9-8479-bc7b587508a8', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$O Piano no Jazz$$, $$O piano é o único instrumento que pode tocar melodia, harmonia e baixo simultaneamente, tornando-se fundamental no jazz desde Scott Joplin até Bill Evans.$$, $$/images/curiosidades/jazz_piano.jpg$$, '2025-06-08 18:58:13.529143'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cd6fec48-e465-48d0-bd05-156674e07397', '1b699036-0f72-4c48-9801-e01f6f25e165', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cd7b895b-27ab-4105-94ab-86d8fc48eecb', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cd929468-cddd-4bfb-9e28-9af9342e6c71', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ce12e259-d782-4ecd-84e9-294f98266214', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ced7e073-5bb7-4fec-9c99-a764f62975ab', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cee13e1c-8d6f-43ec-80b8-5bc64f897a29', '9a5e0eac-114e-4173-90af-32b55c870675', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cf3af110-4a1e-42f0-9a0d-1ffd0323f0aa', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cf69fab9-7eb8-4425-978f-d0df3242a9c2', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cfb7a9c0-afdb-4ce7-bc0c-14dea3858357', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cfce6fcb-af05-4a47-8cbe-f76181a01f6b', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cfd18aeb-3b5a-4faf-9957-1c9e29b52221', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cfed63f0-4822-4a22-a1a0-79450be788fa', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cff05bc5-c2f4-4e5e-aa33-9bc27425f933', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd02f0033-76ca-4b42-8ccd-7bad2f1ce92d', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd04a4293-8f93-4a7f-8aa2-338982a58dd0', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd059ee04-389a-405c-ada8-0d829771ede4', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd061f06a-444c-455a-ba99-a0adff170f81', '7b6ae164-dfdf-452d-a5c3-d01554861444', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd0a3452a-accd-47a8-80ae-4d2f555936c0', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd0eb3979-960e-4d6c-8219-00805e70695b', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd0fc3c1b-1332-4ad8-a642-76ba02c1f316', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd11eade0-2471-4d6d-96ff-381537c2ac6e', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd1a69c05-b13a-405b-87a7-42294c866aaf', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd1b79e7c-d3da-428d-a5f0-38152fba7efc', '761a3318-9a5e-46f3-88f2-62159b96100c', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd216b246-133b-4336-9977-74b80d647b12', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd2c62c26-abe7-42c7-a40b-072071b99167', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd2e99781-ae62-4485-9f69-4ca66b911e33', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$O Violão no Espaço$$, $$Em 1965, o astronauta Wally Schirra levou uma gaita para o espaço, mas foi apenas em 2013 que o astronauta Chris Hadfield levou um violão para a Estação Espacial Internacional e gravou "Space Oddity" de David Bowie.$$, $$/images/curiosidades/violao_espaco.jpg$$, '2025-06-08 01:08:19.394658'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd2eae4cc-e742-4ea0-a5b7-76cdf22826c1', '82052c70-0a9d-4d94-873e-3b402e032f55', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd36be863-2003-41c9-8ed7-a324fc67b491', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd3b9ca0b-7ea0-4f10-843f-9594984cd394', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd3ee019a-869f-46f5-ab3f-7fe235b89fc4', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd41e8408-f524-4cd4-8808-e23cf6d5b9ad', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd42dff36-89b5-4259-bcaa-dc1a9ac1524c', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd488e85d-2ff0-43c4-a0ba-e64578855203', '36040329-1aa6-428a-ad39-cd85de03493e', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd49f1968-b4e7-4acc-87a1-54b8ab2a4523', '32705505-7727-4d27-b7bd-b08e7c90c233', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd4bc32a4-053a-467b-9b1e-9fb0cea92867', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd50dc79c-ae7b-47a0-a0dd-5a5827930bf6', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd57dd70b-9e09-45ed-851d-95d255783310', '36040329-1aa6-428a-ad39-cd85de03493e', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd586ab76-9863-4dec-be74-0dea2ff62682', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd5cade2e-82d5-4e48-b490-450c18c881c0', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd5d09780-f070-4bab-bf0e-26ce680deeb4', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd60fb03c-057a-45c7-acdd-acbd4519a9d0', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd62d3b92-64f5-4f6b-9eb0-9391ee263db7', '761a3318-9a5e-46f3-88f2-62159b96100c', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd68bf4be-065c-453f-85c5-c132521c25d0', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd6a01d2c-f5eb-46c5-8b8e-757ec446ba32', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd6bc5de0-812f-4969-8a22-86e111e65247', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd765147f-3d24-4b1d-b755-8232fa032bd0', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd777a73b-189f-4246-9f11-b180ed4653df', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd7d2eca1-a2f3-4276-900b-971db2f417b0', '36040329-1aa6-428a-ad39-cd85de03493e', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd7d5eeac-358c-4572-a9cc-9c1776207cec', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd80e0c7e-c7bd-44b2-a7ea-7b27848861a5', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$Violão Brasileiro vs. Clássico$$, $$O violão brasileiro tradicional tem o braço mais largo e cordas de aço, enquanto o clássico tem braço mais estreito e cordas de nylon. Essa diferença foi padronizada pelos violonistas do século XX.$$, $$/images/curiosidades/violao_brasileiro_vs_classico.jpg$$, '2025-06-08 01:08:19.394658'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd816c448-53e6-4ef8-9fe5-6dcce781c98b', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd818883c-0a84-4abe-8896-87957be76a7b', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd8250be1-665a-4ec6-82f0-59f505578e68', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd8279f0b-9d62-49f2-892e-b6db4fa87ef8', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd85ac1db-aa32-4ccb-b43c-a8be0aff41ab', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd85fec28-c601-4e86-8f2b-3a7063a05aee', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd8e542c5-c5bf-41fd-b2f4-f6fd2cbc55cd', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd90d20b9-fb48-4c0a-a310-daad1e201cd7', '492f792b-8d0c-46b7-a195-c8c32114696d', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd91aec1f-281c-4a2a-a5c1-f0d9d4c1ddcd', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd93169b1-ff84-4609-b636-4bd5baba40c9', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd989ae75-588e-472b-b194-e351bdd247b1', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd9a5de24-6543-45e7-a951-e1ff593642d7', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd9a92c1a-8716-4d29-87b9-bc787225631f', '492f792b-8d0c-46b7-a195-c8c32114696d', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd9cc61a5-e3fc-4edd-bc3d-19e571028cfd', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'da1861cc-b5e2-4df7-b233-6a1766f8023c', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'da3b9d4c-1a1d-4d40-80cb-8f73f4c52e6f', '761a3318-9a5e-46f3-88f2-62159b96100c', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'da4f7313-9400-4cff-a711-2b03a6f04c9e', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'daa470a8-33f0-416e-b959-785aab33af6d', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'daad55a1-fbeb-472a-82f3-342ca1f6b6cd', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'db08aa88-23e9-456a-961d-4edc77f7bf76', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'db0b3654-2b94-4488-9020-a36c473dee2f', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'db33ee87-70c4-4442-89a1-215dc3b08126', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'db5d3bd3-e707-4063-9ef0-3a2e0d9c984f', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dbabe9e2-1e1e-4f45-8461-1d30adf1f42d', '9a5e0eac-114e-4173-90af-32b55c870675', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dbcdcee1-6d6f-46a2-882e-008813d285e8', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dbd5b562-2576-406f-b64a-fc40d473ff8b', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dc2c32d1-5ef5-45b3-895c-ab4fbcfe23bf', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dc51fd98-ea73-402d-bda9-b13fb61f8d3a', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dcb7af65-16b1-4833-9372-dc31aca79c57', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dd21befb-abb6-4114-9771-30d8e453d473', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dd339f26-c892-4d6d-931a-a6da3201d403', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dd75d333-7232-4017-ae57-85adf32d5ad7', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dd8ab50b-a3ba-4bcc-91fa-8f73b0f812c8', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dd9c92e0-8dc8-4701-ac00-20723aa97ecc', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ddcd466d-1995-4b87-86ee-e465a5ae0580', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dde709b1-1f38-4827-95e3-7888bdfaccc3', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'deaccdf9-0893-4191-8a33-55a94992ecc8', '80436b4f-15c1-452f-9442-34e42b5117e4', $$A Lenda de Paganini$$, $$Niccolò Paganini (1782-1840) era tão virtuoso que as pessoas acreditavam que ele havia vendido sua alma ao diabo. Suas técnicas eram consideradas impossíveis para mortais comuns, criando lendas que persistem até hoje.$$, NULL, '2025-06-09 03:36:30.827266'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'def201e9-ac0c-41dc-a24c-5a02e5706f66', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'df044c0a-f625-4db4-a959-e12d4098e67f', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'df08e8be-f55c-4a37-b33d-c4fca2d9d215', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'df1cdf75-2d98-41cf-948a-f7d3f86a01a6', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$Cordas de Intestino de Gato?$$, $$Apesar do nome "catgut", as cordas antigas não eram feitas de intestino de gato, mas sim de intestino de ovelha! As cordas de nylon só foram inventadas em 1946 pela empresa DuPont.$$, $$/images/curiosidades/cordas_historia.jpg$$, '2025-06-08 01:08:19.394658'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'df265f71-23b8-4d2d-9601-179ebcc3d03d', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'df2aa099-b5f6-485d-a958-6777f88a099b', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'df55643b-8d8c-441a-9b5d-e3386d5822fa', '13912e91-7b48-4a8d-82b7-b59515c2a0d3', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'df99c497-1cd8-4ddc-9e0f-e1e710500943', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dfad880d-ee8d-47d6-b045-8a2590646a1d', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dff6e711-229f-4a19-bc2f-cd00fbf0ff37', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e0250285-5ddb-4f4d-881a-367f2a4ddd09', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e02a92e2-cf67-43af-bc77-f38d4ccac48e', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e03f3863-64d0-4869-a19b-b0e7cbd86a0c', '4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e0c289ec-64f1-43fa-9e1d-1f70d3a3afbd', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e141d4f8-f444-49b7-92d4-ae757a3c65a7', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e1e49569-4914-45f9-951f-f588fae2eef6', '32705505-7727-4d27-b7bd-b08e7c90c233', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e21ae5ea-7ad3-42a1-aa89-2074cbf7e97f', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e230ec65-d123-41d9-8b2f-32732b9edef5', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e25b314e-46fb-4a12-a67f-b03c76a650fd', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e294aa72-996f-40b8-9826-8bb0a1d762e3', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e29b741e-58cb-444e-9526-2faf133527f3', '56e32061-7ed6-495d-9bc1-00cdb345b02e', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e2b3e1b7-0565-454f-a4c1-423c55a9ba60', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e34e08a2-d168-4634-947c-e40ff181fbdc', '86f83611-c0db-470c-87e7-31ee81b1a009', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e372dbe9-e8ea-47f8-aa2b-9a19d013109e', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e3b8c1c5-93ff-4d23-b9b8-5e0fa221b49a', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e3f3b238-1f12-49c1-b563-3db382c64e5c', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e44cbda2-611e-4164-baab-bfb33d8fe8de', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e45d463a-c45a-49d5-903b-b406a44a1d4a', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e4a8c904-05e9-46cb-abe7-2c0f825c9648', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e4cc2fa2-9f86-4943-a792-1cb4effa5c85', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e4de8bfa-a8e8-49e8-a5c7-728ca92342b5', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e51a0806-3744-4f57-8b4e-885d8cf43b2d', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e53b0b3a-3765-4028-9d2e-769c121e312a', '6b11dc1a-295f-4458-9c08-2bcec09ff3ec', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e5469bb6-9629-4165-8b92-bcfe8c7fb605', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e5f7a414-419d-4470-b836-9c7ac8bd9cb6', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Bariolage$$, $$Alternância rápida entre cordas dá efeito de brilho e agilidade.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e601dd07-73c5-44d5-a076-82d73cdd497d', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e61caa2b-2919-4461-96f0-37568fae4622', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e62bfa2f-ccf0-46bb-b793-b5850725e840', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e64a6c44-acd2-4711-a395-73a75407c5ec', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$Guitar Hero e Gaming$$, $$O jogo Guitar Hero, lançado em 2005, introduziu uma nova geração à guitarra. Estudos mostram que jogadores do Guitar Hero têm 2x mais probabilidade de aprender guitarra real.$$, NULL, '2025-06-09 04:31:04.663796'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e657dc26-bcdf-47d3-968a-f0deb8efcaa1', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e678a788-c7e3-41c1-9d99-0b47582c671b', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e68dba03-4ad6-42bb-a02a-28a71dd84fbb', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e6f774d6-4e10-4ee3-906a-458e46c6bbf5', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e7477fc4-c897-4252-9395-b596610147a1', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e76e1969-d710-4510-9acf-aa8a89550565', 'cca87ab1-8ad4-4876-a8d8-190f85927952', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e781b463-fccc-4dce-9191-aefc71a88870', '56f643e0-a3e2-4067-84ac-334c454426f8', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e7f6af5e-0240-4f6c-b3cf-73f529b4cb75', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e8052e4e-46b3-4337-bf35-8302b0db7763', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e838d358-e476-44f4-8725-8235cad022b0', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e8440ec3-e7ae-45e5-9aa2-2f319737a886', '492f792b-8d0c-46b7-a195-c8c32114696d', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e84f9409-4535-4883-804c-b0e7d1c77048', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e885ed3b-8313-4e4b-b01b-16435a5aed5e', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e896992f-ede3-4a80-99fd-31aff646a203', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e899fe1d-22ce-4b9b-a157-6a9d19c9a161', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e8b8d2ac-173d-460c-82c9-4155298a9062', '0e52514e-58c3-463a-a6e4-f71a1439f9b7', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e8ba2701-f3bd-4fa1-99d8-5dab15826ad4', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e8e34ed9-8522-4ff6-bfe8-9d3542800fa0', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e9d425bf-3115-44c2-9f71-01a7d774489d', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e9dabfc2-9cb8-4b0a-b8d2-53dd704a7187', '36040329-1aa6-428a-ad39-cd85de03493e', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ea2dd389-6ad6-4907-b31b-1c06b73bd483', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$Pickups e Magnetismo$$, $$Os pickups captam as vibrações das cordas através de campos magnéticos. Single coils têm som mais brilhante mas captam interferências, enquanto humbuckers cancelam ruídos mas têm som mais encorpado.$$, NULL, '2025-06-09 04:31:04.663796'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ea34151f-56e2-43a2-b11c-0354ad91a653', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ea3c6b75-9762-4247-a89b-72b34252aaa4', '509d6a26-159a-4976-aa46-83f914f930aa', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ea772e12-4102-4375-bf78-a96ad9686862', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ea8a6f82-9e3b-4841-bd9a-1495f1099260', '761a3318-9a5e-46f3-88f2-62159b96100c', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ea9d9bfa-b9cd-4b7c-9e51-f558fec94d92', '1b699036-0f72-4c48-9801-e01f6f25e165', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'eaa37149-0505-44bb-8407-186ab61ca76e', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'eab1c94a-1043-4af0-9f12-bbdbf78371c5', '80436b4f-15c1-452f-9442-34e42b5117e4', $$Frequências do Violino$$, $$O violino pode produzir frequências de 196 Hz (Sol grave) até mais de 3.000 Hz nas posições mais agudas, cobrindo quase quatro oitavas de extensão sonora.$$, NULL, '2025-06-09 03:36:30.827266'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'eb2e1b52-d8c4-408e-9e46-c8aa78a70caa', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'eb701505-a9d5-43b7-a75a-3c5a6ad8a663', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'eb92f717-8830-4ec4-84f6-8aad50797037', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ec0de14d-8a7d-4c5c-a175-8df6817c85c7', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ec297f17-64ac-4673-967d-34fee393c0a9', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ec62b2bf-909d-43a6-8c81-cc72be8b092b', '509d6a26-159a-4976-aa46-83f914f930aa', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ec77a615-816c-4de0-8a0b-ebfc37fae350', '11a7bc0c-232f-40dc-92ac-4d15aebd2d52', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ecc8ae45-e3a2-495c-b28d-fba75378801f', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'edcf2d67-19b4-4319-a9dc-f4c744dd4f10', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'edd308fc-9d31-4052-80ef-2650e572f40d', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'eded2b68-573b-48a0-ad75-1be81076affd', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$Performance$$, $$Peças curtas (solos) ajudam a desenvolver presença e segurança musical.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'edeffe44-4e0d-40e1-9005-26b89404656d', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ee1ff543-58fd-4d85-8533-581953333be2', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ee7c26f3-7b9f-42ab-a639-d3da035da531', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$O Mito da Les Paul Burst$$, $$Entre 1958-1960, Gibson produziu apenas cerca de 1.700 Les Paul Standard Sunburst. Hoje, uma em bom estado pode valer mais de 500.000 dólares, sendo uma das guitarras mais valiosas do mundo.$$, NULL, '2025-06-09 04:31:04.663796'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ee82f753-53cf-4b12-b612-d944a8ce6f22', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'eedd77c0-204f-4baa-99bc-8033b7e9cdb8', 'e48ad87b-d237-45e4-a707-05374c4240fa', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'eefd3f04-28a3-4799-85f3-711da810d6db', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ef335803-fbba-495e-8b6d-5730ba830326', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ef5465f4-dc66-42aa-a8d9-0fe976f0c986', '492f792b-8d0c-46b7-a195-c8c32114696d', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ef78270f-d74c-4b68-a962-d08f9624da92', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ef78d8b1-5742-485c-b700-01511c01c244', '32705505-7727-4d27-b7bd-b08e7c90c233', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ef95d7a0-eff5-4054-b34c-d8a29cca3ad8', 'fb125188-c48e-4d89-a46e-11c3b600dabd', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'efda24db-8bb5-4952-8a77-e2d91ca33027', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'efef67e1-2e1c-4661-aff1-7c7913c02363', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f0092c4a-4865-4f34-bb61-02e5c7858ded', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$Coordenação$$, $$Separar movimentos (lento → rápido) melhora precisão e controle.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f05c331f-7934-4e26-8f99-ab3e2d016f97', '80436b4f-15c1-452f-9442-34e42b5117e4', $$A Importância da Alma$$, $$A "alma" do violino é um pequeno bastão de madeira posicionado internamente entre o tampo e o fundo. Sua posição milimétrica afeta drasticamente o timbre e a projeção do som.$$, NULL, '2025-06-09 03:42:40.336695'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f0692ed6-e3ca-465e-94dd-b6d19ac75681', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f0cae0bc-8b8e-4745-9db1-89690345b93f', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f0cd8ee4-5f36-4cce-8eb2-804d493757d2', '9edff4db-9ef5-43fc-970a-7d2086de223b', $$Scordatura$$, $$Afinações alternativas aparecem em repertório moderno.$$, NULL, '2025-09-22 11:47:10.900437'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f0d5c488-d813-4c69-bb0f-8d3ea0172922', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f0eacb39-54f6-402b-ad14-19fdc4ad6cb9', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f144231a-b780-4542-b89c-57ce99e5f19c', '92ecdeff-3480-4f27-85cd-86f12622cf9f', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f16a86ba-074f-49fa-a609-ea9eeb20aa28', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f21b1389-3523-4c1e-a4ce-199abcf009aa', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f22643e0-6052-4cc8-be0c-180ab0964b49', '3957c464-86dc-4aa2-9f09-57b5eb2a6c6a', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f24e1743-c7ba-40b6-9c26-b7422c1e75e6', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$Som$$, $$O “bom som” é a soma de técnica + ouvido + consistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f2712b86-fb00-4ea8-bcea-de7eaf010fc8', '9a5e0eac-114e-4173-90af-32b55c870675', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f2cf7e5c-fee4-4b2b-bddd-df8af75bfae5', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f2fa0c5c-0da6-42a9-988b-446b16616924', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f3132909-0579-4473-8e75-0a0912d5e571', '63ebeaeb-be5d-4c26-a5cf-f59b71423401', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f326266a-ef53-48d9-a09c-09a4f66a2e6a', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f3880947-e8d8-48ee-b670-5cf6a6982f70', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f3a50f91-0245-463e-a1d8-fb6f5e4e71bc', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f3b7e161-8f95-4dcd-95ab-4a000ea9e0de', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f3ce01aa-eef9-4356-94b0-1cf321c8f33c', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f4611e3e-65cd-4a6b-889b-542da0fd5540', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f4846bb1-9575-4134-ae22-9d6f57751c2c', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f4903a3b-e1f8-43fe-8730-a8cdc81cb53b', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f4d423ee-430d-4842-87f8-7fdf83c7e5ee', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f4e2d5ff-a2eb-4e53-9f64-24aa107462ae', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f4f5bc51-023b-4699-bfe5-3fd13b2c60a3', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f513f21e-f064-44d9-96b3-85f0647d136b', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f5818ff5-89e8-4a72-98d2-e563e6ad0b4b', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f5d1a307-a1f0-4da9-bb48-e65a15be3fbd', '1b699036-0f72-4c48-9801-e01f6f25e165', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f5d878de-5ae3-47ff-9a37-9b8410b41149', '9c3a903d-8750-4ded-9341-c876a6d6de93', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f5eb0e90-da14-4903-933d-d19a09d74c36', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f6e4f39f-2a6e-456e-bc04-c77cd5e1596d', 'f8653cdb-e2e7-479a-bfff-c8643859b866', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f71f96f2-31cf-4bb8-a1b0-eb42638be4cb', '4d78c5a4-04bf-452d-b326-83e7c72c10ef', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f72c75cd-2794-49af-8410-978fe86a121d', 'bc665a4e-e301-44d3-b8bf-decb09422d71', $$Evolução$$, $$O progresso vem em ondas: registre e compare para enxergar melhor.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f7404345-562f-45df-ac4f-3d391eb04d46', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f78fa604-f6d7-4f9d-9af1-e69a1aa8eb44', '3e02292d-bd2f-46ed-9b9e-a0c8b0acd996', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f7aed03d-bf84-4403-858d-10b412a17f96', 'df168c2e-275a-44ed-9ee7-af356bf724e5', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f7c58901-ca53-4a49-bc04-3571947f6469', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f7f03b48-d9f1-4a34-988e-7c533c977275', 'ee709f67-e4e4-4f9c-9001-7574e4d8dfa0', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f7f87e26-5297-42e6-9498-a6c7c42df104', 'c75fe646-ff86-4420-98f0-a0f25d39de45', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f83ecf42-83a8-40bd-9f51-f3b5639d46f6', '9a5e0eac-114e-4173-90af-32b55c870675', $$Expressão$$, $$Controle de dinâmica e fraseado dá “voz” ao instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f87db985-0718-450f-8417-bbf590f7fcff', 'b7425269-f2bb-454c-8c61-e3e9d028c9b4', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f882bb0e-fda9-4bef-a09f-26c54f4bd411', 'a0f53672-7d87-4ab4-a64f-b551fc1a380d', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f8befecf-48cb-4e68-b082-69c7b27340d6', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$O Formato do Violão$$, $$O formato "8" do violão não é apenas estético - a cintura estreita permite que o braço direito descanse confortavelmente, enquanto as duas "barrigas" criam câmaras de ressonância otimizadas para diferentes frequências.$$, $$/images/curiosidades/formato_violao.jpg$$, '2025-06-08 01:08:19.394658'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f8c3cc31-0803-4a6b-b100-9e457b32b8ec', 'df42056c-8a3e-454c-aeca-73b4d608b85c', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f8c7b77a-cda2-4265-ab1c-5103b5464dcf', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f8fbb925-254d-4e16-977a-581fccc69532', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f968e5ad-ab3f-4580-af56-ae14b792b51d', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f998c017-738b-46d9-ad50-3b97db5fb1df', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fa021c0b-3d29-4eb2-b4b2-42f75ada7d38', '0b9c8c6b-0e47-471c-b83b-01c931410692', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fa13476d-afbd-43a5-a6fe-3a2f1ec3124f', '87ee66bf-bb70-4e70-9aa3-4bff514ced4e', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fa396e3b-0d84-4058-b3b7-35af6e07e9d7', '34f9e29b-3d22-464a-b31c-c3f4fbb73328', $$História$$, $$A história do instrumento acompanha mudanças de estilos e necessidades musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fa87b401-0ccd-43f6-8377-94d324de53a2', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fb133293-8371-4f95-88c1-76572b7e91f9', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fb143db0-24fd-4220-ac7b-34f2b725530a', '57d10b2f-c49f-460d-8fab-3da3065c15c2', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fb1c4fd9-a323-4d78-bda7-20ab498e7703', '492f792b-8d0c-46b7-a195-c8c32114696d', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fb2f6c6d-c2a4-430a-bd45-935754c1a403', '4c61dc18-2b1e-48c8-8a2e-2c730679d4a5', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fb33df26-dd96-4a5e-af0b-b198b09de098', 'e54b748d-3b1b-48ba-b65e-ec1e476e94ad', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fb6247b1-d946-435b-ba6c-64353a306729', '8ddb4eea-18b9-4b8f-bb85-16a1f5474f87', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fb70ccbe-c247-4369-95e3-a1633ee31d2c', '492f792b-8d0c-46b7-a195-c8c32114696d', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fb754c8d-da30-4ebf-8305-b0292a80c184', '64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1', $$Construção$$, $$Materiais e formato influenciam projeção, brilho e resistência.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fb9ebad0-0922-4898-8aea-221368204103', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$Timbre$$, $$O timbre muda bastante com variações de intensidade, ataque e articulação.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fbc9dd3b-9072-4230-8495-effed3f0245c', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fbce11fd-2850-48a4-b1e8-c6234a6bcfd6', 'ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fc03304e-905a-49b7-9e11-5d4c5440056f', '35da6877-2528-4f37-9ab4-b44893ad1dbf', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fc07a062-1c31-4b33-86cc-5bc5bd74d695', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$Em conjunto$$, $$Em grupo, ele pode assumir base, melodia, contraponto ou efeitos sonoros.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fc126c32-482d-4f9b-bfc5-ec26d8753e3c', '32705505-7727-4d27-b7bd-b08e7c90c233', $$Audição$$, $$Ouvir bons intérpretes ajuda a formar referência de som e musicalidade.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fc9817fe-9058-4571-99bf-ac0dd3431214', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fca33614-c753-48e0-8b75-71667eb74857', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$Repertório$$, $$Há repertório clássico e popular que explora diferentes funções do instrumento.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fcf6438d-4321-4660-8b3b-c2f7beb725bb', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$Curiosidade$$, $$Muitos estilos usam o instrumento de formas bem diferentes — explore isso.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fd121fb1-cefd-44fb-8363-d11ce03c7ae1', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$Dica$$, $$Use metrônomo e grave pequenos trechos para acompanhar sua evolução.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fd392c26-b90a-4cdd-a362-01e950d67a29', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$Manutenção$$, $$Cuidados de armazenamento e limpeza aumentam a vida útil e a estabilidade sonora.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fd8a1d22-5d8c-420e-ae0b-cb6181090de7', '453ca164-6f0e-4554-b008-dd68bf4586c2', $$Aprendizado$$, $$Prática curta e consistente, com objetivo claro, evolui mais rápido.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fe694f36-b6f2-4b59-91a4-b7ec0c003728', '1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fea3d6fa-ba5c-44fc-a5b5-30b8151ea943', 'bee0f63a-e248-4f2c-9325-0a23cb3c5a8e', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'feff8905-258d-42bb-8f5b-aea67ef28861', '2abbd218-b737-410e-934b-f9c8f3d2b806', $$Ritmo$$, $$Treinar subdivisões e acentuação muda totalmente a clareza rítmica.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ff294d84-b60d-4b86-9ff9-529dba261611', '3702e3f9-bc82-42b6-ae32-c770081b3ec2', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ff603e23-e00c-4d3f-bde2-13f5c34765d4', '4bc1c064-fa97-43f5-b6d7-d466ca66635d', $$Você sabia?$$, $$Este instrumento aparece em várias culturas e estilos musicais.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ff8d44fd-d6fc-4d72-a661-00421cd43156', '80436b4f-15c1-452f-9442-34e42b5117e4', $$Neurociência e Violino$$, $$Estudos mostram que tocar violino desenvolve significativamente o córtex motor, aumenta a conectividade entre hemisférios cerebrais e melhora a coordenação motora fina e a memória auditiva.$$, NULL, '2025-06-09 03:42:40.336695'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ff8df146-98aa-4279-a007-f639ce752120', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$Afinação$$, $$Afinação e estabilidade dependem de técnica, clima e manutenção.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ff9d5afc-9d3d-4fe5-97f1-1199e2349017', '96b547b5-e685-40f8-952c-9dfce2ad4dc6', $$Origem$$, $$A origem do instrumento se conecta a contextos culturais e musicais específicos.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.instrument_facts (tenant_id, id, instrument_id, title, description, image_url, created_at, order_index)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ffca723f-4298-4c4a-b7fa-7f67cb8cbf38', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$Técnica$$, $$Pequenos ajustes de postura e coordenação melhoram muito o som e a fluidez.$$, NULL, '2026-02-13 18:05:22.013093'::timestamptz, 0)
+ON CONFLICT (id) DO NOTHING;
+
+COMMIT;

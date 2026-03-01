@@ -1,0 +1,11 @@
+id,nome,descricao,cor,icone,ordem,ativo,criado_em,created_at,updated_at
+0fcb96f1-2bfa-4409-bc78-239e5f483b2f,Vídeos Educativos,Conteúdos audiovisuais para formação,#3b82f6,play-circle,2,true,2025-05-27 21:01:46.575787+00,2025-12-16 00:06:50.606873+00,2025-12-16 00:06:50.606873+00
+239cb282-f316-4385-a293-ed30f5dee028,Técnicas Pedagógicas,Metodologias e técnicas de ensino,,📚,4,true,2025-05-28 05:44:45.70181+00,2025-12-16 00:06:50.606873+00,2025-12-16 00:06:50.606873+00
+743d2d00-5e2c-4781-b717-d79da81cf4d5,Louvor e Adoração,Conteúdos focados no ministério de louvor,,🙏,3,true,2025-05-28 05:44:45.70181+00,2025-12-16 00:06:50.606873+00,2025-12-16 00:06:50.606873+00
+8cb84d82-bf78-4f36-9a79-6b3b81ec4128,Sacadas Pedagógicas,Dicas rápidas para melhorar as aulas,#10b981,lightbulb,1,true,2025-05-27 21:01:46.575787+00,2025-12-16 00:06:50.606873+00,2025-12-16 00:06:50.606873+00
+9cf892f4-452c-4272-a391-f988b528cded,Desenvolvimento Pessoal,Crescimento e capacitação do músico/professor,,🌱,5,true,2025-05-28 05:44:45.70181+00,2025-12-16 00:06:50.606873+00,2025-12-16 00:06:50.606873+00
+a7556939-36b9-432c-bb96-f7ae29ca1aaa,Técnicas Musicais,Métodos e exercícios específicos,#ef4444,music,5,true,2025-05-27 21:01:46.575787+00,2025-12-16 00:06:50.606873+00,2025-12-16 00:06:50.606873+00
+aff6a63b-de3f-4ec8-80ce-9c5d877cb1ae,Instrumentos,Dicas e técnicas para instrumentos específicos,,🎹,2,true,2025-05-28 05:44:45.70181+00,2025-12-16 00:06:50.606873+00,2025-12-16 00:06:50.606873+00
+b5e8905a-5ac4-4da3-a27d-16312c5b796f,Teoria Musical,"Conteúdos sobre teoria, harmonia e estrutura musical",,🎼,1,true,2025-05-28 05:44:45.70181+00,2025-12-16 00:06:50.606873+00,2025-12-16 00:06:50.606873+00
+dcea0662-0eec-4cf4-a38c-2c11942bd084,Devocionais,Momentos de reflexão e crescimento espiritual,#8b5cf6,heart,3,true,2025-05-27 21:01:46.575787+00,2025-12-16 00:06:50.606873+00,2025-12-16 00:06:50.606873+00
+f19c1de0-2942-496e-b214-517d3687aba7,Materiais Didáticos,"PDFs, apostilas e recursos práticos",#f59e0b,book-open,4,true,2025-05-27 21:01:46.575787+00,2025-12-16 00:06:50.606873+00,2025-12-16 00:06:50.606873+00

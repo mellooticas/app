@@ -1,0 +1,4 @@
+id,title,description,slug,thumbnail_url,level_required,instrument_category,duration_hours,lessons_count,order_index,is_active,is_premium,created_at,updated_at
+3378ea05-ea0a-4ba8-af8f-31ee856a8f02,Introdução ao Teclado,Aprenda os fundamentos do teclado cristão,introducao-teclado,,beginner,teclado,0,8,0,true,false,2025-05-26 21:29:59.893535+00,2025-05-26 23:13:18.563064+00
+b2f85a95-4682-4754-a16d-cda72e72c570,Bateria Gospel,Ritmos e técnicas de bateria para louvor,bateria-gospel,,beginner,bateria,0,8,0,true,false,2025-05-26 21:29:59.893535+00,2025-05-26 23:15:05.678628+00
+eebbcf04-beb5-4e8f-8948-ef03e8a139e5,Teoria Musical Básica,Conceitos fundamentais de teoria musical,teoria-basica,,beginner,teoria,0,10,0,true,false,2025-05-26 21:29:59.893535+00,2025-05-26 23:14:28.885796+00

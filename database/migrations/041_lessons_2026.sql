@@ -1,0 +1,171 @@
+-- =============================================
+-- Migration: 041_lessons_2026.sql
+-- Table: core.lessons
+-- Year 2 Curriculum: 40 lessons (Mar 14 – Dec 12, 2026)
+-- Generated: 2026-03-01T13:48:29.057Z
+-- Rows: 40
+-- =============================================
+
+BEGIN;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '8235b262-bd54-4697-b3bb-7008349b46ac', NULL, 30, $$Aula Inaugural 2026 – Reencontro Musical$$, $$Acolher os alunos veteranos e novatos, revisar combinados, apresentar o plano do Ano 2, formar novos grupos e reacender o vínculo com a música e com o projeto Nipo School.$$, '2026-03-14'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '0cb421a7-5ec5-48b9-9125-42ff540bcf8c', NULL, 31, $$Revisão de Fundamentos e Novos Objetivos$$, $$Revisar os fundamentos musicais do Ano 1 (ritmo, leitura, postura instrumental), diagnosticar o nível atual dos alunos e estabelecer objetivos individuais de evolução.$$, '2026-03-21'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '0997c381-730d-4c2d-8e6e-cc033df02f89', NULL, 32, $$Leitura Rítmica Avançada$$, $$Aprofundar a leitura rítmica com figuras compostas (semicolcheia, síncope, quiáltera), desenvolver independência rítmica e aplicar em peças coletivas.$$, '2026-03-28'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ed021923-2d3b-4c1e-93f3-a3c4750cd801', NULL, 33, $$Leitura Melódica e Intervalos$$, $$Desenvolver a leitura melódica com foco em intervalos musicais (2ª a 8ª), treinar o ouvido para reconhecimento auditivo e aplicar em melodias conhecidas.$$, '2026-04-04'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '84d0f9b9-fe4e-4af3-a0f9-85e406e7c83c', NULL, 34, $$Dinâmica e Expressividade Musical$$, $$Explorar os elementos de dinâmica musical (piano, forte, crescendo, diminuendo), desenvolver a expressividade na execução e aplicar em peças de conjunto.$$, '2026-04-11'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '4e2645f1-265c-4289-a08a-adee01d59ffc', NULL, 35, $$Prática de Conjunto – Retomada$$, $$Consolidar os fundamentos revisados nas aulas anteriores através de prática de conjunto, reforçar a escuta coletiva e preparar os grupos para os próximos blocos.$$, '2026-04-18'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c9fcd418-20f3-46b3-bd0a-c5fad048b15c', NULL, 36, $$Técnica Instrumental Avançada I$$, $$Aprofundar a técnica instrumental individual com foco em articulação, velocidade e clareza sonora, utilizando exercícios progressivos e repertório técnico.$$, '2026-04-25'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '2da2e4ee-27bf-4874-b9a6-e408747787ea', NULL, 37, $$Técnica Instrumental Avançada II$$, $$Continuar o desenvolvimento técnico com foco em ornamentos (trinado, mordente, apojatura), vibrato e técnicas estendidas básicas de cada instrumento.$$, '2026-05-02'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '09bfb0ed-c06c-4557-be39-38739e0c853c', NULL, 38, $$Escalas e Modos Musicais$$, $$Apresentar as escalas maiores, menores e modos gregos básicos (jônio, eólio, dórico, mixolídio), desenvolver a percepção de "cor sonora" e aplicar em improvisação.$$, '2026-05-09'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f15a2aef-5997-415d-8636-e21752bea94d', NULL, 39, $$Acordes e Progressões Harmônicas$$, $$Aprofundar o estudo de acordes (maiores, menores, com 7ª), ensinar progressões harmônicas comuns (I-IV-V, ii-V-I, I-V-vi-IV) e aplicar em acompanhamento de canções.$$, '2026-05-16'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '8b6911bc-67b8-4e9f-9ffe-f645d692b61c', NULL, 40, $$Leitura de Cifras e Partituras$$, $$Desenvolver a habilidade de leitura simultânea de cifras e partituras, integrar melodia e harmonia na prática e preparar os alunos para autonomia musical.$$, '2026-05-23'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '23b9eace-a54d-4346-9712-5d623d12d2cd', NULL, 41, $$Revisão e Mini-Recital I$$, $$Revisar os conteúdos dos Blocos 1 e 2, consolidar aprendizados através de uma apresentação interna (mini-recital) e praticar postura de palco.$$, '2026-05-30'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '9c7b0b65-1f16-4a73-af35-5884bce4b249', NULL, 42, $$Composição – Estrutura de Canção$$, $$Ensinar as estruturas formais de uma canção (intro, verso, refrão, ponte, coda), analisar músicas conhecidas e iniciar o processo de composição em grupo.$$, '2026-06-06'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b98084f6-0e03-47e0-af38-f5737da81ba5', NULL, 43, $$Composição – Letra e Melodia$$, $$Desenvolver a habilidade de criar letras musicais, integrar letra e melodia de forma orgânica e explorar técnicas de escrita criativa aplicadas à música.$$, '2026-06-13'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '0124b63d-3ffa-484e-9275-f387aa9ea439', NULL, 44, $$Arranjo Musical I – Fundamentos$$, $$Introduzir conceitos de arranjo musical (distribuição de vozes, textura, contraponto básico), ensinar a transformar uma melodia simples em uma peça para conjunto.$$, '2026-06-20'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '692058d6-9fd2-4c80-be07-076e5ead8d13', NULL, 45, $$Arranjo Musical II – Vozes e Naipes$$, $$Aprofundar técnicas de arranjo com foco em escrita para naipes (sopros, cordas, percussão), texturas (homofônica, polifônica) e dinâmica de grupo.$$, '2026-06-27'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd4d0f169-07ae-43ee-8fbc-528777468d45', NULL, 46, $$Produção Musical Digital Avançada$$, $$Aprofundar o uso de ferramentas digitais de produção musical (DAWs móveis e desktop), ensinar edição de áudio, uso de loops e efeitos básicos.$$, '2026-07-04'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '6abd7b70-fa9d-4f8a-89d5-eb0c88399abb', NULL, 47, $$Gravação e Mixagem Básica$$, $$Ensinar fundamentos de gravação de áudio (posicionamento de microfone, níveis, ambiente), mixagem básica e masterização simplificada.$$, '2026-07-11'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fe4e11da-56fd-4b2d-99b9-c7743a1fdd6b', NULL, 48, $$Música Africana e Afro-Brasileira$$, $$Explorar as raízes musicais africanas e sua influência na música brasileira, praticar ritmos afro-brasileiros e valorizar a diversidade cultural.$$, '2026-07-18'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', 'de0cc31a-120f-43ce-b6d1-8f49a1f9a1e6', NULL, 49, $$Música Latino-Americana$$, $$Conhecer a diversidade musical da América Latina (salsa, cumbia, bossa nova, tango, son cubano), praticar ritmos latinos e explorar a identidade musical continental.$$, '2026-07-25'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '3e1cd994-7abd-4412-97ea-2266228fb5ed', NULL, 50, $$Música Japonesa e Asiática – Aprofundamento$$, $$Aprofundar o estudo da música japonesa tradicional e contemporânea, explorar escalas pentatônicas orientais, J-Pop/J-Rock e integrar elementos culturais nipo-brasileiros.$$, '2026-08-01'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '3c4b9615-6c99-41d7-a81f-f5a4d6f09ec6', NULL, 51, $$Jazz e Blues – Raízes e Estilo$$, $$Apresentar os fundamentos do jazz e do blues (blue notes, swing, walking bass, 12-bar blues), praticar improvisação no estilo e valorizar a história dessas tradições.$$, '2026-08-08'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fc68fe24-0536-4ab1-83c0-37572dd93216', NULL, 52, $$Rock, Pop e Música Urbana$$, $$Explorar os gêneros rock, pop e música urbana contemporânea (hip-hop, trap, R&B), praticar ritmos e grooves característicos e criar arranjos em grupo.$$, '2026-08-15'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '960d9918-af86-44c3-9be9-15bfcba122c8', NULL, 53, $$Revisão e Mini-Recital II$$, $$Revisar os conteúdos dos Blocos 3 e 4, consolidar os aprendizados de composição, arranjo, produção digital e diversidade cultural através de um mini-recital temático.$$, '2026-08-22'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '7e9cb1e6-3c6a-48a8-af76-096cbe909534', NULL, 54, $$Técnicas de Palco e Presença Cênica$$, $$Desenvolver habilidades de performance ao vivo: presença de palco, comunicação com a plateia, posicionamento, movimentação e controle do nervosismo.$$, '2026-08-29'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fe340392-c21d-4403-8a53-dd0fa34a74f8', NULL, 55, $$Sonorização e Amplificação$$, $$Ensinar fundamentos de sonorização ao vivo: uso de microfones, mesa de som, retorno/monitor, equalização básica e montagem de som para apresentações.$$, '2026-09-05'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd96ab776-8882-4026-a977-68e334f6a73a', NULL, 56, $$Improvisação Avançada$$, $$Desenvolver habilidades avançadas de improvisação musical: improvisar sobre progressões, usar modos e escalas aprendidas, improvisar coletivamente com diálogo musical.$$, '2026-09-12'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd98bb535-a591-4262-97be-a8e909038c93', NULL, 57, $$Música de Câmara e Formações Acústicas$$, $$Explorar a música de câmara e formações acústicas pequenas (duo, trio, quarteto), desenvolver escuta íntima e interação musical sem amplificação.$$, '2026-09-19'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '9a8b5967-ae1a-4b56-b33f-58ee09e2f3f5', NULL, 58, $$Projeto Musical – Planejamento$$, $$Iniciar o Projeto Musical de cada grupo: escolher repertório, definir formação, planejar arranjo, distribuir responsabilidades e criar cronograma até o Show Final.$$, '2026-09-26'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '28386323-8efa-42cc-a5b2-8eed2c45fc20', NULL, 59, $$Projeto Musical – Execução$$, $$Iniciar a execução do Projeto Musical: primeiros ensaios focados, leitura do repertório escolhido, montagem do arranjo e resolução de desafios técnicos.$$, '2026-10-03'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '2ecdfe16-da90-4f41-9e0a-24954ca684f5', NULL, 60, $$Videoclipe e Conteúdo Digital$$, $$Ensinar técnicas básicas de produção audiovisual para criação de videoclipes musicais, desenvolver linguagem visual e storytelling aplicados à música.$$, '2026-10-10'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '9cff1bc8-5a02-4fb5-82fa-1521c95b32e5', NULL, 61, $$Música e Comunidade$$, $$Refletir sobre o papel da música na comunidade, planejar ações musicais comunitárias e preparar repertório acessível para apresentação em contextos diversos.$$, '2026-10-17'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '5b254638-a3d5-4fc3-9f57-821d21790bed', NULL, 62, $$Repertório para o Show Final I$$, $$Definir o repertório oficial do Show Final 2026, distribuir partes entre grupos e naipes, e iniciar os ensaios focados no repertório de encerramento.$$, '2026-10-24'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '9193f4de-d199-47b3-9a87-261fb4ed9267', NULL, 63, $$Repertório para o Show Final II$$, $$Aprofundar o ensaio do repertório do Show Final com foco em detalhes musicais: dinâmica, articulação, transições entre peças e momentos especiais do show.$$, '2026-10-31'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '57c81c5f-20a5-41d7-9029-6b2653da4f50', NULL, 64, $$Ensaio Dirigido I$$, $$Realizar ensaio completo do Show Final no formato de passada geral (run-through), simulando o show do início ao fim com foco em continuidade e fluência.$$, '2026-11-07'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '2018291f-6df3-4a52-a44f-8e5a4f19eb9f', NULL, 65, $$Ensaio Dirigido II$$, $$Realizar segundo ensaio completo com correções dos pontos identificados no Ensaio Dirigido I, polir detalhes e fortalecer a confiança do grupo.$$, '2026-11-14'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f5446e9d-9313-499c-be73-3f7371624fbd', NULL, 66, $$Ensaio Geral I$$, $$Realizar o primeiro ensaio geral com cenário, iluminação (se possível), figurino e todos os elementos do show final, simulando o evento real.$$, '2026-11-21'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b3733049-d482-4882-a484-e092fe79324d', NULL, 67, $$Ensaio Geral II$$, $$Realizar o segundo e último ensaio geral, corrigir detalhes finais e preparar emocionalmente os alunos para a apresentação oficial da Formatura.$$, '2026-11-28'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '5a550f03-cb0b-41ed-b7ed-4b8c9cf714ba', NULL, 68, $$Passagem de Som e Ensaio Final$$, $$Realizar a passagem de som oficial no local do Show Final, fazer os últimos ajustes técnicos e emocionais e preparar tudo para a Formatura.$$, '2026-12-05'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.lessons (tenant_id, id, module_id, number, title, learning_objective, scheduled_date, teacher_id, status, created_at, updated_at, is_active)
+VALUES ('00000000-0000-0000-0000-000000000001', '60cdb1a9-8939-4aaf-9dac-9dd19387d83f', NULL, 69, $$Formatura – Show Final 2026$$, $$Realizar a Formatura e o Show Final do Ano 2 da Nipo School: apresentar todo o repertório preparado, celebrar as conquistas individuais e coletivas, entregar certificados e encerrar o ciclo com gratidão e alegria.$$, '2026-12-12'::date, NULL, 'draft', '2026-03-01 00:00:00.000000+00'::timestamptz, '2026-03-01 00:00:00.000000+00'::timestamptz, true)
+ON CONFLICT (id) DO NOTHING;
+
+COMMIT;

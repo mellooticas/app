@@ -1,0 +1,70 @@
+id,nome,ativo,ok_descricao,ok_historia,ok_origem,ok_familia,ok_material,ok_tecnica_som,ok_imagem,ok_anatomia_json,tecnicas,sons,quiz,curiosidades,performances,midias,relacionados
+0b9c8c6b-0e47-471c-b83b-01c931410692,Bongôs,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+0e52514e-58c3-463a-a6e4-f71a1439f9b7,Harmônica (Gaita),true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+11a7bc0c-232f-40dc-92ac-4d15aebd2d52,Reco-Reco,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+13912e91-7b48-4a8d-82b7-b59515c2a0d3,Gaita de Foles (Bagpipe),true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+174f6ed4-3c21-444a-acfa-5149f53f2ca0,Tuba,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,0
+1b699036-0f72-4c48-9801-e01f6f25e165,Saxofone Tenor,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+1f8c0a22-f3fc-4f51-8938-6e1cc6e24f85,Flauta de Pã (Panflute),true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+26cadf44-6d7b-4f9b-85d6-6b2c40715f45,Saxofone,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,3
+2abbd218-b737-410e-934b-f9c8f3d2b806,Alfaia,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+32705505-7727-4d27-b7bd-b08e7c90c233,Dulcimer Apalachiano,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+34f9e29b-3d22-464a-b31c-c3f4fbb73328,Agogô,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+35aff373-706c-47d8-8004-d8edcddb1e0c,Baixo,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,2
+35da6877-2528-4f37-9ab4-b44893ad1dbf,Corne Inglês,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+36040329-1aa6-428a-ad39-cd85de03493e,Acordeão,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+36b9d36d-f65b-4ba1-89be-4ab3707e874c,Fagote,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,3
+3702e3f9-bc82-42b6-ae32-c770081b3ec2,Congas,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+3957c464-86dc-4aa2-9f09-57b5eb2a6c6a,Zabumba,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+3e02292d-bd2f-46ed-9b9e-a0c8b0acd996,Drum Machine,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+412c40b6-f4fc-4379-9d6f-5ce0ec2d669d,Violoncelo,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,2
+4445b5c9-dcdf-4dd3-8ce6-bb04a22127ce,Triângulo,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+453ca164-6f0e-4554-b008-dd68bf4586c2,Sampler,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+492f792b-8d0c-46b7-a195-c8c32114696d,Clarinete Baixo,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+4bc1c064-fa97-43f5-b6d7-d466ca66635d,Sintetizador,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+4c61dc18-2b1e-48c8-8a2e-2c730679d4a5,Cuíca,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+4d78c5a4-04bf-452d-b326-83e7c72c10ef,Sitar,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+509d6a26-159a-4976-aa46-83f914f930aa,Trompete,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,3
+56e32061-7ed6-495d-9bc1-00cdb345b02e,Cajón,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+56f643e0-a3e2-4067-84ac-334c454426f8,Marimba,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+57d10b2f-c49f-460d-8fab-3da3065c15c2,Theremin,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+63ebeaeb-be5d-4c26-a5cf-f59b71423401,Alaúde,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+64b94e98-6ad2-4e7f-9aa0-b57f6bb58df1,Outro,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,0
+6925f61b-ba48-473a-b69a-e3548036c1df,Glockenspiel,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+6b11dc1a-295f-4458-9c08-2bcec09ff3ec,Hang Drum (Handpan),true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+750450cf-e14e-4f02-944e-b3c1bb0f87a4,Violão,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,2
+761a3318-9a5e-46f3-88f2-62159b96100c,Piccolo,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08,Flauta,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,3
+7b6ae164-dfdf-452d-a5c3-d01554861444,Berimbau,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+80436b4f-15c1-452f-9442-34e42b5117e4,Violino,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,3
+82052c70-0a9d-4d94-873e-3b402e032f55,Saxofone Barítono,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73,Trombone,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,3
+86f83611-c0db-470c-87e7-31ee81b1a009,Bateria,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,4
+87ee66bf-bb70-4e70-9aa3-4bff514ced4e,Canto,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,0
+8bd473f1-7b35-4b9e-869a-17fb73c6e047,Teclado,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,0
+8ddb4eea-18b9-4b8f-bb85-16a1f5474f87,Saxofone Soprano,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+8fbba87d-39e1-4542-b8bb-7c815fdc2b9a,Eufônio,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,0
+92ecdeff-3480-4f27-85cd-86f12622cf9f,Melódica,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+96b547b5-e685-40f8-952c-9dfce2ad4dc6,Contrafagote,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+9a5e0eac-114e-4173-90af-32b55c870675,Percussão Erudita,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,0
+9b42a23b-ac7f-42e1-8a04-bde4c525fbde,Oboé,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,3
+9c3a903d-8750-4ded-9341-c876a6d6de93,Flauta Doce (Recorder),true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+9edff4db-9ef5-43fc-970a-7d2086de223b,Viola Clássica,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,4
+a0f53672-7d87-4ab4-a64f-b551fc1a380d,Vibrafone,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+ab9720a5-1973-484e-9a44-d4aa62594336,Piano,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,2
+ac116dcb-4fd4-4ef6-b6fb-f4ff1287bf68,Saxofone Alto,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+b73f1d80-3d73-487e-89b8-ab35274a8dd4,Contrabaixo Acústico,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,3
+b7425269-f2bb-454c-8c61-e3e9d028c9b4,Koto,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+bc665a4e-e301-44d3-b8bf-decb09422d71,Steel Drum (Steel Pan),true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+bee0f63a-e248-4f2c-9325-0a23cb3c5a8e,Ocarina,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+c75fe646-ff86-4420-98f0-a0f25d39de45,Celesta,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+cca87ab1-8ad4-4876-a8d8-190f85927952,Teoria Musical,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,0
+d7c80fe1-ab43-4920-b2aa-d9b4f3ace166,Clarinete,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,3
+df168c2e-275a-44ed-9ee7-af356bf724e5,Balalaica,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+df42056c-8a3e-454c-aeca-73b4d608b85c,Didgeridoo,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+df49fd27-9bcd-4462-a0f8-b36f0ff9f97f,Guitarra,true,true,true,true,true,true,true,true,true,12,15,7,20,8,30,4
+e48ad87b-d237-45e4-a707-05374c4240fa,Cravo,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+e54b748d-3b1b-48ba-b65e-ec1e476e94ad,Tabla,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+ee709f67-e4e4-4f9c-9001-7574e4d8dfa0,Shakuhachi,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+f8653cdb-e2e7-479a-bfff-c8643859b866,Djembe,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0
+fb125188-c48e-4d89-a46e-11c3b600dabd,Clavicórdio,true,true,true,true,true,true,true,true,false,12,15,7,20,8,30,0

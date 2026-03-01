@@ -1,0 +1,107 @@
+-- =============================================
+-- Migration: 030_achievements.sql
+-- Table: core.achievements
+-- Source CSV: achievements_rows.csv
+-- Generated: 2026-02-28T16:15:03.783Z
+-- Rows: 24
+-- =============================================
+
+BEGIN;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '0bc43330-8f86-4484-b100-75a0cf097acc', $$Primeiro Módulo$$, $$Complete seu primeiro módulo completo$$, $$📚$$, $$#B794F6$$, 100, 'milestone', $$modules_completed$$, 1, true, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1d30c5ca-b0c5-41b6-9dca-64a943532430', $$Dedicado$$, $$Complete 10 aulas$$, $$/images/badges/dedicated.png$$, $$#E53E3E$$, 50, 'progress', $$lessons_completed$$, 10, true, '2025-05-26 21:29:59.893535+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '26da4b72-19ce-4c46-a32e-f9cba7e06395', $$Bem-vindo!$$, $$Complete seu perfil pela primeira vez$$, $$🌟$$, $$#FED7D7$$, 5, 'special', $$profile_complete$$, 1, true, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', $$Tecladista Iniciante$$, $$Complete todos os módulos de teclado nível iniciante$$, $$🎹$$, $$#E6FFFA$$, 200, 'special', $$instrument_mastery$$, 1, true, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '3cdecb3c-2a6c-423d-a6e9-773211694204', $$Acadêmico$$, $$Complete 25 aulas no total$$, $$🎓$$, $$#ED8936$$, 100, 'progress', $$lessons_completed$$, 25, true, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '52829c7d-2c04-4f19-9292-090b5c9425d3', $$Maratonista do Conhecimento$$, $$Assista 10 horas de conteúdo$$, $$🏃$$, $$#BEE3F8$$, 150, 'progress', $$watch_time_hours$$, 10, true, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5a562bde-5b07-4460-a937-3674004f0f15', $$Fogo Sagrado$$, $$Acesse o sistema por 3 dias consecutivos$$, $$🔥$$, $$#F6AD55$$, 30, 'consistency', $$days_streak$$, 3, true, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', $$Aprendiz Persistente$$, $$Complete 10 aulas no total$$, $$🏆$$, $$#9F7AEA$$, 50, 'progress', $$lessons_completed$$, 10, true, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6541c1e1-1225-4440-a9f9-53b851c73f62', $$Ninja da Madrugada$$, $$Acesse o sistema às 3:00 da manhã$$, $$🥷$$, $$#2D3748$$, 50, 'special', $$login_streak$$, 1, true, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', $$Persistente$$, $$Estude por 7 dias seguidos$$, $$/images/badges/streak-7.png$$, $$#E53E3E$$, 30, 'consistency', $$days_streak$$, 7, true, '2025-05-26 21:29:59.893535+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', $$Velocista$$, $$Complete uma aula em menos de 5 minutos$$, $$💨$$, $$#4A5568$$, 25, 'special', $$lessons_completed$$, 1, true, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9096f447-c67c-44d1-b934-a54a412f85b9', $$Mestre Músico$$, $$Complete 50 aulas no total$$, $$👑$$, $$#F56565$$, 200, 'progress', $$lessons_completed$$, 50, true, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a9200849-a50b-428d-9443-323985f498eb', $$Colecionador de Pontos$$, $$Acumule 1000 pontos no total$$, $$💎$$, $$#553C9A$$, 100, 'special', $$total_points$$, 1000, true, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ad816136-0000-4269-a7cb-f604ad75fdaa', $$Colecionador de Sabedoria$$, $$Complete 3 módulos diferentes$$, $$📖$$, $$#F687B3$$, 250, 'milestone', $$modules_completed$$, 3, true, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c2982f54-45b5-4728-bfad-5ce022eb9591', $$Primeiro Passo$$, $$Complete sua primeira aula no Nipo School$$, $$🎖️$$, $$#48BB78$$, 10, 'progress', $$lessons_completed$$, 1, false, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', $$Músico Completo$$, $$Complete um módulo inteiro$$, $$/images/badges/module-complete.png$$, $$#E53E3E$$, 100, 'progress', $$modules_finished$$, 1, true, '2025-05-26 21:29:59.893535+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', $$Disciplina de Ferro$$, $$Acesse o sistema por 7 dias consecutivos$$, $$⚡$$, $$#68D391$$, 70, 'consistency', $$days_streak$$, 7, true, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', $$Batera Gospel$$, $$Complete todos os módulos de bateria nível iniciante$$, $$🥁$$, $$#F7FAFC$$, 200, 'special', $$instrument_mastery$$, 1, true, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', $$Doutor em Música$$, $$Complete 5 módulos diferentes$$, $$🎼$$, $$#FBB6CE$$, 500, 'milestone', $$modules_completed$$, 5, true, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', $$Guerreiro da Fé$$, $$Acesse o sistema por 30 dias consecutivos$$, $$⚔️$$, $$#4FD1C7$$, 300, 'consistency', $$days_streak$$, 30, true, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e3eafc65-7170-49eb-8981-624b2838ffd7', $$Primeiro Passo$$, $$Complete sua primeira aula$$, $$/images/badges/first-lesson.png$$, $$#E53E3E$$, 10, 'progress', $$lessons_completed$$, 1, true, '2025-05-26 21:29:59.893535+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', $$Violonista de Louvor$$, $$Complete todos os módulos de violão nível iniciante$$, $$🎸$$, $$#FFFAF0$$, 200, 'special', $$instrument_mastery$$, 1, true, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e7a32785-434d-4493-8311-30397dab1981', $$Crítico Musical$$, $$Avalie 5 aulas com estrelas$$, $$⭐$$, $$#C6F6D5$$, 20, 'social', $$rating_given$$, 5, true, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO core.achievements (tenant_id, id, name, description, badge_icon, badge_color, points_reward, category, requirement_type, requirement_value, is_active, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ee79afed-8d60-4e41-98ae-650b9010425a', $$Estudante Dedicado$$, $$Complete 5 aulas consecutivas$$, $$🏅$$, $$#4299E1$$, 25, 'progress', $$lessons_completed$$, 5, true, '2025-05-26 23:30:04.127094+00'::timestamptz)
+ON CONFLICT (id) DO NOTHING;
+
+COMMIT;

@@ -1,0 +1,13 @@
+nome,descricao,nivel,tipo_tecnica,grupo_tecnico,tempo_pratica_recomendado,ordem_aprendizado
+Articulação,Técnicas de ataque/ligado/staccato e clareza de execução em {instrumento}.,intermediario,,articulacao,15,6
+Coordenação,Coordenação motora aplicada a {instrumento} com exercícios progressivos.,iniciante,,coordenacao,15,7
+Dinâmica,Controle de volume e intensidade: piano/forte e crescendos em {instrumento}.,iniciante,,dinamica,10,5
+Escalas / Padrões,Padrões fundamentais (escalas/arpejos/células rítmicas) adaptados a {instrumento}.,intermediario,,padroes,20,9
+Independência,Independência de mãos/dedos/partes (quando aplicável) em {instrumento}.,intermediario,,independencia,15,8
+Leitura / Repertório,Aplicar leitura e pequenos trechos no {instrumento} com metas claras.,iniciante,,leitura,20,11
+Pegada / Empunhadura,Formas corretas de segurar/manusear {instrumento} com conforto e controle.,iniciante,,controle,10,2
+Postura e Ergonomia,Como ajustar postura e suporte corporal ao tocar {instrumento}.,iniciante,,postura,10,1
+Produção de Som,"Como gerar som consistente em {instrumento} (ataque, sustentação e finalização).",iniciante,,som,15,3
+Ritmo Básico,"Exercícios de pulso, subdivisão e precisão rítmica em {instrumento}.",iniciante,,tempo,15,4
+Rotina de Estudo,Como montar rotina semanal eficiente para evoluir no {instrumento}.,iniciante,,rotina,10,12
+Timbre,"Como variar timbre em {instrumento} (posição, força, material, embocadura etc.).",intermediario,,timbre,15,10

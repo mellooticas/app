@@ -1,24 +1,24 @@
 'use client'
 
-import { createContext, useContext, useEffect, useState, useRef, ReactNode } from 'react'
+import { createContext, useContext, useEffect, useState, useRef, type ReactNode } from 'react'
 import { supabase } from '@/lib/supabase/client'
+import type { UserRole } from '@/lib/types/rbac'
 
-// 3 roles possíveis - baseado na documentação existente
-export type UserRole = 'aluno' | 'professor' | 'admin'
+export type { UserRole }
 
 export interface User {
   id: string
   email: string
   role: UserRole
+  tenantId: string | null
 }
 
 interface AuthContextType {
   user: User | null
   loading: boolean
   isAuthenticated: boolean
-  profile: any
   signIn: (email: string, password: string) => Promise<void>
-  signUp: (email: string, password: string, userData?: any) => Promise<void>
+  signUp: (email: string, password: string, userData?: Record<string, unknown>) => Promise<void>
   signOut: () => Promise<void>
 }
 
@@ -30,7 +30,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [mounted, setMounted] = useState(false)
   const isLoadingRef = useRef(false)
   const hasInitialized = useRef(false)
-  const subscriptionRef = useRef<any>(null)
+  const subscriptionRef = useRef<{ unsubscribe: () => void } | null>(null)
 
   useEffect(() => {
     setMounted(true)
@@ -40,11 +40,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     loadUser()
 
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event) => {
       if (event === 'SIGNED_OUT') {
         setUser(null)
         setLoading(false)
-      } else if (event === 'SIGNED_IN' && session) {
+      } else if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') {
         loadUser()
       }
     })
@@ -60,7 +60,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   async function loadUser() {
     if (isLoadingRef.current) return
-
     isLoadingRef.current = true
 
     try {
@@ -73,35 +72,24 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         return
       }
 
-      // Sistema de permissões: profiles.tipo_usuario
-      let role: UserRole = 'aluno'
+      // Read role and tenant_id from JWT claims (injected by custom_access_token_hook)
+      const claims = session.access_token
+        ? JSON.parse(atob(session.access_token.split('.')[1]))
+        : {}
 
-      const { data: profile } = await supabase
-        .from('profiles')
-        .select('tipo_usuario')
-        .eq('id', session.user.id)
-        .single()
+      const tenantId: string | null = claims.tenant_id || null
+      const userRoles: string[] = claims.user_roles || []
 
-      if (profile) {
-        // @ts-ignore
-        role = profile.tipo_usuario as UserRole
-      }
-
-      // Normalização de role e tratamento de aliases
-      if (typeof role === 'string') {
-        // @ts-ignore
-        let roleStr = (role as string).toLowerCase().trim()
-        if (roleStr === 'teacher') role = 'professor'
-        if (roleStr === 'student') role = 'aluno'
-        if (roleStr === 'administrator') role = 'admin'
-      }
+      // Primary role: highest hierarchy (admin > teacher > student)
+      const roleHierarchy: UserRole[] = ['admin', 'teacher', 'student']
+      const role: UserRole = roleHierarchy.find(r => userRoles.includes(r)) || 'student'
 
       setUser({
         id: session.user.id,
         email: session.user.email!,
-        role: role
+        role,
+        tenantId,
       })
-
     } catch (error) {
       console.error('Auth error:', error)
       setUser(null)
@@ -114,21 +102,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   async function signIn(email: string, password: string) {
     setLoading(true)
     try {
-      const { data, error } = await supabase.auth.signInWithPassword({
-        email,
-        password
-      })
-
-      if (error) {
-        throw error
-      }
-
-      console.log('✅ Login realizado:', { email, hasSession: !!data.session })
-
-      // Aguarda o loadUser completar
+      const { error } = await supabase.auth.signInWithPassword({ email, password })
+      if (error) throw error
       await loadUser()
-
-      console.log('✅ User carregado após login')
     } catch (error) {
       setLoading(false)
       throw error
@@ -140,25 +116,22 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setUser(null)
   }
 
-  async function signUp(email: string, password: string, userData?: any) {
+  async function signUp(email: string, password: string, userData?: Record<string, unknown>) {
     const { error } = await supabase.auth.signUp({
       email,
       password,
-      options: {
-        data: userData
-      }
+      options: { data: userData },
     })
     if (error) throw error
   }
 
-  const value = {
+  const value: AuthContextType = {
     user,
     loading,
     isAuthenticated: !!user,
-    profile: user ? { role: user.role } : null,
     signIn,
     signUp,
-    signOut
+    signOut,
   }
 
   return (

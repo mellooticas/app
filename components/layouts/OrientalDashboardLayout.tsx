@@ -7,52 +7,89 @@ import { usePathname, useRouter } from 'next/navigation'
 import {
   LogOut,
   Menu,
-  Bell,
-  Flower2, // Sakura (Aluno)
-  Waves,   // Ondas (Professor)
-  Crown,   // Coroa/Nobreza (Admin)
   ChevronRight,
   ChevronDown,
-  ChevronLeft,
   X,
   PanelLeftClose,
   PanelLeftOpen,
-  GraduationCap,
-  Globe,
-  Building2,
-  Lightbulb,
-  Music,
-  BookOpen,
-  Scroll,
-  FileText,
-  Trophy,
-  MessageSquare,
-  Settings,
-  HelpCircle,
   Home,
   Calendar,
   Users,
   PlusCircle,
   CheckCircle,
+  Trophy,
+  MessageSquare,
+  Settings,
+  HelpCircle,
+  Music,
+  BookOpen,
+  Scroll,
   Star,
-  MapPin
+  Zap,
+  Video,
+  Target,
+  Clock,
+  BarChart3,
+  Award,
+  User,
+  Building2,
+  GraduationCap,
+  Globe,
+  Lightbulb,
+  FileText,
+  MapPin,
+  QrCode,
+  Wrench,
+  Package,
+  Flame,
+  type LucideIcon,
 } from 'lucide-react'
 import { useAuth } from '@/app/providers/AuthProvider'
+import { usePermissions } from '@/app/providers/PermissionsProvider'
+import { useNavigationGroups } from '@/lib/hooks/use-navigation'
+import type { NavigationItem, NavigationGroup, UserRole } from '@/lib/types/rbac'
 
-type RoleType = 'aluno' | 'professor' | 'admin'
-
-interface NavItem {
-  label: string
-  href: string
-  icon?: any
+/**
+ * Maps icon_name from the database to Lucide icon components.
+ */
+const ICON_MAP: Record<string, LucideIcon> = {
+  home: Home,
+  calendar: Calendar,
+  users: Users,
+  'plus-circle': PlusCircle,
+  'check-circle': CheckCircle,
+  trophy: Trophy,
+  'message-square': MessageSquare,
+  settings: Settings,
+  'help-circle': HelpCircle,
+  music: Music,
+  'book-open': BookOpen,
+  scroll: Scroll,
+  star: Star,
+  zap: Zap,
+  video: Video,
+  target: Target,
+  clock: Clock,
+  'bar-chart': BarChart3,
+  award: Award,
+  user: User,
+  building: Building2,
+  'graduation-cap': GraduationCap,
+  globe: Globe,
+  lightbulb: Lightbulb,
+  'file-text': FileText,
+  'map-pin': MapPin,
+  'qr-code': QrCode,
+  wrench: Wrench,
+  package: Package,
+  flame: Flame,
 }
 
-interface NavGroup {
-  title?: string
-  items: NavItem[]
-}
-
-interface ThemeConfig {
+/**
+ * Visual theme per role. Only styling - no navigation data.
+ * Navigation comes 100% from the database via useNavigationGroups().
+ */
+const ROLE_THEMES: Record<UserRole, {
   name: string
   kanji: string
   meaning: string
@@ -60,168 +97,97 @@ interface ThemeConfig {
   secondaryColor: string
   gradient: string
   pattern: string
-  icon: any
-  navItems?: NavItem[]
-  groups?: NavGroup[]
-}
-
-const THEMES: Record<RoleType, ThemeConfig> = {
-  aluno: {
+}> = {
+  student: {
     name: 'Aluno',
-    kanji: '生徒', // Seito
+    kanji: '生徒',
     meaning: 'Crescimento & Vitalidade',
     primaryColor: 'text-red-600',
     secondaryColor: 'bg-red-100',
     gradient: 'from-red-600 to-orange-600',
     pattern: 'bg-pattern-asanoha',
-    icon: Flower2,
-    navItems: [
-      { label: 'Dashboard', href: '/alunos' },
-      { label: 'Minhas Aulas', href: '/alunos/aulas' },
-      { label: 'Progresso', href: '/alunos/progresso' },
-      { label: 'Portfólio', href: '/alunos/portfolio' },
-      { label: 'Show Final', href: '/alunos/show-final' },
-      { label: 'Repertório', href: '/alunos/repertorio' },
-      { label: 'Instrumentos', href: '/alunos/instrumentos' },
-      { label: 'Vídeos', href: '/alunos/videos' },
-      { label: 'Desafios', href: '/alunos/desafios' },
-      { label: 'História', href: '/alunos/historia' },
-      { label: 'Conquistas', href: '/alunos/conquistas' },
-      { label: 'Gamificação', href: '/alunos/gamificacao' },
-      { label: 'Meu Perfil', href: '/alunos/perfil' },
-    ]
   },
-  professor: {
+  teacher: {
     name: 'Sensei',
-    kanji: '先生', // Sensei
+    kanji: '先生',
     meaning: 'Sabedoria & Serenidade',
     primaryColor: 'text-blue-600',
     secondaryColor: 'bg-blue-100',
     gradient: 'from-blue-600 to-cyan-600',
     pattern: 'bg-pattern-seigaiha',
-    icon: Waves,
-    navItems: undefined,
-    groups: [
-      {
-        title: 'Ensino',
-        items: [
-          { label: 'Início', href: '/professores', icon: Home },
-          { label: 'Agenda Semanal', href: '/professores/agenda', icon: Calendar },
-          { label: 'Minhas Turmas', href: '/professores/turmas', icon: Users },
-          { label: 'Nova Aula', href: '/professores/aulas/nova', icon: PlusCircle },
-          { label: 'Correções', href: '/professores/correcoes', icon: CheckCircle },
-        ]
-      },
-      {
-        title: 'Formação',
-        items: [
-          { label: 'Formação Docente', href: '/professores/formacao', icon: GraduationCap },
-          { label: 'Experiências BR', href: '/professores/experiencias', icon: MapPin },
-          { label: 'Referenciais Int.', href: '/professores/referenciais', icon: Globe },
-        ]
-      },
-      {
-        title: 'Conteúdo',
-        items: [
-          { label: 'Repertório', href: '/professores/repertorio', icon: BookOpen },
-          { label: 'Instrumentos', href: '/professores/instrumentos', icon: Music },
-          { label: 'História da Música', href: '/professores/historia', icon: Scroll },
-          { label: 'Documentos', href: '/professores/documentos', icon: FileText },
-          { label: 'Espaços Alternativos', href: '/professores/espacos', icon: Building2 },
-        ]
-      },
-      {
-        title: 'Engajamento',
-        items: [
-          { label: 'Gamificação', href: '/professores/gamificacao', icon: Trophy },
-          { label: 'Estratégias', href: '/professores/estrategias', icon: Lightbulb },
-          { label: 'Fórum', href: '/professores/forum', icon: MessageSquare },
-          { label: 'Show Final', href: '/professores/show', icon: Star },
-        ]
-      },
-      {
-        title: 'Sistema',
-        items: [
-          { label: 'Configurações', href: '/professores/configuracoes', icon: Settings },
-          { label: 'Ajuda', href: '/professores/ajuda', icon: HelpCircle },
-        ]
-      }
-    ]
   },
   admin: {
     name: 'Administrador',
-    kanji: '管理', // Kanri
+    kanji: '管理',
     meaning: 'Nobreza & Estrutura',
     primaryColor: 'text-purple-600',
     secondaryColor: 'bg-purple-100',
     gradient: 'from-purple-600 to-indigo-600',
     pattern: 'bg-pattern-sayagata',
-    icon: Crown,
-    groups: [
-      {
-        title: 'Gestão Escolar',
-        items: [
-          { label: 'Dashboard', href: '/admin' },
-          { label: 'Alunos', href: '/admin/alunos' },
-          { label: 'Professores', href: '/admin/professores' },
-          { label: 'Turmas & Matrículas', href: '/admin/turmas' },
-        ]
-      },
-      {
-        title: 'Acadêmico & Conteúdo',
-        items: [
-          { label: 'Aulas', href: '/admin/aulas' },
-          { label: 'Instrumentos', href: '/admin/instrumentos' },
-          { label: 'Repertório', href: '/admin/repertorio' },
-          { label: 'História da Música', href: '/admin/historia' },
-        ]
-      },
-      {
-        title: 'Engajamento',
-        items: [
-          { label: 'Gamificação & XP', href: '/admin/gamificacao' },
-        ]
-      },
-      {
-        title: 'Sistema',
-        items: [
-          { label: 'QR Codes', href: '/admin/qr/gerenciar' },
-          { label: 'Diagnóstico', href: '/admin/diagnostico' },
-          { label: 'Configurações', href: '/admin/configuracoes' },
-          { label: 'Ajuda', href: '/admin/ajuda' },
-        ]
-      }
-    ]
-  }
+  },
+}
+
+function getIcon(iconName: string | null): LucideIcon | null {
+  if (!iconName) return null
+  return ICON_MAP[iconName] || null
 }
 
 interface OrientalDashboardLayoutProps {
   children: ReactNode
-  role: RoleType
 }
 
-export default function OrientalDashboardLayout({ children, role }: OrientalDashboardLayoutProps) {
+export default function OrientalDashboardLayout({ children }: OrientalDashboardLayoutProps) {
   const { signOut, user } = useAuth()
+  const { role, loading: permissionsLoading } = usePermissions()
+  const navigationGroups = useNavigationGroups()
   const router = useRouter()
   const pathname = usePathname()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false)
+  const [expandedGroups, setExpandedGroups] = useState<Record<string, boolean>>({})
 
-  // State for expanded groups - defaulting to all expanded for admin
-  const [expandedGroups, setExpandedGroups] = useState<Record<string, boolean>>({
-    'Gestão Escolar': true,
-    'Acadêmico & Conteúdo': true,
-    'Engajamento': true,
-    'Sistema': true
-  })
+  // Use role from database, fallback to defaults
+  const roleSlug = (role?.slug || 'student') as UserRole
+  const dbTheme = role ? {
+    name: role.display_name || ROLE_THEMES[roleSlug].name,
+    kanji: role.kanji || ROLE_THEMES[roleSlug].kanji,
+    meaning: role.kanji_meaning || ROLE_THEMES[roleSlug].meaning,
+    primaryColor: role.primary_color ? `text-${role.primary_color}` : ROLE_THEMES[roleSlug].primaryColor,
+    secondaryColor: role.secondary_color ? `bg-${role.secondary_color}` : ROLE_THEMES[roleSlug].secondaryColor,
+    gradient: role.gradient || ROLE_THEMES[roleSlug].gradient,
+    pattern: role.pattern || ROLE_THEMES[roleSlug].pattern,
+  } : ROLE_THEMES[roleSlug]
 
-  // Persist sidebar state
+  // Use the CSS-safe fallback theme
+  const theme = ROLE_THEMES[roleSlug]
+
+  // Restore persisted states from localStorage
   useEffect(() => {
-    const savedState = localStorage.getItem('sidebarCollapsed')
-    if (savedState) {
-      setIsSidebarCollapsed(savedState === 'true')
+    const savedCollapsed = localStorage.getItem('sidebarCollapsed')
+    if (savedCollapsed) {
+      setIsSidebarCollapsed(savedCollapsed === 'true')
+    }
+    const savedGroups = localStorage.getItem('sidebarExpandedGroups')
+    if (savedGroups) {
+      try {
+        setExpandedGroups(JSON.parse(savedGroups))
+      } catch { /* ignore corrupt data */ }
     }
   }, [])
+
+  // Expand all groups by default (only if no persisted state)
+  useEffect(() => {
+    if (navigationGroups.length > 0) {
+      setExpandedGroups(prev => {
+        if (Object.keys(prev).length > 0) return prev
+        const initial: Record<string, boolean> = {}
+        for (const g of navigationGroups) {
+          if (g.title) initial[g.title] = true
+        }
+        return initial
+      })
+    }
+  }, [navigationGroups])
 
   const toggleSidebar = () => {
     const newState = !isSidebarCollapsed
@@ -229,99 +195,87 @@ export default function OrientalDashboardLayout({ children, role }: OrientalDash
     localStorage.setItem('sidebarCollapsed', String(newState))
   }
 
-  const theme = THEMES[role]
-  const Icon = theme.icon
-
   const toggleGroup = (title: string) => {
-    setExpandedGroups(prev => ({
-      ...prev,
-      [title]: !prev[title]
-    }))
-  }
-
-  const renderNavItems = (items: NavItem[]) => {
-    return items.map((item) => {
-      const isActive = pathname === item.href
-      return (
-        <Link
-          key={item.href}
-          href={item.href}
-          title={isSidebarCollapsed ? item.label : undefined}
-          onClick={() => setIsMobileMenuOpen(false)}
-          className={`flex items-center ${isSidebarCollapsed ? 'justify-center px-2' : 'justify-between px-4'} py-2.5 rounded-xl transition-all duration-200 group ${isActive
-            ? `bg-gradient-to-r ${theme.gradient} text-white shadow-md`
-            : 'text-gray-600 hover:bg-black/5 hover:text-gray-900'
-            }`}
-        >
-          <div className="flex items-center gap-3">
-            {/* Note: In a real app we'd map icons to items dynamically. 
-                 For now, reusing the theme icon or relying on the text structure. 
-                 Since items don't have individual icons in the config yet, 
-                 we will assume the 'label' is sufficient for desktop, but for collapsed state
-                 we ideally need icons. 
-                 
-                 Fix: Re-mapping basic icons based on label keywords for better visualization if specific icons aren't in config.
-                 In a production refactor, NavItem should have an `icon` property.
-             */}
-            <span className={`${isSidebarCollapsed ? 'text-xs font-bold' : 'font-medium text-sm'} truncate`}>
-              {isSidebarCollapsed ? item.label.substring(0, 2).toUpperCase() : item.label}
-            </span>
-          </div>
-          {!isSidebarCollapsed && isActive && <ChevronRight className="w-4 h-4 opacity-80" />}
-        </Link>
-      )
+    setExpandedGroups(prev => {
+      const next = { ...prev, [title]: !prev[title] }
+      localStorage.setItem('sidebarExpandedGroups', JSON.stringify(next))
+      return next
     })
   }
 
-  const renderContent = () => {
-    if (theme.navItems) {
+  const renderNavItem = (item: NavigationItem) => {
+    const isActive = pathname === item.href || (item.href !== '/dashboard' && pathname.startsWith(item.href + '/'))
+    const IconComponent = getIcon(item.icon_name)
+
+    return (
+      <Link
+        key={item.slug}
+        href={item.href}
+        title={isSidebarCollapsed ? item.label : undefined}
+        onClick={() => setIsMobileMenuOpen(false)}
+        className={`flex items-center ${isSidebarCollapsed ? 'justify-center px-2' : 'justify-between px-4'} py-2.5 rounded-xl transition-all duration-200 group ${
+          isActive
+            ? `bg-gradient-to-r ${theme.gradient} text-white shadow-md`
+            : 'text-gray-600 hover:bg-black/5 hover:text-gray-900'
+        }`}
+      >
+        <div className="flex items-center gap-3">
+          {IconComponent && (
+            <IconComponent className={`w-4 h-4 flex-shrink-0 ${isActive ? 'text-white' : 'text-gray-400 group-hover:text-gray-600'}`} />
+          )}
+          {!isSidebarCollapsed && (
+            <span className="font-medium text-sm truncate">{item.label}</span>
+          )}
+        </div>
+        {!isSidebarCollapsed && isActive && <ChevronRight className="w-4 h-4 opacity-80" />}
+      </Link>
+    )
+  }
+
+  const renderNavigation = () => {
+    if (navigationGroups.length === 0 && !permissionsLoading) {
       return (
-        <div className="space-y-1">
-          {renderNavItems(theme.navItems)}
+        <div className="px-4 py-8 text-center text-sm text-gray-400">
+          Nenhum item de navegação
         </div>
       )
     }
 
-    if (theme.groups) {
-      return (
-        <div className="space-y-4">
-          {theme.groups.map((group, idx) => {
-            // Force expand if sidebar is collapsed to ensure items are accessible via icons/short text
-            const isExpanded = isSidebarCollapsed ? true : (group.title ? expandedGroups[group.title] : true)
+    return (
+      <div className="space-y-4">
+        {navigationGroups.map((group, idx) => {
+          const isExpanded = isSidebarCollapsed ? true : (group.title ? expandedGroups[group.title] !== false : true)
 
-            return (
-              <div key={idx} className="space-y-1">
-                {group.title && !isSidebarCollapsed && (
-                  <button
-                    onClick={() => group.title && toggleGroup(group.title)}
-                    className={`w-full flex items-center justify-between px-4 py-2 text-xs font-bold uppercase tracking-wider ${theme.primaryColor} hover:opacity-80 transition-opacity`}
-                  >
-                    <span className="truncate">{group.title}</span>
-                    {isExpanded ? (
-                      <ChevronDown className="w-3 h-3 flex-shrink-0" />
-                    ) : (
-                      <ChevronRight className="w-3 h-3 flex-shrink-0" />
-                    )}
-                  </button>
-                )}
+          return (
+            <div key={group.title || idx} className="space-y-1">
+              {group.title && !isSidebarCollapsed && (
+                <button
+                  onClick={() => group.title && toggleGroup(group.title)}
+                  className={`w-full flex items-center justify-between px-4 py-2 text-xs font-bold uppercase tracking-wider ${theme.primaryColor} hover:opacity-80 transition-opacity`}
+                >
+                  <span className="truncate">{group.title}</span>
+                  {isExpanded ? (
+                    <ChevronDown className="w-3 h-3 flex-shrink-0" />
+                  ) : (
+                    <ChevronRight className="w-3 h-3 flex-shrink-0" />
+                  )}
+                </button>
+              )}
 
-                {/* Divider for collapsed state */}
-                {group.title && isSidebarCollapsed && (
-                  <div className="border-b border-gray-100 mx-4 my-2" title={group.title}></div>
-                )}
+              {group.title && isSidebarCollapsed && (
+                <div className="border-b border-gray-100 mx-4 my-2" title={group.title} />
+              )}
 
-                <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isExpanded ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                  <div className="space-y-1">
-                    {renderNavItems(group.items)}
-                  </div>
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isExpanded ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                <div className="space-y-1">
+                  {group.items.map(renderNavItem)}
                 </div>
               </div>
-            )
-          })}
-        </div>
-      )
-    }
-    return null
+            </div>
+          )
+        })}
+      </div>
+    )
   }
 
   const sidebarWidth = isSidebarCollapsed ? 'w-20' : 'w-64'
@@ -359,9 +313,9 @@ export default function OrientalDashboardLayout({ children, role }: OrientalDash
           </div>
         </div>
 
-        {/* Navigation */}
+        {/* Navigation from Database */}
         <nav className="flex-1 p-2 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-200 overflow-x-hidden">
-          {renderContent()}
+          {renderNavigation()}
         </nav>
 
         {/* User Profile & Logout */}
@@ -378,7 +332,7 @@ export default function OrientalDashboardLayout({ children, role }: OrientalDash
                 {user?.email?.split('@')[0]}
               </p>
               <p className="text-xs text-gray-500 truncate capitalize">
-                {role}
+                {theme.name}
               </p>
             </div>
           </div>
@@ -432,15 +386,15 @@ export default function OrientalDashboardLayout({ children, role }: OrientalDash
 
             <nav className="flex-1 overflow-y-auto">
               <div className="space-y-4">
-                {/* Re-using rendering logic but forcing expanded view for mobile */}
-                {theme.navItems && renderNavItems(theme.navItems)}
-                {theme.groups && theme.groups.map((group, idx) => (
-                  <div key={idx} className="space-y-2">
+                {navigationGroups.map((group, idx) => (
+                  <div key={group.title || idx} className="space-y-2">
                     {group.title && (
-                      <h3 className={`px-4 text-xs font-bold uppercase tracking-wider ${theme.primaryColor} opacity-70`}>{group.title}</h3>
+                      <h3 className={`px-4 text-xs font-bold uppercase tracking-wider ${theme.primaryColor} opacity-70`}>
+                        {group.title}
+                      </h3>
                     )}
                     <div className="space-y-1">
-                      {renderNavItems(group.items)}
+                      {group.items.map(renderNavItem)}
                     </div>
                   </div>
                 ))}

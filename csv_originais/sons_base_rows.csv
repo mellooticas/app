@@ -1,0 +1,16 @@
+chave,nota_musical,tecnica,dinamica,bpm
+s01,C4,Som Sustentado,mf,60
+s02,D4,Som Sustentado,mf,60
+s03,E4,Som Sustentado,mf,60
+s04,F4,Som Sustentado,mf,60
+s05,G4,Som Sustentado,mf,60
+s06,,Ataque Curto,mf,90
+s07,,Ataque Longo,mf,90
+s08,,Staccato,mf,100
+s09,,Legato,mf,80
+s10,,Crescendo,p→f,70
+s11,,Ritmo Simples,mf,80
+s12,,Ritmo Sincopado,mf,90
+s13,,Acentos,mf,100
+s14,,Timbre Claro,mf,60
+s15,,Timbre Escuro,mf,60

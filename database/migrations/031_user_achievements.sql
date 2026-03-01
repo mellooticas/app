@@ -1,0 +1,2315 @@
+-- =============================================
+-- Migration: 031_user_achievements.sql
+-- Table: core.user_achievements
+-- Source CSV: achievements_progress_rows.csv
+-- Generated: 2026-02-28T16:15:03.794Z
+-- Rows: 576
+-- =============================================
+
+BEGIN;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '00eb9c28-204d-463b-8d7f-d473c49fb270', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, '2025-10-05 05:14:12.332971+00'::timestamptz, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '010202af-7d29-46a4-bf21-229447379988', '953666c4-4b76-4d52-8332-6be7323c0f55', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '0249563b-603b-4906-8ce3-e62b7fee1aa4', '9756b78f-ba05-416f-a90d-e35916b3d780', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '0280dffc-e410-429d-a614-f727bee39f60', '46e25388-417a-4d84-9f3d-fb59c804304d', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '03091aa2-fde0-4be7-8798-e04cdeaeca04', '840f99c4-7479-4098-9c2e-474a695178f0', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '0310b701-cad1-45cd-9f99-145d1eba9dbe', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '032e9afb-25c6-4875-819a-30c8f89463f0', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '049d05c2-34dc-4a6e-adb2-f36b606e673a', '07f4a049-faf4-4852-8512-6ef64f2966ff', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '04fe5bfe-5d4f-4913-a07c-8d254a708554', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '0527e495-3083-40c1-824b-248d2cd013d4', 'a57eeb22-a246-4243-8e32-98297c6f3bad', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '0537a6ae-4e80-4815-9410-52bb835ced27', '840f99c4-7479-4098-9c2e-474a695178f0', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '05fe4387-f2c0-4565-b395-49cd7200ffeb', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '066b7207-056f-4f09-a3ad-3ac446328c80', '953666c4-4b76-4d52-8332-6be7323c0f55', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '06f1c67d-8417-4ee6-a4f7-aab9c49b0399', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '082d31e3-14cc-40c0-a20a-f06b93098eca', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '082e7e06-6689-4da2-a5e4-951833464fb5', '40bbb718-086b-45b5-b816-55c836c7634d', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '08612efb-9ae0-4b2f-b25b-b183e5693252', '9756b78f-ba05-416f-a90d-e35916b3d780', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '086a660d-41e5-4b65-983e-ccd023f021f3', '9756b78f-ba05-416f-a90d-e35916b3d780', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '09292872-74b1-46ce-aaed-cf9f738bab5a', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '093eaacb-d834-4d0e-ad69-8951633c5d64', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', '3cdecb3c-2a6c-423d-a6e9-773211694204', 5, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '09d9dc47-ff5b-4426-aedb-68553b38f0e0', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '0a0e0154-2825-4065-b1db-53c2698ed85c', '41f409ee-1614-4bc6-8cce-a02086601dc9', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '0a9af816-cff0-45a5-a37e-9ae3bec709b4', 'ae514bfc-c915-473d-bb40-de3b0323e79e', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '0acdb8dd-127a-4c8a-a238-343ee77c9768', '40bbb718-086b-45b5-b816-55c836c7634d', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '0bf2f28b-50e9-43a8-a429-9beeede73628', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '0c090ab9-c7be-46b5-8724-70878061ae5d', '07f4a049-faf4-4852-8512-6ef64f2966ff', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '0cc95727-4b34-4ac6-b0a0-402f059877bf', '9064ab32-12ce-415a-8c19-51b566608ee5', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '0d5b3394-5bc8-486a-9f4d-eb0f0814b035', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '0f03c19c-e45c-47f7-bcd9-c9d6bde20ad7', 'ae514bfc-c915-473d-bb40-de3b0323e79e', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '0f4f3923-e994-408b-905b-3b52bcf41a67', 'e64310ba-69bb-41e5-8174-b8d52432f735', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '0f7aa57f-841b-4f2a-b15f-4d0350a30ece', '2577157b-8ad4-4c64-870d-189dcf962c33', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '105a2ed3-ba41-4ab6-af0b-7804ae251d23', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '10cdec4d-781f-4920-bb20-60aa28cb0034', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '10e2c687-02f8-4bb3-9d4c-7c76de3dfe72', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '11ae16eb-6413-41c1-ad0a-5ca088d73802', '41f409ee-1614-4bc6-8cce-a02086601dc9', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '11c51ede-3a1f-4696-b51c-40df80fb4b7d', '46e25388-417a-4d84-9f3d-fb59c804304d', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '12979412-6189-46a8-aa08-3b9bb33e656d', '40bbb718-086b-45b5-b816-55c836c7634d', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1404fc74-2ea0-4f65-8e71-342356108642', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '141766ee-ae51-4b08-b8b9-db2bb487c387', '9064ab32-12ce-415a-8c19-51b566608ee5', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1463872a-1409-4c89-8969-5d24b5cf070e', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1494945a-610e-4ad9-9717-4d259483d614', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '14f659dc-463c-4a8a-9122-66576fcd42ba', '840f99c4-7479-4098-9c2e-474a695178f0', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '157ae4c4-a1af-4687-92c8-f84069298afa', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '161a9dc1-6b0b-4820-9a3c-f2873790d0dd', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '161fb27d-3ab2-49b6-b233-d6705106f281', '840f99c4-7479-4098-9c2e-474a695178f0', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '16467ce5-440c-4b29-b480-3ba760a88375', '953666c4-4b76-4d52-8332-6be7323c0f55', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '16e825a7-68b4-4519-85a4-0b39c38f83e6', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 5, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '170132fa-df94-4a52-8df4-3bb750722464', '953666c4-4b76-4d52-8332-6be7323c0f55', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '17dc4c5b-7cff-4dbb-8cc7-4c92fc34e2e6', '41f409ee-1614-4bc6-8cce-a02086601dc9', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '18ace7ec-4c6c-4092-aa7e-c510ebd15be6', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '18ea9f2b-d603-481c-8c1d-b1a20fe45bb3', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1921bcee-dabb-4d42-ba2b-6352328edda8', '07f4a049-faf4-4852-8512-6ef64f2966ff', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '193f9890-a07e-4c6e-8d83-05734c75ff88', '07f4a049-faf4-4852-8512-6ef64f2966ff', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '196538ff-70b9-469a-9527-11f34f8ff48b', '40bbb718-086b-45b5-b816-55c836c7634d', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '196619a3-8cfb-4575-89b1-e70e7dca9b93', '840f99c4-7479-4098-9c2e-474a695178f0', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '197c8593-c189-4ffe-9837-f481f57ce9a0', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '198a4885-6d2c-4c5e-aea1-d987ed2d1e86', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '19ac6d1e-06f2-4f61-aea2-172ce013da64', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '19bb6c9e-21ae-4cd3-aa2d-8791b11b3c93', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '19fc463f-f28c-4208-8015-733218c68e56', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1a155c56-5dff-4358-a194-2b26aae457ba', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1a7725ea-16f5-4453-aa2e-286fd79ef841', '41f409ee-1614-4bc6-8cce-a02086601dc9', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1b956600-7249-4974-bb99-e69036cd5209', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1ba50d20-6ed7-4398-8e24-faa75a2c121c', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1bbbde34-2b62-46f2-8ec9-90324b658c84', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1c10be1d-d7b2-4c54-9cdd-4fbd7a4c90a5', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1c5d9be0-53da-49fc-b8ad-ed7841074794', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1cbbd20d-7f8b-4df4-a1e3-f06bf85aa584', 'e64310ba-69bb-41e5-8174-b8d52432f735', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1cde4199-3ef1-40ca-beda-e08a4c5d2be2', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1d566259-9c15-4907-ba67-0965ed21f518', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1d95868c-0344-4b98-96a4-5f59f1407206', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1da809fa-1260-46b4-8c51-4b4220a27767', '840f99c4-7479-4098-9c2e-474a695178f0', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1e4dd990-7f37-4620-b201-c7c03d4d8ea0', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, '2025-10-05 05:14:12.332971+00'::timestamptz, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1e8a9605-288a-4009-9aa3-39729c08b6df', '2577157b-8ad4-4c64-870d-189dcf962c33', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 5, 1, true, '2025-10-05 05:16:18.567334+00'::timestamptz, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1e8c47f5-e364-45ba-aedb-b23bce7a0170', '40bbb718-086b-45b5-b816-55c836c7634d', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1f710868-7b27-4e18-abe8-7a1e11b4f25e', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '1fb50f98-ba93-4a2e-9ec8-4742b43fe39f', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '20cf0b3e-899a-4e1e-91fd-8e5392027037', '953666c4-4b76-4d52-8332-6be7323c0f55', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '21817ca0-36cc-4fbb-8344-5855deba73ea', '40bbb718-086b-45b5-b816-55c836c7634d', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '2250839f-36a5-4cf6-bc4d-94eb2b50110b', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '225dbfd7-6135-4603-aef9-109426486e4f', '41f409ee-1614-4bc6-8cce-a02086601dc9', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '2297485a-b609-435a-8383-730ce31938f0', '07f4a049-faf4-4852-8512-6ef64f2966ff', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '2335090f-f4ee-49c5-978a-59e2e58d0901', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '24552e29-ebd0-45db-9b65-6fe8a64b91f1', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '24f7d268-22b5-4aff-8f96-e94de16d5034', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '2535e35e-c016-4412-ae1c-99c6b35eb56a', '953666c4-4b76-4d52-8332-6be7323c0f55', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '25a1bf20-4572-4f00-893a-2f0e830ec5ee', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '25cae366-ff3d-46ff-b0e5-d79e840b6fb6', 'a57eeb22-a246-4243-8e32-98297c6f3bad', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '2661c32e-e93c-48f1-aec0-d4f7c92167bf', '46e25388-417a-4d84-9f3d-fb59c804304d', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '267ce2ed-823a-4fa6-b3af-793f69d5e019', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '269a002b-73e5-4acb-8b49-1ef69a34a8aa', '840f99c4-7479-4098-9c2e-474a695178f0', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '26a5813e-0f6f-43d1-aae5-073d68dbf1ad', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '26b6b337-ac37-411c-9773-53eb29ac1827', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '2760f165-5440-4d18-93b1-89c6e524c934', '9756b78f-ba05-416f-a90d-e35916b3d780', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '28adefb4-e14a-49fc-9956-2607f97cfb9d', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '29e07f7f-885d-4f31-aa20-4305817031a7', 'ae514bfc-c915-473d-bb40-de3b0323e79e', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '29f7e684-a595-441b-a1b3-59689048dc24', '953666c4-4b76-4d52-8332-6be7323c0f55', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '29fe9ab9-797b-49c2-8fe0-2d9f782b551b', '953666c4-4b76-4d52-8332-6be7323c0f55', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '29ff5d09-5243-43dc-b7f8-2af3815df634', 'ae514bfc-c915-473d-bb40-de3b0323e79e', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '2a3b226f-fa7c-41c2-a8dd-50cf618adee4', '9064ab32-12ce-415a-8c19-51b566608ee5', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '2a50c455-2678-4431-be63-1b836cc7ae07', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '2c145bd6-bb0e-4e76-8a95-103451ee4463', '8483907a-5521-43b1-b824-5068b02a2872', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '2c69ca12-ff2c-4368-a965-4f432efa6698', '9064ab32-12ce-415a-8c19-51b566608ee5', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '2f136427-87ad-4a70-8cfa-7ad027bf1712', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '2f52963c-d5c1-4e7f-b612-1c318cdbe2d1', '2577157b-8ad4-4c64-870d-189dcf962c33', '3cdecb3c-2a6c-423d-a6e9-773211694204', 5, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '2f8bc6e9-289d-4962-8ee9-c2545e968206', '07f4a049-faf4-4852-8512-6ef64f2966ff', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '304f616c-776a-4a36-bdd7-8a8c7a3f2fbe', '2577157b-8ad4-4c64-870d-189dcf962c33', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '31219033-3c97-4214-a2cf-b3d8e359dfc4', '953666c4-4b76-4d52-8332-6be7323c0f55', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '31488f07-572f-42db-b865-62263257368a', '953666c4-4b76-4d52-8332-6be7323c0f55', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '318548ad-d6f3-4242-9432-386b08ad76ff', '40bbb718-086b-45b5-b816-55c836c7634d', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '324042c7-2dc6-4055-bcd6-5bc75641b7d3', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '32ebdb14-ab27-4416-90df-c4b80ccc463b', '2577157b-8ad4-4c64-870d-189dcf962c33', '9096f447-c67c-44d1-b934-a54a412f85b9', 5, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '331f2bf3-d13a-4c60-89aa-2e53aff6e69e', 'ae514bfc-c915-473d-bb40-de3b0323e79e', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '33804dcc-bd02-48fe-accc-7bdcd4560bd7', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '33a3d9a6-5ef5-480b-b9e6-3dda97c29956', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '33dbc450-29d8-421e-b7d7-7203af81e36c', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '3497650b-2da7-4408-93ce-ec65c16585cf', '41f409ee-1614-4bc6-8cce-a02086601dc9', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '35c9b573-b53b-40b7-95e4-ac3a818ae247', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '35f16370-4bc6-4d19-b66a-326fe165db47', 'e64310ba-69bb-41e5-8174-b8d52432f735', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '36031830-e684-4f8b-a478-8f0e1a31872e', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '36797942-5308-4d50-9658-4fb5dba05461', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '37a256fc-06a3-4542-bf95-88cdbb9b2ffb', '9756b78f-ba05-416f-a90d-e35916b3d780', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '37be7681-d1c8-4e24-83ed-b41263940006', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '38cff4ac-c9f4-4a0d-a62c-fe8f6707b7f7', '40bbb718-086b-45b5-b816-55c836c7634d', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '39d33c80-fec5-482a-b1b6-88fbdf24ee27', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, '2025-10-05 05:14:12.332971+00'::timestamptz, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '3ae508b0-6222-4e0d-bc09-a372b06b7419', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '3b4c0d33-c7f9-4383-b5b4-78bb6e4871a8', '9064ab32-12ce-415a-8c19-51b566608ee5', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '3b6444a3-50af-4d8e-93ca-48d7fa450679', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '3b682ab7-f665-42cd-8fea-1f18b49c08f5', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '3bf9a538-de0d-4646-b632-f17d6f40151a', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '3cb437e3-fffa-4598-a7cd-6d1d0e256406', '840f99c4-7479-4098-9c2e-474a695178f0', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '3e0d052f-82f1-4316-898f-93bf5dd508ac', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '3e36aa33-7f76-4afe-8820-365c788bfde9', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '3e9fa360-fabc-48f1-ba1b-0921fb3e3b10', 'a57eeb22-a246-4243-8e32-98297c6f3bad', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '3eb3489c-9eb0-4950-a77f-1baa66d49e00', 'a57eeb22-a246-4243-8e32-98297c6f3bad', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '3f46fa43-5b99-4a51-aad3-46217e2d4500', '07f4a049-faf4-4852-8512-6ef64f2966ff', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '3f4d6529-35af-43ca-9ed8-697e824899ea', 'e64310ba-69bb-41e5-8174-b8d52432f735', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '3fcd8cb9-2372-493f-89c0-1e7cbb51c030', '8483907a-5521-43b1-b824-5068b02a2872', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '400db2fc-8532-4184-9031-91ff65adb165', '9756b78f-ba05-416f-a90d-e35916b3d780', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '405bcb82-bc5b-4ee9-a0b4-90ed116f7369', '9756b78f-ba05-416f-a90d-e35916b3d780', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '40965ad8-215c-4fcd-a1c7-c755b0191348', '840f99c4-7479-4098-9c2e-474a695178f0', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4097699a-1d3f-423f-b93d-dca553ec2b57', 'a57eeb22-a246-4243-8e32-98297c6f3bad', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '409f47b4-ec48-4a42-b0b4-848fe1f350ef', '46e25388-417a-4d84-9f3d-fb59c804304d', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '40d02269-a1dd-44db-b607-40d253b77eaf', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '419ca747-ab68-489b-b031-dfc3caca4167', '8483907a-5521-43b1-b824-5068b02a2872', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '41b0f6a6-b41c-4169-a4b6-38e0a3ab64b9', '953666c4-4b76-4d52-8332-6be7323c0f55', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '41e1b6bd-d22b-415d-b5ea-91d05286371e', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '42e7081d-fc1e-45ba-a2ee-1591a9619742', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '43b2860b-4dda-4ff0-88af-fb8732a1b720', '40bbb718-086b-45b5-b816-55c836c7634d', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '43e3f540-fa9c-4f11-bd52-881adaad29f8', '9756b78f-ba05-416f-a90d-e35916b3d780', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '43ecae0c-3fac-41a3-9002-376387f015fa', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4455b494-d492-4245-84d0-49fc2e1bd98e', '40bbb718-086b-45b5-b816-55c836c7634d', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4589d921-4a66-497c-9d07-298545c02319', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '45c8194a-e4b0-4a57-b790-cef6cd580e4f', '840f99c4-7479-4098-9c2e-474a695178f0', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '463035b6-f0cb-4ee0-b23c-d855b0a99239', '46e25388-417a-4d84-9f3d-fb59c804304d', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '466a76a1-815c-47c2-b664-dfbbbe6c9774', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '473a9e97-be76-405e-abca-194539824f18', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4746f01e-a873-46c1-b78d-4281e2918496', '40bbb718-086b-45b5-b816-55c836c7634d', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '474c4513-f269-48a5-b592-57f01c6d706f', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '478c0f01-b8ea-4a82-8154-012192213a31', '07f4a049-faf4-4852-8512-6ef64f2966ff', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '49dc83cb-75c2-4ffd-9dd8-c2a59d62667e', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4a768ae7-c25c-44e0-9852-07762f10fb21', '8483907a-5521-43b1-b824-5068b02a2872', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4aab2bcc-2146-42c7-a027-265b81a8cab8', '9756b78f-ba05-416f-a90d-e35916b3d780', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4aeb6b4d-df81-4fbc-b3ef-adaf7bf05e69', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4aed2426-c944-4c92-b9dd-0e0c1fe31650', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4af25e3c-5d12-47f0-a5d7-3769ec02507e', '07f4a049-faf4-4852-8512-6ef64f2966ff', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4b09a760-8969-4cdf-850d-8339ee1d6f4a', 'a57eeb22-a246-4243-8e32-98297c6f3bad', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4b108725-4b60-4dff-9b6f-86c6e1e07ca2', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4b10fe73-fced-4fa9-8235-eae80abebc52', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4b92bc7c-0db7-4a88-92fd-82f5bb2d08b8', '9756b78f-ba05-416f-a90d-e35916b3d780', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4ca28cc3-02be-4935-8d11-d20e6c7dbb6e', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4cb06cd0-dd7a-4a33-b2ca-42535e49d25b', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4cf32387-c329-42f6-b939-b361d3bc5389', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4cf8d568-873c-4545-b020-6a9146213a14', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4d784b3d-c5d8-4551-91fa-780719a97411', '8483907a-5521-43b1-b824-5068b02a2872', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4d91b823-5c8b-4af7-906a-ac0ab9ea0f32', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4ed5f558-7c49-4a75-af5f-4a61c797b063', '07f4a049-faf4-4852-8512-6ef64f2966ff', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4f0c4358-efc8-44c7-9530-ae9d4d291b92', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4f148fe0-f57c-4bdf-98ce-1b902d84e575', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '4fc213ff-be32-497f-9306-d6501989dc87', '9756b78f-ba05-416f-a90d-e35916b3d780', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '50a90aea-db6e-4a81-bc6a-3e6f11fc72d7', 'a57eeb22-a246-4243-8e32-98297c6f3bad', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5132879c-998c-4bd6-a8a5-4ac052ec354e', 'a57eeb22-a246-4243-8e32-98297c6f3bad', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '51826e66-d7a8-431d-b585-990c9fb3b2d6', '46e25388-417a-4d84-9f3d-fb59c804304d', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '51ac0b0b-d0b7-4580-bfd2-569f4113ece5', '9064ab32-12ce-415a-8c19-51b566608ee5', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '51c3b9b7-9888-433f-8f2d-da57bd85949b', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '524020ce-b627-4161-899d-9d09e519a028', 'ae514bfc-c915-473d-bb40-de3b0323e79e', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '52695a67-4ef9-4ea4-92ad-cd9b1062035d', 'a57eeb22-a246-4243-8e32-98297c6f3bad', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '52c6c736-d569-44df-9a8f-78385c3d5652', '8483907a-5521-43b1-b824-5068b02a2872', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '52fe3302-6827-4c63-b094-f663c99845bd', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '540aa85e-2a0f-490d-96c5-40e6b7809ec7', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '541d5000-909f-4df5-97a6-11f83548ab48', 'e64310ba-69bb-41e5-8174-b8d52432f735', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '545a5fde-799f-45b2-b677-039aaebe696c', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '550917aa-70f0-4c11-8d54-d915743e476a', '46e25388-417a-4d84-9f3d-fb59c804304d', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '56a927ba-2c4e-4951-ad7b-b4a6020f401b', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '56e661ce-b94d-470c-9639-b8c88a05f06d', '9064ab32-12ce-415a-8c19-51b566608ee5', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '56f39d34-0ba2-4155-a370-fdcb9f23a64c', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '57320a07-e20f-47c7-b3ba-670a286065cf', '46e25388-417a-4d84-9f3d-fb59c804304d', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '589683d9-a8ac-428b-ab90-fb1af91d9508', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '58a8c8ef-5086-4f23-befa-0b97786c4d6a', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, '2025-10-05 05:14:12.332971+00'::timestamptz, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '58f755c3-3970-4274-8f0c-88fb4b3fff47', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '59105109-b1ce-425f-9a73-081d2fe08b16', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '591e1b06-06d6-4404-a863-6b3adb51b4d1', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5921adbf-c0f1-472a-afca-cc855ab34585', '41f409ee-1614-4bc6-8cce-a02086601dc9', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5948df32-d339-4477-be3b-fe2f7bb70799', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5984efaf-0dc1-4fdc-bc63-ae453e85c6a8', 'ae514bfc-c915-473d-bb40-de3b0323e79e', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5a543fd9-3727-4f58-830d-d92a5c9c229c', '8483907a-5521-43b1-b824-5068b02a2872', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5b39079a-5533-4d8c-a02b-92206ba4620e', '41f409ee-1614-4bc6-8cce-a02086601dc9', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5b3aff04-4317-4d9b-ad26-4ced83e73e6a', '840f99c4-7479-4098-9c2e-474a695178f0', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5b403d61-87f8-42d0-922c-72bb6d2b2ba1', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5b4f28ed-1af9-40dc-b6c2-9d5ed773161c', '953666c4-4b76-4d52-8332-6be7323c0f55', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5b6fb957-dee6-4292-925f-ef86d9cf33f7', 'a57eeb22-a246-4243-8e32-98297c6f3bad', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5c2b59e3-9939-4ce1-a77b-23d2855e6e3f', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5c9041b6-aa4b-458d-98d9-62e927711112', 'e64310ba-69bb-41e5-8174-b8d52432f735', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5cfef306-5436-4559-b916-8425ba1419ea', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5d0ae177-4843-4999-bb43-dc4cd8b15345', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5dffcbac-acdc-4c36-ae06-b00a7334a7fe', '9756b78f-ba05-416f-a90d-e35916b3d780', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5f0c1734-7425-4041-8601-bbe9295c4994', '41f409ee-1614-4bc6-8cce-a02086601dc9', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5f930efd-319d-4558-8c05-b1b01cd278ba', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5fd73514-f108-4d04-bc99-a73ac27421ee', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6084589e-2351-4d5f-b07f-0e4044f4a110', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '60f0578c-434e-4f6f-a3a4-2fdcbd055927', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '61218f96-f063-4607-a550-ee2c400e4c82', 'a57eeb22-a246-4243-8e32-98297c6f3bad', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '617a4b80-ddce-4c7b-94b7-53db08a8945d', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '620696ca-d76c-4ed6-a9d8-d6150ffaec0e', '2577157b-8ad4-4c64-870d-189dcf962c33', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '62dda8e9-4c2e-4246-9942-7a58b90d91b6', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '642d6455-dc3c-4528-bd7a-9569540e2173', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '64b451ae-bca0-4906-b200-9771fd4601a2', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '653af046-f0ce-4945-8e5e-72a27e9ced9c', '840f99c4-7479-4098-9c2e-474a695178f0', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '659b3462-d07f-4e15-ae9b-11ea01389d33', 'e64310ba-69bb-41e5-8174-b8d52432f735', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '65e4588d-9ab0-42de-bb8b-75fbe7dc7dfc', '8483907a-5521-43b1-b824-5068b02a2872', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '65fda235-9897-4bf1-aedf-1a39b8ec397b', 'e64310ba-69bb-41e5-8174-b8d52432f735', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6625ab83-b113-4b78-8b2d-41d1784a2005', '07f4a049-faf4-4852-8512-6ef64f2966ff', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '663732d6-d78d-496c-9e92-25e0468538fc', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '665c9550-9648-40df-9007-387b6720b344', 'ae514bfc-c915-473d-bb40-de3b0323e79e', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '66919b95-3e41-4987-85ad-c83f8187ce0c', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '66bb8a9b-f46f-487d-b227-a76bd7dff005', 'a57eeb22-a246-4243-8e32-98297c6f3bad', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '66e36128-23d9-4f63-ae8f-9ea499e2efd7', 'e64310ba-69bb-41e5-8174-b8d52432f735', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '676127d0-3eaf-4fe3-a0c1-b87300c8ebf8', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '67745dfb-2371-47f6-8c78-9beda4a1fae3', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '67a7fc7b-d6b1-450f-9a04-bda0e004b1b9', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6853dad2-ab45-4211-b05c-534fa8b6f94f', 'e64310ba-69bb-41e5-8174-b8d52432f735', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '688b3be7-6833-4ced-8daf-b64e46bddc2f', 'e64310ba-69bb-41e5-8174-b8d52432f735', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6891b24c-9a02-435d-8b81-39148226e036', '40bbb718-086b-45b5-b816-55c836c7634d', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '68b049f6-6004-49d9-ad49-8370092e0409', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '69a18ba7-9d9a-46d6-9fc6-5358218197c0', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6a2184e3-b694-4cfb-a76c-6a3b773de3b9', '41f409ee-1614-4bc6-8cce-a02086601dc9', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6a8a8983-0e55-4349-bc3d-288204468af5', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6a97159e-57b3-4d1c-ad65-72355b0fb497', '40bbb718-086b-45b5-b816-55c836c7634d', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6a9821af-736e-4dac-8748-cfc817059c76', '953666c4-4b76-4d52-8332-6be7323c0f55', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6b0053a7-cf44-41bf-8016-393ee418f0b4', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6b70aaf3-1080-4780-837f-ca802bd56a3f', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6b92b694-5324-4fe7-8e2e-2b3f2b8326d1', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', 'a9200849-a50b-428d-9443-323985f498eb', 50, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6bcd2361-9215-49e5-bb80-4efeb5bd15c9', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6beb90a8-4d23-4372-b905-1c72ba709d17', '07f4a049-faf4-4852-8512-6ef64f2966ff', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6c95a49e-de9e-489e-931d-84168e2a0a3b', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6cde3f61-431a-4f67-a0ee-4ba27c58e574', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6d27d250-a33c-4866-8435-aa908d3a4c36', 'a57eeb22-a246-4243-8e32-98297c6f3bad', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6d3cc356-7672-4312-b091-8e4171efdd43', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6d7e8233-bf74-4e8d-b659-7ae18e7e6840', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6dbc3fcc-d094-4973-8d6a-190adf9b9def', '9064ab32-12ce-415a-8c19-51b566608ee5', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6e154d85-73ad-403b-a278-ab67ade90435', '9756b78f-ba05-416f-a90d-e35916b3d780', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6e18101a-f1c4-4f9f-92c5-a95854c24dd9', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 5, 1, true, '2025-10-05 05:14:12.332971+00'::timestamptz, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6e696618-5db5-4b4e-b406-1c2713cadb51', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6eb65082-a239-4f3b-b223-c27e062d2c70', '953666c4-4b76-4d52-8332-6be7323c0f55', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6ee58435-1644-4a7c-a8a9-4ff90137b64d', '40bbb718-086b-45b5-b816-55c836c7634d', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6f39cc6b-db74-42f3-9f15-50e7d58e75a6', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6fe3af93-fe20-4e53-a2e2-fa8f7ccd6096', 'ae514bfc-c915-473d-bb40-de3b0323e79e', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '71270cd5-8ab2-4088-9d91-db99afe5d515', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '71d1dde3-3501-47ff-b762-87df6c085233', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '72335628-52a0-47c8-9a7a-4ebec19d8838', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '730b5c9e-523e-4d7e-8726-367a98028a63', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '737242ca-4b83-41ef-a95b-93f1790d09e8', '8483907a-5521-43b1-b824-5068b02a2872', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '7387819a-3b38-4a33-9a4c-7524fea9191a', '46e25388-417a-4d84-9f3d-fb59c804304d', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '73d5053a-a531-4e09-b76b-229e32b2dcb3', '41f409ee-1614-4bc6-8cce-a02086601dc9', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '753a8331-9c25-4840-bd2c-2e9d357c865d', 'a57eeb22-a246-4243-8e32-98297c6f3bad', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '76ec779e-886b-4aba-83b0-c4329c88d802', '2577157b-8ad4-4c64-870d-189dcf962c33', 'ee79afed-8d60-4e41-98ae-650b9010425a', 5, 5, true, '2025-10-05 05:16:18.567334+00'::timestamptz, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '77cdd834-d0af-4237-8b40-c82319872eee', '2577157b-8ad4-4c64-870d-189dcf962c33', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '77fb4dbf-0cf4-4573-8854-62d81cb1eb5e', 'e64310ba-69bb-41e5-8174-b8d52432f735', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '78277af9-4d77-40f5-b3f5-fe085551acf6', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '7880d89f-b7aa-48b4-a7bd-c7b3f7c3ce9c', '8483907a-5521-43b1-b824-5068b02a2872', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '789c449d-0b2c-42dc-be96-01d589cd8e37', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '78a5ad97-8c5f-420f-8719-ee6676fc8de3', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '79469dc8-1a18-4690-9c61-38c2e0caf824', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '79bcd0a8-974d-458c-bd45-c408f0b4aa62', '9064ab32-12ce-415a-8c19-51b566608ee5', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '7a7a5af6-eac4-45fb-a96c-33d5d1b29b00', '9064ab32-12ce-415a-8c19-51b566608ee5', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '7ad457ba-ee8b-4150-ad0b-171418539850', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '7bbd90e6-37c6-4be5-86ce-40150180a5ea', 'e64310ba-69bb-41e5-8174-b8d52432f735', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '7c348755-6d94-4def-854a-8be871afe273', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '7c4339e8-3b2c-451d-84cc-b3aa2ebd5f3a', 'ae514bfc-c915-473d-bb40-de3b0323e79e', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '7dc4cc7c-215e-4cf9-a241-8b6358d0f8e2', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '7e434bb4-e850-4bdd-a964-b8768aa82f2b', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '7f543069-4843-4d96-9e75-0e2b61224347', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8080bd9c-2972-4849-a6c9-562d3c72552e', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8188f0f6-443e-48fa-92fb-d0222c9234d9', 'ae514bfc-c915-473d-bb40-de3b0323e79e', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '821270ec-c773-4aee-880c-8c78d353ad77', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8255a937-4074-41be-9eee-b2b776cda845', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8338f72b-5fa4-4fb4-8f8a-adef015aee3b', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '833fd87a-a122-479c-ab8f-7244f4b57cfd', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '83529aec-5e69-42b7-a711-d6aafbe49ffb', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '835867aa-f098-4563-bddb-feee30dc390e', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8396496e-7125-4a17-ab6a-3c6a8f78a7b5', 'ae514bfc-c915-473d-bb40-de3b0323e79e', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '83c2977d-86d7-413c-9063-e43693caaf25', '953666c4-4b76-4d52-8332-6be7323c0f55', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '843a5e7d-7390-425d-b44a-0a675903afa5', 'a57eeb22-a246-4243-8e32-98297c6f3bad', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8471b7b9-0686-4753-9315-c2b7745fdc6f', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '847ad0b4-9fa5-4539-973b-043613650cc7', '40bbb718-086b-45b5-b816-55c836c7634d', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '84cbd9c0-bdb4-495b-91e2-4ba5c4421c36', '07f4a049-faf4-4852-8512-6ef64f2966ff', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '850080b9-4afc-439c-8544-948c4c29cf32', '9064ab32-12ce-415a-8c19-51b566608ee5', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8516c06d-d536-4be4-8dff-e0acfcb294f9', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8540ee5a-10d1-4dd3-a7dc-6cc5b21b4215', '07f4a049-faf4-4852-8512-6ef64f2966ff', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '86adb41b-1e4b-4e42-8eef-1dfa25f1fab6', '07f4a049-faf4-4852-8512-6ef64f2966ff', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '871163db-3f3d-43f7-8964-73eeaa1f43ba', '840f99c4-7479-4098-9c2e-474a695178f0', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '873f1efe-fcf1-4293-8502-ab12b08fa070', '2577157b-8ad4-4c64-870d-189dcf962c33', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8788f8a0-9dd8-4343-b8be-df9a18024bec', '840f99c4-7479-4098-9c2e-474a695178f0', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '87fda03d-f571-4cb8-87c1-5f379564d309', '9064ab32-12ce-415a-8c19-51b566608ee5', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '88009678-69c6-481a-81e3-fc5229932036', 'ae514bfc-c915-473d-bb40-de3b0323e79e', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '88602fe4-a0c4-4247-b1fa-b4083cb6d0a8', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '893c9250-dd59-416c-b6eb-e918ba90fe4b', '840f99c4-7479-4098-9c2e-474a695178f0', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '897c7d8d-05fe-40af-a549-c71a057d633d', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, '2025-10-05 05:14:12.332971+00'::timestamptz, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '89a21d1a-6e5b-42b7-b3c2-be06aaad3e4b', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8a570595-c172-4150-95f8-54f0d5623c61', '2577157b-8ad4-4c64-870d-189dcf962c33', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 7, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8afb9b0b-755b-406f-95c2-ff616f902965', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8b06e292-73a7-4a7c-ad32-1adda7315acd', '9064ab32-12ce-415a-8c19-51b566608ee5', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8b5cad0a-846c-4df3-86a2-ec0d5303fc8f', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8cc8c4c6-61dd-4bf2-9a65-11595d06ab80', '46e25388-417a-4d84-9f3d-fb59c804304d', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8d587d7a-1ca4-4292-8daf-dc16d3d2f31a', '8483907a-5521-43b1-b824-5068b02a2872', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8e2353f7-adeb-40ec-ab37-ea637fac018b', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8eaaff7d-6ba8-47a2-a506-6ee38a0a97e8', '8483907a-5521-43b1-b824-5068b02a2872', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8f366736-3107-4a8e-8125-4bf4e3292e9e', '41f409ee-1614-4bc6-8cce-a02086601dc9', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8f7ecb8e-78b8-4046-83f3-0525cd213eec', '46e25388-417a-4d84-9f3d-fb59c804304d', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '907fbfee-6ec4-4083-813b-eedc48ac656f', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '91fbbb7d-a772-4168-ab1f-4613fd75ae40', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '92cf35ab-3345-43cc-8011-9cca75268de2', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9318de07-ffd3-453f-ba5b-00abdffc3413', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '934f0297-aeb7-4d3a-b662-501ec2b0b8b1', '840f99c4-7479-4098-9c2e-474a695178f0', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9390d434-3222-4e8e-a1fc-52d585c46fec', '40bbb718-086b-45b5-b816-55c836c7634d', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '93a25168-d1e0-4a33-ab25-8d3310b4a97b', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '94d60235-bfb8-4db5-a93b-b00db5408408', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '94e8c53b-6df0-4165-8d9d-a625647e14e9', 'ae514bfc-c915-473d-bb40-de3b0323e79e', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '96089d42-cc5b-4687-9b9c-c451da704c5a', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '961e6a71-453e-4070-bb22-d8e678177425', '953666c4-4b76-4d52-8332-6be7323c0f55', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '96780d1e-4795-473f-bd6f-af16a81db816', '8483907a-5521-43b1-b824-5068b02a2872', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '970749a5-992a-4e54-bf4f-6711c3d34576', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9819f825-18b9-41c7-894a-f50c2e0f58ce', '07f4a049-faf4-4852-8512-6ef64f2966ff', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '982dfd66-7da3-49e0-b5f4-c80556ef48a2', '40bbb718-086b-45b5-b816-55c836c7634d', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '98881d93-4e97-4ada-9269-14455c9d3b8c', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, '2025-10-05 05:14:12.332971+00'::timestamptz, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '98900adc-551b-4db7-8a2f-50e2a6b95759', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '98953ee8-57ac-43b5-bb8f-111a4ee6dec4', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '989ac733-7fe6-4635-ba5d-64dfa06df010', 'ae514bfc-c915-473d-bb40-de3b0323e79e', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '98aa68a0-0805-4e0f-8c6d-65ad0a7a4be7', 'ae514bfc-c915-473d-bb40-de3b0323e79e', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '991688e2-2055-4602-a7d7-6a0fb19cbf97', '41f409ee-1614-4bc6-8cce-a02086601dc9', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '99a0004e-479d-4357-ac86-6718448dffed', '2577157b-8ad4-4c64-870d-189dcf962c33', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '99a834ff-c5a9-42b4-89a0-e78cdaec1401', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9a93ac55-b9e6-4a26-83dd-58e080b88dd0', 'e64310ba-69bb-41e5-8174-b8d52432f735', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9b531bc7-6c3e-4ea8-bfe1-6e039000ef76', 'ae514bfc-c915-473d-bb40-de3b0323e79e', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9bc81ac0-e9eb-494a-b66e-81a6bc551144', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9be6a518-85ad-42d7-bc1e-250938c286a3', 'ae514bfc-c915-473d-bb40-de3b0323e79e', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9bfec008-f6d2-4e6b-99a4-5d096e42146e', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9c2cd603-0b62-470b-ac31-4b4a4c24714e', '9756b78f-ba05-416f-a90d-e35916b3d780', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9c5110e1-3578-4f1d-8570-405aaffb9d3d', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9c72582e-51e4-4e54-adee-2d4168df1675', '840f99c4-7479-4098-9c2e-474a695178f0', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9caa747c-8db6-4535-a7c1-16f766674357', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9ce4e91d-82ee-40dc-b35c-654498e673d4', 'e64310ba-69bb-41e5-8174-b8d52432f735', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9d3c5e49-d687-491a-8a5f-bb0fdc4d60b8', 'a57eeb22-a246-4243-8e32-98297c6f3bad', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9d3cbafa-cbf4-40d4-9e3d-aa6048cbb24d', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9dbfe4ab-23d0-4481-9ab3-613d8fbc5db7', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9df77336-47ca-4959-b3db-b264902e9c58', '2577157b-8ad4-4c64-870d-189dcf962c33', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 7, 7, true, '2025-10-05 05:21:19.747201+00'::timestamptz, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9e5e6a6c-f677-45a7-9c37-16a26fdcac21', 'ae514bfc-c915-473d-bb40-de3b0323e79e', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9ede10a1-204e-4177-b510-69c06cf58975', '9064ab32-12ce-415a-8c19-51b566608ee5', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9ef75a02-b35f-49fd-aaf7-42d7699b9c44', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9f2214b2-d650-4709-96c2-1f8c5a182bf8', '2577157b-8ad4-4c64-870d-189dcf962c33', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9f31e561-cd9a-4b79-aaf1-291df60c2958', '41f409ee-1614-4bc6-8cce-a02086601dc9', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9fe4bb7b-b3e2-46d6-a1d1-f219352ad699', '41f409ee-1614-4bc6-8cce-a02086601dc9', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9ffe4b40-1cf6-4c30-a652-6e91e30693eb', '9756b78f-ba05-416f-a90d-e35916b3d780', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a047080d-291f-4c14-b46a-2554e67578e4', '46e25388-417a-4d84-9f3d-fb59c804304d', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a051aa69-18bc-4e83-8e83-998349a9c649', '8483907a-5521-43b1-b824-5068b02a2872', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a0e3d9b7-bb39-497f-bacf-284fe7e7a760', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a1191a6d-d389-401f-b1e0-1b9c883bc8f7', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a136291b-65c8-40bd-967d-446e6666e643', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a25f8245-5504-4141-8eb1-b9706559d555', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a2a020fa-605b-4788-a238-555d7a3ec819', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a35150f8-50bd-4ac6-b7d9-4190b7411c56', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a3eb4318-b50e-40b3-87c0-18ffdef44e9d', '07f4a049-faf4-4852-8512-6ef64f2966ff', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a4da0a8c-e32b-49d5-b009-1c76d299ec37', '9064ab32-12ce-415a-8c19-51b566608ee5', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a61d05ed-6e49-4522-8dfe-8a95b7b8975f', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 5, 1, true, '2025-10-05 05:14:12.332971+00'::timestamptz, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a6446328-39d6-429d-a20c-cab3239e5527', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a66d786e-6d1c-4b39-8efc-4d05a287dddb', '840f99c4-7479-4098-9c2e-474a695178f0', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a6ccad33-a97f-4de9-8548-1f7fa695bece', '07f4a049-faf4-4852-8512-6ef64f2966ff', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a70f1d1e-9f78-482f-91e1-78276e6bfe86', '41f409ee-1614-4bc6-8cce-a02086601dc9', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a7da6db1-0217-4213-8d0c-7aae6ce1274c', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a806d4b5-fb1b-4513-80c8-06acd56827ea', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'abfe23ff-0c44-4403-8be9-fcaf236c8bb6', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ac37b756-b5a2-47ed-a8eb-246507fe74fc', '8483907a-5521-43b1-b824-5068b02a2872', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ac90f0be-16cf-4f36-af13-d1b81a9363dd', '46e25388-417a-4d84-9f3d-fb59c804304d', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'acf96ac9-b929-4778-9c8c-8f22e2d81848', '2577157b-8ad4-4c64-870d-189dcf962c33', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ad4566cc-0fcb-4a04-b3fb-becfac916725', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', 'ee79afed-8d60-4e41-98ae-650b9010425a', 5, 5, true, '2025-10-05 05:14:12.332971+00'::timestamptz, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ad98fbe8-78bd-4743-897a-b7f1a6fd5c5a', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ad9c2e6b-a44b-44ef-8b7e-9eb8bacba83f', 'e64310ba-69bb-41e5-8174-b8d52432f735', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'add02ef2-7153-4348-86b5-c39a719c160f', 'e64310ba-69bb-41e5-8174-b8d52432f735', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ae1ef298-1c09-4670-92b5-103353f38d02', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ae7bb40d-2164-4b48-8278-89596116ec26', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'aeaa0af3-4faa-4e89-b715-c8181e7163ff', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'af7b2a5d-6931-4a9b-8436-16b86495a0b7', '9756b78f-ba05-416f-a90d-e35916b3d780', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'af9cd158-f9fd-410e-a54a-2551d87c4213', '953666c4-4b76-4d52-8332-6be7323c0f55', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'aff7902c-2ee1-42eb-8dde-de30d2b6877b', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b068d162-26e6-4970-a1c4-0a34d6d26e72', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b140a303-0491-4838-85dd-b17a29e1aae0', 'e64310ba-69bb-41e5-8174-b8d52432f735', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b15dcfb0-427b-444f-aa75-c8e11f2cb555', '8483907a-5521-43b1-b824-5068b02a2872', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b1c2c9a4-02e9-4fe3-a357-24e50bd144e2', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, '2025-10-05 05:14:12.332971+00'::timestamptz, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b29a8a74-2e46-44d8-a882-200afde2fe90', '2577157b-8ad4-4c64-870d-189dcf962c33', 'a9200849-a50b-428d-9443-323985f498eb', 50, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b2d037dd-fdab-4b29-bf8d-dbda6f6fe86f', '9064ab32-12ce-415a-8c19-51b566608ee5', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b3378919-ba7e-46a2-9901-1ac3c14347b1', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b35ecf2f-b6b1-49ef-853d-91c420504fd8', 'e64310ba-69bb-41e5-8174-b8d52432f735', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b3d3f323-88b8-4c0e-87ba-6cb89dda9d48', '840f99c4-7479-4098-9c2e-474a695178f0', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b425946f-8eca-4d4f-b331-fdb7700ea766', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b4d4c1d7-14e8-4ee0-81eb-17dfb126676c', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b5351a0b-5e47-4015-bed9-1997f07b38ad', '8483907a-5521-43b1-b824-5068b02a2872', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b57fbe0f-5a15-435a-bd20-6072e8c8bec1', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b5e51980-abf1-48f7-947a-91bae0d1c580', 'a57eeb22-a246-4243-8e32-98297c6f3bad', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b5ec6072-d07f-4811-87df-119f8688ac50', 'e64310ba-69bb-41e5-8174-b8d52432f735', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b62ec05f-7b55-43c5-b504-a1c62ad0399d', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b6b85863-4df5-41fc-966b-1e3a0698fddf', 'a57eeb22-a246-4243-8e32-98297c6f3bad', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b744624b-0cc7-4852-b124-e389f0a84c9c', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b7cf0946-6ddd-4ac9-8af9-7b86cfbb88d1', '2577157b-8ad4-4c64-870d-189dcf962c33', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 5, 1, true, '2025-10-05 05:16:18.567334+00'::timestamptz, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b8e53053-2b73-403b-9e79-1d805fe69845', 'a57eeb22-a246-4243-8e32-98297c6f3bad', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b8f0cc23-d912-4618-a200-5b1f99af40ba', '41f409ee-1614-4bc6-8cce-a02086601dc9', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b9ef8166-abc6-4c68-8f83-4cffd318d46b', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ba5e85e8-37c0-4235-b7a2-c3642615c729', '46e25388-417a-4d84-9f3d-fb59c804304d', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bac47f7c-af12-47a7-bcad-adb50e0ad8ea', '46e25388-417a-4d84-9f3d-fb59c804304d', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bb4a6033-c2e7-4a10-9695-25551f815f91', '8483907a-5521-43b1-b824-5068b02a2872', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bb586ee4-0761-4fbe-a899-ba70ff06230b', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bb5a0860-8720-4170-a898-31efbe77f15d', '8483907a-5521-43b1-b824-5068b02a2872', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bd0db959-ae23-4580-889a-21453833e5fc', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bd6970b7-a2e1-4ce0-a24e-9a3ace177b78', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'be37d82a-d072-45a2-a93d-118aea00a616', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'be879734-9236-4efb-95d4-7b8e307bcde9', '07f4a049-faf4-4852-8512-6ef64f2966ff', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bf7a60d2-dfc5-4192-9e80-1ae084005625', '840f99c4-7479-4098-9c2e-474a695178f0', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bf7fe581-246b-43ba-bd32-dc59c43d367d', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bfe8dc95-082e-4fa1-88bf-4f1a592be71b', '953666c4-4b76-4d52-8332-6be7323c0f55', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c0060361-28cb-461e-a62c-3149773f5ba6', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c02a2bae-3fed-4aac-9490-516240468d99', '07f4a049-faf4-4852-8512-6ef64f2966ff', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c0786e4b-dab7-47d2-9d11-cc974dd83590', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c104201e-4bcf-4b6e-9436-d98e5c6a479b', '8483907a-5521-43b1-b824-5068b02a2872', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c10e04cb-3736-4fc6-83bd-2f9009d86d43', '2577157b-8ad4-4c64-870d-189dcf962c33', '5a562bde-5b07-4460-a937-3674004f0f15', 7, 3, true, '2025-10-05 05:21:19.747201+00'::timestamptz, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c1ca63f8-aada-4191-b7dc-0b1feccc0a13', '41f409ee-1614-4bc6-8cce-a02086601dc9', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c1cbc0f1-3340-4a2b-b032-d2f468791043', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c1fc2ceb-50a7-45fc-ae79-fe1e28a43c9e', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c20ed5f9-351a-4303-9868-4d266195abc9', '953666c4-4b76-4d52-8332-6be7323c0f55', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c218e447-657e-4962-bdd6-3ea60d39493f', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c2af99b0-99b5-4484-8032-d4bd9fd88ccb', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c35ca50f-5300-4591-aadc-f4a217e13608', '40bbb718-086b-45b5-b816-55c836c7634d', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c3cdb071-279d-4277-9edf-0953be8b407b', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c4b86dc9-30c0-48db-8bdc-3d47fd94ce51', '40bbb718-086b-45b5-b816-55c836c7634d', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c4d820de-22bd-4889-940d-6c536bc8a4a9', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c517c46e-50dd-4432-82c1-109ec08fe921', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c5ba9c36-0903-40e3-ba1b-039a881e2308', '8483907a-5521-43b1-b824-5068b02a2872', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c60b6c23-0b8f-48e1-9214-dde93ad7b120', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c60df42b-1c4d-44c0-802b-4ec37733e16d', '8483907a-5521-43b1-b824-5068b02a2872', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c72faa11-7f0e-4d59-8093-35c8508ba502', '9756b78f-ba05-416f-a90d-e35916b3d780', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c741c20b-63d8-4c1c-90bf-e2a2bf1b325a', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c746b699-e2d2-4253-86bd-a0baadc53a79', '40bbb718-086b-45b5-b816-55c836c7634d', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c80153dc-dcf6-4bda-b3a5-40d42a47d54a', '953666c4-4b76-4d52-8332-6be7323c0f55', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c8532b87-6eeb-4b02-aa5c-ccc271ec163f', '8483907a-5521-43b1-b824-5068b02a2872', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ca51c2f1-142e-4741-9c61-a542df517835', '41f409ee-1614-4bc6-8cce-a02086601dc9', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ca8331c3-c461-4848-9567-221816acc6eb', 'a57eeb22-a246-4243-8e32-98297c6f3bad', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ca854113-1eff-4633-943d-cec5487a3502', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 5, 1, true, '2025-10-05 05:14:12.332971+00'::timestamptz, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:16:18.567334+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cac00cac-9c25-4a48-8fef-fa5155031100', '9756b78f-ba05-416f-a90d-e35916b3d780', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cb2f998e-4bfd-4a02-9eb3-2421b8f22cd6', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cca87d7f-8fd0-416f-97fc-293c5ac29476', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cdbc34a8-59cb-45c1-95c7-1d0f1363be85', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', '9096f447-c67c-44d1-b934-a54a412f85b9', 5, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cdfc3eae-86a6-43b7-be10-b8e77de15cc5', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ce1e6dbc-4a80-42f4-8863-118ff984b352', 'ae514bfc-c915-473d-bb40-de3b0323e79e', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ce3d922a-4535-496f-a37c-a91f32850a24', 'ae514bfc-c915-473d-bb40-de3b0323e79e', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cfaa811f-cff9-452c-acda-0a61d1fd6612', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cfd7f1d3-4945-42c3-a3ac-f1b79fd54b63', '9756b78f-ba05-416f-a90d-e35916b3d780', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd163c5b9-8180-4981-8945-e56498692f9b', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, '2025-10-05 05:14:12.332971+00'::timestamptz, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd18df795-a988-4e98-b11f-7a3b3afc5d24', '953666c4-4b76-4d52-8332-6be7323c0f55', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd1ae3418-59b3-44f2-b45c-2587758349d8', '2577157b-8ad4-4c64-870d-189dcf962c33', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 5, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd26cf399-ba5d-4f1e-a2c5-6320e350eb2e', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd4fb7bb5-4b7d-4d5e-81db-8535c4c59afb', '07f4a049-faf4-4852-8512-6ef64f2966ff', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd587a3c1-4d61-4c10-a568-d3a30c4d3c55', '46e25388-417a-4d84-9f3d-fb59c804304d', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd5aad95d-320e-4597-a1eb-abe9c6f05aa2', '840f99c4-7479-4098-9c2e-474a695178f0', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd5bdb291-3280-43a6-ab6b-c8fe22ee5959', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd71f2ba9-d11e-4047-9f78-7e681b6f5a27', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd7438e97-7a80-401f-81b9-8139ead05f15', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd7f33d0b-aae0-4ab8-b5cb-7d20aa04610d', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd7f62be0-0787-4f02-876d-f4464786ecb5', '9064ab32-12ce-415a-8c19-51b566608ee5', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd8569b54-fbe6-407c-828e-563174b49d57', '46e25388-417a-4d84-9f3d-fb59c804304d', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd894203c-7d3a-45f7-a4cd-0529e9950d65', '840f99c4-7479-4098-9c2e-474a695178f0', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'da34de9a-b80b-4445-9450-ca795df7834f', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', '6541c1e1-1225-4440-a9f9-53b851c73f62', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'da60213b-be8b-4e8f-abe7-48ef9a00ad3b', '8483907a-5521-43b1-b824-5068b02a2872', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dad61bc5-790e-4347-a66e-a81d5e96f175', '40bbb718-086b-45b5-b816-55c836c7634d', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dbb6f6d5-af9b-4980-b7b1-7d5c46540567', 'ae514bfc-c915-473d-bb40-de3b0323e79e', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dc28ec9c-ee9b-4ef1-990b-4fa3608c9d54', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dc5547cf-8004-45ef-b804-aa2e1e9af290', '2577157b-8ad4-4c64-870d-189dcf962c33', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dcb68e3a-7959-4b44-8a31-7c66b162c71d', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dce94516-7af0-4b61-902e-7cb40338b80b', '953666c4-4b76-4d52-8332-6be7323c0f55', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dd3d15aa-1082-4d0c-921f-ec307f488b07', '2577157b-8ad4-4c64-870d-189dcf962c33', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 5, 1, true, '2025-10-05 05:16:18.567334+00'::timestamptz, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:16:18.567334+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dddb054d-24da-4b54-98aa-65b3beee8080', 'e64310ba-69bb-41e5-8174-b8d52432f735', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'de197185-6a03-4d51-94d1-c63eb472fe48', '46e25388-417a-4d84-9f3d-fb59c804304d', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'df132218-3862-4ed7-ab21-c087e8308fa1', 'ae514bfc-c915-473d-bb40-de3b0323e79e', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'dfc949e4-8917-4393-8688-a1703903e9e8', '2577157b-8ad4-4c64-870d-189dcf962c33', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 5, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e05784ff-3d0c-42d0-a5cf-013f6fed6793', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e07f1e69-4e1e-47f5-8929-4b916bc02c5a', '9064ab32-12ce-415a-8c19-51b566608ee5', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e0a9c078-53dc-4d96-a8cd-a71fc6203bfb', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e0b308f1-db31-4f90-9ef0-a73dec02ad42', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e0b6ae66-3d09-421e-9637-d99f110c1614', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e0fb966e-8633-4b50-abae-7ce642392c3e', '2577157b-8ad4-4c64-870d-189dcf962c33', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e1256b9f-7905-44b4-8e45-9b360ff6adc9', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e23cd5d4-3bc7-43af-8fac-574978631763', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e2951f39-1fb7-4764-9b4f-e2ad736a7206', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', 'cf97d32e-4053-45ee-acb1-b9a65a6e0dce', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e375602a-e6a6-42ed-a106-86530cb13a25', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e3c43040-ee42-459d-ac01-132db2767557', '46e25388-417a-4d84-9f3d-fb59c804304d', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e3f7c9f0-9bd5-44af-af2a-7a938a29c689', '40bbb718-086b-45b5-b816-55c836c7634d', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e43296da-a02f-4afe-9c8d-eb31ab458f9b', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', 'ee79afed-8d60-4e41-98ae-650b9010425a', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e441b595-b8d1-470e-bbdd-87a8082d1cf9', '9756b78f-ba05-416f-a90d-e35916b3d780', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e4a76402-51c9-40ab-b8dd-6536349b2adf', '5697f078-c2f5-4da6-bb6c-db9ec9764d41', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e4b396ff-07e1-4624-93b6-fde2ffffeae2', 'b37a40d9-ba6c-465f-abfc-c441b47edb4d', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e530db55-ce84-4848-8f33-c9e86789ec78', '46e25388-417a-4d84-9f3d-fb59c804304d', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e5fb09bd-1935-43b4-aa53-c6382b757bd8', '953666c4-4b76-4d52-8332-6be7323c0f55', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e67c877f-1b61-4195-a5dc-05af98b6cb50', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 5, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e778da25-4cd1-4099-bf49-5b55919d200c', '41f409ee-1614-4bc6-8cce-a02086601dc9', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e7b71f44-9c3f-4c74-81e6-24c0ea094d5f', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e8097567-4a5a-47c1-973d-a214f324c04d', 'a57eeb22-a246-4243-8e32-98297c6f3bad', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e8789641-8dee-4712-83bc-787a36240c93', '07f4a049-faf4-4852-8512-6ef64f2966ff', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e88e97cf-abef-4f00-98e2-f60463636ba7', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e8b53be5-6648-438a-9f82-5b5a177c37de', '40bbb718-086b-45b5-b816-55c836c7634d', '3cdecb3c-2a6c-423d-a6e9-773211694204', 0, 25, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e9a1e5c6-a975-459a-94a1-ba045f01e8f9', '2577157b-8ad4-4c64-870d-189dcf962c33', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 7, 7, true, '2025-10-05 05:21:19.747201+00'::timestamptz, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e9d7d4ba-5871-4bff-8214-ab7e348bfe0c', '9756b78f-ba05-416f-a90d-e35916b3d780', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e9e9b552-9661-474c-8700-2af70538b12a', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ea503910-43e8-42b4-8374-4c03808d191c', '41f409ee-1614-4bc6-8cce-a02086601dc9', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'eaec6d53-b2e1-42c1-9406-a556a82f9b51', '41f409ee-1614-4bc6-8cce-a02086601dc9', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'eb1be2c6-3fd3-405d-9672-3338e5537ef5', 'a57eeb22-a246-4243-8e32-98297c6f3bad', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'eb1e1654-a96e-46d7-ba40-fc58998d1ef9', '07f4a049-faf4-4852-8512-6ef64f2966ff', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ebaefd5e-25c2-409d-bd3e-df153e99d779', '2577157b-8ad4-4c64-870d-189dcf962c33', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:16:18.567334+00'::timestamptz, '2025-10-05 05:22:57.696675+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ec4664fc-21be-4e02-a6e2-a67afdbe0094', '4d0b00fd-dbb6-4941-9093-61ab7d7b1122', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ec79e6a3-d5ec-46d8-89eb-b1e915a7e41c', '40bbb718-086b-45b5-b816-55c836c7634d', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ee04a8ce-9422-439d-ac6a-67cea49f3bee', '9064ab32-12ce-415a-8c19-51b566608ee5', 'c3d21b05-5b2c-476d-b551-621e65e6b1c9', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ee915eaf-5cf1-4b26-9edb-64984b2b2dfa', '9064ab32-12ce-415a-8c19-51b566608ee5', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'eec9672a-8d19-4430-b63f-b54dc83725b8', 'ae514bfc-c915-473d-bb40-de3b0323e79e', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ef473b13-7b71-436e-be47-5de0f6472769', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ef8c5770-f98d-417a-814a-eda3a44ee0e5', '1f63bfc3-62d7-48cb-b497-6699cb7d2037', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'eff82a02-8bfc-437e-940c-89e6994b7cee', '9bbcbdbd-b478-43ab-afa5-ddec11d3a63c', '1d30c5ca-b0c5-41b6-9dca-64a943532430', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f0516032-bfd2-498a-a800-495b0fe7e62d', 'e64310ba-69bb-41e5-8174-b8d52432f735', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f07ebfcc-bcce-4cde-89bd-3e66cca1fa81', 'e64310ba-69bb-41e5-8174-b8d52432f735', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f0c6eee2-4933-4023-8893-c9ccdf62e401', '9756b78f-ba05-416f-a90d-e35916b3d780', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f208b83d-b22f-4572-a8ea-6bb5de158567', '953666c4-4b76-4d52-8332-6be7323c0f55', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f3032b26-f5f1-4419-ae1e-d9373be8064c', 'a57eeb22-a246-4243-8e32-98297c6f3bad', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f35d241f-aebf-4f07-8194-73b9e7a181be', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f3981309-d8b0-4609-b0ca-7c3ad42cec5e', 'a5f0b00a-4c68-4c01-b459-ea55d3ab6907', '319051ae-cf9a-4114-9926-ad9a9e7d4a3a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f4a6021b-696e-4207-9eb4-aab741d6c23f', '840f99c4-7479-4098-9c2e-474a695178f0', 'ad816136-0000-4269-a7cb-f604ad75fdaa', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f540a7d6-0a2f-41a6-ae28-c58f692edddb', 'a57eeb22-a246-4243-8e32-98297c6f3bad', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f6e849ef-e235-4b02-8af8-c80bf6fbbe1f', '9064ab32-12ce-415a-8c19-51b566608ee5', 'e4540d74-d3fe-4cf3-8e51-0cf7170b6c0a', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f73f8520-bd2e-4972-b7bc-85b2623724d9', '9064ab32-12ce-415a-8c19-51b566608ee5', '6ba5c287-e36c-44b9-aa4a-2f6eb6dc9e51', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f78481ef-3e58-49d1-8099-65a0e1770fdb', '9756b78f-ba05-416f-a90d-e35916b3d780', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f7df121d-891b-4e8a-8693-3dff9ca616cd', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', '5ca1b83c-a17a-4338-8b2f-d7e6c95b7ad1', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f879cd5e-e849-4bc1-9435-57aa004387f0', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f8aa7b6b-5603-40e0-854f-e9801ae776df', '46e25388-417a-4d84-9f3d-fb59c804304d', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f8aafc95-93c3-4928-8024-1ec8f5b35611', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f9692186-af80-4195-be69-20a90b0aa66f', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', 'a9200849-a50b-428d-9443-323985f498eb', 0, 1000, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f9b9744a-8ed2-48da-b43c-a2748d30c648', '07f4a049-faf4-4852-8512-6ef64f2966ff', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'f9fa0869-acf9-435d-8ccd-114e90703230', '7558a9c8-67c7-4c88-968e-f6a5e193d48c', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fac41eec-47a1-4ee0-a89a-2392a6f2f764', '550a3a3f-9898-4e9c-b620-dd4b6ebaa8c4', 'c2982f54-45b5-4728-bfad-5ce022eb9591', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fbdf0cca-d6ab-465a-b35b-c5f7c25e61e8', '46e25388-417a-4d84-9f3d-fb59c804304d', '9096f447-c67c-44d1-b934-a54a412f85b9', 0, 50, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fd00e481-caa6-4c36-8cf1-2ce49c7de137', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', '5a562bde-5b07-4460-a937-3674004f0f15', 0, 3, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fd3a5222-10cc-4993-adbe-943139b6ed66', '840f99c4-7479-4098-9c2e-474a695178f0', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fd5d1e42-438e-4bb8-9ffc-63a988d24e6d', '9064ab32-12ce-415a-8c19-51b566608ee5', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fd8c220d-8f5e-4066-be13-20a4ba41f097', '1dc09e87-282c-47a9-b0b8-6f84d79f300c', 'd37eb1d3-4843-44e7-9dc8-c2b242c08176', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fdfaebaa-a4da-4782-9025-7ff014a56485', '46e25388-417a-4d84-9f3d-fb59c804304d', '52829c7d-2c04-4f19-9292-090b5c9425d3', 0, 10, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fe1ebdc4-3b17-4a3a-b19b-82769eca07d7', '9064ab32-12ce-415a-8c19-51b566608ee5', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'fe74edaf-3c09-4c0b-8099-7c6370c3850a', '41f409ee-1614-4bc6-8cce-a02086601dc9', 'e3eafc65-7170-49eb-8981-624b2838ffd7', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ff43e8a3-dc72-4f27-9ea3-5d7485473e9b', 'e64310ba-69bb-41e5-8174-b8d52432f735', 'e7a32785-434d-4493-8311-30397dab1981', 0, 5, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ff51d825-49e2-4c22-8020-e02d64675f0c', '41f409ee-1614-4bc6-8cce-a02086601dc9', 'dea78da3-e8d7-4a51-bf45-479a5a340d0e', 0, 30, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ff669fca-feb3-4f7a-b92f-d19687009d78', 'c91f1974-e102-46dd-b1c3-ba3f06c039af', '0bc43330-8f86-4484-b100-75a0cf097acc', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ff8b3b13-05cc-40db-a8b8-35f426b970e9', '9756b78f-ba05-416f-a90d-e35916b3d780', '26da4b72-19ce-4c46-a32e-f9cba7e06395', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ffa3f1f2-5c72-4e0e-987d-134f2d01fbec', '46e25388-417a-4d84-9f3d-fb59c804304d', '855d4ea5-5c4e-47f2-99ae-b39f8d2c17b4', 0, 1, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:10:12.906964+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+INSERT INTO core.user_achievements (tenant_id, id, user_id, achievement_id, current_progress, target_progress, is_completed, completed_at, metadata, created_at, updated_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ffd4d6d1-21fc-49ff-be7d-51db948e1091', '54e79a05-59f7-4cc8-b67f-f522a1b452e4', 'cb44eff6-b70b-47d6-afb1-d43f9427752b', 0, 7, false, NULL, '{}'::jsonb, '2025-10-05 05:07:57.257828+00'::timestamptz, '2025-10-05 05:20:29.969177+00'::timestamptz)
+ON CONFLICT (user_id, achievement_id) DO NOTHING;
+
+COMMIT;

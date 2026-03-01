@@ -1,0 +1,199 @@
+-- =============================================
+-- Migration: 008_instrument_relations.sql
+-- Table: core.instrument_relations
+-- Source CSV: instrumentos_relacionados_rows.csv
+-- Generated: 2026-02-28T16:15:03.463Z
+-- Rows: 47
+-- =============================================
+
+BEGIN;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '059e6746-3c6d-4e76-8790-07df1c786546', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$complementar$$, '2025-06-20 13:37:17.090714'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '07bc5c91-3391-4f73-9f13-8f9d36a6a0ed', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$similar$$, '2025-06-15 19:45:28.153612'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '25284ad5-2a9b-4f89-919b-9be8c4a8fa5a', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', '80436b4f-15c1-452f-9442-34e42b5117e4', $$familia$$, '2025-06-15 19:37:29.869243'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '39e9b522-c7d5-457a-aa73-ddba49c24469', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$complementar$$, '2025-06-15 19:32:05.298555'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '3e52585a-665f-4dc5-a767-80fdbf4af21d', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$similar$$, '2025-06-21 02:36:48.627562'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '415f405b-1a98-4adf-946a-350db477d00b', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$similar$$, '2025-06-09 04:26:07.641004'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5016df77-192d-412d-931c-83a95309bc41', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$familia$$, '2025-06-15 19:32:05.298555'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '586d16f6-e926-4312-a04c-80c5788927fa', '509d6a26-159a-4976-aa46-83f914f930aa', '8fbba87d-39e1-4542-b8bb-7c815fdc2b9a', $$similar$$, '2025-06-16 04:01:57.127594'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5959058f-ad2e-4c97-8221-6a4b0054ad00', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$familia$$, '2025-06-09 04:26:07.641004'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5a7679c3-5654-4f01-b529-046d1cd1a692', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$similar$$, '2025-06-16 05:37:27.057226'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '5e9967c1-47a5-4f5f-ba47-4c0fdce1aa99', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$similar$$, '2025-06-20 13:37:17.090714'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '602af621-92ce-4f93-9d7d-7f3a702b4675', '509d6a26-159a-4976-aa46-83f914f930aa', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', $$familia$$, '2025-06-16 04:01:57.127594'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6178c4ea-d2ad-4bb6-ac17-e8e99fb3cc42', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$familia$$, '2025-06-20 02:57:38.850552'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '67c826cc-e11f-4d32-996d-cdf3bf63fd38', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$complementar$$, '2025-06-15 19:37:29.869243'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '68e77abe-f9cf-4b48-9c82-37cb4f9eea56', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$familia$$, '2025-06-15 19:45:28.153612'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '6ae81249-625a-425c-af66-cb144d41635c', '35aff373-706c-47d8-8004-d8edcddb1e0c', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$familia$$, '2025-06-16 04:51:01.752411'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '7103b1de-60c3-4fa7-bcaf-bb43c28a0de3', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$similar$$, '2025-06-16 02:29:36.755484'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '73301c49-eaf4-4b4e-a3d6-0efcfa7d2c3d', 'ab9720a5-1973-484e-9a44-d4aa62594336', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$familia$$, '2025-06-08 19:06:57.354797'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '763b8b31-425e-47a7-8d28-57fa607995c0', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$complementar$$, '2025-06-20 02:57:38.850552'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '79ba6731-a4a6-4002-b19f-00bd2b04c9db', '9edff4db-9ef5-43fc-970a-7d2086de223b', '80436b4f-15c1-452f-9442-34e42b5117e4', $$familia$$, '2025-09-22 11:52:20.661108'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '7c46d866-5db9-42f1-b453-8df45340d723', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', '80436b4f-15c1-452f-9442-34e42b5117e4', $$familia$$, '2025-06-16 05:37:27.057226'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '7d1c8c8a-537f-4354-87ee-85495094b533', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', $$complementar$$, '2025-06-16 02:29:36.755484'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '82f28495-9f03-496d-aa0a-c25cec3919d8', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', '86f83611-c0db-470c-87e7-31ee81b1a009', $$complementar$$, '2025-06-09 04:26:07.641004'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '885653c3-850f-49ec-a922-a1c7e5b6d2b3', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$similar$$, '2025-06-20 02:57:38.850552'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '8d858ce6-05c5-4cbb-8dae-a61b0567684f', '9edff4db-9ef5-43fc-970a-7d2086de223b', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$familia$$, '2025-09-22 11:52:20.661108'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '957ca93f-391c-4d94-b2c5-65a10c722607', '509d6a26-159a-4976-aa46-83f914f930aa', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$complementar$$, '2025-06-16 04:01:57.127594'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '965e8d0e-1a10-40cc-ba57-33e74638ce70', 'd7c80fe1-ab43-4920-b2aa-d9b4f3ace166', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', $$similar$$, '2025-06-15 19:32:05.298555'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '997033dc-043c-4b22-8512-6b7bb6177c4e', '35aff373-706c-47d8-8004-d8edcddb1e0c', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', $$similar$$, '2025-06-16 04:51:01.752411'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', '9d48f9c9-36f8-49d6-8cc2-ed93aae065f4', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', '174f6ed4-3c21-444a-acfa-5149f53f2ca0', $$complementar$$, '2025-06-21 02:36:48.627562'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'a05b3aab-35f1-439e-ab4c-951018ea1520', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$complementar$$, '2025-06-09 04:26:07.641004'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ab915f40-f700-4aa2-8e3b-73d67b5f5cbe', '26cadf44-6d7b-4f9b-85d6-6b2c40715f45', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', $$familia$$, '2025-06-16 02:29:36.755484'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'af9ca609-53ff-4303-a2d5-fca85de5bf6e', '9edff4db-9ef5-43fc-970a-7d2086de223b', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$familia$$, '2025-09-22 11:52:20.661108'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b3828fd0-44dd-4bc6-84da-dc13b8f7031a', '9b42a23b-ac7f-42e1-8a04-bde4c525fbde', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$familia$$, '2025-06-20 13:37:17.090714'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'b5254b8a-f498-413f-a79a-abfda0c136c4', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$familia$$, '2025-06-08 01:10:16.360705'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bb0e8400-e29b-41d4-a716-446655550001', '86f83611-c0db-470c-87e7-31ee81b1a009', '9a5e0eac-114e-4173-90af-32b55c870675', $$familia$$, '2025-06-09 03:05:09.096012'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bb0e8400-e29b-41d4-a716-446655550002', '86f83611-c0db-470c-87e7-31ee81b1a009', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$similar$$, '2025-06-09 03:05:09.096012'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bb0e8400-e29b-41d4-a716-446655550003', '86f83611-c0db-470c-87e7-31ee81b1a009', '35aff373-706c-47d8-8004-d8edcddb1e0c', $$similar$$, '2025-06-09 03:05:09.096012'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bb0e8400-e29b-41d4-a716-446655550004', '86f83611-c0db-470c-87e7-31ee81b1a009', 'df49fd27-9bcd-4462-a0f8-b36f0ff9f97f', $$similar$$, '2025-06-09 03:05:09.096012'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bb2f9214-041e-420d-be2d-2cf0a3f202e2', '794f42a6-619a-4ca3-8f1b-c3ac7a9e7a08', '36b9d36d-f65b-4ba1-89be-4ab3707e874c', $$complementar$$, '2025-06-15 19:45:28.153612'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'bc919633-6dff-4b71-bd5c-22042cc42e9d', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', '8bd473f1-7b35-4b9e-869a-17fb73c6e047', $$similar$$, '2025-06-08 01:10:16.360705'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c15bfd80-e9a4-4ed9-9ea9-3e7fea9a0659', '80436b4f-15c1-452f-9442-34e42b5117e4', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$familia$$, '2025-06-09 03:44:46.55832'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'c9e73bbc-d930-457f-b571-b467d0927abb', '80436b4f-15c1-452f-9442-34e42b5117e4', 'ab9720a5-1973-484e-9a44-d4aa62594336', $$complementar$$, '2025-06-09 03:44:46.55832'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'cefab709-458d-4009-9c1f-44c9d0cb6618', 'b73f1d80-3d73-487e-89b8-ab35274a8dd4', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$complementar$$, '2025-06-16 05:37:27.057226'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'd3bf196e-8ae5-4e9b-b267-55f17f6445d2', '9edff4db-9ef5-43fc-970a-7d2086de223b', '412c40b6-f4fc-4379-9d6f-5ce0ec2d669d', $$familia$$, '2025-09-22 11:52:20.661108'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e40506ff-2bb8-466e-8297-2887da2bb81d', '80436b4f-15c1-452f-9442-34e42b5117e4', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$similar$$, '2025-06-09 03:44:46.55832'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'e91e2afd-efbf-4783-8b7b-725df13a2839', 'ab9720a5-1973-484e-9a44-d4aa62594336', '750450cf-e14e-4f02-944e-b3c1bb0f87a4', $$familia$$, '2025-06-08 15:19:18.975914'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+INSERT INTO core.instrument_relations (tenant_id, id, instrument_id, related_instrument_id, relation_type, created_at)
+VALUES ('00000000-0000-0000-0000-000000000001', 'ea6e7e65-921a-4827-b065-5489e6fa6084', '850c53c4-2ed6-4a12-a4ff-3fbaecd6bf73', '509d6a26-159a-4976-aa46-83f914f930aa', $$familia$$, '2025-06-21 02:36:48.627562'::timestamptz)
+ON CONFLICT (instrument_id, related_instrument_id) DO NOTHING;
+
+COMMIT;

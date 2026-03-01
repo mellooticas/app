@@ -2,21 +2,12 @@ import { createServerClient, type CookieOptions } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 import type { Database } from './lib/supabase/database.types'
 
-// Rotas públicas que não precisam de autenticação
-const publicRoutes = ['/', '/login', '/register', '/esqueci-senha', '/auth/callback']
-
-// Mapeamento de roles para suas áreas
-const roleToArea: Record<string, string> = {
-  admin: '/admin',
-  professor: '/professores',
-  aluno: '/alunos'
-}
+// Public routes that don't require authentication
+const publicRoutes = ['/', '/login', '/register', '/forgot-password', '/auth/callback', '/set-password']
 
 export async function middleware(request: NextRequest) {
   let response = NextResponse.next({
-    request: {
-      headers: request.headers,
-    },
+    request: { headers: request.headers },
   })
 
   const supabase = createServerClient<Database>(
@@ -28,38 +19,18 @@ export async function middleware(request: NextRequest) {
           return request.cookies.get(name)?.value
         },
         set(name: string, value: string, options: CookieOptions) {
-          request.cookies.set({
-            name,
-            value,
-            ...options,
-          })
+          request.cookies.set({ name, value, ...options })
           response = NextResponse.next({
-            request: {
-              headers: request.headers,
-            },
+            request: { headers: request.headers },
           })
-          response.cookies.set({
-            name,
-            value,
-            ...options,
-          })
+          response.cookies.set({ name, value, ...options })
         },
         remove(name: string, options: CookieOptions) {
-          request.cookies.set({
-            name,
-            value: '',
-            ...options,
-          })
+          request.cookies.set({ name, value: '', ...options })
           response = NextResponse.next({
-            request: {
-              headers: request.headers,
-            },
+            request: { headers: request.headers },
           })
-          response.cookies.set({
-            name,
-            value: '',
-            ...options,
-          })
+          response.cookies.set({ name, value: '', ...options })
         },
       },
     }
@@ -68,67 +39,30 @@ export async function middleware(request: NextRequest) {
   const { data: { session } } = await supabase.auth.getSession()
   const path = request.nextUrl.pathname
 
-  console.log('🔒 Middleware:', { path, hasSession: !!session })
-
-  // Se não tem sessão e está tentando acessar rota protegida
+  // No session + protected route → redirect to login
   if (!session && !publicRoutes.includes(path)) {
-    console.log('❌ Sem sessão, redirecionando para /login')
     return NextResponse.redirect(new URL('/login', request.url))
   }
 
-  // Se tem sessão
-  if (session) {
-    // Buscar role do usuário diretamente de profiles (user_roles desativado temporariamente por erro 406)
-    // @ts-ignore
-    const { data: profile } = await supabase
-      .from('profiles')
-      .select('tipo_usuario')
-      .eq('id', session.user.id)
-      .single()
+  // Has session + login/root page → redirect to dashboard
+  if (session && (path === '/login' || path === '/')) {
+    return NextResponse.redirect(new URL('/dashboard', request.url))
+  }
 
-    // @ts-ignore
-    let role = profile?.tipo_usuario || 'aluno'
+  // Redirect legacy routes to unified routes
+  const legacyRedirects: Record<string, string> = {
+    '/admin': '/dashboard',
+    '/admin/dashboard': '/dashboard',
+    '/professores': '/dashboard',
+    '/professores/dashboard': '/dashboard',
+    '/alunos': '/dashboard',
+    '/alunos/dashboard': '/dashboard',
+    '/esqueci-senha': '/forgot-password',
+  }
 
-    // Normalização de role e tratamento de aliases
-    if (typeof role === 'string') {
-      role = role.toLowerCase().trim()
-      if (role === 'teacher') role = 'professor'
-      if (role === 'student') role = 'aluno'
-      if (role === 'administrator') role = 'admin'
-    }
-
-    const userArea = roleToArea[role] || '/alunos'
-    console.log('✅ Sessão válida:', { role, userArea, path })
-
-    // Se está na página de login OU raiz, redirecionar para área correta
-    if (path === '/login' || path === '/') {
-      console.log('🔄 Redirecionando para:', userArea)
-      return NextResponse.redirect(new URL(userArea, request.url))
-    }
-
-    // Redirecionar rotas antigas do Vite para Next.js
-    if (path === '/admin/dashboard') {
-      return NextResponse.redirect(new URL('/admin', request.url))
-    }
-    if (path === '/professores/dashboard') {
-      return NextResponse.redirect(new URL('/professores', request.url))
-    }
-    if (path === '/alunos/dashboard') {
-      return NextResponse.redirect(new URL('/alunos', request.url))
-    }
-
-    // Se está tentando acessar área de outro role
-    if (path.startsWith('/admin') && role !== 'admin') {
-      return NextResponse.redirect(new URL(userArea, request.url))
-    }
-
-    if (path.startsWith('/professores') && role !== 'professor') {
-      return NextResponse.redirect(new URL(userArea, request.url))
-    }
-
-    if (path.startsWith('/alunos') && role !== 'aluno') {
-      return NextResponse.redirect(new URL(userArea, request.url))
-    }
+  const redirect = legacyRedirects[path]
+  if (redirect) {
+    return NextResponse.redirect(new URL(redirect, request.url))
   }
 
   return response

@@ -1,0 +1,28 @@
+id,nome,descricao,icone,categoria,tipo_criterio,meta_necessaria,pontos_recompensa,created_at,ativo
+02131a23-9e7a-4aef-a77b-dd95ce192418,Improviso Mestre,Participou de sessões de improvisação,🎭,criatividade,improvisacao_participacao,3,45,2025-09-22 13:36:20.288129,true
+04cfc557-45b3-4c4d-8da0-07736714c975,Explorador Rítmico,Completou módulo de iniciação rítmica,🥁,progresso,modulos_completos,1,50,2025-09-22 13:30:01.738269,true
+1225da6e-97e6-4ff1-b282-a0aed1dedceb,Mentor Alpha,Ajudou outro aluno através de peer learning,🤝,social,peer_learning_ativo,1,35,2025-09-22 13:44:11.894662,true
+1f4e95a0-8cb6-4b5d-88e0-908256464df7,Leitor Musical,Dominou a alfabetização musical básica,📖,progresso,aulas_alfabetizacao,2,40,2025-09-22 13:44:11.894662,true
+24975561-5781-48ed-9d5b-ffc116b35606,Técnica Aprimorada,Completou 20 exercícios técnicos,🎯,tecnica,exercicios_completos,20,60,2025-09-22 13:30:01.738269,true
+2534e333-ed21-4b7e-9b44-5192969f2715,Tech Musical,Usou tecnologia para criar música,📱,criatividade,tecnologia_musical,1,35,2025-09-22 13:36:20.288129,true
+3eba5735-1b7c-40dd-8598-d3fe0a89f18a,Curioso Musical,Fez sua primeira pergunta no fórum,🤔,social,perguntas_feitas,1,15,2025-09-22 13:30:01.738269,true
+4fa35a7e-09f3-4308-aaba-2a7aa4029f76,Improviso Mestre,Participou de sessões de improvisação,🎭,criatividade,improvisacao_participacao,3,45,2025-09-22 13:44:11.894662,true
+69617e86-1959-4bd2-9d80-9db076d91ac6,Ajudante da Turma,Respondeu uma pergunta de outro aluno,🤝,social,respostas_dadas,1,20,2025-09-22 13:30:01.738269,true
+6bfc6269-396f-4bf9-a1a1-db07ce2eaa40,Estrela do Palco,Participou da apresentação final,⭐,social,apresentacao_final,1,150,2025-09-22 13:36:20.288129,true
+742bb458-c1c3-442e-abc9-ea640cd5f313,Alpha Spirit,Incorporou os 8 princípios Alpha no aprendizado,⭐,progresso,principios_alpha_aplicados,8,200,2025-09-22 13:44:11.894662,true
+79da001d-ea3d-46bd-ad49-aa2da2a94da0,Compositor,Criou sua primeira composição original,✍️,criatividade,composicao_original,1,100,2025-09-22 13:36:20.288129,true
+83384a26-469b-4155-9426-275fa9732633,Leitor Musical,Dominou a alfabetização musical básica,📖,progresso,aulas_alfabetizacao,2,40,2025-09-22 13:36:20.288129,true
+89fe825f-b246-41af-8212-e5c974e9220c,Tech Musical,Usou tecnologia para criar música,📱,criatividade,tecnologia_musical,1,35,2025-09-22 13:44:11.894662,true
+8a330948-b51f-484c-acaa-d1ef33b5e588,Metodologias Master,Estudou todas as metodologias disponíveis,📚,progresso,metodologias_estudadas,5,100,2025-09-22 13:30:01.738269,true
+9c325d67-5c87-4c5b-aacb-1e8cde35c6b3,Desafio Alpha,Completou seu primeiro desafio semanal Alpha,🎯,criatividade,desafios_semanais,1,25,2025-09-22 13:44:11.894662,true
+9dda0885-c759-4f2f-b3d0-e5107787a019,Compositor,Criou sua primeira composição original,✍️,criatividade,composicao_original,1,100,2025-09-22 13:44:11.894662,true
+b3f88753-c5e4-4c5e-848a-cf048199c1ed,Cultura Global,Explorou músicas de diferentes países,🌍,progresso,musicas_internacionais,3,40,2025-09-22 13:44:11.894662,true
+b7ca7e24-57e2-42b3-9249-18fa0f05daef,Alma Brasileira,Aprendeu repertório da música brasileira,🇧🇷,tecnica,repertorio_brasileiro,5,50,2025-09-22 13:44:11.894662,true
+b9d22381-7b68-4033-8be1-079d53be273f,Ritmo no Sangue,Completou as aulas de percussão corporal e ritmos básicos,🥁,progresso,aulas_bloco_completo,5,30,2025-09-22 13:36:20.288129,true
+d0f083cd-52ab-4544-9b92-cd8e42e59ed1,Cultura Global,Explorou músicas de diferentes países,🌍,progresso,musicas_internacionais,3,40,2025-09-22 13:36:20.288129,true
+d2915f91-3587-45a8-9a56-68f333c8d8d2,Alma Brasileira,Aprendeu repertório da música brasileira,🇧🇷,tecnica,repertorio_brasileiro,5,50,2025-09-22 13:36:20.288129,true
+d8b15159-2a81-476f-aa66-2cfe45a4740b,Ritmo no Sangue,Completou as aulas de percussão corporal e ritmos básicos,🥁,progresso,aulas_bloco_completo,5,30,2025-09-22 13:44:11.894662,true
+ef1be3a8-a692-416f-8aed-87035dc88e00,Estrela do Palco,Participou da apresentação final,⭐,social,apresentacao_final,1,150,2025-09-22 13:44:11.894662,true
+f1138c79-81df-44e8-9ef9-7a5992f846c8,Repertório Brasileiro,Aprendeu 10 músicas do repertório brasileiro,🇧🇷,tecnica,musicas_aprendidas,10,75,2025-09-22 13:30:01.738269,true
+f3b06079-d992-4c68-a8d0-bb7786e12441,Colaborador Ativo,Recebeu 10 likes em suas respostas,⭐,social,likes_recebidos,10,40,2025-09-22 13:30:01.738269,true
+fc3b60a9-ff11-4004-bca6-5cdae1e4e51e,Primeiro Passo,Assistiu sua primeira aula completa,👶,progresso,aulas_assistidas,1,10,2025-09-22 13:30:01.738269,true
