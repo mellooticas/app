@@ -79,6 +79,10 @@ export const enrollStudentSchema = z.object({
   student_id: z.string().uuid(),
 })
 
+export const unenrollStudentSchema = z.object({
+  enrollment_id: z.string().uuid(),
+})
+
 export const recordAttendanceSchema = z.object({
   course_id: z.string().uuid(),
   date: z.string(),

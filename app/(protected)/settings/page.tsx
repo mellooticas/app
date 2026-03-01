@@ -1,7 +1,7 @@
 'use client'
 
 import { PermissionGate } from '@/components/auth/PermissionGate'
-import { Settings, Users, Building2, Shield, Lock } from 'lucide-react'
+import { Settings, Users, Building2, Shield, Lock, GraduationCap } from 'lucide-react'
 import Link from 'next/link'
 
 export default function SettingsPage() {
@@ -27,6 +27,13 @@ export default function SettingsPage() {
             title="Escola"
             desc="Dados da escola, unidades e configurações gerais"
             color="blue"
+          />
+          <SettingsCard
+            href="/settings/enrollments"
+            icon={GraduationCap}
+            title="Matrículas"
+            desc="Gerenciar matrículas de alunos em turmas"
+            color="green"
           />
           <SettingsCard
             href="/settings/roles"

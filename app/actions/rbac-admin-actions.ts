@@ -9,6 +9,7 @@ import {
   removeUserRoleSchema,
   toggleUserActiveSchema,
   inviteUserSchema,
+  createStudentSchema,
   updateRoleSchema,
   saveRolePermissionsSchema,
   saveRoleNavigationSchema,
@@ -235,6 +236,82 @@ export async function inviteUser(rawData: unknown): Promise<ActionResult> {
 
   revalidatePath('/settings/users')
   return successResponse(null, 'Convite enviado por email com sucesso')
+}
+
+/**
+ * Create a new student/teacher directly (admin sets name, email, password).
+ * Uses Supabase Auth admin.createUser so the user can login immediately.
+ */
+export async function createStudent(rawData: unknown): Promise<ActionResult> {
+  const ctx = await getAuthContext()
+  if (!ctx) return unauthorizedError('Acesso restrito a administradores')
+
+  const validation = await validateAction(createStudentSchema, rawData)
+  if (!validation.success) return validationError(validation.error)
+
+  const { fullName, email, password, phone, instrumentId, roleSlug } = validation.data
+
+  // 1. Create user via Supabase Auth admin API (user can login immediately)
+  const { data: userData, error: createError } = await adminSupabase.auth.admin.createUser({
+    email,
+    password,
+    email_confirm: true,
+    user_metadata: {
+      full_name: fullName,
+      role: roleSlug,
+      phone: phone || null,
+      primary_instrument_id: instrumentId || null,
+      tenant_id: ctx.tenantId,
+    },
+  })
+
+  if (createError) return databaseError(createError.message)
+
+  // 2. If role is teacher, assign teacher role (trigger assigns student by default)
+  if (userData.user && roleSlug === 'teacher') {
+    const { data: role } = await ctx.supabase
+      .from('roles')
+      .select('id')
+      .eq('tenant_id', ctx.tenantId)
+      .eq('slug', 'teacher')
+      .single()
+
+    if (role) {
+      // Wait for trigger to create profile
+      await new Promise(resolve => setTimeout(resolve, 500))
+
+      // Remove student role assigned by trigger
+      const { data: studentRole } = await ctx.supabase
+        .from('roles')
+        .select('id')
+        .eq('tenant_id', ctx.tenantId)
+        .eq('slug', 'student')
+        .single()
+
+      if (studentRole) {
+        await adminSupabase
+          .from('iam.user_roles')
+          .delete()
+          .eq('user_id', userData.user.id)
+          .eq('tenant_id', ctx.tenantId)
+          .eq('role_id', studentRole.id)
+      }
+
+      await adminSupabase
+        .from('iam.user_roles')
+        .insert({
+          user_id: userData.user.id,
+          tenant_id: ctx.tenantId,
+          role_id: role.id,
+          assigned_by: ctx.userId,
+          is_active: true,
+        })
+    }
+  }
+
+  revalidatePath('/settings/enrollments')
+  revalidatePath('/settings/users')
+  return successResponse({ userId: userData.user?.id }, 'Cadastro realizado com sucesso')
 }
 
 // ========================================

@@ -30,6 +30,17 @@ export const inviteUserSchema = z.object({
   }),
 })
 
+export const createStudentSchema = z.object({
+  fullName: z.string().min(3, 'Nome deve ter no mínimo 3 caracteres'),
+  email: z.string().email('Email inválido'),
+  password: z.string().min(6, 'Senha deve ter no mínimo 6 caracteres'),
+  phone: z.string().optional(),
+  instrumentId: z.string().uuid().optional(),
+  roleSlug: z.enum(['student', 'teacher'], {
+    errorMap: () => ({ message: 'Tipo inválido' }),
+  }).default('student'),
+})
+
 // ========================================
 // Role Management
 // ========================================
@@ -80,6 +91,7 @@ export type AssignUserRoleInput = z.infer<typeof assignUserRoleSchema>
 export type RemoveUserRoleInput = z.infer<typeof removeUserRoleSchema>
 export type ToggleUserActiveInput = z.infer<typeof toggleUserActiveSchema>
 export type InviteUserInput = z.infer<typeof inviteUserSchema>
+export type CreateStudentInput = z.infer<typeof createStudentSchema>
 export type UpdateRoleInput = z.infer<typeof updateRoleSchema>
 export type SaveRolePermissionsInput = z.infer<typeof saveRolePermissionsSchema>
 export type SaveRoleNavigationInput = z.infer<typeof saveRoleNavigationSchema>

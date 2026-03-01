@@ -3,7 +3,7 @@
 import { revalidatePath } from 'next/cache'
 import { getActionContext } from '@/lib/utils/action-context'
 import { validateAction } from '@/lib/validations/validate-action'
-import { createCourseSchema, enrollStudentSchema, recordAttendanceSchema } from '@/lib/validations/unified-schemas'
+import { createCourseSchema, enrollStudentSchema, unenrollStudentSchema, recordAttendanceSchema } from '@/lib/validations/unified-schemas'
 import { successResponse, unauthorizedError, databaseError, validationError } from '@/lib/utils/action-response'
 import type { ActionResult } from '@/lib/types/action-result'
 
@@ -50,6 +50,28 @@ export async function enrollStudent(rawData: any): Promise<ActionResult> {
     return successResponse(data, 'Aluno matriculado com sucesso')
   } catch (e) {
     return databaseError('Erro ao matricular aluno')
+  }
+}
+
+export async function unenrollStudent(rawData: any): Promise<ActionResult> {
+  try {
+    const validation = await validateAction(unenrollStudentSchema, rawData)
+    if (!validation.success) return validationError(validation.error)
+
+    const ctx = await getActionContext()
+    if (!ctx) return unauthorizedError()
+
+    const { error } = await ctx.supabase
+      .from('enrollments')
+      .delete()
+      .eq('id', validation.data.enrollment_id)
+
+    if (error) return databaseError(error.message)
+
+    revalidatePath('/settings/enrollments')
+    return successResponse(null, 'Matrícula cancelada com sucesso')
+  } catch (e) {
+    return databaseError('Erro ao cancelar matrícula')
   }
 }
 
