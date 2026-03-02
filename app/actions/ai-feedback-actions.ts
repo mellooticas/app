@@ -2,8 +2,9 @@
 
 import { revalidatePath } from 'next/cache'
 import { getActionContext } from '@/lib/utils/action-context'
-import { successResponse, unauthorizedError, databaseError } from '@/lib/utils/action-response'
+import { successResponse, unauthorizedError, forbiddenError, databaseError } from '@/lib/utils/action-response'
 import type { ActionResult } from '@/lib/types/action-result'
+import { checkPermission } from '@/lib/auth/check-permission'
 import { generateJSON } from '@/lib/ai/ai-client'
 import { SYSTEM_BASE, FEEDBACK_PROMPT } from '@/lib/ai/prompts'
 
@@ -181,6 +182,9 @@ export async function requestAIFeedback(
   try {
     const ctx = await getActionContext()
     if (!ctx) return unauthorizedError()
+
+    const canFeedback = await checkPermission('lessons.create')
+    if (!canFeedback) return forbiddenError('Permissão lessons.create necessária')
 
     if (type === 'challenge' && challengeId) {
       await generateChallengeFeedback(id, challengeId)

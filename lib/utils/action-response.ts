@@ -29,6 +29,13 @@ export function unauthorizedError(message: string = 'Usuário não autenticado')
 }
 
 /**
+ * Helper para erro de permissão (autenticado mas sem privilégio)
+ */
+export function forbiddenError(message: string = 'Permissão insuficiente'): ActionResult {
+  return errorResponse(message, ErrorCode.FORBIDDEN)
+}
+
+/**
  * Helper para erro de banco de dados
  */
 export function databaseError(message: string = 'Erro ao acessar banco de dados'): ActionResult {

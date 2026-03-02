@@ -4,24 +4,36 @@ import { revalidatePath } from 'next/cache'
 import { getActionContext } from '@/lib/utils/action-context'
 import { validateAction } from '@/lib/validations/validate-action'
 import { generateLessonMaterialsSchema, generateBatchMaterialsSchema } from '@/lib/validations/unified-schemas'
-import { successResponse, unauthorizedError, databaseError, validationError, notFoundError } from '@/lib/utils/action-response'
+import { successResponse, unauthorizedError, forbiddenError, databaseError, validationError, notFoundError } from '@/lib/utils/action-response'
 import type { ActionResult } from '@/lib/types/action-result'
+import { checkPermission } from '@/lib/auth/check-permission'
 import { generateText, generateJSON } from '@/lib/ai/ai-client'
 import { SYSTEM_BASE, LESSON_MATERIAL_PROMPT, EXERCISE_PROMPT } from '@/lib/ai/prompts'
 import { buildLessonContext } from '@/lib/ai/curriculum-context'
 import { createHash } from 'crypto'
 
+interface AIExercise {
+  title: string
+  description: string
+  difficulty: number
+  duration_minutes: number
+  tip: string
+}
+
 /**
  * Generate AI materials for a single lesson
  * Admin/Teacher only
  */
-export async function generateLessonMaterials(rawData: any): Promise<ActionResult> {
+export async function generateLessonMaterials(rawData: unknown): Promise<ActionResult> {
   try {
     const validation = await validateAction(generateLessonMaterialsSchema, rawData)
     if ('error' in validation) return validationError(validation.error)
 
     const ctx = await getActionContext()
     if (!ctx) return unauthorizedError()
+
+    const canGenerate = await checkPermission('lessons.create')
+    if (!canGenerate) return forbiddenError('Permissão lessons.create necessária')
 
     // Fetch lesson data with activities
     const { data: lessonRaw, error: lessonError } = await ctx.supabase
@@ -31,14 +43,15 @@ export async function generateLessonMaterials(rawData: any): Promise<ActionResul
       .single()
 
     if (lessonError || !lessonRaw) return notFoundError('Aula')
-    const lesson = lessonRaw as any
+    // TODO: regenerate database.types.ts to fix view type resolution (currently resolves to never)
+    const lesson = lessonRaw as Record<string, any>
 
     const { data: activitiesRaw } = await ctx.supabase
       .from('v_lesson_activities')
       .select('*')
       .eq('lesson_id', lesson.id)
       .order('order_index')
-    const activities = (activitiesRaw || []) as any[]
+    const activities = (activitiesRaw || []) as Record<string, any>[]
 
     // Build context
     const lessonContext = buildLessonContext({
@@ -50,7 +63,7 @@ export async function generateLessonMaterials(rawData: any): Promise<ActionResul
     })
 
     const activitiesText = activities.length
-      ? `\nATIVIDADES DA AULA:\n${activities.map((a: any) => `- [${a.activity_type}] ${a.title}: ${a.description || ''}`).join('\n')}`
+      ? `\nATIVIDADES DA AULA:\n${activities.map(a => `- [${a.activity_type}] ${a.title}: ${a.description || ''}`).join('\n')}`
       : ''
 
     const fullContext = lessonContext + activitiesText
@@ -110,7 +123,8 @@ export async function generateLessonMaterials(rawData: any): Promise<ActionResul
     if (saveError) return databaseError(saveError.message)
 
     // Save exercises as separate content
-    if (exercises?.exercises?.length) {
+    const exerciseList = exercises?.exercises as AIExercise[] | undefined
+    if (exerciseList?.length) {
       await (ctx.supabase as any)
         .from('ai_generated_content')
         .insert({
@@ -118,10 +132,10 @@ export async function generateLessonMaterials(rawData: any): Promise<ActionResul
           lesson_id: lesson.id,
           content_type: 'exercise',
           title: `Exercícios: ${lesson.title}`,
-          content: exercises.exercises.map((e: any, i: number) =>
+          content: exerciseList.map((e, i) =>
             `### Exercício ${i + 1}: ${e.title}\n${e.description}\n\n**Dificuldade:** ${'⭐'.repeat(e.difficulty)}\n**Tempo:** ~${e.duration_minutes} min\n**Dica:** ${e.tip}`
           ).join('\n\n---\n\n'),
-          metadata: { exercises: exercises.exercises, lesson_number: lesson.lesson_number },
+          metadata: { exercises: exerciseList, lesson_number: lesson.lesson_number },
           ai_model: process.env.AI_MODEL_FAST || 'gpt-4o-mini',
           ai_prompt_hash: promptHash + '_exercises',
           status: 'active',
@@ -132,9 +146,9 @@ export async function generateLessonMaterials(rawData: any): Promise<ActionResul
     revalidatePath(`/lessons/${lesson.id}`)
     revalidatePath('/settings/ai-content')
     return successResponse(savedMaterial, 'Material gerado com sucesso')
-  } catch (e: any) {
+  } catch (e) {
     console.error('AI generation error:', e)
-    return databaseError(e.message || 'Erro ao gerar material')
+    return databaseError(e instanceof Error ? e.message : 'Erro ao gerar material')
   }
 }
 
@@ -142,13 +156,16 @@ export async function generateLessonMaterials(rawData: any): Promise<ActionResul
  * Generate materials for multiple lessons in batch
  * Admin only
  */
-export async function generateBatchMaterials(rawData: any): Promise<ActionResult> {
+export async function generateBatchMaterials(rawData: unknown): Promise<ActionResult> {
   try {
     const validation = await validateAction(generateBatchMaterialsSchema, rawData)
     if ('error' in validation) return validationError(validation.error)
 
     const ctx = await getActionContext()
     if (!ctx) return unauthorizedError()
+
+    const canGenerate = await checkPermission('lessons.create')
+    if (!canGenerate) return forbiddenError('Permissão lessons.create necessária')
 
     const results: { lesson_id: string; status: 'success' | 'error' | 'skipped'; message: string }[] = []
 
@@ -181,8 +198,8 @@ export async function generateBatchMaterials(rawData: any): Promise<ActionResult
     revalidatePath('/settings/ai-content')
     const successCount = results.filter(r => r.status === 'success').length
     return successResponse(results, `${successCount}/${results.length} materiais gerados`)
-  } catch (e: any) {
-    return databaseError(e.message || 'Erro no batch')
+  } catch (e) {
+    return databaseError(e instanceof Error ? e.message : 'Erro no batch')
   }
 }
 
