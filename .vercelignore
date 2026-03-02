@@ -2,3 +2,7 @@
 node_modules/
 .next/
 .turbo/
+database/
+docs/
+scripts/
+.claude/
