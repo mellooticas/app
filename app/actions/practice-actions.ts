@@ -6,6 +6,7 @@ import { validateAction } from '@/lib/validations/validate-action'
 import { logPracticeSchema } from '@/lib/validations/unified-schemas'
 import { successResponse, unauthorizedError, databaseError, validationError } from '@/lib/utils/action-response'
 import type { ActionResult } from '@/lib/types/action-result'
+import { onPracticeLog } from '@/app/actions/alpha-engine-actions'
 
 export async function logPracticeSession(rawData: any): Promise<ActionResult> {
   try {
@@ -38,6 +39,9 @@ export async function logPracticeSession(rawData: any): Promise<ActionResult> {
       p_reference_type: 'practice_session',
       p_reference_id: data.id,
     }).then(() => ctx.supabase.rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
+
+    // Alpha Engine: bonus micro-challenge if 30+ min (fire-and-forget)
+    onPracticeLog(validation.data.duration_minutes).catch(() => {})
 
     revalidatePath('/practice')
     revalidatePath('/progress')

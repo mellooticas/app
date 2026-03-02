@@ -20,6 +20,7 @@ import {
 } from '@/lib/validations/unified-schemas'
 import { successResponse, unauthorizedError, databaseError, validationError } from '@/lib/utils/action-response'
 import type { ActionResult } from '@/lib/types/action-result'
+import { onLessonComplete } from '@/app/actions/alpha-engine-actions'
 
 export async function createLesson(rawData: any): Promise<ActionResult> {
   try {
@@ -96,6 +97,9 @@ export async function completeLesson(lessonId: string): Promise<ActionResult> {
       p_reference_type: 'lesson',
       p_reference_id: lessonId,
     }).then(() => ctx.supabase.rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
+
+    // Alpha Engine: auto-generate reinforcement items (fire-and-forget)
+    onLessonComplete(lessonId).catch(() => {})
 
     revalidatePath('/lessons')
     revalidatePath(`/lessons/${lessonId}`)

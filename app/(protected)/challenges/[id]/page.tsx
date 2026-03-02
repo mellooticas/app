@@ -7,6 +7,7 @@ import { Star, Upload, ArrowLeft, Loader2, Send } from 'lucide-react'
 import Link from 'next/link'
 import { RoleView } from '@/components/auth/RoleView'
 import { submitChallenge } from '@/app/actions/challenge-actions'
+import FileUpload from '@/components/ui/file-upload'
 import type { Tables } from '@/lib/supabase/database.types'
 
 type Challenge = Tables<'v_challenges'>
@@ -19,6 +20,7 @@ export default function ChallengeDetailPage() {
   const [loading, setLoading] = useState(true)
   const [showForm, setShowForm] = useState(false)
   const [response, setResponse] = useState('')
+  const [fileUrl, setFileUrl] = useState('')
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState('')
   const [success, setSuccess] = useState('')
@@ -42,13 +44,14 @@ export default function ChallengeDetailPage() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    if (!response.trim()) return
+    if (!response.trim() && !fileUrl) return
     setSubmitting(true)
     setError('')
 
     const result = await submitChallenge({
       challenge_id: id,
-      response: response.trim(),
+      response: response.trim() || undefined,
+      file_url: fileUrl || undefined,
     })
 
     if ('error' in result) {
@@ -129,10 +132,20 @@ export default function ChallengeDetailPage() {
                 placeholder="Escreva sua resposta, descreva seu processo, reflexões..."
                 className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-200"
               />
+              <FileUpload
+                bucket="challenges"
+                accept={['image/*', 'audio/*', 'video/*', 'application/pdf']}
+                maxSizeMB={50}
+                label="Anexar arquivo (opcional)"
+                hint="Vídeo, áudio, imagem ou documento"
+                compact
+                onUpload={(url) => setFileUrl(url)}
+                onRemove={() => setFileUrl('')}
+              />
               <div className="flex gap-3">
                 <button
                   type="submit"
-                  disabled={!response.trim() || submitting}
+                  disabled={(!response.trim() && !fileUrl) || submitting}
                   className="px-6 py-3 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition-colors disabled:opacity-50 flex items-center gap-2"
                 >
                   {submitting ? <Loader2 className="w-4 h-4 animate-spin" /> : <Send className="w-4 h-4" />}

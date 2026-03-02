@@ -6,6 +6,7 @@ import { validateAction } from '@/lib/validations/validate-action'
 import { submitPortfolioSchema, evaluatePortfolioSchema } from '@/lib/validations/unified-schemas'
 import { successResponse, unauthorizedError, databaseError, validationError } from '@/lib/utils/action-response'
 import type { ActionResult } from '@/lib/types/action-result'
+import { generatePortfolioFeedback } from '@/app/actions/ai-feedback-actions'
 
 export async function submitPortfolioV2(rawData: any): Promise<ActionResult> {
   try {
@@ -38,6 +39,9 @@ export async function submitPortfolioV2(rawData: any): Promise<ActionResult> {
       p_reference_type: 'portfolio',
       p_reference_id: data.id,
     }).then(() => ctx.supabase.rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
+
+    // AI Feedback: auto-generate feedback if has description (fire-and-forget)
+    generatePortfolioFeedback(data.id).catch(() => {})
 
     revalidatePath('/portfolio')
     revalidatePath('/progress')

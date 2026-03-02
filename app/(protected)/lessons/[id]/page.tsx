@@ -9,7 +9,7 @@ import {
   BookOpen, Clock, Calendar, User, ArrowLeft, Edit, CheckCircle, Heart,
   FileText, Video, Music2, ExternalLink, Play, Music, Zap, Flag,
   Loader2, ClipboardCheck, MessageSquare, Send, Trash2, ChevronRight,
-  Star, AlertCircle, Plus, X, Save, Tag, Reply,
+  Star, AlertCircle, Plus, X, Save, Tag, Reply, Sparkles,
 } from 'lucide-react'
 import Link from 'next/link'
 import {
@@ -20,6 +20,9 @@ import {
   createCriteria, updateCriteria, deleteCriteria,
   addLessonTag, removeLessonTag,
 } from '@/app/actions/lesson-actions'
+import { generateLessonMaterials } from '@/app/actions/ai-actions'
+import MediaPlayer from '@/components/ui/media-player'
+import FileUpload from '@/components/ui/file-upload'
 import { getLessonLevel, LEVEL_COLORS, STATUS_LABELS, STATUS_COLORS, ACTIVITY_TYPE_CONFIG, MATERIAL_TYPE_LABELS } from '@/lib/lessons/constants'
 import type { Tables } from '@/lib/supabase/database.types'
 
@@ -52,6 +55,13 @@ type TabKey = 'antes' | 'durante' | 'depois'
 // Inline Form Components
 // =============================================
 
+const UPLOAD_ACCEPT: Record<string, string[]> = {
+  document: ['application/pdf', 'image/*'],
+  audio: ['audio/*'],
+  video: ['video/*'],
+  sheet_music: ['application/pdf', 'image/*'],
+}
+
 function MaterialForm({ lessonId, material, onSave, onCancel }: {
   lessonId: string
   material?: Material
@@ -64,6 +74,10 @@ function MaterialForm({ lessonId, material, onSave, onCancel }: {
   const [fileUrl, setFileUrl] = useState(material?.file_url || '')
   const [orderIndex, setOrderIndex] = useState(material?.order_index ?? 0)
   const [saving, setSaving] = useState(false)
+  const [showUrlInput, setShowUrlInput] = useState(false)
+
+  const canUpload = materialType !== 'link'
+  const currentUrlValid = fileUrl && fileUrl !== '#'
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -81,7 +95,7 @@ function MaterialForm({ lessonId, material, onSave, onCancel }: {
       <div className="flex gap-3">
         <input value={title} onChange={e => setTitle(e.target.value)} placeholder="Titulo do material" required
           className="flex-1 px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-200" />
-        <select value={materialType} onChange={e => setMaterialType(e.target.value)}
+        <select value={materialType} onChange={e => { setMaterialType(e.target.value); setShowUrlInput(false) }}
           className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-200">
           <option value="document">Documento</option>
           <option value="video">Video</option>
@@ -92,12 +106,62 @@ function MaterialForm({ lessonId, material, onSave, onCancel }: {
       </div>
       <input value={description} onChange={e => setDescription(e.target.value)} placeholder="Descricao (opcional)"
         className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-200" />
-      <div className="flex gap-3">
-        <input value={fileUrl} onChange={e => setFileUrl(e.target.value)} placeholder="URL do arquivo (opcional)"
-          className="flex-1 px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-200" />
-        <input type="number" value={orderIndex} onChange={e => setOrderIndex(Number(e.target.value))} placeholder="Ordem" min={0}
-          className="w-20 px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-200" />
-      </div>
+
+      {/* File Upload or URL Input */}
+      {canUpload && !showUrlInput ? (
+        <div className="space-y-2">
+          <FileUpload
+            bucket="lessons"
+            pathPrefix={`materials/${lessonId}`}
+            accept={UPLOAD_ACCEPT[materialType] || ['application/pdf', 'image/*']}
+            maxSizeMB={100}
+            onUpload={(url) => setFileUrl(url)}
+            onRemove={() => setFileUrl('')}
+            currentUrl={currentUrlValid ? fileUrl : undefined}
+            label={materialType === 'video' ? 'Upload de video (ou cole URL abaixo)' : undefined}
+            compact
+          />
+          <button
+            type="button"
+            onClick={() => setShowUrlInput(true)}
+            className="text-xs text-blue-500 hover:text-blue-700 hover:underline"
+          >
+            {materialType === 'video' ? 'Colar link do YouTube' : 'Inserir URL manualmente'}
+          </button>
+        </div>
+      ) : (
+        <div className="space-y-2">
+          <div className="flex gap-3">
+            <input
+              value={fileUrl === '#' ? '' : fileUrl}
+              onChange={e => setFileUrl(e.target.value)}
+              placeholder={materialType === 'video' ? 'URL do YouTube ou video' : materialType === 'link' ? 'URL do link' : 'URL do arquivo'}
+              className="flex-1 px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-200"
+            />
+            <input type="number" value={orderIndex} onChange={e => setOrderIndex(Number(e.target.value))} placeholder="Ordem" min={0}
+              className="w-20 px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-200" />
+          </div>
+          {canUpload && (
+            <button
+              type="button"
+              onClick={() => setShowUrlInput(false)}
+              className="text-xs text-blue-500 hover:text-blue-700 hover:underline"
+            >
+              Fazer upload de arquivo
+            </button>
+          )}
+        </div>
+      )}
+
+      {/* Order index (when using upload mode) */}
+      {canUpload && !showUrlInput && (
+        <div className="flex items-center gap-2">
+          <span className="text-xs text-gray-500">Ordem:</span>
+          <input type="number" value={orderIndex} onChange={e => setOrderIndex(Number(e.target.value))} min={0}
+            className="w-20 px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-200" />
+        </div>
+      )}
+
       <div className="flex justify-end gap-2">
         <button type="button" onClick={onCancel} className="px-3 py-1.5 text-sm text-gray-600 hover:bg-gray-100 rounded-lg">Cancelar</button>
         <button type="submit" disabled={saving || !title.trim()} className="px-4 py-1.5 text-sm bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 disabled:opacity-50 flex items-center gap-1">
@@ -228,6 +292,9 @@ export default function LessonDetailPage() {
   const [materials, setMaterials] = useState<Material[]>([])
   const [activities, setActivities] = useState<Activity[]>([])
   const [criteria, setCriteria] = useState<Criteria[]>([])
+  const [aiContent, setAiContent] = useState<{ id: string; content_type: string; title: string; content: string; metadata: any }[]>([])
+  const [generatingAI, setGeneratingAI] = useState(false)
+  const [expandedAI, setExpandedAI] = useState<string | null>(null)
   const [checklists, setChecklists] = useState<Checklist[]>([])
   const [progress, setProgress] = useState<LessonProgress | null>(null)
   const [comments, setComments] = useState<LessonComment[]>([])
@@ -278,6 +345,9 @@ export default function LessonDetailPage() {
 
       const { data: tagsData } = await supabase.from('lesson_tags' as any).select('id, tag').eq('lesson_id', id)
       if (tagsData) setTags(tagsData as any[])
+
+      const { data: aiData } = await supabase.from('v_ai_generated_content' as any).select('id, content_type, title, content, metadata').eq('lesson_id', id).eq('status', 'active').order('created_at', { ascending: false })
+      if (aiData) setAiContent(aiData as any[])
 
       if (userId) {
         const { data: progressData } = await supabase
@@ -712,43 +782,118 @@ export default function LessonDetailPage() {
                 {materials.map(mat => {
                   const Icon = materialIcons[mat.material_type || 'document'] || FileText
                   const isPlaceholder = !mat.file_url || mat.file_url === '#'
+                  const isMediaType = mat.material_type === 'video' || mat.material_type === 'audio'
+                  const isYouTube = mat.file_url?.includes('youtube.com') || mat.file_url?.includes('youtu.be')
+                  const showPlayer = !isPlaceholder && mat.file_url && (isMediaType || isYouTube)
                   return (
-                    <div
-                      key={mat.id}
-                      className={`flex items-center gap-3 p-3 rounded-lg border transition-colors ${
-                        isPlaceholder ? 'border-gray-100 bg-gray-50 opacity-60' : 'border-gray-100 hover:bg-blue-50 hover:border-blue-200'
-                      }`}
-                    >
-                      <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${isPlaceholder ? 'bg-gray-100 text-gray-400' : 'bg-blue-50 text-blue-600'}`}>
-                        <Icon className="w-5 h-5" />
+                    <div key={mat.id} className="space-y-2">
+                      <div
+                        className={`flex items-center gap-3 p-3 rounded-lg border transition-colors ${
+                          isPlaceholder ? 'border-gray-100 bg-gray-50 opacity-60' : 'border-gray-100 hover:bg-blue-50 hover:border-blue-200'
+                        }`}
+                      >
+                        <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${isPlaceholder ? 'bg-gray-100 text-gray-400' : 'bg-blue-50 text-blue-600'}`}>
+                          <Icon className="w-5 h-5" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          {!isPlaceholder && mat.file_url && !showPlayer ? (
+                            <a href={mat.file_url} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-blue-600 hover:underline truncate block">{mat.title}</a>
+                          ) : (
+                            <p className="text-sm font-medium text-gray-900 truncate">{mat.title}</p>
+                          )}
+                          {mat.description && <p className="text-xs text-gray-400 truncate">{mat.description}</p>}
+                          {isPlaceholder && <p className="text-xs text-amber-500">Conteudo em breve</p>}
+                        </div>
+                        <span className="text-xs text-gray-400">
+                          {MATERIAL_TYPE_LABELS[mat.material_type || 'document'] || mat.material_type}
+                        </span>
+                        <PermissionGate permission="lessons.create">
+                          <button onClick={() => { setEditingMaterial(mat); setShowMaterialForm(false) }} className="text-gray-400 hover:text-blue-600 p-1" title="Editar">
+                            <Edit className="w-4 h-4" />
+                          </button>
+                          <button onClick={() => handleDeleteMaterial(mat.id)} className="text-gray-400 hover:text-red-500 p-1" title="Remover">
+                            <Trash2 className="w-4 h-4" />
+                          </button>
+                        </PermissionGate>
+                        {!isPlaceholder && !showPlayer && <ChevronRight className="w-4 h-4 text-gray-300" />}
                       </div>
-                      <div className="flex-1 min-w-0">
-                        {!isPlaceholder && mat.file_url ? (
-                          <a href={mat.file_url} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-blue-600 hover:underline truncate block">{mat.title}</a>
-                        ) : (
-                          <p className="text-sm font-medium text-gray-900 truncate">{mat.title}</p>
-                        )}
-                        {mat.description && <p className="text-xs text-gray-400 truncate">{mat.description}</p>}
-                        {isPlaceholder && <p className="text-xs text-amber-500">Conteudo em breve</p>}
-                      </div>
-                      <span className="text-xs text-gray-400">
-                        {MATERIAL_TYPE_LABELS[mat.material_type || 'document'] || mat.material_type}
-                      </span>
-                      <PermissionGate permission="lessons.create">
-                        <button onClick={() => { setEditingMaterial(mat); setShowMaterialForm(false) }} className="text-gray-400 hover:text-blue-600 p-1" title="Editar">
-                          <Edit className="w-4 h-4" />
-                        </button>
-                        <button onClick={() => handleDeleteMaterial(mat.id)} className="text-gray-400 hover:text-red-500 p-1" title="Remover">
-                          <Trash2 className="w-4 h-4" />
-                        </button>
-                      </PermissionGate>
-                      {!isPlaceholder && <ChevronRight className="w-4 h-4 text-gray-300" />}
+                      {showPlayer && mat.file_url && (
+                        <MediaPlayer url={mat.file_url} title={mat.title} />
+                      )}
                     </div>
                   )
                 })}
               </div>
             )}
           </div>
+
+          {/* AI-Generated Content */}
+          {(aiContent.length > 0 || true) && (
+            <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl border border-purple-200 p-6">
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="font-bold text-gray-900 flex items-center gap-2">
+                  <Sparkles className="w-5 h-5 text-purple-500" />
+                  Conteúdo AI ({aiContent.length})
+                </h2>
+                <PermissionGate permission="lessons.create">
+                  <button
+                    onClick={async () => {
+                      setGeneratingAI(true)
+                      const result = await generateLessonMaterials({ lesson_id: id })
+                      if (result.success) {
+                        const { data: aiData } = await supabase.from('v_ai_generated_content' as any).select('id, content_type, title, content, metadata').eq('lesson_id', id).eq('status', 'active').order('created_at', { ascending: false })
+                        if (aiData) setAiContent(aiData as any[])
+                      }
+                      setGeneratingAI(false)
+                    }}
+                    disabled={generatingAI}
+                    className="flex items-center gap-1.5 px-3 py-1.5 text-sm bg-purple-100 text-purple-700 rounded-lg hover:bg-purple-200 font-medium disabled:opacity-50"
+                  >
+                    {generatingAI ? <Loader2 className="w-4 h-4 animate-spin" /> : <Sparkles className="w-4 h-4" />}
+                    {aiContent.length > 0 ? 'Regenerar' : 'Gerar Material'}
+                  </button>
+                </PermissionGate>
+              </div>
+
+              {generatingAI ? (
+                <div className="text-center py-8">
+                  <Loader2 className="w-8 h-8 text-purple-400 mx-auto mb-2 animate-spin" />
+                  <p className="text-sm text-purple-600">Gerando conteúdo com AI...</p>
+                </div>
+              ) : aiContent.length === 0 ? (
+                <p className="text-sm text-purple-400">Nenhum conteúdo AI gerado ainda. Clique em "Gerar Material" acima.</p>
+              ) : (
+                <div className="space-y-3">
+                  {aiContent.map(item => (
+                    <div key={item.id} className="bg-white rounded-xl border border-purple-100 overflow-hidden">
+                      <button
+                        onClick={() => setExpandedAI(expandedAI === item.id ? null : item.id)}
+                        className="w-full flex items-center gap-3 p-4 text-left hover:bg-purple-50/50 transition-colors"
+                      >
+                        <div className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 ${
+                          item.content_type === 'exercise' ? 'bg-blue-100 text-blue-600' : 'bg-purple-100 text-purple-600'
+                        }`}>
+                          {item.content_type === 'exercise' ? <Zap className="w-4 h-4" /> : <FileText className="w-4 h-4" />}
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <h3 className="text-sm font-bold text-gray-900 truncate">{item.title}</h3>
+                          <p className="text-xs text-gray-400">{item.content_type === 'exercise' ? 'Exercícios' : 'Material de Apoio'}</p>
+                        </div>
+                        <ChevronRight className={`w-4 h-4 text-gray-300 transition-transform ${expandedAI === item.id ? 'rotate-90' : ''}`} />
+                      </button>
+                      {expandedAI === item.id && (
+                        <div className="px-4 pb-4 border-t border-purple-50">
+                          <div className="bg-gray-50 rounded-xl p-4 mt-3 text-sm text-gray-700 whitespace-pre-wrap leading-relaxed max-h-96 overflow-y-auto">
+                            {item.content}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
 
           {/* Criterios de Avaliacao */}
           <div className="bg-white rounded-xl border border-gray-100 p-6">

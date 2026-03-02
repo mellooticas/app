@@ -2,15 +2,17 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { ArrowLeft, Upload, Briefcase, Loader2 } from 'lucide-react'
+import { ArrowLeft, Briefcase, Loader2 } from 'lucide-react'
 import Link from 'next/link'
 import { submitPortfolioV2 } from '@/app/actions/portfolio-actions-v2'
+import FileUpload from '@/components/ui/file-upload'
 
 export default function NewPortfolioPage() {
   const router = useRouter()
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
   const [workType, setWorkType] = useState('performance')
+  const [fileUrl, setFileUrl] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
@@ -24,6 +26,7 @@ export default function NewPortfolioPage() {
       title: title.trim(),
       work_type: workType,
       description: description.trim() || undefined,
+      file_url: fileUrl || undefined,
     })
 
     if ('error' in result) {
@@ -91,11 +94,16 @@ export default function NewPortfolioPage() {
 
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">Evidências</label>
-          <div className="border-2 border-dashed border-gray-200 rounded-xl p-8 text-center hover:border-teal-300 transition-colors cursor-pointer">
-            <Upload className="w-8 h-8 text-gray-400 mx-auto mb-2" />
-            <p className="text-sm text-gray-500">Upload de arquivos em breve</p>
-            <p className="text-xs text-gray-400 mt-1">Vídeo, áudio, imagem ou documento (máx 50MB)</p>
-          </div>
+          <FileUpload
+            bucket="portfolios"
+            accept={['image/*', 'audio/*', 'video/*', 'application/pdf']}
+            maxSizeMB={50}
+            label="Upload de Vídeo, Áudio, Imagem ou PDF"
+            hint="Arraste ou clique para selecionar (máx 50MB)"
+            onUpload={(url) => setFileUrl(url)}
+            onRemove={() => setFileUrl('')}
+            currentUrl={fileUrl || undefined}
+          />
         </div>
 
         <button

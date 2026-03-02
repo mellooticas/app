@@ -16,6 +16,7 @@ import {
   Award,
 } from 'lucide-react'
 import Link from 'next/link'
+import { AlphaNextStep } from '@/components/alpha-next-step'
 
 interface StudentStats {
   total_points: number
@@ -117,6 +118,9 @@ export function StudentDashboard() {
           </div>
         </div>
       </div>
+
+      {/* Alpha: Next Step Widget */}
+      <AlphaNextStep />
 
       {/* Stats Grid */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">

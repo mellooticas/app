@@ -6,6 +6,8 @@ import { validateAction } from '@/lib/validations/validate-action'
 import { submitChallengeSchema, evaluateSubmissionSchema } from '@/lib/validations/unified-schemas'
 import { successResponse, unauthorizedError, databaseError, validationError } from '@/lib/utils/action-response'
 import type { ActionResult } from '@/lib/types/action-result'
+import { onChallengeComplete } from '@/app/actions/alpha-engine-actions'
+import { generateChallengeFeedback } from '@/app/actions/ai-feedback-actions'
 
 export async function submitChallenge(rawData: any): Promise<ActionResult> {
   try {
@@ -40,6 +42,12 @@ export async function submitChallenge(rawData: any): Promise<ActionResult> {
       p_reference_type: 'challenge_submission',
       p_reference_id: data.id,
     }).then(() => ctx.supabase.rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
+
+    // Alpha Engine: generate reinforcement exercises (fire-and-forget)
+    onChallengeComplete(validation.data.challenge_id).catch(() => {})
+
+    // AI Feedback: auto-generate feedback if text response (fire-and-forget)
+    generateChallengeFeedback(data.id, validation.data.challenge_id).catch(() => {})
 
     revalidatePath('/challenges')
     revalidatePath(`/challenges/${validation.data.challenge_id}`)

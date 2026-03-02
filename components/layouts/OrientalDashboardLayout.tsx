@@ -42,6 +42,10 @@ import {
   Wrench,
   Package,
   Flame,
+  Sparkles,
+  Route,
+  Brain,
+  Library,
   type LucideIcon,
 } from 'lucide-react'
 import { useAuth } from '@/app/providers/AuthProvider'
@@ -83,6 +87,11 @@ const ICON_MAP: Record<string, LucideIcon> = {
   wrench: Wrench,
   package: Package,
   flame: Flame,
+  sparkles: Sparkles,
+  route: Route,
+  brain: Brain,
+  library: Library,
+  'building-2': Building2,
 }
 
 /**

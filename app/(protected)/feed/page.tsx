@@ -5,6 +5,8 @@ import { supabase } from '@/lib/supabase/client'
 import { useAuth } from '@/app/providers/AuthProvider'
 import { Video, Heart, MessageCircle, Plus, Image as ImageIcon, Mic, X, Loader2, Send } from 'lucide-react'
 import { createPost, likePost, commentOnPost } from '@/app/actions/feed-actions'
+import FileUpload from '@/components/ui/file-upload'
+import MediaPlayer from '@/components/ui/media-player'
 import type { Tables } from '@/lib/supabase/database.types'
 
 type FeedPost = Tables<'v_feed_posts'>
@@ -20,6 +22,7 @@ export default function FeedPage() {
   // New post form
   const [caption, setCaption] = useState('')
   const [contentType, setContentType] = useState<'text' | 'video' | 'audio' | 'image'>('text')
+  const [mediaUrl, setMediaUrl] = useState('')
 
   // Comment
   const [commentingOn, setCommentingOn] = useState<string | null>(null)
@@ -47,6 +50,7 @@ export default function FeedPage() {
     const result = await createPost({
       content_type: contentType,
       caption: caption.trim(),
+      media_url: mediaUrl || undefined,
     })
 
     if ('error' in result) {
@@ -55,6 +59,7 @@ export default function FeedPage() {
       setShowForm(false)
       setCaption('')
       setContentType('text')
+      setMediaUrl('')
       await loadPosts()
     }
     setSaving(false)
@@ -111,6 +116,22 @@ export default function FeedPage() {
             placeholder="O que você está praticando hoje?"
             className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-pink-200"
           />
+          {contentType !== 'text' && (
+            <FileUpload
+              bucket="feed"
+              accept={
+                contentType === 'video' ? ['video/*'] :
+                contentType === 'audio' ? ['audio/*'] :
+                contentType === 'image' ? ['image/*'] :
+                ['image/*', 'audio/*', 'video/*']
+              }
+              maxSizeMB={50}
+              label={contentType === 'video' ? 'Upload de Vídeo' : contentType === 'audio' ? 'Upload de Áudio' : 'Upload de Imagem'}
+              compact
+              onUpload={(url) => setMediaUrl(url)}
+              onRemove={() => setMediaUrl('')}
+            />
+          )}
           <button
             type="submit"
             disabled={!caption.trim() || saving}
@@ -176,10 +197,11 @@ export default function FeedPage() {
               {post.caption && <p className="px-4 pb-3 text-sm text-gray-700">{post.caption}</p>}
 
               {post.media_url && (
-                <div className="bg-gray-100 aspect-video flex items-center justify-center">
-                  {post.content_type === 'video' && <Video className="w-12 h-12 text-gray-400" />}
-                  {post.content_type === 'audio' && <Mic className="w-12 h-12 text-gray-400" />}
-                  {post.content_type === 'image' && <ImageIcon className="w-12 h-12 text-gray-400" />}
+                <div className="px-4 pb-2">
+                  <MediaPlayer
+                    url={post.media_url}
+                    type={post.content_type === 'video' ? 'video' : post.content_type === 'audio' ? 'audio' : post.content_type === 'image' ? 'image' : undefined}
+                  />
                 </div>
               )}
 
