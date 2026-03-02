@@ -5,7 +5,7 @@ import type { Database } from './lib/supabase/database.types'
 // Public routes that don't require authentication
 const publicRoutes = ['/', '/login', '/register', '/forgot-password', '/auth/callback', '/set-password']
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   let response = NextResponse.next({
     request: { headers: request.headers },
   })
