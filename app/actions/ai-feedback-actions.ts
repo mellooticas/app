@@ -5,7 +5,7 @@ import { getActionContext } from '@/lib/utils/action-context'
 import { successResponse, unauthorizedError, forbiddenError, databaseError } from '@/lib/utils/action-response'
 import type { ActionResult } from '@/lib/types/action-result'
 import { checkPermission } from '@/lib/auth/check-permission'
-import { generateJSON } from '@/lib/ai/ai-client'
+import { generateJSON, type AICallContext } from '@/lib/ai/ai-client'
 import { SYSTEM_BASE, FEEDBACK_PROMPT } from '@/lib/ai/prompts'
 
 interface FeedbackResult {
@@ -53,12 +53,13 @@ ${submission.response}
 ${submission.file_url ? '\n(O aluno também enviou um arquivo anexo)' : ''}
 `.trim()
 
+    const aiCtx: AICallContext = { tenantId: ctx.tenantId, userId: ctx.userId, actionName: 'generateChallengeFeedback' }
     const result = await generateJSON<FeedbackResult>({
       system: SYSTEM_BASE,
       prompt: `${feedbackContext}\n\n${FEEDBACK_PROMPT}`,
       model: 'smart', // Use GPT-4o for better feedback quality
       maxTokens: 2000,
-    })
+    }, aiCtx)
 
     if (!result?.strengths) return
 
@@ -133,12 +134,13 @@ ${portfolio.video_url ? '\n(O aluno enviou vídeo)' : ''}
 ${portfolio.audio_url ? '\n(O aluno enviou áudio)' : ''}
 `.trim()
 
+    const aiCtx: AICallContext = { tenantId: ctx.tenantId, userId: ctx.userId, actionName: 'generatePortfolioFeedback' }
     const result = await generateJSON<FeedbackResult>({
       system: SYSTEM_BASE,
       prompt: `${feedbackContext}\n\n${FEEDBACK_PROMPT}`,
       model: 'smart',
       maxTokens: 2000,
-    })
+    }, aiCtx)
 
     if (!result?.strengths) return
 

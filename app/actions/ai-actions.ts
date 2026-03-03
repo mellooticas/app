@@ -7,7 +7,7 @@ import { generateLessonMaterialsSchema, generateBatchMaterialsSchema } from '@/l
 import { successResponse, unauthorizedError, forbiddenError, databaseError, validationError, notFoundError } from '@/lib/utils/action-response'
 import type { ActionResult } from '@/lib/types/action-result'
 import { checkPermission } from '@/lib/auth/check-permission'
-import { generateText, generateJSON } from '@/lib/ai/ai-client'
+import { generateText, generateJSON, type AICallContext } from '@/lib/ai/ai-client'
 import { SYSTEM_BASE, LESSON_MATERIAL_PROMPT, EXERCISE_PROMPT } from '@/lib/ai/prompts'
 import { buildLessonContext } from '@/lib/ai/curriculum-context'
 import { createHash } from 'crypto'
@@ -85,6 +85,9 @@ export async function generateLessonMaterials(rawData: unknown): Promise<ActionR
       return successResponse({ id: existing[0].id, cached: true }, 'Material já existente')
     }
 
+    // AI call context for usage logging
+    const aiCtx: AICallContext = { tenantId: ctx.tenantId, userId: ctx.userId, actionName: 'generateLessonMaterials' }
+
     // Generate lesson material (markdown)
     const material = await generateText({
       system: SYSTEM_BASE,
@@ -92,7 +95,7 @@ export async function generateLessonMaterials(rawData: unknown): Promise<ActionR
       model: 'fast',
       maxTokens: 4096,
       temperature: 0.7,
-    })
+    }, aiCtx)
 
     // Generate exercises (JSON)
     const exercises = await generateJSON({
@@ -100,7 +103,7 @@ export async function generateLessonMaterials(rawData: unknown): Promise<ActionR
       prompt: `${fullContext}\n\n${EXERCISE_PROMPT}`,
       model: 'fast',
       maxTokens: 2048,
-    })
+    }, aiCtx)
 
     // Save material
     const { data: savedMaterial, error: saveError } = await (ctx.supabase as any)
