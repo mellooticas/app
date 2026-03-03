@@ -33,7 +33,7 @@ export async function submitChallenge(rawData: any): Promise<ActionResult> {
     if (error) return databaseError(error.message)
 
     // Gamification: award points for submitting (fire-and-forget)
-    ctx.supabase.rpc('rpc_award_points', {
+    ;(ctx.supabase as any).rpc('rpc_award_points', {
       p_user_id: ctx.userId,
       p_points: 15,
       p_source: 'challenge',
@@ -41,7 +41,7 @@ export async function submitChallenge(rawData: any): Promise<ActionResult> {
       p_description: 'Desafio submetido',
       p_reference_type: 'challenge_submission',
       p_reference_id: data.id,
-    }).then(() => ctx.supabase.rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
+    }).then(() => (ctx.supabase as any).rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
 
     // Alpha Engine: generate reinforcement exercises (fire-and-forget)
     onChallengeComplete(validation.data.challenge_id).catch(() => {})

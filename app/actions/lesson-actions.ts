@@ -80,7 +80,7 @@ export async function completeLesson(lessonId: string): Promise<ActionResult> {
     const ctx = await getActionContext()
     if (!ctx) return unauthorizedError()
 
-    const { error } = await ctx.supabase.rpc('rpc_complete_lesson', {
+    const { error } = await (ctx.supabase as any).rpc('rpc_complete_lesson', {
       p_lesson_id: lessonId,
       p_notes: null,
     })
@@ -88,7 +88,7 @@ export async function completeLesson(lessonId: string): Promise<ActionResult> {
     if (error) return databaseError(error.message)
 
     // Gamification: award points + check achievements (fire-and-forget)
-    ctx.supabase.rpc('rpc_award_points', {
+    ;(ctx.supabase as any).rpc('rpc_award_points', {
       p_user_id: ctx.userId,
       p_points: 10,
       p_source: 'lesson',
@@ -96,7 +96,7 @@ export async function completeLesson(lessonId: string): Promise<ActionResult> {
       p_description: 'Aula concluída',
       p_reference_type: 'lesson',
       p_reference_id: lessonId,
-    }).then(() => ctx.supabase.rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
+    }).then(() => (ctx.supabase as any).rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
 
     // Alpha Engine: auto-generate reinforcement items (fire-and-forget)
     onLessonComplete(lessonId).catch(() => {})

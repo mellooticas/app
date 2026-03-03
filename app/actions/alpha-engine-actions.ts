@@ -69,7 +69,7 @@ export async function completeAlphaItem(rawData: any): Promise<ActionResult> {
     if (updateError) return databaseError(updateError.message)
 
     // Gamification: award points
-    ctx.supabase.rpc('rpc_award_points', {
+    ;(ctx.supabase as any).rpc('rpc_award_points', {
       p_user_id: ctx.userId,
       p_points: item.points_reward || 5,
       p_source: 'alpha',
@@ -77,7 +77,7 @@ export async function completeAlphaItem(rawData: any): Promise<ActionResult> {
       p_description: 'Atividade Alpha concluída',
       p_reference_type: 'alpha_queue',
       p_reference_id: item.id,
-    }).then(() => ctx.supabase.rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
+    }).then(() => (ctx.supabase as any).rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
 
     // Adaptive difficulty: check every 3 completions (fire-and-forget)
     const { count } = await (ctx.supabase as any)

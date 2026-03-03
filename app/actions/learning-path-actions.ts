@@ -207,7 +207,7 @@ export async function startPath(rawData: any): Promise<ActionResult> {
     if (error) return databaseError(error.message)
 
     // Gamification: award points for starting a path
-    ctx.supabase.rpc('rpc_award_points', {
+    ;(ctx.supabase as any).rpc('rpc_award_points', {
       p_user_id: ctx.userId,
       p_points: 10,
       p_source: 'path',
@@ -215,7 +215,7 @@ export async function startPath(rawData: any): Promise<ActionResult> {
       p_description: 'Trilha iniciada',
       p_reference_type: 'learning_path',
       p_reference_id: validation.data.path_id,
-    }).then(() => ctx.supabase.rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
+    }).then(() => (ctx.supabase as any).rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
 
     revalidatePath('/paths')
     revalidatePath(`/paths/${validation.data.path_id}`)
@@ -302,7 +302,7 @@ export async function completeStep(rawData: any): Promise<ActionResult> {
 
     // Gamification
     const points = step.points_reward || 10
-    ctx.supabase.rpc('rpc_award_points', {
+    ;(ctx.supabase as any).rpc('rpc_award_points', {
       p_user_id: ctx.userId,
       p_points: points,
       p_source: 'path',
@@ -310,11 +310,11 @@ export async function completeStep(rawData: any): Promise<ActionResult> {
       p_description: 'Step da trilha completado',
       p_reference_type: 'learning_path_step',
       p_reference_id: step_id,
-    }).then(() => ctx.supabase.rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
+    }).then(() => (ctx.supabase as any).rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
 
     // Bonus for completing the entire path
     if (isCompleted) {
-      ctx.supabase.rpc('rpc_award_points', {
+      ;(ctx.supabase as any).rpc('rpc_award_points', {
         p_user_id: ctx.userId,
         p_points: 50,
         p_source: 'path',
@@ -322,7 +322,7 @@ export async function completeStep(rawData: any): Promise<ActionResult> {
         p_description: 'Trilha completa!',
         p_reference_type: 'learning_path',
         p_reference_id: path_id,
-      }).then(() => ctx.supabase.rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
+      }).then(() => (ctx.supabase as any).rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
     }
 
     revalidatePath('/paths')

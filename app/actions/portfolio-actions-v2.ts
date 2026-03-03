@@ -30,7 +30,7 @@ export async function submitPortfolioV2(rawData: any): Promise<ActionResult> {
     if (error) return databaseError(error.message)
 
     // Gamification: award points for portfolio submission (fire-and-forget)
-    ctx.supabase.rpc('rpc_award_points', {
+    ;(ctx.supabase as any).rpc('rpc_award_points', {
       p_user_id: ctx.userId,
       p_points: 20,
       p_source: 'portfolio',
@@ -38,7 +38,7 @@ export async function submitPortfolioV2(rawData: any): Promise<ActionResult> {
       p_description: 'Portfólio submetido',
       p_reference_type: 'portfolio',
       p_reference_id: data.id,
-    }).then(() => ctx.supabase.rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
+    }).then(() => (ctx.supabase as any).rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
 
     // AI Feedback: auto-generate feedback if has description (fire-and-forget)
     generatePortfolioFeedback(data.id).catch(() => {})

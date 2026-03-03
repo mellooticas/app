@@ -30,7 +30,7 @@ export async function logPracticeSession(rawData: any): Promise<ActionResult> {
     if (error) return databaseError(error.message)
 
     // Gamification: award points for practice (fire-and-forget)
-    ctx.supabase.rpc('rpc_award_points', {
+    ;(ctx.supabase as any).rpc('rpc_award_points', {
       p_user_id: ctx.userId,
       p_points: 5,
       p_source: 'practice',
@@ -38,7 +38,7 @@ export async function logPracticeSession(rawData: any): Promise<ActionResult> {
       p_description: `Pratica: ${validation.data.duration_minutes} min`,
       p_reference_type: 'practice_session',
       p_reference_id: data.id,
-    }).then(() => ctx.supabase.rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
+    }).then(() => (ctx.supabase as any).rpc('rpc_check_achievements', { p_user_id: ctx.userId }))
 
     // Alpha Engine: bonus micro-challenge if 30+ min (fire-and-forget)
     onPracticeLog(validation.data.duration_minutes).catch(() => {})
