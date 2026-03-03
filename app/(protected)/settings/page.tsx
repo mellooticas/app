@@ -1,7 +1,7 @@
 'use client'
 
 import { PermissionGate } from '@/components/auth/PermissionGate'
-import { Settings, Users, Building2, Shield, Lock, GraduationCap } from 'lucide-react'
+import { Settings, Users, Building2, Shield, Lock, GraduationCap, ShieldCheck, Database } from 'lucide-react'
 import Link from 'next/link'
 
 export default function SettingsPage() {
@@ -48,6 +48,20 @@ export default function SettingsPage() {
             title="Segurança"
             desc="Políticas de acesso e autenticação"
             color="red"
+          />
+          <SettingsCard
+            href="/settings/superadmin"
+            icon={ShieldCheck}
+            title="Superadmin"
+            desc="Saúde do sistema, custos IA e auditoria"
+            color="slate"
+          />
+          <SettingsCard
+            href="/settings/data-quality"
+            icon={Database}
+            title="Qualidade de Dados"
+            desc="Completude e integridade dos dados"
+            color="cyan"
           />
         </div>
       </div>
