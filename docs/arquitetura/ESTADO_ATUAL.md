@@ -1,6 +1,6 @@
 # Estado Atual do App — Nipo School
 
-> Atualizado em: 2026-03-03 (v4 — Pilot readiness, AI cost control, superadmin, feature flags)
+> Atualizado em: 2026-03-06 (v4.1 — auth recovery, QR generator, docs alignment)
 
 ## Arquitetura de Dados
 
@@ -30,7 +30,7 @@
 - **Segurança**: Apenas schema `public` exposto. Views com `security_invoker = true`
 - **Tenant isolation**: Todas as actions usam `getActionContext()` que extrai `tenant_id` do JWT
 - **AI**: OpenAI SDK (GPT-4o-mini bulk, GPT-4o feedback) — conteúdo salvo em `core.ai_generated_content`
-- **Storage**: Supabase Storage bucket `lessons` para upload de materiais (PDFs, áudios, vídeos, imagens)
+- **Storage**: Supabase Storage buckets `lessons`, `portfolios`, `challenges` e `feed` para materiais, evidencias e midia
 
 ### Fluxo de Autenticação nas Actions
 
@@ -143,6 +143,7 @@ proxy.ts (Next.js 16 convention, renamed from middleware.ts)
 | `/settings/enrollments` | FUNCIONAL | Matrícula de alunos em turmas |
 | `/settings/school` | FUNCIONAL | Dados da escola + unidades (CRUD) |
 | `/diagnostics` | FUNCIONAL | Stats do sistema |
+| `/qr/manage` | FUNCIONAL | Geracao de QR code para rotas do app |
 
 ### Gerenciamento
 | Rota | Status | Action |
@@ -157,6 +158,7 @@ proxy.ts (Next.js 16 convention, renamed from middleware.ts)
 |---|---|---|
 | `/profile` | FUNCIONAL | `updateProfile()` com modo edição + multi-instrumentos |
 | `/register` | FUNCIONAL | Formulário de cadastro de aluno |
+| `/forgot-password` | FUNCIONAL | Envio de link de recuperacao para `/set-password` |
 | `/schedule` | FUNCIONAL | Agenda via `v_lessons` |
 | `/documents` | FUNCIONAL | `v_support_materials` |
 | `/training` | FUNCIONAL | Materiais de formação |
@@ -338,7 +340,7 @@ Padrão: `rpc_award_points()` → then → `rpc_check_achievements()` (não awai
 - [x] ~~Upload de arquivos via Supabase Storage~~ (implementado)
 - [x] ~~Testes automatizados~~ (45 testes via Vitest)
 - [x] ~~CI/CD pipeline~~ (GitHub Actions)
-- [ ] Upload de arquivos em portfólio e feed
+- [x] ~~Upload de arquivos em portfólio e feed~~ (implementado)
 - [ ] Timeline interativa de história da música
 - [ ] Quiz nos instrumentos
 - [ ] Notificações em tempo real

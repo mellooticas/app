@@ -104,12 +104,14 @@ Checklist completo: [PILOT_READINESS.md](./PILOT_READINESS.md)
 
 ## Documentacao
 
+- [Indice Canonico da Documentacao](./docs/README.md)
 - [Estado Atual da Arquitetura](./docs/arquitetura/ESTADO_ATUAL.md)
 - [Rotas e Navegacao](./docs/arquitetura/ROTAS_E_NAVEGACAO.md)
 - [Banco de Dados](./docs/arquitetura/BANCO_DE_DADOS.md)
 - [Status Geral](./docs/implementacao/STATUS_GERAL.md)
 - [Migracoes](./docs/implementacao/MIGRACOES.md)
 - [Runbook de Incidentes](./docs/operations/RUNBOOK.md)
+- [Analise de Gaps para Producao](./docs/operations/PRODUCTION_GAP_ANALYSIS.md)
 
 ### Onboarding
 - [Guia do Admin](./docs/onboarding/ADMIN_GUIDE.md)

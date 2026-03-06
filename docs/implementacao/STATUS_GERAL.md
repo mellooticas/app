@@ -1,6 +1,6 @@
-﻿# Status Geral da Implementacao - Nipo School
+# Status Geral da Implementacao - Nipo School
 
-**Ultima atualizacao:** 2026-03-03
+**Ultima atualizacao:** 2026-03-06
 
 ---
 
@@ -36,6 +36,9 @@
 - Constraints de qualidade de dados em tabelas criticas.
 - Rate limiting e quotas para acoes de IA.
 - CI pipeline com lint + type-check + testes automatizados.
+- Script de type-check autonomo via node scripts/ensure-next-type-files.mjs && tsc --noEmit.
+- Fluxo de recuperacao de senha disponivel em /forgot-password com redirecionamento para /set-password.
+- Gerador de QR Codes funcional em /qr/manage para rotas do app.
 - Onboarding guides para admin, professor, aluno e familia.
 - Incident runbook para auth, DB, IA, storage e deploy.
 - Pilot readiness checklist com criterios Go/No-Go.

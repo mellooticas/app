@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start -p 4000",
     "lint": "next lint",
-    "type-check": "tsc --noEmit",
+    "type-check": "node scripts/ensure-next-type-files.mjs && tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest"
   },
@@ -66,3 +66,4 @@
     "workbox-window": "^7.3.0"
   }
 }
+
