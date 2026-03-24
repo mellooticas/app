@@ -1,39 +1,74 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { useParams } from 'next/navigation'
 import { supabase } from '@/lib/supabase/client'
-import { Calendar, ArrowLeft, Check, X, User } from 'lucide-react'
+import { Calendar, ArrowLeft, Check, X, User, Loader2, CheckCircle } from 'lucide-react'
 import Link from 'next/link'
+import { recordAttendance } from '@/app/actions/course-actions'
 
 export default function AttendancePage() {
   const { id } = useParams<{ id: string }>()
   const [students, setStudents] = useState<any[]>([])
   const [courseName, setCourseName] = useState('')
   const [loading, setLoading] = useState(true)
+  const [saving, setSaving] = useState(false)
+  const [saved, setSaved] = useState(false)
   const [selectedDate, setSelectedDate] = useState(new Date().toISOString().split('T')[0])
 
-  useEffect(() => {
-    async function load() {
-      try {
-        const { data: course } = await supabase.from('v_courses').select('name').eq('id', id).single()
-        if (course) setCourseName((course as any).name)
+  const loadAttendance = useCallback(async (date: string) => {
+    if (!id) return
+    setLoading(true)
+    try {
+      const [courseRes, enrollmentsRes, attendanceRes] = await Promise.all([
+        supabase.from('v_courses').select('name').eq('id', id).single(),
+        supabase.from('v_enrollments').select('*').eq('course_id', id).eq('status', 'active').order('student_name'),
+        supabase.from('attendance').select('student_id, is_present').eq('course_id', id).eq('date', date),
+      ])
 
-        const { data: enrollments } = await supabase.from('v_enrollments').select('*').eq('course_id', id).eq('status', 'active').order('student_name')
-        if (enrollments) setStudents(enrollments.map((s: any) => ({ ...s, present: false })))
-      } catch (error) {
-        console.error('Error:', error)
-      } finally {
-        setLoading(false)
+      if (courseRes.data) setCourseName((courseRes.data as any).name)
+
+      if (enrollmentsRes.data) {
+        const existingMap = new Map((attendanceRes.data || []).map((a: any) => [a.student_id, a.is_present]))
+        setStudents(enrollmentsRes.data.map((s: any) => ({
+          ...s,
+          present: existingMap.has(s.student_id) ? existingMap.get(s.student_id) : false,
+        })))
       }
+    } catch (error) {
+      console.error('Error:', error)
+    } finally {
+      setLoading(false)
     }
-    if (id) load()
   }, [id])
 
+  useEffect(() => {
+    loadAttendance(selectedDate)
+    setSaved(false)
+  }, [loadAttendance, selectedDate])
+
   const togglePresence = (studentId: string) => {
+    setSaved(false)
     setStudents(prev => prev.map(s =>
       s.student_id === studentId ? { ...s, present: !s.present } : s
     ))
+  }
+
+  const handleSave = async () => {
+    setSaving(true)
+    const result = await recordAttendance({
+      course_id: id,
+      date: selectedDate,
+      records: students.map(s => ({
+        student_id: s.student_id,
+        is_present: s.present,
+      })),
+    })
+    setSaving(false)
+    if (!('error' in result)) {
+      setSaved(true)
+      setTimeout(() => setSaved(false), 3000)
+    }
   }
 
   const presentCount = students.filter(s => s.present).length
@@ -84,8 +119,22 @@ export default function AttendancePage() {
             ))}
           </div>
 
-          <button className="w-full py-3 bg-green-600 text-white rounded-xl font-bold hover:bg-green-700 transition-colors">
-            Salvar Frequência
+          <button
+            onClick={handleSave}
+            disabled={saving || saved}
+            className={`w-full py-3 rounded-xl font-bold transition-colors flex items-center justify-center gap-2 ${
+              saved
+                ? 'bg-green-100 text-green-700'
+                : 'bg-green-600 text-white hover:bg-green-700'
+            }`}
+          >
+            {saving ? (
+              <><Loader2 className="w-4 h-4 animate-spin" /> Salvando...</>
+            ) : saved ? (
+              <><CheckCircle className="w-4 h-4" /> Frequência Salva!</>
+            ) : (
+              'Salvar Frequência'
+            )}
           </button>
         </>
       )}

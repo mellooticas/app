@@ -1,16 +1,32 @@
 'use client'
 
-import { HelpCircle, BookOpen, MessageCircle, Mail, ExternalLink } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { supabase } from '@/lib/supabase/client'
+import { HelpCircle, BookOpen, MessageCircle, Mail, Loader2 } from 'lucide-react'
 
-const faqs = [
-  { q: 'Como faço para registrar minha prática?', a: 'Acesse o menu "Diário de Prática" e clique em "Nova Sessão". Registre o instrumento, duração e suas observações.' },
-  { q: 'Como funciona o sistema de pontos?', a: 'Você ganha pontos completando aulas, enviando desafios e mantendo uma sequência diária de prática. Os pontos acumulados desbloqueiam conquistas e novos níveis.' },
-  { q: 'Como participar de um desafio?', a: 'Vá em "Desafios", escolha um desafio disponível e envie sua submissão em vídeo, áudio ou texto. O professor avaliará e você receberá pontos.' },
-  { q: 'Como enviar um trabalho ao portfólio?', a: 'Acesse "Portfólio" e clique em "Nova Entrada". Você pode enviar gravações, fotos de partituras ou textos reflexivos.' },
-  { q: 'O que é o Feed Musical?', a: 'É o espaço para compartilhar suas produções musicais com a comunidade. Poste vídeos, áudios e interaja com outros músicos.' },
-]
+type Faq = {
+  id: string
+  title: string    // question
+  content: string  // answer
+  order_index: number
+}
 
 export default function HelpPage() {
+  const [faqs, setFaqs] = useState<Faq[]>([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    supabase
+      .from('v_library_items')
+      .select('id, title, content, order_index')
+      .eq('category', 'faq')
+      .order('order_index')
+      .then(({ data }) => {
+        setFaqs((data as Faq[]) || [])
+        setLoading(false)
+      })
+  }, [])
+
   return (
     <div className="space-y-6">
       <h1 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
@@ -38,19 +54,26 @@ export default function HelpPage() {
 
       <div>
         <h2 className="text-lg font-bold text-gray-900 mb-4">Perguntas Frequentes</h2>
-        <div className="space-y-3">
-          {faqs.map((faq, i) => (
-            <details key={i} className="bg-white rounded-xl border border-gray-100 group">
-              <summary className="p-4 cursor-pointer font-bold text-sm text-gray-900 flex items-center justify-between hover:text-teal-700 transition-colors">
-                {faq.q}
-                <span className="text-gray-400 group-open:rotate-180 transition-transform">&#9660;</span>
-              </summary>
-              <div className="px-4 pb-4 text-sm text-gray-600 border-t border-gray-50 pt-3">
-                {faq.a}
-              </div>
-            </details>
-          ))}
-        </div>
+
+        {loading ? (
+          <div className="flex items-center justify-center py-8">
+            <Loader2 className="w-6 h-6 animate-spin text-gray-400" />
+          </div>
+        ) : (
+          <div className="space-y-3">
+            {faqs.map(faq => (
+              <details key={faq.id} className="bg-white rounded-xl border border-gray-100 group">
+                <summary className="p-4 cursor-pointer font-bold text-sm text-gray-900 flex items-center justify-between hover:text-teal-700 transition-colors">
+                  {faq.title}
+                  <span className="text-gray-400 group-open:rotate-180 transition-transform">&#9660;</span>
+                </summary>
+                <div className="px-4 pb-4 text-sm text-gray-600 border-t border-gray-50 pt-3">
+                  {faq.content}
+                </div>
+              </details>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   )
